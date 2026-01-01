@@ -1,0 +1,1 @@
+- 2026-01-01: FlatList perf on long tx history, getItemLayout candidate
