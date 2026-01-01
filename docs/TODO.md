@@ -1,0 +1,1 @@
+- 2026-01-01: analytics custom range presets: 7d / 30d / MTD / YTD
