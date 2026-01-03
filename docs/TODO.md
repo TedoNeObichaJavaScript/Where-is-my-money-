@@ -1,3 +1,4 @@
 - 2026-01-01: analytics custom range presets: 7d / 30d / MTD / YTD
 - 2026-01-01: backup format versioning so old exports stay importable
 - 2026-01-03: SQLite migration strategy before adding budgets table
+- 2026-01-03: accessibility pass: touch targets under 44dp on filter chips
