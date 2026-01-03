@@ -1,2 +1,3 @@
 - 2026-01-01: FlatList perf on long tx history, getItemLayout candidate
 - 2026-01-01: tx tags vs single category — decided: single category + note
+- 2026-01-03: budget rollover: carry unspent vs reset monthly
