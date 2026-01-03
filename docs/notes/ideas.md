@@ -5,3 +5,4 @@
 - 2026-01-03: monthly summary notification copy drafts
 - 2026-01-03: settings screen grouping — appearance / data / security
 - 2026-01-03: transfer between accounts should not count as spend
+- 2026-01-03: sort options: date, amount, category — persist choice
