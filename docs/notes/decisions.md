@@ -3,3 +3,4 @@
 - 2026-01-03: budget rollover: carry unspent vs reset monthly
 - 2026-01-03: icon set audit — replace mismatched category glyphs
 - 2026-01-03: backup format versioning so old exports stay importable
+- 2026-01-03: biometric lock on app resume, grace period 30s
