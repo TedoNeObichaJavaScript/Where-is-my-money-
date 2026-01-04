@@ -7,3 +7,4 @@
 - 2026-01-04: FlatList perf on long tx history, getItemLayout candidate
 - 2026-01-04: transfer between accounts should not count as spend
 - 2026-01-04: FlatList perf on long tx history, getItemLayout candidate
+- 2026-01-04: sort options: date, amount, category — persist choice
