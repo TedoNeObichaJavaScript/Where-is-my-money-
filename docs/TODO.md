@@ -3,3 +3,4 @@
 - 2026-01-03: SQLite migration strategy before adding budgets table
 - 2026-01-03: accessibility pass: touch targets under 44dp on filter chips
 - 2026-01-03: app icon variants — dark bg vs light bg test on launcher
+- 2026-01-04: monthly summary notification copy drafts
