@@ -6,3 +6,4 @@
 - 2026-01-03: biometric lock on app resume, grace period 30s
 - 2026-01-04: pin fallback when biometrics unenrolled
 - 2026-01-04: category color palette — needs contrast pass in dark mode
+- 2026-01-05: pin fallback when biometrics unenrolled
