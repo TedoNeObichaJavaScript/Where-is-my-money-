@@ -9,3 +9,4 @@
 - 2026-01-04: FlatList perf on long tx history, getItemLayout candidate
 - 2026-01-04: sort options: date, amount, category — persist choice
 - 2026-01-05: widget idea: today spend glance on home screen
+- 2026-01-06: transfer between accounts should not count as spend
