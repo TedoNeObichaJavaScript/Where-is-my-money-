@@ -11,3 +11,4 @@
 - 2026-01-05: widget idea: today spend glance on home screen
 - 2026-01-06: transfer between accounts should not count as spend
 - 2026-01-07: widget idea: today spend glance on home screen
+- 2026-01-07: receipt photo attach — storage path + cleanup on tx delete
