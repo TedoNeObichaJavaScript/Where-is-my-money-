@@ -13,3 +13,4 @@
 - 2026-01-07: widget idea: today spend glance on home screen
 - 2026-01-07: receipt photo attach — storage path + cleanup on tx delete
 - 2026-01-07: receipt photo attach — storage path + cleanup on tx delete
+- 2026-01-08: amount input keypad: custom vs system numeric
