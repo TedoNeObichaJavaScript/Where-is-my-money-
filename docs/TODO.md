@@ -14,3 +14,4 @@
 - 2026-01-07: receipt photo attach — storage path + cleanup on tx delete
 - 2026-01-07: receipt photo attach — storage path + cleanup on tx delete
 - 2026-01-08: amount input keypad: custom vs system numeric
+- 2026-01-08: accessibility pass: touch targets under 44dp on filter chips
