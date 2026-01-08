@@ -9,3 +9,4 @@
 - 2026-01-05: pin fallback when biometrics unenrolled
 - 2026-01-06: sort options: date, amount, category — persist choice
 - 2026-01-07: sort options: date, amount, category — persist choice
+- 2026-01-08: currency symbol placement per locale (lv after amount)
