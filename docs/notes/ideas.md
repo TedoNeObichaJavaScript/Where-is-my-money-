@@ -13,3 +13,4 @@
 - 2026-01-08: chart lib comparison: victory-native vs react-native-svg hand-rolled
 - 2026-01-09: pin fallback when biometrics unenrolled
 - 2026-01-09: budget alerts at 80% and 100%, local notifications only
+- 2026-01-09: accessibility pass: touch targets under 44dp on filter chips
