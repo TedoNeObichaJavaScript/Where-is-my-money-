@@ -11,3 +11,4 @@
 - 2026-01-08: analytics custom range presets: 7d / 30d / MTD / YTD
 - 2026-01-08: CSV export column order + separator for BG Excel locale
 - 2026-01-08: chart lib comparison: victory-native vs react-native-svg hand-rolled
+- 2026-01-09: pin fallback when biometrics unenrolled
