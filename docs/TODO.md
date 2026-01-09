@@ -18,3 +18,4 @@
 - 2026-01-08: transfer between accounts should not count as spend
 - 2026-01-09: category color palette — needs contrast pass in dark mode
 - 2026-01-09: currency symbol placement per locale (lv after amount)
+- 2026-01-09: monthly summary notification copy drafts
