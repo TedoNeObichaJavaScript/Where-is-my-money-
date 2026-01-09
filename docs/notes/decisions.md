@@ -16,3 +16,4 @@
 - 2026-01-09: SQLite migration strategy before adding budgets table
 - 2026-01-09: search: debounce input, index on tx note
 - 2026-01-09: FlatList perf on long tx history, getItemLayout candidate
+- 2026-01-09: pin fallback when biometrics unenrolled
