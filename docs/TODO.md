@@ -16,3 +16,4 @@
 - 2026-01-08: amount input keypad: custom vs system numeric
 - 2026-01-08: accessibility pass: touch targets under 44dp on filter chips
 - 2026-01-08: transfer between accounts should not count as spend
+- 2026-01-09: category color palette — needs contrast pass in dark mode
