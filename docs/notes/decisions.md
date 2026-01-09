@@ -17,3 +17,4 @@
 - 2026-01-09: search: debounce input, index on tx note
 - 2026-01-09: FlatList perf on long tx history, getItemLayout candidate
 - 2026-01-09: pin fallback when biometrics unenrolled
+- 2026-01-09: analytics custom range presets: 7d / 30d / MTD / YTD
