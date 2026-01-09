@@ -14,3 +14,4 @@
 - 2026-01-09: settings screen grouping — appearance / data / security
 - 2026-01-09: accessibility pass: touch targets under 44dp on filter chips
 - 2026-01-09: SQLite migration strategy before adding budgets table
+- 2026-01-09: search: debounce input, index on tx note
