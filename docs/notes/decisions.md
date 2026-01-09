@@ -12,3 +12,4 @@
 - 2026-01-08: currency symbol placement per locale (lv after amount)
 - 2026-01-08: widget idea: today spend glance on home screen
 - 2026-01-09: settings screen grouping — appearance / data / security
+- 2026-01-09: accessibility pass: touch targets under 44dp on filter chips
