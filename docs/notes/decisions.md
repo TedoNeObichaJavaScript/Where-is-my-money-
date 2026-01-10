@@ -22,3 +22,4 @@
 - 2026-01-09: empty states for analytics when < 5 tx
 - 2026-01-10: pin fallback when biometrics unenrolled
 - 2026-01-10: haptics on tx save — light impact only
+- 2026-01-10: amount input keypad: custom vs system numeric
