@@ -20,3 +20,4 @@
 - 2026-01-10: category color palette — needs contrast pass in dark mode
 - 2026-01-10: backup format versioning so old exports stay importable
 - 2026-01-10: accessibility pass: touch targets under 44dp on filter chips
+- 2026-01-10: SQLite migration strategy before adding budgets table
