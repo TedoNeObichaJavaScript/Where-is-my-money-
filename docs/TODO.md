@@ -23,3 +23,4 @@
 - 2026-01-10: receipt photo attach — storage path + cleanup on tx delete
 - 2026-01-10: search: debounce input, index on tx note
 - 2026-01-10: monthly summary notification copy drafts
+- 2026-01-10: haptics on tx save — light impact only
