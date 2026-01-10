@@ -18,3 +18,4 @@
 - 2026-01-09: pin fallback when biometrics unenrolled
 - 2026-01-10: budget rollover: carry unspent vs reset monthly
 - 2026-01-10: category color palette — needs contrast pass in dark mode
+- 2026-01-10: backup format versioning so old exports stay importable
