@@ -23,3 +23,4 @@
 - 2026-01-10: pin fallback when biometrics unenrolled
 - 2026-01-10: haptics on tx save — light impact only
 - 2026-01-10: amount input keypad: custom vs system numeric
+- 2026-01-10: app icon variants — dark bg vs light bg test on launcher
