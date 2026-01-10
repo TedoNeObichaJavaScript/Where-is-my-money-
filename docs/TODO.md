@@ -20,3 +20,4 @@
 - 2026-01-09: currency symbol placement per locale (lv after amount)
 - 2026-01-09: monthly summary notification copy drafts
 - 2026-01-09: chart lib comparison: victory-native vs react-native-svg hand-rolled
+- 2026-01-10: receipt photo attach — storage path + cleanup on tx delete
