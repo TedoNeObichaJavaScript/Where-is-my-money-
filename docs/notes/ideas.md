@@ -23,3 +23,4 @@
 - 2026-01-10: SQLite migration strategy before adding budgets table
 - 2026-01-11: tx tags vs single category — decided: single category + note
 - 2026-01-11: soft delete with undo snackbar instead of confirm dialog
+- 2026-01-11: CSV export column order + separator for BG Excel locale
