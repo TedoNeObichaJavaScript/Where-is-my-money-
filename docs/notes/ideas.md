@@ -25,3 +25,4 @@
 - 2026-01-11: soft delete with undo snackbar instead of confirm dialog
 - 2026-01-11: CSV export column order + separator for BG Excel locale
 - 2026-01-11: settings screen grouping — appearance / data / security
+- 2026-01-11: tx tags vs single category — decided: single category + note
