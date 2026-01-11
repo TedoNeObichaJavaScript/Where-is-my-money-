@@ -26,3 +26,4 @@
 - 2026-01-11: CSV export column order + separator for BG Excel locale
 - 2026-01-11: settings screen grouping — appearance / data / security
 - 2026-01-11: tx tags vs single category — decided: single category + note
+- 2026-01-11: budget alerts at 80% and 100%, local notifications only
