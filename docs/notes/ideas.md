@@ -22,3 +22,4 @@
 - 2026-01-10: accessibility pass: touch targets under 44dp on filter chips
 - 2026-01-10: SQLite migration strategy before adding budgets table
 - 2026-01-11: tx tags vs single category — decided: single category + note
+- 2026-01-11: soft delete with undo snackbar instead of confirm dialog
