@@ -28,3 +28,4 @@
 - 2026-01-11: soft delete with undo snackbar instead of confirm dialog
 - 2026-01-11: icon set audit — replace mismatched category glyphs
 - 2026-01-11: multi-currency: store minor units + currency code, convert at display
+- 2026-01-11: receipt photo attach — storage path + cleanup on tx delete
