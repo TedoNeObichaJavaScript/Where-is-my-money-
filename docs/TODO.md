@@ -25,3 +25,4 @@
 - 2026-01-10: monthly summary notification copy drafts
 - 2026-01-10: haptics on tx save — light impact only
 - 2026-01-11: onboarding flow: skip vs guided first account setup
+- 2026-01-11: soft delete with undo snackbar instead of confirm dialog
