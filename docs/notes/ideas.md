@@ -21,3 +21,4 @@
 - 2026-01-10: backup format versioning so old exports stay importable
 - 2026-01-10: accessibility pass: touch targets under 44dp on filter chips
 - 2026-01-10: SQLite migration strategy before adding budgets table
+- 2026-01-11: tx tags vs single category — decided: single category + note
