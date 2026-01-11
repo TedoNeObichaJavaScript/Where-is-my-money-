@@ -27,3 +27,4 @@
 - 2026-01-11: onboarding flow: skip vs guided first account setup
 - 2026-01-11: soft delete with undo snackbar instead of confirm dialog
 - 2026-01-11: icon set audit — replace mismatched category glyphs
+- 2026-01-11: multi-currency: store minor units + currency code, convert at display
