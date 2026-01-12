@@ -31,3 +31,4 @@
 - 2026-01-12: currency symbol placement per locale (lv after amount)
 - 2026-01-12: sort options: date, amount, category — persist choice
 - 2026-01-12: soft delete with undo snackbar instead of confirm dialog
+- 2026-01-12: sort options: date, amount, category — persist choice
