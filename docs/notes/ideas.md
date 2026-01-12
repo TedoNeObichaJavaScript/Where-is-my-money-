@@ -29,3 +29,4 @@
 - 2026-01-11: budget alerts at 80% and 100%, local notifications only
 - 2026-01-12: multi-currency: store minor units + currency code, convert at display
 - 2026-01-12: sort options: date, amount, category — persist choice
+- 2026-01-12: amount input keypad: custom vs system numeric
