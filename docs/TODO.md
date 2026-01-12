@@ -32,3 +32,4 @@
 - 2026-01-11: category color palette — needs contrast pass in dark mode
 - 2026-01-11: pin fallback when biometrics unenrolled
 - 2026-01-12: amount input keypad: custom vs system numeric
+- 2026-01-12: empty states for analytics when < 5 tx
