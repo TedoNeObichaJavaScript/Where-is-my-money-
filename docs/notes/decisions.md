@@ -29,3 +29,4 @@
 - 2026-01-12: monthly summary notification copy drafts
 - 2026-01-12: backup format versioning so old exports stay importable
 - 2026-01-12: currency symbol placement per locale (lv after amount)
+- 2026-01-12: sort options: date, amount, category — persist choice
