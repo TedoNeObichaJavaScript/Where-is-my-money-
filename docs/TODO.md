@@ -36,3 +36,4 @@
 - 2026-01-12: search: debounce input, index on tx note
 - 2026-01-13: app icon variants — dark bg vs light bg test on launcher
 - 2026-01-13: app icon variants — dark bg vs light bg test on launcher
+- 2026-01-13: budget alerts at 80% and 100%, local notifications only
