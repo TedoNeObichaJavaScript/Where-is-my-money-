@@ -31,3 +31,4 @@
 - 2026-01-12: sort options: date, amount, category — persist choice
 - 2026-01-12: amount input keypad: custom vs system numeric
 - 2026-01-12: amount input keypad: custom vs system numeric
+- 2026-01-13: monthly summary notification copy drafts
