@@ -36,3 +36,4 @@
 - 2026-01-13: onboarding flow: skip vs guided first account setup
 - 2026-01-13: settings screen grouping — appearance / data / security
 - 2026-01-13: SQLite migration strategy before adding budgets table
+- 2026-01-13: receipt photo attach — storage path + cleanup on tx delete
