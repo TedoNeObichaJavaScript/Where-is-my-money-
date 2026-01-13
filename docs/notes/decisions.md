@@ -35,3 +35,4 @@
 - 2026-01-13: budget alerts at 80% and 100%, local notifications only
 - 2026-01-13: receipt photo attach — storage path + cleanup on tx delete
 - 2026-01-13: pin fallback when biometrics unenrolled
+- 2026-01-13: budget alerts at 80% and 100%, local notifications only
