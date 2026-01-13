@@ -33,3 +33,4 @@
 - 2026-01-12: amount input keypad: custom vs system numeric
 - 2026-01-13: monthly summary notification copy drafts
 - 2026-01-13: budget rollover: carry unspent vs reset monthly
+- 2026-01-13: onboarding flow: skip vs guided first account setup
