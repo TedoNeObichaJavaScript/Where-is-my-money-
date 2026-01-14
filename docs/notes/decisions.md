@@ -41,3 +41,4 @@
 - 2026-01-14: accessibility pass: touch targets under 44dp on filter chips
 - 2026-01-14: monthly summary notification copy drafts
 - 2026-01-14: amount input keypad: custom vs system numeric
+- 2026-01-14: transfer between accounts should not count as spend
