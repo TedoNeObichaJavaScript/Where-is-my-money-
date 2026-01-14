@@ -43,3 +43,4 @@
 - 2026-01-14: accessibility pass: touch targets under 44dp on filter chips
 - 2026-01-14: empty states for analytics when < 5 tx
 - 2026-01-14: CSV export column order + separator for BG Excel locale
+- 2026-01-14: amount input keypad: custom vs system numeric
