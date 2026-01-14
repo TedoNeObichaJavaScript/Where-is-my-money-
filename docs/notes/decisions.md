@@ -39,3 +39,4 @@
 - 2026-01-14: recurring tx edge cases (DST, month-end 29/30/31)
 - 2026-01-14: app icon variants — dark bg vs light bg test on launcher
 - 2026-01-14: accessibility pass: touch targets under 44dp on filter chips
+- 2026-01-14: monthly summary notification copy drafts
