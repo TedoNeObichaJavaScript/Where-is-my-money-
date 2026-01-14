@@ -44,3 +44,4 @@
 - 2026-01-14: receipt photo attach — storage path + cleanup on tx delete
 - 2026-01-14: transfer between accounts should not count as spend
 - 2026-01-14: recurring tx edge cases (DST, month-end 29/30/31)
+- 2026-01-14: analytics custom range presets: 7d / 30d / MTD / YTD
