@@ -42,3 +42,4 @@
 - 2026-01-13: amount input keypad: custom vs system numeric
 - 2026-01-14: sort options: date, amount, category — persist choice
 - 2026-01-14: receipt photo attach — storage path + cleanup on tx delete
+- 2026-01-14: transfer between accounts should not count as spend
