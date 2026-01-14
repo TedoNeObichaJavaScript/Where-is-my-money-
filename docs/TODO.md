@@ -41,3 +41,4 @@
 - 2026-01-13: chart lib comparison: victory-native vs react-native-svg hand-rolled
 - 2026-01-13: amount input keypad: custom vs system numeric
 - 2026-01-14: sort options: date, amount, category — persist choice
+- 2026-01-14: receipt photo attach — storage path + cleanup on tx delete
