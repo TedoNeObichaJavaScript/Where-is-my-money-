@@ -42,3 +42,4 @@
 - 2026-01-13: haptics on tx save — light impact only
 - 2026-01-14: accessibility pass: touch targets under 44dp on filter chips
 - 2026-01-14: empty states for analytics when < 5 tx
+- 2026-01-14: CSV export column order + separator for BG Excel locale
