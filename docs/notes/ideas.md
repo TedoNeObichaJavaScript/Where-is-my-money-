@@ -46,3 +46,4 @@
 - 2026-01-14: amount input keypad: custom vs system numeric
 - 2026-01-14: category color palette — needs contrast pass in dark mode
 - 2026-01-14: receipt photo attach — storage path + cleanup on tx delete
+- 2026-01-14: tx tags vs single category — decided: single category + note
