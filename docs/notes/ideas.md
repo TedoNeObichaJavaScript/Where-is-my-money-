@@ -47,3 +47,4 @@
 - 2026-01-14: category color palette — needs contrast pass in dark mode
 - 2026-01-14: receipt photo attach — storage path + cleanup on tx delete
 - 2026-01-14: tx tags vs single category — decided: single category + note
+- 2026-01-14: app icon variants — dark bg vs light bg test on launcher
