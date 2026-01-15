@@ -45,3 +45,4 @@
 - 2026-01-15: empty states for analytics when < 5 tx
 - 2026-01-15: search: debounce input, index on tx note
 - 2026-01-15: settings screen grouping — appearance / data / security
+- 2026-01-15: accessibility pass: touch targets under 44dp on filter chips
