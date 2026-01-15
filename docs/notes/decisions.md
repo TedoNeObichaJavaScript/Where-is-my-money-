@@ -42,3 +42,4 @@
 - 2026-01-14: monthly summary notification copy drafts
 - 2026-01-14: amount input keypad: custom vs system numeric
 - 2026-01-14: transfer between accounts should not count as spend
+- 2026-01-15: empty states for analytics when < 5 tx
