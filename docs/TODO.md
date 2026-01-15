@@ -46,3 +46,4 @@
 - 2026-01-14: recurring tx edge cases (DST, month-end 29/30/31)
 - 2026-01-14: analytics custom range presets: 7d / 30d / MTD / YTD
 - 2026-01-14: widget idea: today spend glance on home screen
+- 2026-01-15: haptics on tx save — light impact only
