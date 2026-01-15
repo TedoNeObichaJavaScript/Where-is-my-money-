@@ -49,3 +49,4 @@
 - 2026-01-14: tx tags vs single category — decided: single category + note
 - 2026-01-14: app icon variants — dark bg vs light bg test on launcher
 - 2026-01-14: haptics on tx save — light impact only
+- 2026-01-15: onboarding flow: skip vs guided first account setup
