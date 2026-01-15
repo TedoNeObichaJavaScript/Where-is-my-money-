@@ -43,3 +43,4 @@
 - 2026-01-14: amount input keypad: custom vs system numeric
 - 2026-01-14: transfer between accounts should not count as spend
 - 2026-01-15: empty states for analytics when < 5 tx
+- 2026-01-15: search: debounce input, index on tx note
