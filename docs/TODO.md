@@ -50,3 +50,4 @@
 - 2026-01-15: FlatList perf on long tx history, getItemLayout candidate
 - 2026-01-16: app icon variants — dark bg vs light bg test on launcher
 - 2026-01-16: budget alerts at 80% and 100%, local notifications only
+- 2026-01-16: search: debounce input, index on tx note
