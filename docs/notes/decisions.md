@@ -48,3 +48,4 @@
 - 2026-01-15: accessibility pass: touch targets under 44dp on filter chips
 - 2026-01-16: FlatList perf on long tx history, getItemLayout candidate
 - 2026-01-16: soft delete with undo snackbar instead of confirm dialog
+- 2026-01-16: sort options: date, amount, category — persist choice
