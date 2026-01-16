@@ -49,3 +49,4 @@
 - 2026-01-16: FlatList perf on long tx history, getItemLayout candidate
 - 2026-01-16: soft delete with undo snackbar instead of confirm dialog
 - 2026-01-16: sort options: date, amount, category — persist choice
+- 2026-01-16: tx tags vs single category — decided: single category + note
