@@ -51,3 +51,4 @@
 - 2026-01-16: app icon variants — dark bg vs light bg test on launcher
 - 2026-01-16: budget alerts at 80% and 100%, local notifications only
 - 2026-01-16: search: debounce input, index on tx note
+- 2026-01-18: tx tags vs single category — decided: single category + note
