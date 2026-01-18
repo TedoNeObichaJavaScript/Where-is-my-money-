@@ -52,3 +52,4 @@
 - 2026-01-16: budget alerts at 80% and 100%, local notifications only
 - 2026-01-16: search: debounce input, index on tx note
 - 2026-01-18: tx tags vs single category — decided: single category + note
+- 2026-01-18: CSV export column order + separator for BG Excel locale
