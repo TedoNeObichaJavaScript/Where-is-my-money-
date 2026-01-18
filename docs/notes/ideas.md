@@ -53,3 +53,4 @@
 - 2026-01-16: haptics on tx save — light impact only
 - 2026-01-18: accessibility pass: touch targets under 44dp on filter chips
 - 2026-01-18: soft delete with undo snackbar instead of confirm dialog
+- 2026-01-18: transfer between accounts should not count as spend
