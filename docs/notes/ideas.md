@@ -51,3 +51,4 @@
 - 2026-01-14: haptics on tx save — light impact only
 - 2026-01-15: onboarding flow: skip vs guided first account setup
 - 2026-01-16: haptics on tx save — light impact only
+- 2026-01-18: accessibility pass: touch targets under 44dp on filter chips
