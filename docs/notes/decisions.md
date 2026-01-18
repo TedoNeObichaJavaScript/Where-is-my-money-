@@ -51,3 +51,4 @@
 - 2026-01-16: sort options: date, amount, category — persist choice
 - 2026-01-16: tx tags vs single category — decided: single category + note
 - 2026-01-18: currency symbol placement per locale (lv after amount)
+- 2026-01-18: onboarding flow: skip vs guided first account setup
