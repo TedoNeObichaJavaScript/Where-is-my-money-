@@ -53,3 +53,4 @@
 - 2026-01-16: search: debounce input, index on tx note
 - 2026-01-18: tx tags vs single category — decided: single category + note
 - 2026-01-18: CSV export column order + separator for BG Excel locale
+- 2026-01-18: app icon variants — dark bg vs light bg test on launcher
