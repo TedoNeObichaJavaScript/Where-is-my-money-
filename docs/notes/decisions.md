@@ -60,3 +60,4 @@
 - 2026-01-19: CSV export column order + separator for BG Excel locale
 - 2026-01-19: budget rollover: carry unspent vs reset monthly
 - 2026-01-19: monthly summary notification copy drafts
+- 2026-01-19: icon set audit — replace mismatched category glyphs
