@@ -58,3 +58,4 @@
 - 2026-01-18: tx tags vs single category — decided: single category + note
 - 2026-01-19: FlatList perf on long tx history, getItemLayout candidate
 - 2026-01-19: biometric lock on app resume, grace period 30s
+- 2026-01-19: CSV export column order + separator for BG Excel locale
