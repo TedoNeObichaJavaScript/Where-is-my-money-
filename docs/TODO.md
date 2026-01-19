@@ -56,3 +56,4 @@
 - 2026-01-18: app icon variants — dark bg vs light bg test on launcher
 - 2026-01-18: icon set audit — replace mismatched category glyphs
 - 2026-01-18: tx tags vs single category — decided: single category + note
+- 2026-01-19: FlatList perf on long tx history, getItemLayout candidate
