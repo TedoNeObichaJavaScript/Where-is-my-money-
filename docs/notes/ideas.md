@@ -60,3 +60,4 @@
 - 2026-01-19: search: debounce input, index on tx note
 - 2026-01-19: onboarding flow: skip vs guided first account setup
 - 2026-01-19: tx tags vs single category — decided: single category + note
+- 2026-01-19: monthly summary notification copy drafts
