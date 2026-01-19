@@ -57,3 +57,4 @@
 - 2026-01-19: sort options: date, amount, category — persist choice
 - 2026-01-19: category color palette — needs contrast pass in dark mode
 - 2026-01-19: receipt photo attach — storage path + cleanup on tx delete
+- 2026-01-19: CSV export column order + separator for BG Excel locale
