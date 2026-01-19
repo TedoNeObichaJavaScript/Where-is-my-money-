@@ -65,3 +65,4 @@
 - 2026-01-19: transfer between accounts should not count as spend
 - 2026-01-19: budget rollover: carry unspent vs reset monthly
 - 2026-01-19: CSV export column order + separator for BG Excel locale
+- 2026-01-19: biometric lock on app resume, grace period 30s
