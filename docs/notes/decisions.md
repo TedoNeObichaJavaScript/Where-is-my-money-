@@ -59,3 +59,4 @@
 - 2026-01-19: receipt photo attach — storage path + cleanup on tx delete
 - 2026-01-19: CSV export column order + separator for BG Excel locale
 - 2026-01-19: budget rollover: carry unspent vs reset monthly
+- 2026-01-19: monthly summary notification copy drafts
