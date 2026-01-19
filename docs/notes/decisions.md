@@ -55,3 +55,4 @@
 - 2026-01-18: biometric lock on app resume, grace period 30s
 - 2026-01-18: tx tags vs single category — decided: single category + note
 - 2026-01-19: sort options: date, amount, category — persist choice
+- 2026-01-19: category color palette — needs contrast pass in dark mode
