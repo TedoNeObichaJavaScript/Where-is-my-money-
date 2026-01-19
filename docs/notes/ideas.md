@@ -63,3 +63,4 @@
 - 2026-01-19: monthly summary notification copy drafts
 - 2026-01-19: app icon variants — dark bg vs light bg test on launcher
 - 2026-01-19: transfer between accounts should not count as spend
+- 2026-01-19: budget rollover: carry unspent vs reset monthly
