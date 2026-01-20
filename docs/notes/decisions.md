@@ -62,3 +62,4 @@
 - 2026-01-19: monthly summary notification copy drafts
 - 2026-01-19: icon set audit — replace mismatched category glyphs
 - 2026-01-20: analytics custom range presets: 7d / 30d / MTD / YTD
+- 2026-01-20: chart lib comparison: victory-native vs react-native-svg hand-rolled
