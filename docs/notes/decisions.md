@@ -64,3 +64,4 @@
 - 2026-01-20: analytics custom range presets: 7d / 30d / MTD / YTD
 - 2026-01-20: chart lib comparison: victory-native vs react-native-svg hand-rolled
 - 2026-01-20: amount input keypad: custom vs system numeric
+- 2026-01-21: onboarding flow: skip vs guided first account setup
