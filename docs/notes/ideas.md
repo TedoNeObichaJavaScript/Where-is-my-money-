@@ -67,3 +67,4 @@
 - 2026-01-19: CSV export column order + separator for BG Excel locale
 - 2026-01-19: biometric lock on app resume, grace period 30s
 - 2026-01-20: accessibility pass: touch targets under 44dp on filter chips
+- 2026-01-22: backup format versioning so old exports stay importable
