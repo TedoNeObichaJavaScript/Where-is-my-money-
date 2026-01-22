@@ -67,3 +67,4 @@
 - 2026-01-21: onboarding flow: skip vs guided first account setup
 - 2026-01-21: chart lib comparison: victory-native vs react-native-svg hand-rolled
 - 2026-01-22: currency symbol placement per locale (lv after amount)
+- 2026-01-22: sort options: date, amount, category — persist choice
