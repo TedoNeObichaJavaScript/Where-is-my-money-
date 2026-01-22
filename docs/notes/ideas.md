@@ -69,3 +69,4 @@
 - 2026-01-20: accessibility pass: touch targets under 44dp on filter chips
 - 2026-01-22: backup format versioning so old exports stay importable
 - 2026-01-22: multi-currency: store minor units + currency code, convert at display
+- 2026-01-22: budget rollover: carry unspent vs reset monthly
