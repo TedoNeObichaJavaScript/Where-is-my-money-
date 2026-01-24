@@ -71,3 +71,4 @@
 - 2026-01-22: multi-currency: store minor units + currency code, convert at display
 - 2026-01-22: budget rollover: carry unspent vs reset monthly
 - 2026-01-22: analytics custom range presets: 7d / 30d / MTD / YTD
+- 2026-01-24: budget rollover: carry unspent vs reset monthly
