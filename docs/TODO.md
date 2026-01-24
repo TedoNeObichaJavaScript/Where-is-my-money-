@@ -70,3 +70,4 @@
 - 2026-01-24: amount input keypad: custom vs system numeric
 - 2026-01-24: soft delete with undo snackbar instead of confirm dialog
 - 2026-01-24: backup format versioning so old exports stay importable
+- 2026-01-24: widget idea: today spend glance on home screen
