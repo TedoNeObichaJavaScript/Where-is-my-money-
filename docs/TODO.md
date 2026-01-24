@@ -68,3 +68,4 @@
 - 2026-01-24: CSV export column order + separator for BG Excel locale
 - 2026-01-24: settings screen grouping — appearance / data / security
 - 2026-01-24: amount input keypad: custom vs system numeric
+- 2026-01-24: soft delete with undo snackbar instead of confirm dialog
