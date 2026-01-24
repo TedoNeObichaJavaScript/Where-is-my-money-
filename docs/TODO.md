@@ -72,3 +72,4 @@
 - 2026-01-24: backup format versioning so old exports stay importable
 - 2026-01-24: widget idea: today spend glance on home screen
 - 2026-01-24: pin fallback when biometrics unenrolled
+- 2026-01-24: empty states for analytics when < 5 tx
