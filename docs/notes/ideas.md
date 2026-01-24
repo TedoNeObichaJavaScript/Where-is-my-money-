@@ -74,3 +74,4 @@
 - 2026-01-24: budget rollover: carry unspent vs reset monthly
 - 2026-01-24: widget idea: today spend glance on home screen
 - 2026-01-24: biometric lock on app resume, grace period 30s
+- 2026-01-24: icon set audit — replace mismatched category glyphs
