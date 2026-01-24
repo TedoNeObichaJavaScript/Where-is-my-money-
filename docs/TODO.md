@@ -64,3 +64,4 @@
 - 2026-01-22: FlatList perf on long tx history, getItemLayout candidate
 - 2026-01-22: recurring tx edge cases (DST, month-end 29/30/31)
 - 2026-01-24: pin fallback when biometrics unenrolled
+- 2026-01-24: CSV export column order + separator for BG Excel locale
