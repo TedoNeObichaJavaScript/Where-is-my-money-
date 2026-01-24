@@ -73,3 +73,4 @@
 - 2026-01-22: analytics custom range presets: 7d / 30d / MTD / YTD
 - 2026-01-24: budget rollover: carry unspent vs reset monthly
 - 2026-01-24: widget idea: today spend glance on home screen
+- 2026-01-24: biometric lock on app resume, grace period 30s
