@@ -71,3 +71,4 @@
 - 2026-01-22: pin fallback when biometrics unenrolled
 - 2026-01-22: icon set audit — replace mismatched category glyphs
 - 2026-01-24: search: debounce input, index on tx note
+- 2026-01-24: biometric lock on app resume, grace period 30s
