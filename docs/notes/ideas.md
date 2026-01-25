@@ -77,3 +77,4 @@
 - 2026-01-24: icon set audit — replace mismatched category glyphs
 - 2026-01-25: multi-currency: store minor units + currency code, convert at display
 - 2026-01-25: widget idea: today spend glance on home screen
+- 2026-01-25: analytics custom range presets: 7d / 30d / MTD / YTD
