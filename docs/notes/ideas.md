@@ -76,3 +76,4 @@
 - 2026-01-24: biometric lock on app resume, grace period 30s
 - 2026-01-24: icon set audit — replace mismatched category glyphs
 - 2026-01-25: multi-currency: store minor units + currency code, convert at display
+- 2026-01-25: widget idea: today spend glance on home screen
