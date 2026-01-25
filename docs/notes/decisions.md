@@ -80,3 +80,4 @@
 - 2026-01-25: budget alerts at 80% and 100%, local notifications only
 - 2026-01-25: search: debounce input, index on tx note
 - 2026-01-25: tx tags vs single category — decided: single category + note
+- 2026-01-25: widget idea: today spend glance on home screen
