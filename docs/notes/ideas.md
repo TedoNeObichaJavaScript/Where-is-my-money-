@@ -78,3 +78,4 @@
 - 2026-01-25: multi-currency: store minor units + currency code, convert at display
 - 2026-01-25: widget idea: today spend glance on home screen
 - 2026-01-25: analytics custom range presets: 7d / 30d / MTD / YTD
+- 2026-01-25: CSV export column order + separator for BG Excel locale
