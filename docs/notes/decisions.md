@@ -75,3 +75,4 @@
 - 2026-01-24: CSV export column order + separator for BG Excel locale
 - 2026-01-24: pin fallback when biometrics unenrolled
 - 2026-01-24: accessibility pass: touch targets under 44dp on filter chips
+- 2026-01-25: search: debounce input, index on tx note
