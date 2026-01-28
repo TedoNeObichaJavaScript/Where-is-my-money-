@@ -87,3 +87,4 @@
 - 2026-01-28: SQLite migration strategy before adding budgets table
 - 2026-01-28: sort options: date, amount, category — persist choice
 - 2026-01-28: budget rollover: carry unspent vs reset monthly
+- 2026-01-28: currency symbol placement per locale (lv after amount)
