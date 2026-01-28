@@ -85,3 +85,4 @@
 - 2026-01-28: accessibility pass: touch targets under 44dp on filter chips
 - 2026-01-28: transfer between accounts should not count as spend
 - 2026-01-28: SQLite migration strategy before adding budgets table
+- 2026-01-28: sort options: date, amount, category — persist choice
