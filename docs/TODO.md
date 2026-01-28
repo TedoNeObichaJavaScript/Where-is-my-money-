@@ -77,3 +77,4 @@
 - 2026-01-25: analytics custom range presets: 7d / 30d / MTD / YTD
 - 2026-01-25: recurring tx edge cases (DST, month-end 29/30/31)
 - 2026-01-26: app icon variants — dark bg vs light bg test on launcher
+- 2026-01-28: pin fallback when biometrics unenrolled
