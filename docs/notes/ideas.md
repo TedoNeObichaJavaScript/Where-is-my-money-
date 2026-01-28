@@ -83,3 +83,4 @@
 - 2026-01-25: backup format versioning so old exports stay importable
 - 2026-01-26: monthly summary notification copy drafts
 - 2026-01-28: accessibility pass: touch targets under 44dp on filter chips
+- 2026-01-28: transfer between accounts should not count as spend
