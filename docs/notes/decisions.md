@@ -87,3 +87,4 @@
 - 2026-01-28: pin fallback when biometrics unenrolled
 - 2026-01-28: pin fallback when biometrics unenrolled
 - 2026-01-28: budget rollover: carry unspent vs reset monthly
+- 2026-01-28: budget rollover: carry unspent vs reset monthly
