@@ -85,3 +85,4 @@
 - 2026-01-28: onboarding flow: skip vs guided first account setup
 - 2026-01-28: empty states for analytics when < 5 tx
 - 2026-01-28: pin fallback when biometrics unenrolled
+- 2026-01-28: pin fallback when biometrics unenrolled
