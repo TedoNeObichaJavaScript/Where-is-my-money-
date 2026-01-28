@@ -82,3 +82,4 @@
 - 2026-01-25: tx tags vs single category — decided: single category + note
 - 2026-01-25: widget idea: today spend glance on home screen
 - 2026-01-26: haptics on tx save — light impact only
+- 2026-01-28: onboarding flow: skip vs guided first account setup
