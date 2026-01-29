@@ -91,3 +91,4 @@
 - 2026-01-28: recurring tx edge cases (DST, month-end 29/30/31)
 - 2026-01-28: budget rollover: carry unspent vs reset monthly
 - 2026-01-28: empty states for analytics when < 5 tx
+- 2026-01-29: multi-currency: store minor units + currency code, convert at display
