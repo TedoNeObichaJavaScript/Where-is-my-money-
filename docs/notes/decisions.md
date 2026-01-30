@@ -94,3 +94,4 @@
 - 2026-01-30: currency symbol placement per locale (lv after amount)
 - 2026-01-30: soft delete with undo snackbar instead of confirm dialog
 - 2026-01-30: onboarding flow: skip vs guided first account setup
+- 2026-01-30: chart lib comparison: victory-native vs react-native-svg hand-rolled
