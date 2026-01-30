@@ -91,3 +91,4 @@
 - 2026-01-30: icon set audit — replace mismatched category glyphs
 - 2026-01-30: soft delete with undo snackbar instead of confirm dialog
 - 2026-01-30: sort options: date, amount, category — persist choice
+- 2026-01-30: currency symbol placement per locale (lv after amount)
