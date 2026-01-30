@@ -93,3 +93,4 @@
 - 2026-01-28: empty states for analytics when < 5 tx
 - 2026-01-29: multi-currency: store minor units + currency code, convert at display
 - 2026-01-30: app icon variants — dark bg vs light bg test on launcher
+- 2026-01-30: tx tags vs single category — decided: single category + note
