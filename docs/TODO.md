@@ -80,3 +80,4 @@
 - 2026-01-28: pin fallback when biometrics unenrolled
 - 2026-01-28: icon set audit — replace mismatched category glyphs
 - 2026-01-30: widget idea: today spend glance on home screen
+- 2026-01-30: recurring tx edge cases (DST, month-end 29/30/31)
