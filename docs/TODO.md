@@ -83,3 +83,4 @@
 - 2026-01-30: recurring tx edge cases (DST, month-end 29/30/31)
 - 2026-01-30: sort options: date, amount, category — persist choice
 - 2026-01-30: accessibility pass: touch targets under 44dp on filter chips
+- 2026-01-30: FlatList perf on long tx history, getItemLayout candidate
