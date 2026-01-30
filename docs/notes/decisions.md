@@ -89,3 +89,4 @@
 - 2026-01-28: budget rollover: carry unspent vs reset monthly
 - 2026-01-28: budget rollover: carry unspent vs reset monthly
 - 2026-01-30: icon set audit — replace mismatched category glyphs
+- 2026-01-30: soft delete with undo snackbar instead of confirm dialog
