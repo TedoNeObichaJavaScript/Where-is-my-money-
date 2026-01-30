@@ -84,3 +84,4 @@
 - 2026-01-30: sort options: date, amount, category — persist choice
 - 2026-01-30: accessibility pass: touch targets under 44dp on filter chips
 - 2026-01-30: FlatList perf on long tx history, getItemLayout candidate
+- 2026-01-30: onboarding flow: skip vs guided first account setup
