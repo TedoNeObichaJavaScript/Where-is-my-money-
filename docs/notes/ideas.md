@@ -96,3 +96,4 @@
 - 2026-01-30: tx tags vs single category — decided: single category + note
 - 2026-01-30: onboarding flow: skip vs guided first account setup
 - 2026-01-31: category color palette — needs contrast pass in dark mode
+- 2026-01-31: monthly summary notification copy drafts
