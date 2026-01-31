@@ -85,3 +85,4 @@
 - 2026-01-30: accessibility pass: touch targets under 44dp on filter chips
 - 2026-01-30: FlatList perf on long tx history, getItemLayout candidate
 - 2026-01-30: onboarding flow: skip vs guided first account setup
+- 2026-01-31: biometric lock on app resume, grace period 30s
