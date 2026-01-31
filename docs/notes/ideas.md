@@ -95,3 +95,4 @@
 - 2026-01-30: app icon variants — dark bg vs light bg test on launcher
 - 2026-01-30: tx tags vs single category — decided: single category + note
 - 2026-01-30: onboarding flow: skip vs guided first account setup
+- 2026-01-31: category color palette — needs contrast pass in dark mode
