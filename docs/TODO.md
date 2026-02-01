@@ -92,3 +92,4 @@
 - 2026-02-01: icon set audit — replace mismatched category glyphs
 - 2026-02-01: biometric lock on app resume, grace period 30s
 - 2026-02-01: haptics on tx save — light impact only
+- 2026-02-01: tx tags vs single category — decided: single category + note
