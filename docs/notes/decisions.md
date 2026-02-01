@@ -96,3 +96,4 @@
 - 2026-01-30: onboarding flow: skip vs guided first account setup
 - 2026-01-30: chart lib comparison: victory-native vs react-native-svg hand-rolled
 - 2026-01-30: sort options: date, amount, category — persist choice
+- 2026-02-01: multi-currency: store minor units + currency code, convert at display
