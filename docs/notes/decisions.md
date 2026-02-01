@@ -97,3 +97,4 @@
 - 2026-01-30: chart lib comparison: victory-native vs react-native-svg hand-rolled
 - 2026-01-30: sort options: date, amount, category — persist choice
 - 2026-02-01: multi-currency: store minor units + currency code, convert at display
+- 2026-02-01: analytics custom range presets: 7d / 30d / MTD / YTD
