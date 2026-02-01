@@ -89,3 +89,4 @@
 - 2026-01-31: backup format versioning so old exports stay importable
 - 2026-02-01: transfer between accounts should not count as spend
 - 2026-02-01: accessibility pass: touch targets under 44dp on filter chips
+- 2026-02-01: icon set audit — replace mismatched category glyphs
