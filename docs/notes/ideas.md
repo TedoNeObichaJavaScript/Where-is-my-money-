@@ -97,3 +97,4 @@
 - 2026-01-30: onboarding flow: skip vs guided first account setup
 - 2026-01-31: category color palette — needs contrast pass in dark mode
 - 2026-01-31: monthly summary notification copy drafts
+- 2026-02-01: recurring tx edge cases (DST, month-end 29/30/31)
