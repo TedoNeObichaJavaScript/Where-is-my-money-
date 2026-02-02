@@ -98,3 +98,4 @@
 - 2026-02-02: category color palette — needs contrast pass in dark mode
 - 2026-02-02: budget alerts at 80% and 100%, local notifications only
 - 2026-02-02: icon set audit — replace mismatched category glyphs
+- 2026-02-02: icon set audit — replace mismatched category glyphs
