@@ -94,3 +94,4 @@
 - 2026-02-01: haptics on tx save — light impact only
 - 2026-02-01: tx tags vs single category — decided: single category + note
 - 2026-02-02: analytics custom range presets: 7d / 30d / MTD / YTD
+- 2026-02-02: analytics custom range presets: 7d / 30d / MTD / YTD
