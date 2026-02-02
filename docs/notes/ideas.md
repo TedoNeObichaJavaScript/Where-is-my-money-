@@ -101,3 +101,4 @@
 - 2026-02-01: recurring tx edge cases (DST, month-end 29/30/31)
 - 2026-02-01: SQLite migration strategy before adding budgets table
 - 2026-02-01: accessibility pass: touch targets under 44dp on filter chips
+- 2026-02-02: soft delete with undo snackbar instead of confirm dialog
