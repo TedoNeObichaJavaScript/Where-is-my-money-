@@ -95,3 +95,4 @@
 - 2026-02-01: tx tags vs single category — decided: single category + note
 - 2026-02-02: analytics custom range presets: 7d / 30d / MTD / YTD
 - 2026-02-02: analytics custom range presets: 7d / 30d / MTD / YTD
+- 2026-02-02: category color palette — needs contrast pass in dark mode
