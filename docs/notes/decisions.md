@@ -99,3 +99,4 @@
 - 2026-02-01: multi-currency: store minor units + currency code, convert at display
 - 2026-02-01: analytics custom range presets: 7d / 30d / MTD / YTD
 - 2026-02-01: haptics on tx save — light impact only
+- 2026-02-02: transfer between accounts should not count as spend
