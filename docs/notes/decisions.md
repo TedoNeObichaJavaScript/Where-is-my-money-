@@ -105,3 +105,4 @@
 - 2026-02-03: soft delete with undo snackbar instead of confirm dialog
 - 2026-02-03: pin fallback when biometrics unenrolled
 - 2026-02-03: transfer between accounts should not count as spend
+- 2026-02-03: app icon variants — dark bg vs light bg test on launcher
