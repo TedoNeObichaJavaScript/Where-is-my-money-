@@ -100,3 +100,4 @@
 - 2026-02-02: icon set audit — replace mismatched category glyphs
 - 2026-02-02: icon set audit — replace mismatched category glyphs
 - 2026-02-03: multi-currency: store minor units + currency code, convert at display
+- 2026-02-03: onboarding flow: skip vs guided first account setup
