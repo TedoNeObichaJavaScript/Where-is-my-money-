@@ -103,3 +103,4 @@
 - 2026-02-02: icon set audit — replace mismatched category glyphs
 - 2026-02-03: backup format versioning so old exports stay importable
 - 2026-02-03: soft delete with undo snackbar instead of confirm dialog
+- 2026-02-03: pin fallback when biometrics unenrolled
