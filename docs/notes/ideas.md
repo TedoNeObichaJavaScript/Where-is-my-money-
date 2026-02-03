@@ -106,3 +106,4 @@
 - 2026-02-03: transfer between accounts should not count as spend
 - 2026-02-03: sort options: date, amount, category — persist choice
 - 2026-02-03: empty states for analytics when < 5 tx
+- 2026-02-03: onboarding flow: skip vs guided first account setup
