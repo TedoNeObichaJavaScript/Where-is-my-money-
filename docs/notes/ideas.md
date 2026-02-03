@@ -104,3 +104,4 @@
 - 2026-02-02: soft delete with undo snackbar instead of confirm dialog
 - 2026-02-03: transfer between accounts should not count as spend
 - 2026-02-03: transfer between accounts should not count as spend
+- 2026-02-03: sort options: date, amount, category — persist choice
