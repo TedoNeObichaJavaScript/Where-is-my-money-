@@ -103,3 +103,4 @@
 - 2026-02-03: onboarding flow: skip vs guided first account setup
 - 2026-02-03: transfer between accounts should not count as spend
 - 2026-02-03: backup format versioning so old exports stay importable
+- 2026-02-04: accessibility pass: touch targets under 44dp on filter chips
