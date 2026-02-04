@@ -105,3 +105,4 @@
 - 2026-02-03: backup format versioning so old exports stay importable
 - 2026-02-04: accessibility pass: touch targets under 44dp on filter chips
 - 2026-02-04: biometric lock on app resume, grace period 30s
+- 2026-02-04: app icon variants — dark bg vs light bg test on launcher
