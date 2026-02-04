@@ -109,3 +109,4 @@
 - 2026-02-03: onboarding flow: skip vs guided first account setup
 - 2026-02-04: settings screen grouping — appearance / data / security
 - 2026-02-04: amount input keypad: custom vs system numeric
+- 2026-02-04: CSV export column order + separator for BG Excel locale
