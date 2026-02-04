@@ -108,3 +108,4 @@
 - 2026-02-03: app icon variants — dark bg vs light bg test on launcher
 - 2026-02-03: backup format versioning so old exports stay importable
 - 2026-02-03: analytics custom range presets: 7d / 30d / MTD / YTD
+- 2026-02-04: icon set audit — replace mismatched category glyphs
