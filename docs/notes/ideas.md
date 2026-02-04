@@ -111,3 +111,4 @@
 - 2026-02-04: amount input keypad: custom vs system numeric
 - 2026-02-04: CSV export column order + separator for BG Excel locale
 - 2026-02-04: backup format versioning so old exports stay importable
+- 2026-02-04: CSV export column order + separator for BG Excel locale
