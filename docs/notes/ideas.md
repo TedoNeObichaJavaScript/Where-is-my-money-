@@ -107,3 +107,4 @@
 - 2026-02-03: sort options: date, amount, category — persist choice
 - 2026-02-03: empty states for analytics when < 5 tx
 - 2026-02-03: onboarding flow: skip vs guided first account setup
+- 2026-02-04: settings screen grouping — appearance / data / security
