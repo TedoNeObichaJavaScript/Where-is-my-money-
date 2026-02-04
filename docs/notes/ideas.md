@@ -118,3 +118,4 @@
 - 2026-02-04: backup format versioning so old exports stay importable
 - 2026-02-04: currency symbol placement per locale (lv after amount)
 - 2026-02-04: haptics on tx save — light impact only
+- 2026-02-04: icon set audit — replace mismatched category glyphs
