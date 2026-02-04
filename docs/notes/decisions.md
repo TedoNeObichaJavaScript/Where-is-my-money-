@@ -109,3 +109,4 @@
 - 2026-02-03: backup format versioning so old exports stay importable
 - 2026-02-03: analytics custom range presets: 7d / 30d / MTD / YTD
 - 2026-02-04: icon set audit — replace mismatched category glyphs
+- 2026-02-04: tx tags vs single category — decided: single category + note
