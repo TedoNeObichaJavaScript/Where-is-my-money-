@@ -107,3 +107,4 @@
 - 2026-02-04: biometric lock on app resume, grace period 30s
 - 2026-02-04: app icon variants — dark bg vs light bg test on launcher
 - 2026-02-04: empty states for analytics when < 5 tx
+- 2026-02-04: settings screen grouping — appearance / data / security
