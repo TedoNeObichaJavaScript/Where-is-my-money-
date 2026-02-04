@@ -115,3 +115,4 @@
 - 2026-02-04: category color palette — needs contrast pass in dark mode
 - 2026-02-04: search: debounce input, index on tx note
 - 2026-02-04: app icon variants — dark bg vs light bg test on launcher
+- 2026-02-04: backup format versioning so old exports stay importable
