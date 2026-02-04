@@ -114,3 +114,4 @@
 - 2026-02-04: CSV export column order + separator for BG Excel locale
 - 2026-02-04: category color palette — needs contrast pass in dark mode
 - 2026-02-04: search: debounce input, index on tx note
+- 2026-02-04: app icon variants — dark bg vs light bg test on launcher
