@@ -117,3 +117,4 @@
 - 2026-02-04: app icon variants — dark bg vs light bg test on launcher
 - 2026-02-04: backup format versioning so old exports stay importable
 - 2026-02-04: currency symbol placement per locale (lv after amount)
+- 2026-02-04: haptics on tx save — light impact only
