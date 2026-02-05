@@ -109,3 +109,4 @@
 - 2026-02-04: empty states for analytics when < 5 tx
 - 2026-02-04: settings screen grouping — appearance / data / security
 - 2026-02-04: haptics on tx save — light impact only
+- 2026-02-05: category color palette — needs contrast pass in dark mode
