@@ -112,3 +112,4 @@
 - 2026-02-05: category color palette — needs contrast pass in dark mode
 - 2026-02-05: backup format versioning so old exports stay importable
 - 2026-02-05: backup format versioning so old exports stay importable
+- 2026-02-05: currency symbol placement per locale (lv after amount)
