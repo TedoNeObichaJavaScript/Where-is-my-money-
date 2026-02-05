@@ -111,3 +111,4 @@
 - 2026-02-04: haptics on tx save — light impact only
 - 2026-02-05: category color palette — needs contrast pass in dark mode
 - 2026-02-05: backup format versioning so old exports stay importable
+- 2026-02-05: backup format versioning so old exports stay importable
