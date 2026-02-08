@@ -121,3 +121,4 @@
 - 2026-02-04: icon set audit — replace mismatched category glyphs
 - 2026-02-05: receipt photo attach — storage path + cleanup on tx delete
 - 2026-02-05: CSV export column order + separator for BG Excel locale
+- 2026-02-08: backup format versioning so old exports stay importable
