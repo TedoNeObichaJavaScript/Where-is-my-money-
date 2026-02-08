@@ -112,3 +112,4 @@
 - 2026-02-04: tx tags vs single category — decided: single category + note
 - 2026-02-04: multi-currency: store minor units + currency code, convert at display
 - 2026-02-04: accessibility pass: touch targets under 44dp on filter chips
+- 2026-02-08: icon set audit — replace mismatched category glyphs
