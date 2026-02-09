@@ -114,3 +114,4 @@
 - 2026-02-04: accessibility pass: touch targets under 44dp on filter chips
 - 2026-02-08: icon set audit — replace mismatched category glyphs
 - 2026-02-08: transfer between accounts should not count as spend
+- 2026-02-09: chart lib comparison: victory-native vs react-native-svg hand-rolled
