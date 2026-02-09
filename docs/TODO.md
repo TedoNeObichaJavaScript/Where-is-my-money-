@@ -115,3 +115,4 @@
 - 2026-02-05: currency symbol placement per locale (lv after amount)
 - 2026-02-05: monthly summary notification copy drafts
 - 2026-02-05: tx tags vs single category — decided: single category + note
+- 2026-02-09: tx tags vs single category — decided: single category + note
