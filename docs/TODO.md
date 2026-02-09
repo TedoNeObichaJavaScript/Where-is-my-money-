@@ -124,3 +124,4 @@
 - 2026-02-09: backup format versioning so old exports stay importable
 - 2026-02-09: soft delete with undo snackbar instead of confirm dialog
 - 2026-02-09: receipt photo attach — storage path + cleanup on tx delete
+- 2026-02-09: onboarding flow: skip vs guided first account setup
