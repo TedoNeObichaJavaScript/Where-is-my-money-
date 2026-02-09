@@ -118,3 +118,4 @@
 - 2026-02-09: tx tags vs single category — decided: single category + note
 - 2026-02-09: amount input keypad: custom vs system numeric
 - 2026-02-09: multi-currency: store minor units + currency code, convert at display
+- 2026-02-09: receipt photo attach — storage path + cleanup on tx delete
