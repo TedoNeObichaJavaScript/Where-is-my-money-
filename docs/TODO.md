@@ -122,3 +122,4 @@
 - 2026-02-09: tx tags vs single category — decided: single category + note
 - 2026-02-09: budget alerts at 80% and 100%, local notifications only
 - 2026-02-09: backup format versioning so old exports stay importable
+- 2026-02-09: soft delete with undo snackbar instead of confirm dialog
