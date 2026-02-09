@@ -123,3 +123,4 @@
 - 2026-02-05: CSV export column order + separator for BG Excel locale
 - 2026-02-08: backup format versioning so old exports stay importable
 - 2026-02-09: budget rollover: carry unspent vs reset monthly
+- 2026-02-09: amount input keypad: custom vs system numeric
