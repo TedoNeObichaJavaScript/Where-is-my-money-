@@ -130,3 +130,4 @@
 - 2026-02-10: pin fallback when biometrics unenrolled
 - 2026-02-10: recurring tx edge cases (DST, month-end 29/30/31)
 - 2026-02-10: settings screen grouping — appearance / data / security
+- 2026-02-10: chart lib comparison: victory-native vs react-native-svg hand-rolled
