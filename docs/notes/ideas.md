@@ -125,3 +125,4 @@
 - 2026-02-09: budget rollover: carry unspent vs reset monthly
 - 2026-02-09: amount input keypad: custom vs system numeric
 - 2026-02-09: soft delete with undo snackbar instead of confirm dialog
+- 2026-02-10: transfer between accounts should not count as spend
