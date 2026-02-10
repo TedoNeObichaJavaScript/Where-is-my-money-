@@ -127,3 +127,4 @@
 - 2026-02-09: soft delete with undo snackbar instead of confirm dialog
 - 2026-02-10: transfer between accounts should not count as spend
 - 2026-02-10: FlatList perf on long tx history, getItemLayout candidate
+- 2026-02-10: backup format versioning so old exports stay importable
