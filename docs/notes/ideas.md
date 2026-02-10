@@ -126,3 +126,4 @@
 - 2026-02-09: amount input keypad: custom vs system numeric
 - 2026-02-09: soft delete with undo snackbar instead of confirm dialog
 - 2026-02-10: transfer between accounts should not count as spend
+- 2026-02-10: FlatList perf on long tx history, getItemLayout candidate
