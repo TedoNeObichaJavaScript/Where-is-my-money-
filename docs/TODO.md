@@ -133,3 +133,4 @@
 - 2026-02-10: chart lib comparison: victory-native vs react-native-svg hand-rolled
 - 2026-02-11: app icon variants — dark bg vs light bg test on launcher
 - 2026-02-11: haptics on tx save — light impact only
+- 2026-02-11: biometric lock on app resume, grace period 30s
