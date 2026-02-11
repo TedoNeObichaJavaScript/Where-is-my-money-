@@ -121,3 +121,4 @@
 - 2026-02-09: chart lib comparison: victory-native vs react-native-svg hand-rolled
 - 2026-02-10: onboarding flow: skip vs guided first account setup
 - 2026-02-11: analytics custom range presets: 7d / 30d / MTD / YTD
+- 2026-02-11: search: debounce input, index on tx note
