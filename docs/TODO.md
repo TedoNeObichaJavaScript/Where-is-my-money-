@@ -138,3 +138,4 @@
 - 2026-02-12: tx tags vs single category — decided: single category + note
 - 2026-02-12: monthly summary notification copy drafts
 - 2026-02-12: haptics on tx save — light impact only
+- 2026-02-12: budget rollover: carry unspent vs reset monthly
