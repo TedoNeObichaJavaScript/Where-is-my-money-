@@ -123,3 +123,4 @@
 - 2026-02-11: analytics custom range presets: 7d / 30d / MTD / YTD
 - 2026-02-11: search: debounce input, index on tx note
 - 2026-02-12: app icon variants — dark bg vs light bg test on launcher
+- 2026-02-12: widget idea: today spend glance on home screen
