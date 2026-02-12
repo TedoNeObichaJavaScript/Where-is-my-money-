@@ -129,3 +129,4 @@
 - 2026-02-10: FlatList perf on long tx history, getItemLayout candidate
 - 2026-02-10: backup format versioning so old exports stay importable
 - 2026-02-11: currency symbol placement per locale (lv after amount)
+- 2026-02-12: icon set audit — replace mismatched category glyphs
