@@ -136,3 +136,4 @@
 - 2026-02-11: biometric lock on app resume, grace period 30s
 - 2026-02-11: sort options: date, amount, category — persist choice
 - 2026-02-12: tx tags vs single category — decided: single category + note
+- 2026-02-12: monthly summary notification copy drafts
