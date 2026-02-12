@@ -137,3 +137,4 @@
 - 2026-02-11: sort options: date, amount, category — persist choice
 - 2026-02-12: tx tags vs single category — decided: single category + note
 - 2026-02-12: monthly summary notification copy drafts
+- 2026-02-12: haptics on tx save — light impact only
