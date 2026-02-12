@@ -130,3 +130,4 @@
 - 2026-02-10: backup format versioning so old exports stay importable
 - 2026-02-11: currency symbol placement per locale (lv after amount)
 - 2026-02-12: icon set audit — replace mismatched category glyphs
+- 2026-02-12: pin fallback when biometrics unenrolled
