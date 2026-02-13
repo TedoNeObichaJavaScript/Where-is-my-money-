@@ -124,3 +124,4 @@
 - 2026-02-11: search: debounce input, index on tx note
 - 2026-02-12: app icon variants — dark bg vs light bg test on launcher
 - 2026-02-12: widget idea: today spend glance on home screen
+- 2026-02-13: budget alerts at 80% and 100%, local notifications only
