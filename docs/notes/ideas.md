@@ -132,3 +132,4 @@
 - 2026-02-12: icon set audit — replace mismatched category glyphs
 - 2026-02-12: pin fallback when biometrics unenrolled
 - 2026-02-13: monthly summary notification copy drafts
+- 2026-02-13: pin fallback when biometrics unenrolled
