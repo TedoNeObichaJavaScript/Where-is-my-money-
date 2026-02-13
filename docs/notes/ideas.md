@@ -131,3 +131,4 @@
 - 2026-02-11: currency symbol placement per locale (lv after amount)
 - 2026-02-12: icon set audit — replace mismatched category glyphs
 - 2026-02-12: pin fallback when biometrics unenrolled
+- 2026-02-13: monthly summary notification copy drafts
