@@ -142,3 +142,4 @@
 - 2026-02-13: accessibility pass: touch targets under 44dp on filter chips
 - 2026-02-13: FlatList perf on long tx history, getItemLayout candidate
 - 2026-02-13: multi-currency: store minor units + currency code, convert at display
+- 2026-02-13: transfer between accounts should not count as spend
