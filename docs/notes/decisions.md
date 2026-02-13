@@ -128,3 +128,4 @@
 - 2026-02-13: recurring tx edge cases (DST, month-end 29/30/31)
 - 2026-02-13: budget rollover: carry unspent vs reset monthly
 - 2026-02-13: icon set audit — replace mismatched category glyphs
+- 2026-02-13: app icon variants — dark bg vs light bg test on launcher
