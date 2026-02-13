@@ -134,3 +134,4 @@
 - 2026-02-13: monthly summary notification copy drafts
 - 2026-02-13: pin fallback when biometrics unenrolled
 - 2026-02-13: CSV export column order + separator for BG Excel locale
+- 2026-02-13: icon set audit — replace mismatched category glyphs
