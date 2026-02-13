@@ -139,3 +139,4 @@
 - 2026-02-12: monthly summary notification copy drafts
 - 2026-02-12: haptics on tx save — light impact only
 - 2026-02-12: budget rollover: carry unspent vs reset monthly
+- 2026-02-13: accessibility pass: touch targets under 44dp on filter chips
