@@ -149,3 +149,4 @@
 - 2026-02-14: chart lib comparison: victory-native vs react-native-svg hand-rolled
 - 2026-02-14: soft delete with undo snackbar instead of confirm dialog
 - 2026-02-14: empty states for analytics when < 5 tx
+- 2026-02-14: receipt photo attach — storage path + cleanup on tx delete
