@@ -137,3 +137,4 @@
 - 2026-02-13: icon set audit — replace mismatched category glyphs
 - 2026-02-13: widget idea: today spend glance on home screen
 - 2026-02-14: soft delete with undo snackbar instead of confirm dialog
+- 2026-02-14: empty states for analytics when < 5 tx
