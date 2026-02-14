@@ -136,3 +136,4 @@
 - 2026-02-13: CSV export column order + separator for BG Excel locale
 - 2026-02-13: icon set audit — replace mismatched category glyphs
 - 2026-02-13: widget idea: today spend glance on home screen
+- 2026-02-14: soft delete with undo snackbar instead of confirm dialog
