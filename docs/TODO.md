@@ -144,3 +144,4 @@
 - 2026-02-13: multi-currency: store minor units + currency code, convert at display
 - 2026-02-13: transfer between accounts should not count as spend
 - 2026-02-13: recurring tx edge cases (DST, month-end 29/30/31)
+- 2026-02-14: transfer between accounts should not count as spend
