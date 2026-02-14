@@ -132,3 +132,4 @@
 - 2026-02-13: search: debounce input, index on tx note
 - 2026-02-14: tx tags vs single category — decided: single category + note
 - 2026-02-14: search: debounce input, index on tx note
+- 2026-02-14: monthly summary notification copy drafts
