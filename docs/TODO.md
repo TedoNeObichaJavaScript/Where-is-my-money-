@@ -148,3 +148,4 @@
 - 2026-02-14: currency symbol placement per locale (lv after amount)
 - 2026-02-14: chart lib comparison: victory-native vs react-native-svg hand-rolled
 - 2026-02-14: soft delete with undo snackbar instead of confirm dialog
+- 2026-02-14: empty states for analytics when < 5 tx
