@@ -134,3 +134,4 @@
 - 2026-02-14: search: debounce input, index on tx note
 - 2026-02-14: monthly summary notification copy drafts
 - 2026-02-14: receipt photo attach — storage path + cleanup on tx delete
+- 2026-02-15: budget rollover: carry unspent vs reset monthly
