@@ -139,3 +139,4 @@
 - 2026-02-15: haptics on tx save — light impact only
 - 2026-02-15: analytics custom range presets: 7d / 30d / MTD / YTD
 - 2026-02-15: amount input keypad: custom vs system numeric
+- 2026-02-15: monthly summary notification copy drafts
