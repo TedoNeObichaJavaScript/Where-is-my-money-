@@ -150,3 +150,4 @@
 - 2026-02-14: soft delete with undo snackbar instead of confirm dialog
 - 2026-02-14: empty states for analytics when < 5 tx
 - 2026-02-14: receipt photo attach — storage path + cleanup on tx delete
+- 2026-02-15: haptics on tx save — light impact only
