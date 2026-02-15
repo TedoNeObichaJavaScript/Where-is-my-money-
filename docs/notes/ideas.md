@@ -141,3 +141,4 @@
 - 2026-02-15: icon set audit — replace mismatched category glyphs
 - 2026-02-15: settings screen grouping — appearance / data / security
 - 2026-02-15: sort options: date, amount, category — persist choice
+- 2026-02-15: widget idea: today spend glance on home screen
