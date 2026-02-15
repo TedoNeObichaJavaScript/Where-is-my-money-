@@ -140,3 +140,4 @@
 - 2026-02-14: empty states for analytics when < 5 tx
 - 2026-02-15: icon set audit — replace mismatched category glyphs
 - 2026-02-15: settings screen grouping — appearance / data / security
+- 2026-02-15: sort options: date, amount, category — persist choice
