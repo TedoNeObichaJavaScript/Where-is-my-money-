@@ -145,3 +145,4 @@
 - 2026-02-15: accessibility pass: touch targets under 44dp on filter chips
 - 2026-02-15: currency symbol placement per locale (lv after amount)
 - 2026-02-17: FlatList perf on long tx history, getItemLayout candidate
+- 2026-02-17: CSV export column order + separator for BG Excel locale
