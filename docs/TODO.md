@@ -152,3 +152,4 @@
 - 2026-02-14: receipt photo attach — storage path + cleanup on tx delete
 - 2026-02-15: haptics on tx save — light impact only
 - 2026-02-17: receipt photo attach — storage path + cleanup on tx delete
+- 2026-02-17: SQLite migration strategy before adding budgets table
