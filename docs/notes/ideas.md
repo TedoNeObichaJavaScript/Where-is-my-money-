@@ -146,3 +146,4 @@
 - 2026-02-15: currency symbol placement per locale (lv after amount)
 - 2026-02-17: FlatList perf on long tx history, getItemLayout candidate
 - 2026-02-17: CSV export column order + separator for BG Excel locale
+- 2026-02-17: app icon variants — dark bg vs light bg test on launcher
