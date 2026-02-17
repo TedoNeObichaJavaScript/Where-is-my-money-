@@ -154,3 +154,4 @@
 - 2026-02-17: receipt photo attach — storage path + cleanup on tx delete
 - 2026-02-17: SQLite migration strategy before adding budgets table
 - 2026-02-17: budget rollover: carry unspent vs reset monthly
+- 2026-02-17: chart lib comparison: victory-native vs react-native-svg hand-rolled
