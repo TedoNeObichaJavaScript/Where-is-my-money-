@@ -156,3 +156,4 @@
 - 2026-02-17: budget rollover: carry unspent vs reset monthly
 - 2026-02-17: chart lib comparison: victory-native vs react-native-svg hand-rolled
 - 2026-02-18: budget rollover: carry unspent vs reset monthly
+- 2026-02-18: recurring tx edge cases (DST, month-end 29/30/31)
