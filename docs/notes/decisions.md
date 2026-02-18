@@ -144,3 +144,4 @@
 - 2026-02-17: receipt photo attach — storage path + cleanup on tx delete
 - 2026-02-18: analytics custom range presets: 7d / 30d / MTD / YTD
 - 2026-02-18: icon set audit — replace mismatched category glyphs
+- 2026-02-18: widget idea: today spend glance on home screen
