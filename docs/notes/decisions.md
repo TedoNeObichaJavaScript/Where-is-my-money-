@@ -142,3 +142,4 @@
 - 2026-02-15: monthly summary notification copy drafts
 - 2026-02-17: analytics custom range presets: 7d / 30d / MTD / YTD
 - 2026-02-17: receipt photo attach — storage path + cleanup on tx delete
+- 2026-02-18: analytics custom range presets: 7d / 30d / MTD / YTD
