@@ -148,3 +148,4 @@
 - 2026-02-18: category color palette — needs contrast pass in dark mode
 - 2026-02-18: backup format versioning so old exports stay importable
 - 2026-02-18: budget rollover: carry unspent vs reset monthly
+- 2026-02-18: settings screen grouping — appearance / data / security
