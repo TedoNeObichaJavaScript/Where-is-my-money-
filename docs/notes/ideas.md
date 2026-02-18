@@ -148,3 +148,4 @@
 - 2026-02-17: CSV export column order + separator for BG Excel locale
 - 2026-02-17: app icon variants — dark bg vs light bg test on launcher
 - 2026-02-17: tx tags vs single category — decided: single category + note
+- 2026-02-18: currency symbol placement per locale (lv after amount)
