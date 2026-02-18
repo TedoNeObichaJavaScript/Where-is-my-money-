@@ -147,3 +147,4 @@
 - 2026-02-18: widget idea: today spend glance on home screen
 - 2026-02-18: category color palette — needs contrast pass in dark mode
 - 2026-02-18: backup format versioning so old exports stay importable
+- 2026-02-18: budget rollover: carry unspent vs reset monthly
