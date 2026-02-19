@@ -160,3 +160,4 @@
 - 2026-02-19: onboarding flow: skip vs guided first account setup
 - 2026-02-19: CSV export column order + separator for BG Excel locale
 - 2026-02-19: empty states for analytics when < 5 tx
+- 2026-02-19: haptics on tx save — light impact only
