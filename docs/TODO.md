@@ -158,3 +158,4 @@
 - 2026-02-18: budget rollover: carry unspent vs reset monthly
 - 2026-02-18: recurring tx edge cases (DST, month-end 29/30/31)
 - 2026-02-19: onboarding flow: skip vs guided first account setup
+- 2026-02-19: CSV export column order + separator for BG Excel locale
