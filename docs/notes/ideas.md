@@ -153,3 +153,4 @@
 - 2026-02-18: budget rollover: carry unspent vs reset monthly
 - 2026-02-19: transfer between accounts should not count as spend
 - 2026-02-19: icon set audit — replace mismatched category glyphs
+- 2026-02-19: accessibility pass: touch targets under 44dp on filter chips
