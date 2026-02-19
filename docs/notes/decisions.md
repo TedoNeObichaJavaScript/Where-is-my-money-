@@ -153,3 +153,4 @@
 - 2026-02-19: budget alerts at 80% and 100%, local notifications only
 - 2026-02-19: haptics on tx save — light impact only
 - 2026-02-19: budget alerts at 80% and 100%, local notifications only
+- 2026-02-19: receipt photo attach — storage path + cleanup on tx delete
