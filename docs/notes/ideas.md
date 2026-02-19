@@ -151,3 +151,4 @@
 - 2026-02-18: currency symbol placement per locale (lv after amount)
 - 2026-02-18: settings screen grouping — appearance / data / security
 - 2026-02-18: budget rollover: carry unspent vs reset monthly
+- 2026-02-19: transfer between accounts should not count as spend
