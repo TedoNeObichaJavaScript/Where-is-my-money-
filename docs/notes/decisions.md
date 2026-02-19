@@ -152,3 +152,4 @@
 - 2026-02-18: FlatList perf on long tx history, getItemLayout candidate
 - 2026-02-19: budget alerts at 80% and 100%, local notifications only
 - 2026-02-19: haptics on tx save — light impact only
+- 2026-02-19: budget alerts at 80% and 100%, local notifications only
