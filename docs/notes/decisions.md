@@ -150,3 +150,4 @@
 - 2026-02-18: budget rollover: carry unspent vs reset monthly
 - 2026-02-18: settings screen grouping — appearance / data / security
 - 2026-02-18: FlatList perf on long tx history, getItemLayout candidate
+- 2026-02-19: budget alerts at 80% and 100%, local notifications only
