@@ -162,3 +162,4 @@
 - 2026-02-20: widget idea: today spend glance on home screen
 - 2026-02-20: icon set audit — replace mismatched category glyphs
 - 2026-02-20: sort options: date, amount, category — persist choice
+- 2026-02-20: CSV export column order + separator for BG Excel locale
