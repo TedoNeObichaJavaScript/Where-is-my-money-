@@ -163,3 +163,4 @@
 - 2026-02-19: haptics on tx save — light impact only
 - 2026-02-19: receipt photo attach — storage path + cleanup on tx delete
 - 2026-02-20: soft delete with undo snackbar instead of confirm dialog
+- 2026-02-20: icon set audit — replace mismatched category glyphs
