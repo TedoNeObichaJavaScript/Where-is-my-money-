@@ -159,3 +159,4 @@
 - 2026-02-20: pin fallback when biometrics unenrolled
 - 2026-02-20: onboarding flow: skip vs guided first account setup
 - 2026-02-20: settings screen grouping — appearance / data / security
+- 2026-02-20: widget idea: today spend glance on home screen
