@@ -157,3 +157,4 @@
 - 2026-02-20: search: debounce input, index on tx note
 - 2026-02-20: category color palette — needs contrast pass in dark mode
 - 2026-02-20: widget idea: today spend glance on home screen
+- 2026-02-20: SQLite migration strategy before adding budgets table
