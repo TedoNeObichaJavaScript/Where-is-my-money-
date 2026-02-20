@@ -156,3 +156,4 @@
 - 2026-02-19: accessibility pass: touch targets under 44dp on filter chips
 - 2026-02-20: search: debounce input, index on tx note
 - 2026-02-20: category color palette — needs contrast pass in dark mode
+- 2026-02-20: widget idea: today spend glance on home screen
