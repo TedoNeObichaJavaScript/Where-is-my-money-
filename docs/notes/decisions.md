@@ -160,3 +160,4 @@
 - 2026-02-20: onboarding flow: skip vs guided first account setup
 - 2026-02-20: settings screen grouping — appearance / data / security
 - 2026-02-20: widget idea: today spend glance on home screen
+- 2026-02-20: icon set audit — replace mismatched category glyphs
