@@ -159,3 +159,4 @@
 - 2026-02-20: widget idea: today spend glance on home screen
 - 2026-02-20: SQLite migration strategy before adding budgets table
 - 2026-02-20: backup format versioning so old exports stay importable
+- 2026-02-20: amount input keypad: custom vs system numeric
