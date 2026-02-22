@@ -164,3 +164,4 @@
 - 2026-02-20: sort options: date, amount, category — persist choice
 - 2026-02-20: CSV export column order + separator for BG Excel locale
 - 2026-02-20: accessibility pass: touch targets under 44dp on filter chips
+- 2026-02-22: amount input keypad: custom vs system numeric
