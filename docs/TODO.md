@@ -165,3 +165,4 @@
 - 2026-02-20: soft delete with undo snackbar instead of confirm dialog
 - 2026-02-20: icon set audit — replace mismatched category glyphs
 - 2026-02-22: pin fallback when biometrics unenrolled
+- 2026-02-22: monthly summary notification copy drafts
