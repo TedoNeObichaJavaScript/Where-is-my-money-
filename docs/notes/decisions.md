@@ -165,3 +165,4 @@
 - 2026-02-20: CSV export column order + separator for BG Excel locale
 - 2026-02-20: accessibility pass: touch targets under 44dp on filter chips
 - 2026-02-22: amount input keypad: custom vs system numeric
+- 2026-02-23: settings screen grouping — appearance / data / security
