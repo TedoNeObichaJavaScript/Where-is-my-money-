@@ -162,3 +162,4 @@
 - 2026-02-20: amount input keypad: custom vs system numeric
 - 2026-02-20: icon set audit — replace mismatched category glyphs
 - 2026-02-23: receipt photo attach — storage path + cleanup on tx delete
+- 2026-02-23: category color palette — needs contrast pass in dark mode
