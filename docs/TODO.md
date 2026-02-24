@@ -168,3 +168,4 @@
 - 2026-02-22: monthly summary notification copy drafts
 - 2026-02-23: SQLite migration strategy before adding budgets table
 - 2026-02-23: widget idea: today spend glance on home screen
+- 2026-02-24: accessibility pass: touch targets under 44dp on filter chips
