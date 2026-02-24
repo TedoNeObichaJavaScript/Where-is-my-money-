@@ -172,3 +172,4 @@
 - 2026-02-24: chart lib comparison: victory-native vs react-native-svg hand-rolled
 - 2026-02-24: analytics custom range presets: 7d / 30d / MTD / YTD
 - 2026-02-24: category color palette — needs contrast pass in dark mode
+- 2026-02-24: soft delete with undo snackbar instead of confirm dialog
