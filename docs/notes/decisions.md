@@ -167,3 +167,4 @@
 - 2026-02-22: amount input keypad: custom vs system numeric
 - 2026-02-23: settings screen grouping — appearance / data / security
 - 2026-02-23: CSV export column order + separator for BG Excel locale
+- 2026-02-24: empty states for analytics when < 5 tx
