@@ -170,3 +170,4 @@
 - 2026-02-24: empty states for analytics when < 5 tx
 - 2026-02-24: budget rollover: carry unspent vs reset monthly
 - 2026-02-24: chart lib comparison: victory-native vs react-native-svg hand-rolled
+- 2026-02-24: analytics custom range presets: 7d / 30d / MTD / YTD
