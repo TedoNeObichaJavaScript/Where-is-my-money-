@@ -166,3 +166,4 @@
 - 2026-02-23: receipt photo attach — storage path + cleanup on tx delete
 - 2026-02-24: pin fallback when biometrics unenrolled
 - 2026-02-24: pin fallback when biometrics unenrolled
+- 2026-02-24: tx tags vs single category — decided: single category + note
