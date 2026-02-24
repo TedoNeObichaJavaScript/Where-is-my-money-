@@ -169,3 +169,4 @@
 - 2026-02-24: tx tags vs single category — decided: single category + note
 - 2026-02-24: currency symbol placement per locale (lv after amount)
 - 2026-02-24: CSV export column order + separator for BG Excel locale
+- 2026-02-24: onboarding flow: skip vs guided first account setup
