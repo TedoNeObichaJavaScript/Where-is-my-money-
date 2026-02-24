@@ -165,3 +165,4 @@
 - 2026-02-23: category color palette — needs contrast pass in dark mode
 - 2026-02-23: receipt photo attach — storage path + cleanup on tx delete
 - 2026-02-24: pin fallback when biometrics unenrolled
+- 2026-02-24: pin fallback when biometrics unenrolled
