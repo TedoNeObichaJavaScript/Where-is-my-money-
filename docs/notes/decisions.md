@@ -168,3 +168,4 @@
 - 2026-02-23: settings screen grouping — appearance / data / security
 - 2026-02-23: CSV export column order + separator for BG Excel locale
 - 2026-02-24: empty states for analytics when < 5 tx
+- 2026-02-24: budget rollover: carry unspent vs reset monthly
