@@ -171,3 +171,4 @@
 - 2026-02-24: accessibility pass: touch targets under 44dp on filter chips
 - 2026-02-24: widget idea: today spend glance on home screen
 - 2026-02-24: category color palette — needs contrast pass in dark mode
+- 2026-02-24: settings screen grouping — appearance / data / security
