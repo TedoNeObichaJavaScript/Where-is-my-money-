@@ -174,3 +174,4 @@
 - 2026-02-26: backup format versioning so old exports stay importable
 - 2026-02-26: budget alerts at 80% and 100%, local notifications only
 - 2026-02-26: budget alerts at 80% and 100%, local notifications only
+- 2026-02-26: empty states for analytics when < 5 tx
