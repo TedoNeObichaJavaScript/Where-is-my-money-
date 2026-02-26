@@ -170,3 +170,4 @@
 - 2026-02-24: currency symbol placement per locale (lv after amount)
 - 2026-02-24: CSV export column order + separator for BG Excel locale
 - 2026-02-24: onboarding flow: skip vs guided first account setup
+- 2026-02-26: empty states for analytics when < 5 tx
