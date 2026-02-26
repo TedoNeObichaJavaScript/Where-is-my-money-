@@ -172,3 +172,4 @@
 - 2026-02-24: onboarding flow: skip vs guided first account setup
 - 2026-02-26: empty states for analytics when < 5 tx
 - 2026-02-26: backup format versioning so old exports stay importable
+- 2026-02-26: budget alerts at 80% and 100%, local notifications only
