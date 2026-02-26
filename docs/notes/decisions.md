@@ -177,3 +177,4 @@
 - 2026-02-26: settings screen grouping — appearance / data / security
 - 2026-02-26: transfer between accounts should not count as spend
 - 2026-02-26: chart lib comparison: victory-native vs react-native-svg hand-rolled
+- 2026-02-26: widget idea: today spend glance on home screen
