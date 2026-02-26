@@ -172,3 +172,4 @@
 - 2026-02-24: widget idea: today spend glance on home screen
 - 2026-02-24: category color palette — needs contrast pass in dark mode
 - 2026-02-24: settings screen grouping — appearance / data / security
+- 2026-02-26: tx tags vs single category — decided: single category + note
