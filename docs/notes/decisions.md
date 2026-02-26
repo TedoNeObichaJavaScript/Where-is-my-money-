@@ -174,3 +174,4 @@
 - 2026-02-24: category color palette — needs contrast pass in dark mode
 - 2026-02-24: soft delete with undo snackbar instead of confirm dialog
 - 2026-02-24: chart lib comparison: victory-native vs react-native-svg hand-rolled
+- 2026-02-26: settings screen grouping — appearance / data / security
