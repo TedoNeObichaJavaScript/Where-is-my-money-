@@ -175,3 +175,4 @@
 - 2026-02-26: tx tags vs single category — decided: single category + note
 - 2026-02-26: backup format versioning so old exports stay importable
 - 2026-02-27: icon set audit — replace mismatched category glyphs
+- 2026-02-27: SQLite migration strategy before adding budgets table
