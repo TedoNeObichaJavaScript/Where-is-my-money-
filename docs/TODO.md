@@ -179,3 +179,4 @@
 - 2026-02-27: icon set audit — replace mismatched category glyphs
 - 2026-02-27: category color palette — needs contrast pass in dark mode
 - 2026-02-27: category color palette — needs contrast pass in dark mode
+- 2026-02-27: receipt photo attach — storage path + cleanup on tx delete
