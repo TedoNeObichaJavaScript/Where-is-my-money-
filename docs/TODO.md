@@ -177,3 +177,4 @@
 - 2026-02-27: icon set audit — replace mismatched category glyphs
 - 2026-02-27: SQLite migration strategy before adding budgets table
 - 2026-02-27: icon set audit — replace mismatched category glyphs
+- 2026-02-27: category color palette — needs contrast pass in dark mode
