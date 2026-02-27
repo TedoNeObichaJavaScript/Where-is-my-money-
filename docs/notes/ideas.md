@@ -176,3 +176,4 @@
 - 2026-02-26: budget alerts at 80% and 100%, local notifications only
 - 2026-02-26: empty states for analytics when < 5 tx
 - 2026-02-26: budget alerts at 80% and 100%, local notifications only
+- 2026-02-27: category color palette — needs contrast pass in dark mode
