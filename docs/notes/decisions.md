@@ -181,3 +181,4 @@
 - 2026-02-27: monthly summary notification copy drafts
 - 2026-02-27: pin fallback when biometrics unenrolled
 - 2026-02-27: budget rollover: carry unspent vs reset monthly
+- 2026-02-27: FlatList perf on long tx history, getItemLayout candidate
