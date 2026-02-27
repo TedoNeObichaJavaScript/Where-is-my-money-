@@ -178,3 +178,4 @@
 - 2026-02-26: budget alerts at 80% and 100%, local notifications only
 - 2026-02-27: category color palette — needs contrast pass in dark mode
 - 2026-02-27: category color palette — needs contrast pass in dark mode
+- 2026-02-27: SQLite migration strategy before adding budgets table
