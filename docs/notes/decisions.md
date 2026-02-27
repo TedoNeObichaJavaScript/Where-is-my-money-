@@ -180,3 +180,4 @@
 - 2026-02-26: widget idea: today spend glance on home screen
 - 2026-02-27: monthly summary notification copy drafts
 - 2026-02-27: pin fallback when biometrics unenrolled
+- 2026-02-27: budget rollover: carry unspent vs reset monthly
