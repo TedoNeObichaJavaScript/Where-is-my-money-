@@ -179,3 +179,4 @@
 - 2026-02-26: chart lib comparison: victory-native vs react-native-svg hand-rolled
 - 2026-02-26: widget idea: today spend glance on home screen
 - 2026-02-27: monthly summary notification copy drafts
+- 2026-02-27: pin fallback when biometrics unenrolled
