@@ -187,3 +187,4 @@
 - 2026-02-28: haptics on tx save — light impact only
 - 2026-02-28: app icon variants — dark bg vs light bg test on launcher
 - 2026-02-28: sort options: date, amount, category — persist choice
+- 2026-02-28: widget idea: today spend glance on home screen
