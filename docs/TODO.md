@@ -184,3 +184,4 @@
 - 2026-02-28: budget alerts at 80% and 100%, local notifications only
 - 2026-02-28: icon set audit — replace mismatched category glyphs
 - 2026-02-28: soft delete with undo snackbar instead of confirm dialog
+- 2026-02-28: haptics on tx save — light impact only
