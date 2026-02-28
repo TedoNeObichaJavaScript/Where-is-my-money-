@@ -186,3 +186,4 @@
 - 2026-02-28: multi-currency: store minor units + currency code, convert at display
 - 2026-02-28: CSV export column order + separator for BG Excel locale
 - 2026-02-28: sort options: date, amount, category — persist choice
+- 2026-02-28: budget rollover: carry unspent vs reset monthly
