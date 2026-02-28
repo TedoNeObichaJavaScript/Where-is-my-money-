@@ -181,3 +181,4 @@
 - 2026-02-27: SQLite migration strategy before adding budgets table
 - 2026-02-27: tx tags vs single category — decided: single category + note
 - 2026-02-28: icon set audit — replace mismatched category glyphs
+- 2026-02-28: empty states for analytics when < 5 tx
