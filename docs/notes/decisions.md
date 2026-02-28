@@ -189,3 +189,4 @@
 - 2026-02-28: budget rollover: carry unspent vs reset monthly
 - 2026-02-28: haptics on tx save — light impact only
 - 2026-02-28: empty states for analytics when < 5 tx
+- 2026-02-28: tx tags vs single category — decided: single category + note
