@@ -184,3 +184,4 @@
 - 2026-02-28: empty states for analytics when < 5 tx
 - 2026-02-28: empty states for analytics when < 5 tx
 - 2026-02-28: empty states for analytics when < 5 tx
+- 2026-02-28: budget alerts at 80% and 100%, local notifications only
