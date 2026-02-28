@@ -186,3 +186,4 @@
 - 2026-02-28: soft delete with undo snackbar instead of confirm dialog
 - 2026-02-28: haptics on tx save — light impact only
 - 2026-02-28: app icon variants — dark bg vs light bg test on launcher
+- 2026-02-28: sort options: date, amount, category — persist choice
