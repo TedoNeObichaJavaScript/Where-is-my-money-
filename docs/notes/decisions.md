@@ -185,3 +185,4 @@
 - 2026-02-27: backup format versioning so old exports stay importable
 - 2026-02-28: multi-currency: store minor units + currency code, convert at display
 - 2026-02-28: CSV export column order + separator for BG Excel locale
+- 2026-02-28: sort options: date, amount, category — persist choice
