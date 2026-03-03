@@ -190,3 +190,4 @@
 - 2026-02-28: widget idea: today spend glance on home screen
 - 2026-02-28: empty states for analytics when < 5 tx
 - 2026-03-03: app icon variants — dark bg vs light bg test on launcher
+- 2026-03-03: currency symbol placement per locale (lv after amount)
