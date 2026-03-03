@@ -195,3 +195,4 @@
 - 2026-03-01: soft delete with undo snackbar instead of confirm dialog
 - 2026-03-03: analytics custom range presets: 7d / 30d / MTD / YTD
 - 2026-03-03: app icon variants — dark bg vs light bg test on launcher
+- 2026-03-03: budget alerts at 80% and 100%, local notifications only
