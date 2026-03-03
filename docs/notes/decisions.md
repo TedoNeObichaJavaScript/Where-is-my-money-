@@ -193,3 +193,4 @@
 - 2026-02-28: budget alerts at 80% and 100%, local notifications only
 - 2026-02-28: CSV export column order + separator for BG Excel locale
 - 2026-03-01: soft delete with undo snackbar instead of confirm dialog
+- 2026-03-03: analytics custom range presets: 7d / 30d / MTD / YTD
