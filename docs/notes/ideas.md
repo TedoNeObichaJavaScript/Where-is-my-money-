@@ -188,3 +188,4 @@
 - 2026-03-03: receipt photo attach — storage path + cleanup on tx delete
 - 2026-03-03: biometric lock on app resume, grace period 30s
 - 2026-03-03: pin fallback when biometrics unenrolled
+- 2026-03-04: soft delete with undo snackbar instead of confirm dialog
