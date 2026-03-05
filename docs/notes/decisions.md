@@ -198,3 +198,4 @@
 - 2026-03-03: budget alerts at 80% and 100%, local notifications only
 - 2026-03-04: pin fallback when biometrics unenrolled
 - 2026-03-04: icon set audit — replace mismatched category glyphs
+- 2026-03-05: haptics on tx save — light impact only
