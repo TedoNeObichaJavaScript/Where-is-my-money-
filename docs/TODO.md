@@ -194,3 +194,4 @@
 - 2026-03-04: SQLite migration strategy before adding budgets table
 - 2026-03-04: backup format versioning so old exports stay importable
 - 2026-03-04: app icon variants — dark bg vs light bg test on launcher
+- 2026-03-05: sort options: date, amount, category — persist choice
