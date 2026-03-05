@@ -189,3 +189,4 @@
 - 2026-03-03: biometric lock on app resume, grace period 30s
 - 2026-03-03: pin fallback when biometrics unenrolled
 - 2026-03-04: soft delete with undo snackbar instead of confirm dialog
+- 2026-03-05: sort options: date, amount, category — persist choice
