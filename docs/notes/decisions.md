@@ -199,3 +199,4 @@
 - 2026-03-04: pin fallback when biometrics unenrolled
 - 2026-03-04: icon set audit — replace mismatched category glyphs
 - 2026-03-05: haptics on tx save — light impact only
+- 2026-03-05: amount input keypad: custom vs system numeric
