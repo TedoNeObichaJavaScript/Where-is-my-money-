@@ -193,3 +193,4 @@
 - 2026-03-05: recurring tx edge cases (DST, month-end 29/30/31)
 - 2026-03-05: soft delete with undo snackbar instead of confirm dialog
 - 2026-03-05: soft delete with undo snackbar instead of confirm dialog
+- 2026-03-05: amount input keypad: custom vs system numeric
