@@ -196,3 +196,4 @@
 - 2026-03-05: amount input keypad: custom vs system numeric
 - 2026-03-06: FlatList perf on long tx history, getItemLayout candidate
 - 2026-03-06: currency symbol placement per locale (lv after amount)
+- 2026-03-06: empty states for analytics when < 5 tx
