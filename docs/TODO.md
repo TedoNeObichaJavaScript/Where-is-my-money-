@@ -199,3 +199,4 @@
 - 2026-03-06: chart lib comparison: victory-native vs react-native-svg hand-rolled
 - 2026-03-06: icon set audit — replace mismatched category glyphs
 - 2026-03-06: search: debounce input, index on tx note
+- 2026-03-06: currency symbol placement per locale (lv after amount)
