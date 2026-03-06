@@ -196,3 +196,4 @@
 - 2026-03-04: app icon variants — dark bg vs light bg test on launcher
 - 2026-03-05: sort options: date, amount, category — persist choice
 - 2026-03-05: widget idea: today spend glance on home screen
+- 2026-03-06: chart lib comparison: victory-native vs react-native-svg hand-rolled
