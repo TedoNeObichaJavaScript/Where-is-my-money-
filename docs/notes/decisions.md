@@ -203,3 +203,4 @@
 - 2026-03-05: widget idea: today spend glance on home screen
 - 2026-03-06: category color palette — needs contrast pass in dark mode
 - 2026-03-06: soft delete with undo snackbar instead of confirm dialog
+- 2026-03-06: currency symbol placement per locale (lv after amount)
