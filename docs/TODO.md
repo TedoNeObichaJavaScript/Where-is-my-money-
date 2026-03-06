@@ -200,3 +200,4 @@
 - 2026-03-06: icon set audit — replace mismatched category glyphs
 - 2026-03-06: search: debounce input, index on tx note
 - 2026-03-06: currency symbol placement per locale (lv after amount)
+- 2026-03-06: FlatList perf on long tx history, getItemLayout candidate
