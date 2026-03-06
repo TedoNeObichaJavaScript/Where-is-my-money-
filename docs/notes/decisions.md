@@ -204,3 +204,4 @@
 - 2026-03-06: category color palette — needs contrast pass in dark mode
 - 2026-03-06: soft delete with undo snackbar instead of confirm dialog
 - 2026-03-06: currency symbol placement per locale (lv after amount)
+- 2026-03-06: accessibility pass: touch targets under 44dp on filter chips
