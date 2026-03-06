@@ -201,3 +201,4 @@
 - 2026-03-05: haptics on tx save — light impact only
 - 2026-03-05: amount input keypad: custom vs system numeric
 - 2026-03-05: widget idea: today spend glance on home screen
+- 2026-03-06: category color palette — needs contrast pass in dark mode
