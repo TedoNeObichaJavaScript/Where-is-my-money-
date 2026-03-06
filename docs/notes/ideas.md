@@ -198,3 +198,4 @@
 - 2026-03-06: currency symbol placement per locale (lv after amount)
 - 2026-03-06: empty states for analytics when < 5 tx
 - 2026-03-06: budget rollover: carry unspent vs reset monthly
+- 2026-03-06: backup format versioning so old exports stay importable
