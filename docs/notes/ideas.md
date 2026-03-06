@@ -194,3 +194,4 @@
 - 2026-03-05: soft delete with undo snackbar instead of confirm dialog
 - 2026-03-05: soft delete with undo snackbar instead of confirm dialog
 - 2026-03-05: amount input keypad: custom vs system numeric
+- 2026-03-06: FlatList perf on long tx history, getItemLayout candidate
