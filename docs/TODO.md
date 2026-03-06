@@ -203,3 +203,4 @@
 - 2026-03-06: FlatList perf on long tx history, getItemLayout candidate
 - 2026-03-06: sort options: date, amount, category — persist choice
 - 2026-03-06: budget rollover: carry unspent vs reset monthly
+- 2026-03-06: backup format versioning so old exports stay importable
