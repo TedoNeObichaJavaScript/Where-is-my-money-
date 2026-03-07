@@ -206,3 +206,4 @@
 - 2026-03-06: backup format versioning so old exports stay importable
 - 2026-03-06: accessibility pass: touch targets under 44dp on filter chips
 - 2026-03-06: FlatList perf on long tx history, getItemLayout candidate
+- 2026-03-07: receipt photo attach — storage path + cleanup on tx delete
