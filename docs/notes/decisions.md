@@ -205,3 +205,4 @@
 - 2026-03-06: soft delete with undo snackbar instead of confirm dialog
 - 2026-03-06: currency symbol placement per locale (lv after amount)
 - 2026-03-06: accessibility pass: touch targets under 44dp on filter chips
+- 2026-03-07: widget idea: today spend glance on home screen
