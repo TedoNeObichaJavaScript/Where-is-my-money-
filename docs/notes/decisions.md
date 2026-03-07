@@ -206,3 +206,4 @@
 - 2026-03-06: currency symbol placement per locale (lv after amount)
 - 2026-03-06: accessibility pass: touch targets under 44dp on filter chips
 - 2026-03-07: widget idea: today spend glance on home screen
+- 2026-03-07: app icon variants — dark bg vs light bg test on launcher
