@@ -208,3 +208,4 @@
 - 2026-03-06: FlatList perf on long tx history, getItemLayout candidate
 - 2026-03-07: receipt photo attach — storage path + cleanup on tx delete
 - 2026-03-07: budget rollover: carry unspent vs reset monthly
+- 2026-03-07: onboarding flow: skip vs guided first account setup
