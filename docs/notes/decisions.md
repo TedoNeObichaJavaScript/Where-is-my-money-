@@ -208,3 +208,4 @@
 - 2026-03-07: widget idea: today spend glance on home screen
 - 2026-03-07: app icon variants — dark bg vs light bg test on launcher
 - 2026-03-08: soft delete with undo snackbar instead of confirm dialog
+- 2026-03-08: tx tags vs single category — decided: single category + note
