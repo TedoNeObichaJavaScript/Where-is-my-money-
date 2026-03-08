@@ -207,3 +207,4 @@
 - 2026-03-06: accessibility pass: touch targets under 44dp on filter chips
 - 2026-03-07: widget idea: today spend glance on home screen
 - 2026-03-07: app icon variants — dark bg vs light bg test on launcher
+- 2026-03-08: soft delete with undo snackbar instead of confirm dialog
