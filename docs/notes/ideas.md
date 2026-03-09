@@ -203,3 +203,4 @@
 - 2026-03-06: analytics custom range presets: 7d / 30d / MTD / YTD
 - 2026-03-07: settings screen grouping — appearance / data / security
 - 2026-03-07: pin fallback when biometrics unenrolled
+- 2026-03-09: category color palette — needs contrast pass in dark mode
