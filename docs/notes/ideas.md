@@ -204,3 +204,4 @@
 - 2026-03-07: settings screen grouping — appearance / data / security
 - 2026-03-07: pin fallback when biometrics unenrolled
 - 2026-03-09: category color palette — needs contrast pass in dark mode
+- 2026-03-09: recurring tx edge cases (DST, month-end 29/30/31)
