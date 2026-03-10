@@ -212,3 +212,4 @@
 - 2026-03-08: category color palette — needs contrast pass in dark mode
 - 2026-03-09: app icon variants — dark bg vs light bg test on launcher
 - 2026-03-09: receipt photo attach — storage path + cleanup on tx delete
+- 2026-03-10: empty states for analytics when < 5 tx
