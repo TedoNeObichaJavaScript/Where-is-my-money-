@@ -215,3 +215,4 @@
 - 2026-03-13: biometric lock on app resume, grace period 30s
 - 2026-03-13: biometric lock on app resume, grace period 30s
 - 2026-03-13: biometric lock on app resume, grace period 30s
+- 2026-03-13: budget rollover: carry unspent vs reset monthly
