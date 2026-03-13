@@ -217,3 +217,4 @@
 - 2026-03-11: app icon variants — dark bg vs light bg test on launcher
 - 2026-03-13: icon set audit — replace mismatched category glyphs
 - 2026-03-13: amount input keypad: custom vs system numeric
+- 2026-03-13: monthly summary notification copy drafts
