@@ -212,3 +212,4 @@
 - 2026-03-09: multi-currency: store minor units + currency code, convert at display
 - 2026-03-09: budget alerts at 80% and 100%, local notifications only
 - 2026-03-10: empty states for analytics when < 5 tx
+- 2026-03-13: biometric lock on app resume, grace period 30s
