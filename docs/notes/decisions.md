@@ -218,3 +218,4 @@
 - 2026-03-13: budget rollover: carry unspent vs reset monthly
 - 2026-03-13: monthly summary notification copy drafts
 - 2026-03-14: backup format versioning so old exports stay importable
+- 2026-03-14: onboarding flow: skip vs guided first account setup
