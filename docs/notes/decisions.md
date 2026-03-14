@@ -217,3 +217,4 @@
 - 2026-03-13: biometric lock on app resume, grace period 30s
 - 2026-03-13: budget rollover: carry unspent vs reset monthly
 - 2026-03-13: monthly summary notification copy drafts
+- 2026-03-14: backup format versioning so old exports stay importable
