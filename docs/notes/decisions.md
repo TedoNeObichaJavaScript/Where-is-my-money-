@@ -219,3 +219,4 @@
 - 2026-03-13: monthly summary notification copy drafts
 - 2026-03-14: backup format versioning so old exports stay importable
 - 2026-03-14: onboarding flow: skip vs guided first account setup
+- 2026-03-14: accessibility pass: touch targets under 44dp on filter chips
