@@ -218,3 +218,4 @@
 - 2026-03-13: icon set audit — replace mismatched category glyphs
 - 2026-03-13: amount input keypad: custom vs system numeric
 - 2026-03-13: monthly summary notification copy drafts
+- 2026-03-14: receipt photo attach — storage path + cleanup on tx delete
