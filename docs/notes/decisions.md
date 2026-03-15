@@ -222,3 +222,4 @@
 - 2026-03-14: accessibility pass: touch targets under 44dp on filter chips
 - 2026-03-15: analytics custom range presets: 7d / 30d / MTD / YTD
 - 2026-03-15: settings screen grouping — appearance / data / security
+- 2026-03-15: budget alerts at 80% and 100%, local notifications only
