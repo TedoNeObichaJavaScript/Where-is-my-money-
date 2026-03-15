@@ -211,3 +211,4 @@
 - 2026-03-13: transfer between accounts should not count as spend
 - 2026-03-13: budget rollover: carry unspent vs reset monthly
 - 2026-03-14: chart lib comparison: victory-native vs react-native-svg hand-rolled
+- 2026-03-15: SQLite migration strategy before adding budgets table
