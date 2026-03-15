@@ -221,3 +221,4 @@
 - 2026-03-14: onboarding flow: skip vs guided first account setup
 - 2026-03-14: accessibility pass: touch targets under 44dp on filter chips
 - 2026-03-15: analytics custom range presets: 7d / 30d / MTD / YTD
+- 2026-03-15: settings screen grouping — appearance / data / security
