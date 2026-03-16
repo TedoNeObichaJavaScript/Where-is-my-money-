@@ -222,3 +222,4 @@
 - 2026-03-15: search: debounce input, index on tx note
 - 2026-03-16: settings screen grouping — appearance / data / security
 - 2026-03-16: accessibility pass: touch targets under 44dp on filter chips
+- 2026-03-16: monthly summary notification copy drafts
