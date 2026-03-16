@@ -214,3 +214,4 @@
 - 2026-03-15: SQLite migration strategy before adding budgets table
 - 2026-03-15: haptics on tx save — light impact only
 - 2026-03-15: currency symbol placement per locale (lv after amount)
+- 2026-03-16: SQLite migration strategy before adding budgets table
