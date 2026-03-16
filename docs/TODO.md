@@ -221,3 +221,4 @@
 - 2026-03-14: receipt photo attach — storage path + cleanup on tx delete
 - 2026-03-15: search: debounce input, index on tx note
 - 2026-03-16: settings screen grouping — appearance / data / security
+- 2026-03-16: accessibility pass: touch targets under 44dp on filter chips
