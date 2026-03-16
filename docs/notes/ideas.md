@@ -216,3 +216,4 @@
 - 2026-03-15: currency symbol placement per locale (lv after amount)
 - 2026-03-16: SQLite migration strategy before adding budgets table
 - 2026-03-16: soft delete with undo snackbar instead of confirm dialog
+- 2026-03-16: settings screen grouping — appearance / data / security
