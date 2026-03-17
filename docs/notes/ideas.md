@@ -217,3 +217,4 @@
 - 2026-03-16: SQLite migration strategy before adding budgets table
 - 2026-03-16: soft delete with undo snackbar instead of confirm dialog
 - 2026-03-16: settings screen grouping — appearance / data / security
+- 2026-03-17: multi-currency: store minor units + currency code, convert at display
