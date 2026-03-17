@@ -220,3 +220,4 @@
 - 2026-03-17: multi-currency: store minor units + currency code, convert at display
 - 2026-03-17: transfer between accounts should not count as spend
 - 2026-03-17: icon set audit — replace mismatched category glyphs
+- 2026-03-17: haptics on tx save — light impact only
