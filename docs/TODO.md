@@ -223,3 +223,4 @@
 - 2026-03-16: settings screen grouping — appearance / data / security
 - 2026-03-16: accessibility pass: touch targets under 44dp on filter chips
 - 2026-03-16: monthly summary notification copy drafts
+- 2026-03-17: sort options: date, amount, category — persist choice
