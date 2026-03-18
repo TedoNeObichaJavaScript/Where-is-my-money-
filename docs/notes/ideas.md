@@ -231,3 +231,4 @@
 - 2026-03-18: receipt photo attach — storage path + cleanup on tx delete
 - 2026-03-18: tx tags vs single category — decided: single category + note
 - 2026-03-18: pin fallback when biometrics unenrolled
+- 2026-03-18: biometric lock on app resume, grace period 30s
