@@ -227,3 +227,4 @@
 - 2026-03-18: app icon variants — dark bg vs light bg test on launcher
 - 2026-03-18: transfer between accounts should not count as spend
 - 2026-03-18: biometric lock on app resume, grace period 30s
+- 2026-03-18: backup format versioning so old exports stay importable
