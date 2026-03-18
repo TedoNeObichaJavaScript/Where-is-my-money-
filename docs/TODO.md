@@ -225,3 +225,4 @@
 - 2026-03-16: monthly summary notification copy drafts
 - 2026-03-17: sort options: date, amount, category — persist choice
 - 2026-03-18: app icon variants — dark bg vs light bg test on launcher
+- 2026-03-18: transfer between accounts should not count as spend
