@@ -224,3 +224,4 @@
 - 2026-03-17: SQLite migration strategy before adding budgets table
 - 2026-03-17: backup format versioning so old exports stay importable
 - 2026-03-18: onboarding flow: skip vs guided first account setup
+- 2026-03-18: transfer between accounts should not count as spend
