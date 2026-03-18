@@ -229,3 +229,4 @@
 - 2026-03-18: tx tags vs single category — decided: single category + note
 - 2026-03-18: analytics custom range presets: 7d / 30d / MTD / YTD
 - 2026-03-18: budget alerts at 80% and 100%, local notifications only
+- 2026-03-18: chart lib comparison: victory-native vs react-native-svg hand-rolled
