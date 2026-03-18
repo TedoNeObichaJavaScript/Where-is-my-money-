@@ -223,3 +223,4 @@
 - 2026-03-17: haptics on tx save — light impact only
 - 2026-03-17: SQLite migration strategy before adding budgets table
 - 2026-03-17: backup format versioning so old exports stay importable
+- 2026-03-18: onboarding flow: skip vs guided first account setup
