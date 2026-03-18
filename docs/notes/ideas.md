@@ -226,3 +226,4 @@
 - 2026-03-18: onboarding flow: skip vs guided first account setup
 - 2026-03-18: transfer between accounts should not count as spend
 - 2026-03-18: multi-currency: store minor units + currency code, convert at display
+- 2026-03-18: biometric lock on app resume, grace period 30s
