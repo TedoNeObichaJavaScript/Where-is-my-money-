@@ -232,3 +232,4 @@
 - 2026-03-18: chart lib comparison: victory-native vs react-native-svg hand-rolled
 - 2026-03-18: biometric lock on app resume, grace period 30s
 - 2026-03-18: receipt photo attach — storage path + cleanup on tx delete
+- 2026-03-18: category color palette — needs contrast pass in dark mode
