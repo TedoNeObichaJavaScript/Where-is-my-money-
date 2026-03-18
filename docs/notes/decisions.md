@@ -227,3 +227,4 @@
 - 2026-03-17: budget rollover: carry unspent vs reset monthly
 - 2026-03-18: backup format versioning so old exports stay importable
 - 2026-03-18: tx tags vs single category — decided: single category + note
+- 2026-03-18: analytics custom range presets: 7d / 30d / MTD / YTD
