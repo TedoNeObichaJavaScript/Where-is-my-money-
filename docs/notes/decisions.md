@@ -226,3 +226,4 @@
 - 2026-03-15: recurring tx edge cases (DST, month-end 29/30/31)
 - 2026-03-17: budget rollover: carry unspent vs reset monthly
 - 2026-03-18: backup format versioning so old exports stay importable
+- 2026-03-18: tx tags vs single category — decided: single category + note
