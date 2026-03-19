@@ -233,3 +233,4 @@
 - 2026-03-18: biometric lock on app resume, grace period 30s
 - 2026-03-18: receipt photo attach — storage path + cleanup on tx delete
 - 2026-03-18: category color palette — needs contrast pass in dark mode
+- 2026-03-19: settings screen grouping — appearance / data / security
