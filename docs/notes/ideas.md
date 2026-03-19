@@ -232,3 +232,4 @@
 - 2026-03-18: tx tags vs single category — decided: single category + note
 - 2026-03-18: pin fallback when biometrics unenrolled
 - 2026-03-18: biometric lock on app resume, grace period 30s
+- 2026-03-19: budget rollover: carry unspent vs reset monthly
