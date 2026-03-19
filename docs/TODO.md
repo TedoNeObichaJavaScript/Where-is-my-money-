@@ -232,3 +232,4 @@
 - 2026-03-19: tx tags vs single category — decided: single category + note
 - 2026-03-19: biometric lock on app resume, grace period 30s
 - 2026-03-19: monthly summary notification copy drafts
+- 2026-03-19: backup format versioning so old exports stay importable
