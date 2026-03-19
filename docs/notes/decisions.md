@@ -238,3 +238,4 @@
 - 2026-03-19: analytics custom range presets: 7d / 30d / MTD / YTD
 - 2026-03-19: onboarding flow: skip vs guided first account setup
 - 2026-03-19: currency symbol placement per locale (lv after amount)
+- 2026-03-19: amount input keypad: custom vs system numeric
