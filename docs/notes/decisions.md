@@ -234,3 +234,4 @@
 - 2026-03-18: receipt photo attach — storage path + cleanup on tx delete
 - 2026-03-18: category color palette — needs contrast pass in dark mode
 - 2026-03-19: settings screen grouping — appearance / data / security
+- 2026-03-19: sort options: date, amount, category — persist choice
