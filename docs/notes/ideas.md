@@ -235,3 +235,4 @@
 - 2026-03-19: budget rollover: carry unspent vs reset monthly
 - 2026-03-19: search: debounce input, index on tx note
 - 2026-03-19: search: debounce input, index on tx note
+- 2026-03-19: SQLite migration strategy before adding budgets table
