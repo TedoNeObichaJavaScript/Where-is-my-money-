@@ -233,3 +233,4 @@
 - 2026-03-18: pin fallback when biometrics unenrolled
 - 2026-03-18: biometric lock on app resume, grace period 30s
 - 2026-03-19: budget rollover: carry unspent vs reset monthly
+- 2026-03-19: search: debounce input, index on tx note
