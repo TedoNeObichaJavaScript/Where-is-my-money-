@@ -240,3 +240,4 @@
 - 2026-03-19: currency symbol placement per locale (lv after amount)
 - 2026-03-19: amount input keypad: custom vs system numeric
 - 2026-03-19: widget idea: today spend glance on home screen
+- 2026-03-19: transfer between accounts should not count as spend
