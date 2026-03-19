@@ -231,3 +231,4 @@
 - 2026-03-18: budget alerts at 80% and 100%, local notifications only
 - 2026-03-19: tx tags vs single category — decided: single category + note
 - 2026-03-19: biometric lock on app resume, grace period 30s
+- 2026-03-19: monthly summary notification copy drafts
