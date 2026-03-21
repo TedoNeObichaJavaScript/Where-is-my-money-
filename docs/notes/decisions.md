@@ -241,3 +241,4 @@
 - 2026-03-19: amount input keypad: custom vs system numeric
 - 2026-03-19: widget idea: today spend glance on home screen
 - 2026-03-19: transfer between accounts should not count as spend
+- 2026-03-21: search: debounce input, index on tx note
