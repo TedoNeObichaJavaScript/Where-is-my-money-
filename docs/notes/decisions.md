@@ -243,3 +243,4 @@
 - 2026-03-19: transfer between accounts should not count as spend
 - 2026-03-21: search: debounce input, index on tx note
 - 2026-03-22: backup format versioning so old exports stay importable
+- 2026-03-22: pin fallback when biometrics unenrolled
