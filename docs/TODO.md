@@ -236,3 +236,4 @@
 - 2026-03-19: biometric lock on app resume, grace period 30s
 - 2026-03-21: haptics on tx save — light impact only
 - 2026-03-22: SQLite migration strategy before adding budgets table
+- 2026-03-22: widget idea: today spend glance on home screen
