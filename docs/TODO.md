@@ -237,3 +237,4 @@
 - 2026-03-21: haptics on tx save — light impact only
 - 2026-03-22: SQLite migration strategy before adding budgets table
 - 2026-03-22: widget idea: today spend glance on home screen
+- 2026-03-22: amount input keypad: custom vs system numeric
