@@ -242,3 +242,4 @@
 - 2026-03-22: haptics on tx save — light impact only
 - 2026-03-22: receipt photo attach — storage path + cleanup on tx delete
 - 2026-03-22: haptics on tx save — light impact only
+- 2026-03-22: category color palette — needs contrast pass in dark mode
