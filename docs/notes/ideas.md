@@ -238,3 +238,4 @@
 - 2026-03-19: SQLite migration strategy before adding budgets table
 - 2026-03-21: SQLite migration strategy before adding budgets table
 - 2026-03-22: budget rollover: carry unspent vs reset monthly
+- 2026-03-22: icon set audit — replace mismatched category glyphs
