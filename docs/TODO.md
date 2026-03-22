@@ -240,3 +240,4 @@
 - 2026-03-22: amount input keypad: custom vs system numeric
 - 2026-03-22: chart lib comparison: victory-native vs react-native-svg hand-rolled
 - 2026-03-22: haptics on tx save — light impact only
+- 2026-03-22: receipt photo attach — storage path + cleanup on tx delete
