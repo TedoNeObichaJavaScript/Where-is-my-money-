@@ -238,3 +238,4 @@
 - 2026-03-22: SQLite migration strategy before adding budgets table
 - 2026-03-22: widget idea: today spend glance on home screen
 - 2026-03-22: amount input keypad: custom vs system numeric
+- 2026-03-22: chart lib comparison: victory-native vs react-native-svg hand-rolled
