@@ -241,3 +241,4 @@
 - 2026-03-22: icon set audit — replace mismatched category glyphs
 - 2026-03-22: search: debounce input, index on tx note
 - 2026-03-23: chart lib comparison: victory-native vs react-native-svg hand-rolled
+- 2026-03-23: accessibility pass: touch targets under 44dp on filter chips
