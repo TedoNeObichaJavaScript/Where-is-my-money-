@@ -243,3 +243,4 @@
 - 2026-03-23: chart lib comparison: victory-native vs react-native-svg hand-rolled
 - 2026-03-23: accessibility pass: touch targets under 44dp on filter chips
 - 2026-03-23: currency symbol placement per locale (lv after amount)
+- 2026-03-23: chart lib comparison: victory-native vs react-native-svg hand-rolled
