@@ -245,3 +245,4 @@
 - 2026-03-22: category color palette — needs contrast pass in dark mode
 - 2026-03-23: SQLite migration strategy before adding budgets table
 - 2026-03-23: tx tags vs single category — decided: single category + note
+- 2026-03-23: backup format versioning so old exports stay importable
