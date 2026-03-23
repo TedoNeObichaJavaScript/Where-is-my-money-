@@ -246,3 +246,4 @@
 - 2026-03-22: pin fallback when biometrics unenrolled
 - 2026-03-23: budget alerts at 80% and 100%, local notifications only
 - 2026-03-23: amount input keypad: custom vs system numeric
+- 2026-03-23: backup format versioning so old exports stay importable
