@@ -247,3 +247,4 @@
 - 2026-03-23: tx tags vs single category — decided: single category + note
 - 2026-03-23: backup format versioning so old exports stay importable
 - 2026-03-23: soft delete with undo snackbar instead of confirm dialog
+- 2026-03-23: backup format versioning so old exports stay importable
