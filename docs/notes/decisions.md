@@ -244,3 +244,4 @@
 - 2026-03-21: search: debounce input, index on tx note
 - 2026-03-22: backup format versioning so old exports stay importable
 - 2026-03-22: pin fallback when biometrics unenrolled
+- 2026-03-23: budget alerts at 80% and 100%, local notifications only
