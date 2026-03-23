@@ -240,3 +240,4 @@
 - 2026-03-22: budget rollover: carry unspent vs reset monthly
 - 2026-03-22: icon set audit — replace mismatched category glyphs
 - 2026-03-22: search: debounce input, index on tx note
+- 2026-03-23: chart lib comparison: victory-native vs react-native-svg hand-rolled
