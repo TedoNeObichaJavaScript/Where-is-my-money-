@@ -248,3 +248,4 @@
 - 2026-03-23: amount input keypad: custom vs system numeric
 - 2026-03-23: backup format versioning so old exports stay importable
 - 2026-03-23: transfer between accounts should not count as spend
+- 2026-03-24: CSV export column order + separator for BG Excel locale
