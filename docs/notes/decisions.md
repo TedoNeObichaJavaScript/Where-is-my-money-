@@ -251,3 +251,4 @@
 - 2026-03-24: CSV export column order + separator for BG Excel locale
 - 2026-03-25: receipt photo attach — storage path + cleanup on tx delete
 - 2026-03-25: monthly summary notification copy drafts
+- 2026-03-25: budget rollover: carry unspent vs reset monthly
