@@ -252,3 +252,4 @@
 - 2026-03-25: receipt photo attach — storage path + cleanup on tx delete
 - 2026-03-25: monthly summary notification copy drafts
 - 2026-03-25: budget rollover: carry unspent vs reset monthly
+- 2026-03-25: analytics custom range presets: 7d / 30d / MTD / YTD
