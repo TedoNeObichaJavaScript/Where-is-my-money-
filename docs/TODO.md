@@ -249,3 +249,4 @@
 - 2026-03-23: soft delete with undo snackbar instead of confirm dialog
 - 2026-03-23: backup format versioning so old exports stay importable
 - 2026-03-24: recurring tx edge cases (DST, month-end 29/30/31)
+- 2026-03-25: multi-currency: store minor units + currency code, convert at display
