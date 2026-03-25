@@ -251,3 +251,4 @@
 - 2026-03-24: recurring tx edge cases (DST, month-end 29/30/31)
 - 2026-03-25: multi-currency: store minor units + currency code, convert at display
 - 2026-03-25: pin fallback when biometrics unenrolled
+- 2026-03-25: pin fallback when biometrics unenrolled
