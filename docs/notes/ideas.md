@@ -253,3 +253,4 @@
 - 2026-03-25: amount input keypad: custom vs system numeric
 - 2026-03-25: sort options: date, amount, category — persist choice
 - 2026-03-25: monthly summary notification copy drafts
+- 2026-03-25: search: debounce input, index on tx note
