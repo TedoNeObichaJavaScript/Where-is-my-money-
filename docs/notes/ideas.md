@@ -250,3 +250,4 @@
 - 2026-03-25: haptics on tx save — light impact only
 - 2026-03-25: icon set audit — replace mismatched category glyphs
 - 2026-03-25: amount input keypad: custom vs system numeric
+- 2026-03-25: amount input keypad: custom vs system numeric
