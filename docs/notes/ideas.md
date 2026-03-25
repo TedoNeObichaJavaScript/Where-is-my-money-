@@ -249,3 +249,4 @@
 - 2026-03-25: empty states for analytics when < 5 tx
 - 2026-03-25: haptics on tx save — light impact only
 - 2026-03-25: icon set audit — replace mismatched category glyphs
+- 2026-03-25: amount input keypad: custom vs system numeric
