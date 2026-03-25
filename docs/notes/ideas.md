@@ -251,3 +251,4 @@
 - 2026-03-25: icon set audit — replace mismatched category glyphs
 - 2026-03-25: amount input keypad: custom vs system numeric
 - 2026-03-25: amount input keypad: custom vs system numeric
+- 2026-03-25: sort options: date, amount, category — persist choice
