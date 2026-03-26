@@ -256,3 +256,4 @@
 - 2026-03-25: backup format versioning so old exports stay importable
 - 2026-03-26: SQLite migration strategy before adding budgets table
 - 2026-03-26: backup format versioning so old exports stay importable
+- 2026-03-26: soft delete with undo snackbar instead of confirm dialog
