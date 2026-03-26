@@ -260,3 +260,4 @@
 - 2026-03-26: amount input keypad: custom vs system numeric
 - 2026-03-26: tx tags vs single category — decided: single category + note
 - 2026-03-26: tx tags vs single category — decided: single category + note
+- 2026-03-26: transfer between accounts should not count as spend
