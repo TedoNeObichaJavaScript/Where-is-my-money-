@@ -259,3 +259,4 @@
 - 2026-03-26: category color palette — needs contrast pass in dark mode
 - 2026-03-26: amount input keypad: custom vs system numeric
 - 2026-03-26: tx tags vs single category — decided: single category + note
+- 2026-03-26: tx tags vs single category — decided: single category + note
