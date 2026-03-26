@@ -257,3 +257,4 @@
 - 2026-03-26: haptics on tx save — light impact only
 - 2026-03-26: app icon variants — dark bg vs light bg test on launcher
 - 2026-03-26: category color palette — needs contrast pass in dark mode
+- 2026-03-26: amount input keypad: custom vs system numeric
