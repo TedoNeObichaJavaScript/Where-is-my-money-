@@ -255,3 +255,4 @@
 - 2026-03-25: monthly summary notification copy drafts
 - 2026-03-25: search: debounce input, index on tx note
 - 2026-03-26: recurring tx edge cases (DST, month-end 29/30/31)
+- 2026-03-26: empty states for analytics when < 5 tx
