@@ -252,3 +252,4 @@
 - 2026-03-25: multi-currency: store minor units + currency code, convert at display
 - 2026-03-25: pin fallback when biometrics unenrolled
 - 2026-03-25: pin fallback when biometrics unenrolled
+- 2026-03-26: monthly summary notification copy drafts
