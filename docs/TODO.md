@@ -255,3 +255,4 @@
 - 2026-03-26: monthly summary notification copy drafts
 - 2026-03-26: search: debounce input, index on tx note
 - 2026-03-26: haptics on tx save — light impact only
+- 2026-03-26: app icon variants — dark bg vs light bg test on launcher
