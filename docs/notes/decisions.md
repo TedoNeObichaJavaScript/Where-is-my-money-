@@ -257,3 +257,4 @@
 - 2026-03-26: SQLite migration strategy before adding budgets table
 - 2026-03-26: backup format versioning so old exports stay importable
 - 2026-03-26: soft delete with undo snackbar instead of confirm dialog
+- 2026-03-27: onboarding flow: skip vs guided first account setup
