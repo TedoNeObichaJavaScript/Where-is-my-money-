@@ -263,3 +263,4 @@
 - 2026-03-27: SQLite migration strategy before adding budgets table
 - 2026-03-27: SQLite migration strategy before adding budgets table
 - 2026-03-27: monthly summary notification copy drafts
+- 2026-03-27: biometric lock on app resume, grace period 30s
