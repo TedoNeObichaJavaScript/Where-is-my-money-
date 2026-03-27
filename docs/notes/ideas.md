@@ -261,3 +261,4 @@
 - 2026-03-26: chart lib comparison: victory-native vs react-native-svg hand-rolled
 - 2026-03-26: accessibility pass: touch targets under 44dp on filter chips
 - 2026-03-27: SQLite migration strategy before adding budgets table
+- 2026-03-27: SQLite migration strategy before adding budgets table
