@@ -264,3 +264,4 @@
 - 2026-03-27: chart lib comparison: victory-native vs react-native-svg hand-rolled
 - 2026-03-27: pin fallback when biometrics unenrolled
 - 2026-03-27: amount input keypad: custom vs system numeric
+- 2026-03-27: backup format versioning so old exports stay importable
