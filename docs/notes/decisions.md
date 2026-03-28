@@ -262,3 +262,4 @@
 - 2026-03-27: backup format versioning so old exports stay importable
 - 2026-03-27: backup format versioning so old exports stay importable
 - 2026-03-28: pin fallback when biometrics unenrolled
+- 2026-03-28: haptics on tx save — light impact only
