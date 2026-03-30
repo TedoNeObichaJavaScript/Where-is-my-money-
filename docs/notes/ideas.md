@@ -272,3 +272,4 @@
 - 2026-03-30: empty states for analytics when < 5 tx
 - 2026-03-30: transfer between accounts should not count as spend
 - 2026-03-30: app icon variants — dark bg vs light bg test on launcher
+- 2026-03-30: transfer between accounts should not count as spend
