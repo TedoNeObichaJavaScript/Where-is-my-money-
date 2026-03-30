@@ -270,3 +270,4 @@
 - 2026-03-30: CSV export column order + separator for BG Excel locale
 - 2026-03-30: icon set audit — replace mismatched category glyphs
 - 2026-03-30: category color palette — needs contrast pass in dark mode
+- 2026-03-30: accessibility pass: touch targets under 44dp on filter chips
