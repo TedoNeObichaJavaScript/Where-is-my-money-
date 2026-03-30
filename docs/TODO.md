@@ -269,3 +269,4 @@
 - 2026-03-30: settings screen grouping — appearance / data / security
 - 2026-03-30: CSV export column order + separator for BG Excel locale
 - 2026-03-30: icon set audit — replace mismatched category glyphs
+- 2026-03-30: category color palette — needs contrast pass in dark mode
