@@ -270,3 +270,4 @@
 - 2026-03-30: app icon variants — dark bg vs light bg test on launcher
 - 2026-03-30: CSV export column order + separator for BG Excel locale
 - 2026-03-30: accessibility pass: touch targets under 44dp on filter chips
+- 2026-03-30: budget rollover: carry unspent vs reset monthly
