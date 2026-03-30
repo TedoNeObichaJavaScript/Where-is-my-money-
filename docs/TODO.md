@@ -265,3 +265,4 @@
 - 2026-03-27: pin fallback when biometrics unenrolled
 - 2026-03-27: amount input keypad: custom vs system numeric
 - 2026-03-27: backup format versioning so old exports stay importable
+- 2026-03-30: multi-currency: store minor units + currency code, convert at display
