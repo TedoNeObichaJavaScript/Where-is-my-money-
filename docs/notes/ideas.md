@@ -267,3 +267,4 @@
 - 2026-03-27: sort options: date, amount, category — persist choice
 - 2026-03-30: chart lib comparison: victory-native vs react-native-svg hand-rolled
 - 2026-03-30: tx tags vs single category — decided: single category + note
+- 2026-03-30: app icon variants — dark bg vs light bg test on launcher
