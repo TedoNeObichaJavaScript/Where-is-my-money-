@@ -274,3 +274,4 @@
 - 2026-04-02: FlatList perf on long tx history, getItemLayout candidate
 - 2026-04-02: backup format versioning so old exports stay importable
 - 2026-04-02: budget alerts at 80% and 100%, local notifications only
+- 2026-04-02: CSV export column order + separator for BG Excel locale
