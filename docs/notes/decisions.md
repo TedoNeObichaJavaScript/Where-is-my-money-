@@ -271,3 +271,4 @@
 - 2026-03-30: CSV export column order + separator for BG Excel locale
 - 2026-03-30: accessibility pass: touch targets under 44dp on filter chips
 - 2026-03-30: budget rollover: carry unspent vs reset monthly
+- 2026-04-02: FlatList perf on long tx history, getItemLayout candidate
