@@ -273,3 +273,4 @@
 - 2026-03-30: transfer between accounts should not count as spend
 - 2026-03-30: app icon variants — dark bg vs light bg test on launcher
 - 2026-03-30: transfer between accounts should not count as spend
+- 2026-04-02: category color palette — needs contrast pass in dark mode
