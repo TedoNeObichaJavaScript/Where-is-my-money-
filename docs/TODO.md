@@ -279,3 +279,4 @@
 - 2026-04-05: amount input keypad: custom vs system numeric
 - 2026-04-05: icon set audit — replace mismatched category glyphs
 - 2026-04-05: budget rollover: carry unspent vs reset monthly
+- 2026-04-05: analytics custom range presets: 7d / 30d / MTD / YTD
