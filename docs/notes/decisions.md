@@ -277,3 +277,4 @@
 - 2026-04-02: CSV export column order + separator for BG Excel locale
 - 2026-04-05: transfer between accounts should not count as spend
 - 2026-04-05: onboarding flow: skip vs guided first account setup
+- 2026-04-05: budget alerts at 80% and 100%, local notifications only
