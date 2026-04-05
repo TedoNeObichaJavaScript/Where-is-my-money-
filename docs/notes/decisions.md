@@ -280,3 +280,4 @@
 - 2026-04-05: budget alerts at 80% and 100%, local notifications only
 - 2026-04-05: chart lib comparison: victory-native vs react-native-svg hand-rolled
 - 2026-04-05: empty states for analytics when < 5 tx
+- 2026-04-05: budget rollover: carry unspent vs reset monthly
