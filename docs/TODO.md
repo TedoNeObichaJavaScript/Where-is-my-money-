@@ -274,3 +274,4 @@
 - 2026-04-02: budget rollover: carry unspent vs reset monthly
 - 2026-04-02: app icon variants — dark bg vs light bg test on launcher
 - 2026-04-02: app icon variants — dark bg vs light bg test on launcher
+- 2026-04-05: backup format versioning so old exports stay importable
