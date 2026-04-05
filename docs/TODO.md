@@ -277,3 +277,4 @@
 - 2026-04-05: backup format versioning so old exports stay importable
 - 2026-04-05: currency symbol placement per locale (lv after amount)
 - 2026-04-05: amount input keypad: custom vs system numeric
+- 2026-04-05: icon set audit — replace mismatched category glyphs
