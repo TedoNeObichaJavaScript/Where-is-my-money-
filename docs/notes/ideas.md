@@ -279,3 +279,4 @@
 - 2026-04-02: analytics custom range presets: 7d / 30d / MTD / YTD
 - 2026-04-02: sort options: date, amount, category — persist choice
 - 2026-04-05: settings screen grouping — appearance / data / security
+- 2026-04-05: onboarding flow: skip vs guided first account setup
