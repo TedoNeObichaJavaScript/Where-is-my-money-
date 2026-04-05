@@ -278,3 +278,4 @@
 - 2026-04-02: category color palette — needs contrast pass in dark mode
 - 2026-04-02: analytics custom range presets: 7d / 30d / MTD / YTD
 - 2026-04-02: sort options: date, amount, category — persist choice
+- 2026-04-05: settings screen grouping — appearance / data / security
