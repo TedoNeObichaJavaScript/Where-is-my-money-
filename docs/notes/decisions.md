@@ -282,3 +282,4 @@
 - 2026-04-05: empty states for analytics when < 5 tx
 - 2026-04-05: budget rollover: carry unspent vs reset monthly
 - 2026-04-06: haptics on tx save — light impact only
+- 2026-04-06: soft delete with undo snackbar instead of confirm dialog
