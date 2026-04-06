@@ -282,3 +282,4 @@
 - 2026-04-05: onboarding flow: skip vs guided first account setup
 - 2026-04-06: biometric lock on app resume, grace period 30s
 - 2026-04-06: receipt photo attach — storage path + cleanup on tx delete
+- 2026-04-06: category color palette — needs contrast pass in dark mode
