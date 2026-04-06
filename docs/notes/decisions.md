@@ -283,3 +283,4 @@
 - 2026-04-05: budget rollover: carry unspent vs reset monthly
 - 2026-04-06: haptics on tx save — light impact only
 - 2026-04-06: soft delete with undo snackbar instead of confirm dialog
+- 2026-04-06: sort options: date, amount, category — persist choice
