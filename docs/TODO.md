@@ -286,3 +286,4 @@
 - 2026-04-06: currency symbol placement per locale (lv after amount)
 - 2026-04-06: sort options: date, amount, category — persist choice
 - 2026-04-06: icon set audit — replace mismatched category glyphs
+- 2026-04-06: analytics custom range presets: 7d / 30d / MTD / YTD
