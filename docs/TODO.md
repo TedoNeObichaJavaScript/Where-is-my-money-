@@ -281,3 +281,4 @@
 - 2026-04-05: budget rollover: carry unspent vs reset monthly
 - 2026-04-05: analytics custom range presets: 7d / 30d / MTD / YTD
 - 2026-04-05: SQLite migration strategy before adding budgets table
+- 2026-04-06: multi-currency: store minor units + currency code, convert at display
