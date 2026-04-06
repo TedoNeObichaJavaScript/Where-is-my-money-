@@ -283,3 +283,4 @@
 - 2026-04-05: SQLite migration strategy before adding budgets table
 - 2026-04-06: multi-currency: store minor units + currency code, convert at display
 - 2026-04-06: biometric lock on app resume, grace period 30s
+- 2026-04-06: currency symbol placement per locale (lv after amount)
