@@ -285,3 +285,4 @@
 - 2026-04-06: soft delete with undo snackbar instead of confirm dialog
 - 2026-04-06: sort options: date, amount, category — persist choice
 - 2026-04-06: receipt photo attach — storage path + cleanup on tx delete
+- 2026-04-06: monthly summary notification copy drafts
