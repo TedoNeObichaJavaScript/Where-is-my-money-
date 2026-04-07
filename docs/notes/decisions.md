@@ -289,3 +289,4 @@
 - 2026-04-06: FlatList perf on long tx history, getItemLayout candidate
 - 2026-04-07: monthly summary notification copy drafts
 - 2026-04-07: amount input keypad: custom vs system numeric
+- 2026-04-07: analytics custom range presets: 7d / 30d / MTD / YTD
