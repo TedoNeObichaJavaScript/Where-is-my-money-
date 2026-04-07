@@ -291,3 +291,4 @@
 - 2026-04-07: tx tags vs single category — decided: single category + note
 - 2026-04-07: pin fallback when biometrics unenrolled
 - 2026-04-07: transfer between accounts should not count as spend
+- 2026-04-07: SQLite migration strategy before adding budgets table
