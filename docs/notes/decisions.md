@@ -287,3 +287,4 @@
 - 2026-04-06: receipt photo attach — storage path + cleanup on tx delete
 - 2026-04-06: monthly summary notification copy drafts
 - 2026-04-06: FlatList perf on long tx history, getItemLayout candidate
+- 2026-04-07: monthly summary notification copy drafts
