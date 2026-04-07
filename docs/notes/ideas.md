@@ -284,3 +284,4 @@
 - 2026-04-06: receipt photo attach — storage path + cleanup on tx delete
 - 2026-04-06: category color palette — needs contrast pass in dark mode
 - 2026-04-06: settings screen grouping — appearance / data / security
+- 2026-04-07: pin fallback when biometrics unenrolled
