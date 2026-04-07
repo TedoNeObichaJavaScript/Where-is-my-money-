@@ -293,3 +293,4 @@
 - 2026-04-07: transfer between accounts should not count as spend
 - 2026-04-07: SQLite migration strategy before adding budgets table
 - 2026-04-07: empty states for analytics when < 5 tx
+- 2026-04-07: backup format versioning so old exports stay importable
