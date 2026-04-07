@@ -286,3 +286,4 @@
 - 2026-04-06: settings screen grouping — appearance / data / security
 - 2026-04-07: pin fallback when biometrics unenrolled
 - 2026-04-07: backup format versioning so old exports stay importable
+- 2026-04-07: SQLite migration strategy before adding budgets table
