@@ -296,3 +296,4 @@
 - 2026-04-07: backup format versioning so old exports stay importable
 - 2026-04-07: receipt photo attach — storage path + cleanup on tx delete
 - 2026-04-08: analytics custom range presets: 7d / 30d / MTD / YTD
+- 2026-04-08: amount input keypad: custom vs system numeric
