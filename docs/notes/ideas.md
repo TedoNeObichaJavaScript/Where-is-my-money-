@@ -291,3 +291,4 @@
 - 2026-04-07: haptics on tx save — light impact only
 - 2026-04-08: empty states for analytics when < 5 tx
 - 2026-04-08: currency symbol placement per locale (lv after amount)
+- 2026-04-08: settings screen grouping — appearance / data / security
