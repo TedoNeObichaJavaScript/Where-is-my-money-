@@ -293,3 +293,4 @@
 - 2026-04-07: recurring tx edge cases (DST, month-end 29/30/31)
 - 2026-04-08: multi-currency: store minor units + currency code, convert at display
 - 2026-04-08: multi-currency: store minor units + currency code, convert at display
+- 2026-04-08: CSV export column order + separator for BG Excel locale
