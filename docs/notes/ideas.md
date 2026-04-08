@@ -294,3 +294,4 @@
 - 2026-04-08: settings screen grouping — appearance / data / security
 - 2026-04-08: amount input keypad: custom vs system numeric
 - 2026-04-08: receipt photo attach — storage path + cleanup on tx delete
+- 2026-04-08: biometric lock on app resume, grace period 30s
