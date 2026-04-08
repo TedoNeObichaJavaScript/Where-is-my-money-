@@ -298,3 +298,4 @@
 - 2026-04-08: analytics custom range presets: 7d / 30d / MTD / YTD
 - 2026-04-08: amount input keypad: custom vs system numeric
 - 2026-04-08: currency symbol placement per locale (lv after amount)
+- 2026-04-08: receipt photo attach — storage path + cleanup on tx delete
