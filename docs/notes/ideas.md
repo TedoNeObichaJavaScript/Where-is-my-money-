@@ -289,3 +289,4 @@
 - 2026-04-07: SQLite migration strategy before adding budgets table
 - 2026-04-07: app icon variants — dark bg vs light bg test on launcher
 - 2026-04-07: haptics on tx save — light impact only
+- 2026-04-08: empty states for analytics when < 5 tx
