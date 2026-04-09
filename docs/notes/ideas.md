@@ -296,3 +296,4 @@
 - 2026-04-08: receipt photo attach — storage path + cleanup on tx delete
 - 2026-04-08: biometric lock on app resume, grace period 30s
 - 2026-04-09: sort options: date, amount, category — persist choice
+- 2026-04-09: pin fallback when biometrics unenrolled
