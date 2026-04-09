@@ -301,3 +301,4 @@
 - 2026-04-08: receipt photo attach — storage path + cleanup on tx delete
 - 2026-04-08: CSV export column order + separator for BG Excel locale
 - 2026-04-09: tx tags vs single category — decided: single category + note
+- 2026-04-09: FlatList perf on long tx history, getItemLayout candidate
