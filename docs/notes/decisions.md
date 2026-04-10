@@ -295,3 +295,4 @@
 - 2026-04-08: multi-currency: store minor units + currency code, convert at display
 - 2026-04-08: CSV export column order + separator for BG Excel locale
 - 2026-04-08: analytics custom range presets: 7d / 30d / MTD / YTD
+- 2026-04-10: receipt photo attach — storage path + cleanup on tx delete
