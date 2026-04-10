@@ -297,3 +297,4 @@
 - 2026-04-08: biometric lock on app resume, grace period 30s
 - 2026-04-09: sort options: date, amount, category — persist choice
 - 2026-04-09: pin fallback when biometrics unenrolled
+- 2026-04-10: monthly summary notification copy drafts
