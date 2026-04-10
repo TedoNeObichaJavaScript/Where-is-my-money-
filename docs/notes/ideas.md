@@ -299,3 +299,4 @@
 - 2026-04-09: pin fallback when biometrics unenrolled
 - 2026-04-10: monthly summary notification copy drafts
 - 2026-04-10: widget idea: today spend glance on home screen
+- 2026-04-10: FlatList perf on long tx history, getItemLayout candidate
