@@ -303,3 +303,4 @@
 - 2026-04-11: tx tags vs single category — decided: single category + note
 - 2026-04-11: tx tags vs single category — decided: single category + note
 - 2026-04-11: monthly summary notification copy drafts
+- 2026-04-11: receipt photo attach — storage path + cleanup on tx delete
