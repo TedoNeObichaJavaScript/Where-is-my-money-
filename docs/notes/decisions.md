@@ -298,3 +298,4 @@
 - 2026-04-10: receipt photo attach — storage path + cleanup on tx delete
 - 2026-04-10: analytics custom range presets: 7d / 30d / MTD / YTD
 - 2026-04-10: soft delete with undo snackbar instead of confirm dialog
+- 2026-04-11: currency symbol placement per locale (lv after amount)
