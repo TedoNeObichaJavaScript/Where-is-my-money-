@@ -300,3 +300,4 @@
 - 2026-04-10: soft delete with undo snackbar instead of confirm dialog
 - 2026-04-11: currency symbol placement per locale (lv after amount)
 - 2026-04-11: transfer between accounts should not count as spend
+- 2026-04-11: onboarding flow: skip vs guided first account setup
