@@ -301,3 +301,4 @@
 - 2026-04-10: widget idea: today spend glance on home screen
 - 2026-04-10: FlatList perf on long tx history, getItemLayout candidate
 - 2026-04-11: tx tags vs single category — decided: single category + note
+- 2026-04-11: tx tags vs single category — decided: single category + note
