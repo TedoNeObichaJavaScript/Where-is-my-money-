@@ -305,3 +305,4 @@
 - 2026-04-11: monthly summary notification copy drafts
 - 2026-04-11: receipt photo attach — storage path + cleanup on tx delete
 - 2026-04-12: FlatList perf on long tx history, getItemLayout candidate
+- 2026-04-12: onboarding flow: skip vs guided first account setup
