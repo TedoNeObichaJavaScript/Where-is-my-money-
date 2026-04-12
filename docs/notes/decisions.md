@@ -303,3 +303,4 @@
 - 2026-04-11: onboarding flow: skip vs guided first account setup
 - 2026-04-11: settings screen grouping — appearance / data / security
 - 2026-04-12: app icon variants — dark bg vs light bg test on launcher
+- 2026-04-12: icon set audit — replace mismatched category glyphs
