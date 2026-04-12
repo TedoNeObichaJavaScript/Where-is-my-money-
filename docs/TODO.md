@@ -306,3 +306,4 @@
 - 2026-04-11: budget alerts at 80% and 100%, local notifications only
 - 2026-04-11: amount input keypad: custom vs system numeric
 - 2026-04-12: transfer between accounts should not count as spend
+- 2026-04-12: chart lib comparison: victory-native vs react-native-svg hand-rolled
