@@ -308,3 +308,4 @@
 - 2026-04-12: onboarding flow: skip vs guided first account setup
 - 2026-04-12: empty states for analytics when < 5 tx
 - 2026-04-12: monthly summary notification copy drafts
+- 2026-04-12: accessibility pass: touch targets under 44dp on filter chips
