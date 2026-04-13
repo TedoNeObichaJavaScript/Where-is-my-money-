@@ -307,3 +307,4 @@
 - 2026-04-11: amount input keypad: custom vs system numeric
 - 2026-04-12: transfer between accounts should not count as spend
 - 2026-04-12: chart lib comparison: victory-native vs react-native-svg hand-rolled
+- 2026-04-13: icon set audit — replace mismatched category glyphs
