@@ -309,3 +309,4 @@
 - 2026-04-12: chart lib comparison: victory-native vs react-native-svg hand-rolled
 - 2026-04-13: icon set audit — replace mismatched category glyphs
 - 2026-04-13: category color palette — needs contrast pass in dark mode
+- 2026-04-13: biometric lock on app resume, grace period 30s
