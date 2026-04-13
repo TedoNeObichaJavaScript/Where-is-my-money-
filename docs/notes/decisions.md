@@ -305,3 +305,4 @@
 - 2026-04-12: app icon variants — dark bg vs light bg test on launcher
 - 2026-04-12: icon set audit — replace mismatched category glyphs
 - 2026-04-13: widget idea: today spend glance on home screen
+- 2026-04-13: haptics on tx save — light impact only
