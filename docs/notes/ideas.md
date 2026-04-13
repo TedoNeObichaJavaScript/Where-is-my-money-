@@ -310,3 +310,4 @@
 - 2026-04-12: monthly summary notification copy drafts
 - 2026-04-12: accessibility pass: touch targets under 44dp on filter chips
 - 2026-04-12: biometric lock on app resume, grace period 30s
+- 2026-04-13: budget rollover: carry unspent vs reset monthly
