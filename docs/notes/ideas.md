@@ -316,3 +316,4 @@
 - 2026-04-13: SQLite migration strategy before adding budgets table
 - 2026-04-13: SQLite migration strategy before adding budgets table
 - 2026-04-14: amount input keypad: custom vs system numeric
+- 2026-04-14: app icon variants — dark bg vs light bg test on launcher
