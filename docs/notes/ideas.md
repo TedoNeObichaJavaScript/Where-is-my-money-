@@ -315,3 +315,4 @@
 - 2026-04-13: monthly summary notification copy drafts
 - 2026-04-13: SQLite migration strategy before adding budgets table
 - 2026-04-13: SQLite migration strategy before adding budgets table
+- 2026-04-14: amount input keypad: custom vs system numeric
