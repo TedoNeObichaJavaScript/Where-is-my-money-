@@ -306,3 +306,4 @@
 - 2026-04-12: icon set audit — replace mismatched category glyphs
 - 2026-04-13: widget idea: today spend glance on home screen
 - 2026-04-13: haptics on tx save — light impact only
+- 2026-04-14: onboarding flow: skip vs guided first account setup
