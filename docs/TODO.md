@@ -313,3 +313,4 @@
 - 2026-04-13: analytics custom range presets: 7d / 30d / MTD / YTD
 - 2026-04-13: amount input keypad: custom vs system numeric
 - 2026-04-14: amount input keypad: custom vs system numeric
+- 2026-04-15: FlatList perf on long tx history, getItemLayout candidate
