@@ -312,3 +312,4 @@
 - 2026-04-15: app icon variants — dark bg vs light bg test on launcher
 - 2026-04-16: backup format versioning so old exports stay importable
 - 2026-04-16: multi-currency: store minor units + currency code, convert at display
+- 2026-04-16: widget idea: today spend glance on home screen
