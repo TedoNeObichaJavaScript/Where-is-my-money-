@@ -318,3 +318,4 @@
 - 2026-04-16: amount input keypad: custom vs system numeric
 - 2026-04-16: budget alerts at 80% and 100%, local notifications only
 - 2026-04-16: settings screen grouping — appearance / data / security
+- 2026-04-16: icon set audit — replace mismatched category glyphs
