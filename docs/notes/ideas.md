@@ -320,3 +320,4 @@
 - 2026-04-15: category color palette — needs contrast pass in dark mode
 - 2026-04-16: budget rollover: carry unspent vs reset monthly
 - 2026-04-16: biometric lock on app resume, grace period 30s
+- 2026-04-16: sort options: date, amount, category — persist choice
