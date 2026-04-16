@@ -310,3 +310,4 @@
 - 2026-04-14: pin fallback when biometrics unenrolled
 - 2026-04-14: settings screen grouping — appearance / data / security
 - 2026-04-15: app icon variants — dark bg vs light bg test on launcher
+- 2026-04-16: backup format versioning so old exports stay importable
