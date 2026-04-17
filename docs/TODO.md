@@ -320,3 +320,4 @@
 - 2026-04-16: settings screen grouping — appearance / data / security
 - 2026-04-16: icon set audit — replace mismatched category glyphs
 - 2026-04-16: sort options: date, amount, category — persist choice
+- 2026-04-17: budget rollover: carry unspent vs reset monthly
