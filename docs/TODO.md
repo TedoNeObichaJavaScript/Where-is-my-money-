@@ -321,3 +321,4 @@
 - 2026-04-16: icon set audit — replace mismatched category glyphs
 - 2026-04-16: sort options: date, amount, category — persist choice
 - 2026-04-17: budget rollover: carry unspent vs reset monthly
+- 2026-04-17: analytics custom range presets: 7d / 30d / MTD / YTD
