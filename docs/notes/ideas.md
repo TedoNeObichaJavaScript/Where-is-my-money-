@@ -326,3 +326,4 @@
 - 2026-04-17: app icon variants — dark bg vs light bg test on launcher
 - 2026-04-17: FlatList perf on long tx history, getItemLayout candidate
 - 2026-04-17: widget idea: today spend glance on home screen
+- 2026-04-17: CSV export column order + separator for BG Excel locale
