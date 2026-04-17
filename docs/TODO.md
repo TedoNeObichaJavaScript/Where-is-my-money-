@@ -326,3 +326,4 @@
 - 2026-04-17: haptics on tx save — light impact only
 - 2026-04-17: sort options: date, amount, category — persist choice
 - 2026-04-17: pin fallback when biometrics unenrolled
+- 2026-04-17: transfer between accounts should not count as spend
