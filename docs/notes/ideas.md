@@ -327,3 +327,4 @@
 - 2026-04-17: FlatList perf on long tx history, getItemLayout candidate
 - 2026-04-17: widget idea: today spend glance on home screen
 - 2026-04-17: CSV export column order + separator for BG Excel locale
+- 2026-04-17: soft delete with undo snackbar instead of confirm dialog
