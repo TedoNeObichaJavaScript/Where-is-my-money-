@@ -322,3 +322,4 @@
 - 2026-04-16: sort options: date, amount, category — persist choice
 - 2026-04-17: budget rollover: carry unspent vs reset monthly
 - 2026-04-17: analytics custom range presets: 7d / 30d / MTD / YTD
+- 2026-04-17: search: debounce input, index on tx note
