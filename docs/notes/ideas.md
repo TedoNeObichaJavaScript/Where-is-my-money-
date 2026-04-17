@@ -329,3 +329,4 @@
 - 2026-04-17: CSV export column order + separator for BG Excel locale
 - 2026-04-17: soft delete with undo snackbar instead of confirm dialog
 - 2026-04-17: soft delete with undo snackbar instead of confirm dialog
+- 2026-04-17: pin fallback when biometrics unenrolled
