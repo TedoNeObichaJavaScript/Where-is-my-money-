@@ -319,3 +319,4 @@
 - 2026-04-16: category color palette — needs contrast pass in dark mode
 - 2026-04-16: budget rollover: carry unspent vs reset monthly
 - 2026-04-17: SQLite migration strategy before adding budgets table
+- 2026-04-17: amount input keypad: custom vs system numeric
