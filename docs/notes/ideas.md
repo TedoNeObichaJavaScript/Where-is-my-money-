@@ -332,3 +332,4 @@
 - 2026-04-17: pin fallback when biometrics unenrolled
 - 2026-04-17: biometric lock on app resume, grace period 30s
 - 2026-04-19: chart lib comparison: victory-native vs react-native-svg hand-rolled
+- 2026-04-19: sort options: date, amount, category — persist choice
