@@ -335,3 +335,4 @@
 - 2026-04-19: sort options: date, amount, category — persist choice
 - 2026-04-20: settings screen grouping — appearance / data / security
 - 2026-04-20: receipt photo attach — storage path + cleanup on tx delete
+- 2026-04-20: tx tags vs single category — decided: single category + note
