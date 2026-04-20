@@ -321,3 +321,4 @@
 - 2026-04-17: SQLite migration strategy before adding budgets table
 - 2026-04-17: amount input keypad: custom vs system numeric
 - 2026-04-19: budget rollover: carry unspent vs reset monthly
+- 2026-04-20: amount input keypad: custom vs system numeric
