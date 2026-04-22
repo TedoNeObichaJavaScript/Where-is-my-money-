@@ -324,3 +324,4 @@
 - 2026-04-20: amount input keypad: custom vs system numeric
 - 2026-04-20: budget alerts at 80% and 100%, local notifications only
 - 2026-04-22: search: debounce input, index on tx note
+- 2026-04-22: budget rollover: carry unspent vs reset monthly
