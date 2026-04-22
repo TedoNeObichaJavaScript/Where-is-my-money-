@@ -334,3 +334,4 @@
 - 2026-04-22: analytics custom range presets: 7d / 30d / MTD / YTD
 - 2026-04-22: currency symbol placement per locale (lv after amount)
 - 2026-04-22: search: debounce input, index on tx note
+- 2026-04-22: haptics on tx save — light impact only
