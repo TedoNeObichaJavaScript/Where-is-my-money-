@@ -331,3 +331,4 @@
 - 2026-04-20: budget alerts at 80% and 100%, local notifications only
 - 2026-04-20: chart lib comparison: victory-native vs react-native-svg hand-rolled
 - 2026-04-20: accessibility pass: touch targets under 44dp on filter chips
+- 2026-04-22: analytics custom range presets: 7d / 30d / MTD / YTD
