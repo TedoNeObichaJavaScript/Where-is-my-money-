@@ -326,3 +326,4 @@
 - 2026-04-22: search: debounce input, index on tx note
 - 2026-04-22: budget rollover: carry unspent vs reset monthly
 - 2026-04-22: multi-currency: store minor units + currency code, convert at display
+- 2026-04-22: biometric lock on app resume, grace period 30s
