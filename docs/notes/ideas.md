@@ -340,3 +340,4 @@
 - 2026-04-22: widget idea: today spend glance on home screen
 - 2026-04-22: category color palette — needs contrast pass in dark mode
 - 2026-04-22: soft delete with undo snackbar instead of confirm dialog
+- 2026-04-22: haptics on tx save — light impact only
