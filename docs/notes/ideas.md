@@ -336,3 +336,4 @@
 - 2026-04-20: settings screen grouping — appearance / data / security
 - 2026-04-20: receipt photo attach — storage path + cleanup on tx delete
 - 2026-04-20: tx tags vs single category — decided: single category + note
+- 2026-04-22: haptics on tx save — light impact only
