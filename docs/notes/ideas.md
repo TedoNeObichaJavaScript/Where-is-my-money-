@@ -342,3 +342,4 @@
 - 2026-04-22: soft delete with undo snackbar instead of confirm dialog
 - 2026-04-22: haptics on tx save — light impact only
 - 2026-04-24: monthly summary notification copy drafts
+- 2026-04-24: biometric lock on app resume, grace period 30s
