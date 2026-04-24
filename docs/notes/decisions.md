@@ -331,3 +331,4 @@
 - 2026-04-24: CSV export column order + separator for BG Excel locale
 - 2026-04-24: chart lib comparison: victory-native vs react-native-svg hand-rolled
 - 2026-04-24: accessibility pass: touch targets under 44dp on filter chips
+- 2026-04-24: transfer between accounts should not count as spend
