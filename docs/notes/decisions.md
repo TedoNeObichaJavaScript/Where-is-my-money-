@@ -333,3 +333,4 @@
 - 2026-04-24: accessibility pass: touch targets under 44dp on filter chips
 - 2026-04-24: transfer between accounts should not count as spend
 - 2026-04-24: empty states for analytics when < 5 tx
+- 2026-04-24: icon set audit — replace mismatched category glyphs
