@@ -329,3 +329,4 @@
 - 2026-04-22: biometric lock on app resume, grace period 30s
 - 2026-04-22: currency symbol placement per locale (lv after amount)
 - 2026-04-24: CSV export column order + separator for BG Excel locale
+- 2026-04-24: chart lib comparison: victory-native vs react-native-svg hand-rolled
