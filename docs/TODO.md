@@ -337,3 +337,4 @@
 - 2026-04-22: haptics on tx save — light impact only
 - 2026-04-24: app icon variants — dark bg vs light bg test on launcher
 - 2026-04-24: app icon variants — dark bg vs light bg test on launcher
+- 2026-04-25: backup format versioning so old exports stay importable
