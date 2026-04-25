@@ -339,3 +339,4 @@
 - 2026-04-24: app icon variants — dark bg vs light bg test on launcher
 - 2026-04-25: backup format versioning so old exports stay importable
 - 2026-04-25: settings screen grouping — appearance / data / security
+- 2026-04-25: settings screen grouping — appearance / data / security
