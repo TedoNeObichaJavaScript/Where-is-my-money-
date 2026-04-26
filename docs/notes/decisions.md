@@ -335,3 +335,4 @@
 - 2026-04-24: empty states for analytics when < 5 tx
 - 2026-04-24: icon set audit — replace mismatched category glyphs
 - 2026-04-26: empty states for analytics when < 5 tx
+- 2026-04-26: chart lib comparison: victory-native vs react-native-svg hand-rolled
