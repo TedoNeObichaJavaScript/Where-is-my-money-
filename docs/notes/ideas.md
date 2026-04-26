@@ -343,3 +343,4 @@
 - 2026-04-22: haptics on tx save — light impact only
 - 2026-04-24: monthly summary notification copy drafts
 - 2026-04-24: biometric lock on app resume, grace period 30s
+- 2026-04-26: app icon variants — dark bg vs light bg test on launcher
