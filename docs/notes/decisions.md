@@ -338,3 +338,4 @@
 - 2026-04-26: chart lib comparison: victory-native vs react-native-svg hand-rolled
 - 2026-04-26: onboarding flow: skip vs guided first account setup
 - 2026-04-26: multi-currency: store minor units + currency code, convert at display
+- 2026-04-27: empty states for analytics when < 5 tx
