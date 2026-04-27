@@ -347,3 +347,4 @@
 - 2026-04-26: CSV export column order + separator for BG Excel locale
 - 2026-04-26: tx tags vs single category — decided: single category + note
 - 2026-04-27: currency symbol placement per locale (lv after amount)
+- 2026-04-27: accessibility pass: touch targets under 44dp on filter chips
