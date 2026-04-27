@@ -340,3 +340,4 @@
 - 2026-04-26: multi-currency: store minor units + currency code, convert at display
 - 2026-04-27: empty states for analytics when < 5 tx
 - 2026-04-27: soft delete with undo snackbar instead of confirm dialog
+- 2026-04-27: recurring tx edge cases (DST, month-end 29/30/31)
