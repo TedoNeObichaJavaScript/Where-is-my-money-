@@ -349,3 +349,4 @@
 - 2026-04-27: currency symbol placement per locale (lv after amount)
 - 2026-04-27: accessibility pass: touch targets under 44dp on filter chips
 - 2026-04-27: sort options: date, amount, category — persist choice
+- 2026-04-27: chart lib comparison: victory-native vs react-native-svg hand-rolled
