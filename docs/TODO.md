@@ -342,3 +342,4 @@
 - 2026-04-25: settings screen grouping — appearance / data / security
 - 2026-04-26: accessibility pass: touch targets under 44dp on filter chips
 - 2026-04-26: CSV export column order + separator for BG Excel locale
+- 2026-04-28: transfer between accounts should not count as spend
