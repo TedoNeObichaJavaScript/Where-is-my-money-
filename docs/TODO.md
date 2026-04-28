@@ -343,3 +343,4 @@
 - 2026-04-26: accessibility pass: touch targets under 44dp on filter chips
 - 2026-04-26: CSV export column order + separator for BG Excel locale
 - 2026-04-28: transfer between accounts should not count as spend
+- 2026-04-28: multi-currency: store minor units + currency code, convert at display
