@@ -343,3 +343,4 @@
 - 2026-04-27: recurring tx edge cases (DST, month-end 29/30/31)
 - 2026-04-27: empty states for analytics when < 5 tx
 - 2026-04-28: search: debounce input, index on tx note
+- 2026-04-28: app icon variants — dark bg vs light bg test on launcher
