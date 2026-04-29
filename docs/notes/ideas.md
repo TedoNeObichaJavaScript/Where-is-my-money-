@@ -351,3 +351,4 @@
 - 2026-04-27: sort options: date, amount, category — persist choice
 - 2026-04-27: chart lib comparison: victory-native vs react-native-svg hand-rolled
 - 2026-04-28: search: debounce input, index on tx note
+- 2026-04-29: empty states for analytics when < 5 tx
