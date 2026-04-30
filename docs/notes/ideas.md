@@ -354,3 +354,4 @@
 - 2026-04-29: empty states for analytics when < 5 tx
 - 2026-04-29: SQLite migration strategy before adding budgets table
 - 2026-04-30: icon set audit — replace mismatched category glyphs
+- 2026-04-30: onboarding flow: skip vs guided first account setup
