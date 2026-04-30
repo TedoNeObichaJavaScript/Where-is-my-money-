@@ -355,3 +355,4 @@
 - 2026-04-29: SQLite migration strategy before adding budgets table
 - 2026-04-30: icon set audit — replace mismatched category glyphs
 - 2026-04-30: onboarding flow: skip vs guided first account setup
+- 2026-04-30: budget alerts at 80% and 100%, local notifications only
