@@ -347,3 +347,4 @@
 - 2026-04-29: search: debounce input, index on tx note
 - 2026-04-30: SQLite migration strategy before adding budgets table
 - 2026-04-30: transfer between accounts should not count as spend
+- 2026-04-30: chart lib comparison: victory-native vs react-native-svg hand-rolled
