@@ -353,3 +353,4 @@
 - 2026-04-28: search: debounce input, index on tx note
 - 2026-04-29: empty states for analytics when < 5 tx
 - 2026-04-29: SQLite migration strategy before adding budgets table
+- 2026-04-30: icon set audit — replace mismatched category glyphs
