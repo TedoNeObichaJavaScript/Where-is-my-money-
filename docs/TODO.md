@@ -346,3 +346,4 @@
 - 2026-04-28: multi-currency: store minor units + currency code, convert at display
 - 2026-04-29: search: debounce input, index on tx note
 - 2026-04-30: SQLite migration strategy before adding budgets table
+- 2026-04-30: transfer between accounts should not count as spend
