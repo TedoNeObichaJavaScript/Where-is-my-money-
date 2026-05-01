@@ -348,3 +348,4 @@
 - 2026-04-30: SQLite migration strategy before adding budgets table
 - 2026-04-30: transfer between accounts should not count as spend
 - 2026-04-30: chart lib comparison: victory-native vs react-native-svg hand-rolled
+- 2026-05-01: receipt photo attach — storage path + cleanup on tx delete
