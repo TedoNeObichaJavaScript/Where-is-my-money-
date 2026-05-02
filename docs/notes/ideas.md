@@ -358,3 +358,4 @@
 - 2026-04-30: budget alerts at 80% and 100%, local notifications only
 - 2026-05-02: category color palette — needs contrast pass in dark mode
 - 2026-05-02: currency symbol placement per locale (lv after amount)
+- 2026-05-02: pin fallback when biometrics unenrolled
