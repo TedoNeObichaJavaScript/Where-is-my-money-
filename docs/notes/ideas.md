@@ -360,3 +360,4 @@
 - 2026-05-02: currency symbol placement per locale (lv after amount)
 - 2026-05-02: pin fallback when biometrics unenrolled
 - 2026-05-02: search: debounce input, index on tx note
+- 2026-05-02: monthly summary notification copy drafts
