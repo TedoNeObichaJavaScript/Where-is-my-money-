@@ -350,3 +350,4 @@
 - 2026-04-30: chart lib comparison: victory-native vs react-native-svg hand-rolled
 - 2026-05-01: receipt photo attach — storage path + cleanup on tx delete
 - 2026-05-02: budget rollover: carry unspent vs reset monthly
+- 2026-05-02: FlatList perf on long tx history, getItemLayout candidate
