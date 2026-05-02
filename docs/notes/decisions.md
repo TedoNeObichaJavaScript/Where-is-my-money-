@@ -346,3 +346,4 @@
 - 2026-04-28: app icon variants — dark bg vs light bg test on launcher
 - 2026-04-28: empty states for analytics when < 5 tx
 - 2026-04-30: budget rollover: carry unspent vs reset monthly
+- 2026-05-02: receipt photo attach — storage path + cleanup on tx delete
