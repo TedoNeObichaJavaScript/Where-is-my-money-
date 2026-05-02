@@ -347,3 +347,4 @@
 - 2026-04-28: empty states for analytics when < 5 tx
 - 2026-04-30: budget rollover: carry unspent vs reset monthly
 - 2026-05-02: receipt photo attach — storage path + cleanup on tx delete
+- 2026-05-02: search: debounce input, index on tx note
