@@ -352,3 +352,4 @@
 - 2026-05-02: budget rollover: carry unspent vs reset monthly
 - 2026-05-02: FlatList perf on long tx history, getItemLayout candidate
 - 2026-05-02: transfer between accounts should not count as spend
+- 2026-05-02: backup format versioning so old exports stay importable
