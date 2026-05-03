@@ -361,3 +361,4 @@
 - 2026-05-02: pin fallback when biometrics unenrolled
 - 2026-05-02: search: debounce input, index on tx note
 - 2026-05-02: monthly summary notification copy drafts
+- 2026-05-03: haptics on tx save — light impact only
