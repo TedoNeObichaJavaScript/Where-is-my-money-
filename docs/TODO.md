@@ -354,3 +354,4 @@
 - 2026-05-02: transfer between accounts should not count as spend
 - 2026-05-02: backup format versioning so old exports stay importable
 - 2026-05-04: SQLite migration strategy before adding budgets table
+- 2026-05-04: search: debounce input, index on tx note
