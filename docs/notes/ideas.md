@@ -363,3 +363,4 @@
 - 2026-05-02: monthly summary notification copy drafts
 - 2026-05-03: haptics on tx save — light impact only
 - 2026-05-04: SQLite migration strategy before adding budgets table
+- 2026-05-04: analytics custom range presets: 7d / 30d / MTD / YTD
