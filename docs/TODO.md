@@ -356,3 +356,4 @@
 - 2026-05-04: SQLite migration strategy before adding budgets table
 - 2026-05-04: search: debounce input, index on tx note
 - 2026-05-04: recurring tx edge cases (DST, month-end 29/30/31)
+- 2026-05-04: search: debounce input, index on tx note
