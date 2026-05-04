@@ -352,3 +352,4 @@
 - 2026-05-04: onboarding flow: skip vs guided first account setup
 - 2026-05-04: recurring tx edge cases (DST, month-end 29/30/31)
 - 2026-05-04: tx tags vs single category — decided: single category + note
+- 2026-05-04: budget alerts at 80% and 100%, local notifications only
