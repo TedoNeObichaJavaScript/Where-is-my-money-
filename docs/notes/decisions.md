@@ -349,3 +349,4 @@
 - 2026-05-02: receipt photo attach — storage path + cleanup on tx delete
 - 2026-05-02: search: debounce input, index on tx note
 - 2026-05-03: multi-currency: store minor units + currency code, convert at display
+- 2026-05-04: onboarding flow: skip vs guided first account setup
