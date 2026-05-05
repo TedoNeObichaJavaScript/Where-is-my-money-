@@ -358,3 +358,4 @@
 - 2026-05-04: recurring tx edge cases (DST, month-end 29/30/31)
 - 2026-05-04: search: debounce input, index on tx note
 - 2026-05-04: icon set audit — replace mismatched category glyphs
+- 2026-05-05: empty states for analytics when < 5 tx
