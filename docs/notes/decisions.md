@@ -355,3 +355,4 @@
 - 2026-05-04: budget alerts at 80% and 100%, local notifications only
 - 2026-05-05: settings screen grouping — appearance / data / security
 - 2026-05-05: search: debounce input, index on tx note
+- 2026-05-05: icon set audit — replace mismatched category glyphs
