@@ -359,3 +359,4 @@
 - 2026-05-06: multi-currency: store minor units + currency code, convert at display
 - 2026-05-06: receipt photo attach — storage path + cleanup on tx delete
 - 2026-05-06: budget rollover: carry unspent vs reset monthly
+- 2026-05-06: CSV export column order + separator for BG Excel locale
