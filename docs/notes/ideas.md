@@ -368,3 +368,4 @@
 - 2026-05-06: FlatList perf on long tx history, getItemLayout candidate
 - 2026-05-06: accessibility pass: touch targets under 44dp on filter chips
 - 2026-05-06: FlatList perf on long tx history, getItemLayout candidate
+- 2026-05-06: analytics custom range presets: 7d / 30d / MTD / YTD
