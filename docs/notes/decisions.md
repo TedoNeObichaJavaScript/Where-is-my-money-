@@ -356,3 +356,4 @@
 - 2026-05-05: settings screen grouping — appearance / data / security
 - 2026-05-05: search: debounce input, index on tx note
 - 2026-05-05: icon set audit — replace mismatched category glyphs
+- 2026-05-06: multi-currency: store minor units + currency code, convert at display
