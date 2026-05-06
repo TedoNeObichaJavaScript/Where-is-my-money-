@@ -367,3 +367,4 @@
 - 2026-05-05: search: debounce input, index on tx note
 - 2026-05-06: FlatList perf on long tx history, getItemLayout candidate
 - 2026-05-06: accessibility pass: touch targets under 44dp on filter chips
+- 2026-05-06: FlatList perf on long tx history, getItemLayout candidate
