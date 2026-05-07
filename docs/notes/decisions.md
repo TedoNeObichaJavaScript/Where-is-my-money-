@@ -360,3 +360,4 @@
 - 2026-05-06: receipt photo attach — storage path + cleanup on tx delete
 - 2026-05-06: budget rollover: carry unspent vs reset monthly
 - 2026-05-06: CSV export column order + separator for BG Excel locale
+- 2026-05-07: search: debounce input, index on tx note
