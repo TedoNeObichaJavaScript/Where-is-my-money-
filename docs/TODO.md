@@ -363,3 +363,4 @@
 - 2026-05-06: monthly summary notification copy drafts
 - 2026-05-06: haptics on tx save — light impact only
 - 2026-05-07: app icon variants — dark bg vs light bg test on launcher
+- 2026-05-07: analytics custom range presets: 7d / 30d / MTD / YTD
