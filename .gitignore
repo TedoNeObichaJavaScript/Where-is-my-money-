@@ -1,0 +1,40 @@
+# --- Android / Gradle ---
+*.iml
+.gradle/
+.kotlin/
+.idea/
+.DS_Store
+.externalNativeBuild
+.cxx/
+captures/
+
+# Build outputs
+build/
+**/build/
+release/
+/app/release/
+
+# Local config (machine-specific)
+local.properties
+
+# Signing
+*.keystore
+*.jks
+!debug.keystore
+
+# --- Local-only assets (screenshots, ADB dumps, scratch) ---
+.local-assets/
+*.png
+*.jpg
+*.jpeg
+window_dump.xml
+!.github/assets/*.svg
+!.github/assets/*.png
+!app/src/**/*.png
+!app/src/**/*.jpg
+!app/src/**/*.webp
+
+# OS / editors
+Thumbs.db
+*.swp
+*.bak

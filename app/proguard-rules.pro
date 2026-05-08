@@ -1,0 +1,3 @@
+-keep class bg.parite.app.data.model.** { *; }
+-keep class net.sqlcipher.** { *; }
+-dontwarn net.sqlcipher.**

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Къде са ми парите?</string>
+    <string name="app_name_short">Парите</string>
+
+    <string name="nav_home">Начало</string>
+    <string name="nav_add">Добави</string>
+    <string name="nav_history">История</string>
+    <string name="nav_analytics">Статистика</string>
+    <string name="nav_settings">Настройки</string>
+
+    <string name="home_balance_total">Общ баланс</string>
+    <string name="home_today_spent">Похарчено днес</string>
+    <string name="home_this_month">Този месец</string>
+    <string name="home_recent">Последни</string>
+    <string name="home_no_transactions">Все още няма транзакции. Натисни +, за да добавиш.</string>
+
+    <string name="add_title_expense">Нов разход</string>
+    <string name="add_title_income">Нов приход</string>
+    <string name="add_amount">Сума</string>
+    <string name="add_category">Категория</string>
+    <string name="add_account">Сметка</string>
+    <string name="add_note">Бележка (по избор)</string>
+    <string name="add_save">Запази</string>
+    <string name="add_cancel">Отказ</string>
+    <string name="add_expense">Разход</string>
+    <string name="add_income">Приход</string>
+
+    <string name="history_title">История</string>
+    <string name="analytics_title">Статистика</string>
+    <string name="settings_title">Настройки</string>
+    <string name="coming_soon">Скоро</string>
+
+    <string name="cat_food">Храна</string>
+    <string name="cat_groceries">Хранителни стоки</string>
+    <string name="cat_transport">Транспорт</string>
+    <string name="cat_housing">Жилище</string>
+    <string name="cat_bills">Сметки</string>
+    <string name="cat_entertainment">Забавления</string>
+    <string name="cat_clothing">Дрехи</string>
+    <string name="cat_health">Здраве</string>
+    <string name="cat_education">Образование</string>
+    <string name="cat_gifts">Подаръци</string>
+    <string name="cat_travel">Пътуване</string>
+    <string name="cat_other">Друго</string>
+
+    <string name="cat_salary">Заплата</string>
+    <string name="cat_gift_in">Подарък</string>
+    <string name="cat_other_in">Друго</string>
+
+    <string name="acc_cash">В брой</string>
+    <string name="acc_card">Карта</string>
+    <string name="acc_savings">Спестявания</string>
+
+    <string name="settings_section_security">Сигурност</string>
+    <string name="settings_section_data">Данни</string>
+    <string name="settings_section_about">За приложението</string>
+    <string name="settings_lock_with_biometric">Заключване с биометрия</string>
+    <string name="settings_lock_with_biometric_desc">Изисква пръстов отпечатък или лице за отваряне</string>
+    <string name="settings_backup_now">Резервно копие във файл</string>
+    <string name="settings_restore">Възстановяване от файл</string>
+    <string name="settings_restore_desc">Замества всички данни с тези от резервно копие</string>
+    <string name="settings_backup_never">Няма резервно копие</string>
+    <string name="settings_backup_last_at">Последно резервно копие %1$s</string>
+    <string name="settings_about_desc">Версия %1$s · направено с грижа</string>
+
+    <string name="backup_success">Запазени %1$d транзакции</string>
+    <string name="backup_failed">Грешка при запазване: %1$s</string>
+    <string name="restore_confirm_title">Замяна на всички данни?</string>
+    <string name="restore_confirm_msg">Възстановяването ще замени всички текущи данни. Действието не може да се отмени.</string>
+    <string name="restore_confirm_ok">Замени</string>
+    <string name="restore_success">Възстановени %1$d транзакции</string>
+    <string name="restore_failed">Грешка при възстановяване: %1$s</string>
+
+    <string name="biometric_unavailable">На устройството няма биометрия или заключен екран</string>
+    <string name="biometric_prompt_title">Отключи Парите</string>
+    <string name="biometric_prompt_subtitle">Използвай биометрия, за да продължиш</string>
+    <string name="biometric_unlock_button">Отключи</string>
+
+    <string name="history_search_hint">Търси в бележките</string>
+    <string name="history_empty">Все още няма нищо</string>
+    <string name="history_delete">Изтрий</string>
+    <string name="history_undo">Върни</string>
+
+    <string name="day_today">Днес</string>
+    <string name="day_yesterday">Вчера</string>
+
+    <string name="add_custom_cat_short">Нова</string>
+    <string name="custom_cat_title">Нова категория</string>
+    <string name="custom_cat_emoji">Емоджи</string>
+    <string name="custom_cat_name">Име</string>
+    <string name="custom_cat_color">Цвят</string>
+    <string name="custom_cat_create">Създай</string>
+
+    <string name="edit_title_expense">Редакция на разход</string>
+    <string name="edit_title_income">Редакция на приход</string>
+    <string name="add_recent">Скоро използвани</string>
+
+    <string name="analytics_spent">Изхарчено</string>
+    <string name="analytics_income">Приходи</string>
+    <string name="analytics_net">Нетно</string>
+    <string name="analytics_by_category">По категория</string>
+    <string name="analytics_daily">Дневни разходи</string>
+    <string name="analytics_top_categories">Топ категории</string>
+    <string name="analytics_empty">Няма разходи този месец</string>
+
+    <string name="settings_section_appearance">Облик</string>
+    <string name="settings_theme">Тема</string>
+    <string name="settings_theme_desc">Избери палитрата, която ти подхожда</string>
+    <string name="theme_coral">Корал</string>
+    <string name="theme_ocean">Океан</string>
+    <string name="theme_forest">Гора</string>
+    <string name="theme_sunset">Залез</string>
+    <string name="theme_mono">Шисто</string>
+
+    <string name="widget_label">Къде са ми парите?</string>
+    <string name="widget_title">Къде са ми парите?</string>
+    <string name="widget_tagline">Натисни, за да запишеш</string>
+    <string name="widget_expense">− Разход</string>
+    <string name="widget_income">+ Приход</string>
+    <string name="widget_description">Бързо записвай разходи и приходи от началния екран</string>
+</resources>
