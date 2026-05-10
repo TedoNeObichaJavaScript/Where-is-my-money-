@@ -367,3 +367,4 @@
 - 2026-05-10: accessibility pass: touch targets under 44dp on filter chips
 - 2026-05-10: app icon variants — dark bg vs light bg test on launcher
 - 2026-05-10: soft delete with undo snackbar instead of confirm dialog
+- 2026-05-10: tx tags vs single category — decided: single category + note
