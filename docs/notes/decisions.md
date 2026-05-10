@@ -365,3 +365,4 @@
 - 2026-05-10: analytics custom range presets: 7d / 30d / MTD / YTD
 - 2026-05-10: SQLite migration strategy before adding budgets table
 - 2026-05-10: accessibility pass: touch targets under 44dp on filter chips
+- 2026-05-10: app icon variants — dark bg vs light bg test on launcher
