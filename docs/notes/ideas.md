@@ -372,3 +372,4 @@
 - 2026-05-07: analytics custom range presets: 7d / 30d / MTD / YTD
 - 2026-05-07: accessibility pass: touch targets under 44dp on filter chips
 - 2026-05-07: CSV export column order + separator for BG Excel locale
+- 2026-05-10: widget idea: today spend glance on home screen
