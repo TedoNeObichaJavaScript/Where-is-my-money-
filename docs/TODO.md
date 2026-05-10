@@ -365,3 +365,4 @@
 - 2026-05-07: app icon variants — dark bg vs light bg test on launcher
 - 2026-05-07: analytics custom range presets: 7d / 30d / MTD / YTD
 - 2026-05-10: CSV export column order + separator for BG Excel locale
+- 2026-05-10: monthly summary notification copy drafts
