@@ -363,3 +363,4 @@
 - 2026-05-07: search: debounce input, index on tx note
 - 2026-05-07: SQLite migration strategy before adding budgets table
 - 2026-05-10: analytics custom range presets: 7d / 30d / MTD / YTD
+- 2026-05-10: SQLite migration strategy before adding budgets table
