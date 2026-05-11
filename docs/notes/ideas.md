@@ -379,3 +379,4 @@
 - 2026-05-11: SQLite migration strategy before adding budgets table
 - 2026-05-11: SQLite migration strategy before adding budgets table
 - 2026-05-11: monthly summary notification copy drafts
+- 2026-05-11: onboarding flow: skip vs guided first account setup
