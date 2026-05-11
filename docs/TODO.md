@@ -369,3 +369,4 @@
 - 2026-05-11: empty states for analytics when < 5 tx
 - 2026-05-11: multi-currency: store minor units + currency code, convert at display
 - 2026-05-11: SQLite migration strategy before adding budgets table
+- 2026-05-11: backup format versioning so old exports stay importable
