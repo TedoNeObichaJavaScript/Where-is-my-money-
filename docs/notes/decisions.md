@@ -369,3 +369,4 @@
 - 2026-05-10: soft delete with undo snackbar instead of confirm dialog
 - 2026-05-10: tx tags vs single category — decided: single category + note
 - 2026-05-11: app icon variants — dark bg vs light bg test on launcher
+- 2026-05-11: biometric lock on app resume, grace period 30s
