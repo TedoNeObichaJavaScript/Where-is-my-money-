@@ -368,3 +368,4 @@
 - 2026-05-10: monthly summary notification copy drafts
 - 2026-05-11: empty states for analytics when < 5 tx
 - 2026-05-11: multi-currency: store minor units + currency code, convert at display
+- 2026-05-11: SQLite migration strategy before adding budgets table
