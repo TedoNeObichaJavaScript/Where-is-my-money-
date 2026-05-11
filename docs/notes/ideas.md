@@ -378,3 +378,4 @@
 - 2026-05-11: category color palette — needs contrast pass in dark mode
 - 2026-05-11: SQLite migration strategy before adding budgets table
 - 2026-05-11: SQLite migration strategy before adding budgets table
+- 2026-05-11: monthly summary notification copy drafts
