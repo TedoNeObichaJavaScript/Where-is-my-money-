@@ -377,3 +377,4 @@
 - 2026-05-10: pin fallback when biometrics unenrolled
 - 2026-05-11: category color palette — needs contrast pass in dark mode
 - 2026-05-11: SQLite migration strategy before adding budgets table
+- 2026-05-11: SQLite migration strategy before adding budgets table
