@@ -375,3 +375,4 @@
 - 2026-05-10: widget idea: today spend glance on home screen
 - 2026-05-10: amount input keypad: custom vs system numeric
 - 2026-05-10: pin fallback when biometrics unenrolled
+- 2026-05-11: category color palette — needs contrast pass in dark mode
