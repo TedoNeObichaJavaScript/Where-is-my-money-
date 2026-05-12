@@ -370,3 +370,4 @@
 - 2026-05-11: multi-currency: store minor units + currency code, convert at display
 - 2026-05-11: SQLite migration strategy before adding budgets table
 - 2026-05-11: backup format versioning so old exports stay importable
+- 2026-05-12: sort options: date, amount, category — persist choice
