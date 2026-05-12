@@ -374,3 +374,4 @@
 - 2026-05-11: currency symbol placement per locale (lv after amount)
 - 2026-05-12: transfer between accounts should not count as spend
 - 2026-05-12: biometric lock on app resume, grace period 30s
+- 2026-05-12: analytics custom range presets: 7d / 30d / MTD / YTD
