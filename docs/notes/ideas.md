@@ -382,3 +382,4 @@
 - 2026-05-11: onboarding flow: skip vs guided first account setup
 - 2026-05-12: monthly summary notification copy drafts
 - 2026-05-12: chart lib comparison: victory-native vs react-native-svg hand-rolled
+- 2026-05-12: transfer between accounts should not count as spend
