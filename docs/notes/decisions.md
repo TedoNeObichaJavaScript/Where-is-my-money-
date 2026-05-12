@@ -372,3 +372,4 @@
 - 2026-05-11: biometric lock on app resume, grace period 30s
 - 2026-05-11: multi-currency: store minor units + currency code, convert at display
 - 2026-05-11: currency symbol placement per locale (lv after amount)
+- 2026-05-12: transfer between accounts should not count as spend
