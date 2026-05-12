@@ -372,3 +372,4 @@
 - 2026-05-11: backup format versioning so old exports stay importable
 - 2026-05-12: sort options: date, amount, category — persist choice
 - 2026-05-12: sort options: date, amount, category — persist choice
+- 2026-05-12: app icon variants — dark bg vs light bg test on launcher
