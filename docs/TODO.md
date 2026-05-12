@@ -373,3 +373,4 @@
 - 2026-05-12: sort options: date, amount, category — persist choice
 - 2026-05-12: sort options: date, amount, category — persist choice
 - 2026-05-12: app icon variants — dark bg vs light bg test on launcher
+- 2026-05-12: multi-currency: store minor units + currency code, convert at display
