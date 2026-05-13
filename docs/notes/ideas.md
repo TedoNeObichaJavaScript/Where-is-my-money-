@@ -384,3 +384,4 @@
 - 2026-05-12: chart lib comparison: victory-native vs react-native-svg hand-rolled
 - 2026-05-12: transfer between accounts should not count as spend
 - 2026-05-13: transfer between accounts should not count as spend
+- 2026-05-13: biometric lock on app resume, grace period 30s
