@@ -385,3 +385,4 @@
 - 2026-05-12: transfer between accounts should not count as spend
 - 2026-05-13: transfer between accounts should not count as spend
 - 2026-05-13: biometric lock on app resume, grace period 30s
+- 2026-05-13: empty states for analytics when < 5 tx
