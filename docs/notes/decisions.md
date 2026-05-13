@@ -375,3 +375,4 @@
 - 2026-05-12: transfer between accounts should not count as spend
 - 2026-05-12: biometric lock on app resume, grace period 30s
 - 2026-05-12: analytics custom range presets: 7d / 30d / MTD / YTD
+- 2026-05-13: chart lib comparison: victory-native vs react-native-svg hand-rolled
