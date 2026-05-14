@@ -387,3 +387,4 @@
 - 2026-05-13: biometric lock on app resume, grace period 30s
 - 2026-05-13: empty states for analytics when < 5 tx
 - 2026-05-13: accessibility pass: touch targets under 44dp on filter chips
+- 2026-05-14: CSV export column order + separator for BG Excel locale
