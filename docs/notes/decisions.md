@@ -377,3 +377,4 @@
 - 2026-05-12: analytics custom range presets: 7d / 30d / MTD / YTD
 - 2026-05-13: chart lib comparison: victory-native vs react-native-svg hand-rolled
 - 2026-05-14: multi-currency: store minor units + currency code, convert at display
+- 2026-05-14: widget idea: today spend glance on home screen
