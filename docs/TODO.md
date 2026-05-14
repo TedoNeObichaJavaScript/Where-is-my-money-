@@ -376,3 +376,4 @@
 - 2026-05-12: multi-currency: store minor units + currency code, convert at display
 - 2026-05-13: haptics on tx save — light impact only
 - 2026-05-13: transfer between accounts should not count as spend
+- 2026-05-14: receipt photo attach — storage path + cleanup on tx delete
