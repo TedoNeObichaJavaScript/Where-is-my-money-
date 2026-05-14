@@ -379,3 +379,4 @@
 - 2026-05-14: multi-currency: store minor units + currency code, convert at display
 - 2026-05-14: widget idea: today spend glance on home screen
 - 2026-05-14: settings screen grouping — appearance / data / security
+- 2026-05-14: FlatList perf on long tx history, getItemLayout candidate
