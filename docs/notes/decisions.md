@@ -382,3 +382,4 @@
 - 2026-05-14: FlatList perf on long tx history, getItemLayout candidate
 - 2026-05-14: haptics on tx save — light impact only
 - 2026-05-16: analytics custom range presets: 7d / 30d / MTD / YTD
+- 2026-05-16: chart lib comparison: victory-native vs react-native-svg hand-rolled
