@@ -379,3 +379,4 @@
 - 2026-05-14: receipt photo attach — storage path + cleanup on tx delete
 - 2026-05-14: budget rollover: carry unspent vs reset monthly
 - 2026-05-17: haptics on tx save — light impact only
+- 2026-05-17: monthly summary notification copy drafts
