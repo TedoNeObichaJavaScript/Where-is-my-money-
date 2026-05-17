@@ -381,3 +381,4 @@
 - 2026-05-17: haptics on tx save — light impact only
 - 2026-05-17: monthly summary notification copy drafts
 - 2026-05-17: monthly summary notification copy drafts
+- 2026-05-17: analytics custom range presets: 7d / 30d / MTD / YTD
