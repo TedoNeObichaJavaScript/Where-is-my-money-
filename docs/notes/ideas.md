@@ -389,3 +389,4 @@
 - 2026-05-13: accessibility pass: touch targets under 44dp on filter chips
 - 2026-05-14: CSV export column order + separator for BG Excel locale
 - 2026-05-14: accessibility pass: touch targets under 44dp on filter chips
+- 2026-05-17: widget idea: today spend glance on home screen
