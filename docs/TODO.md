@@ -382,3 +382,4 @@
 - 2026-05-17: monthly summary notification copy drafts
 - 2026-05-17: monthly summary notification copy drafts
 - 2026-05-17: analytics custom range presets: 7d / 30d / MTD / YTD
+- 2026-05-17: SQLite migration strategy before adding budgets table
