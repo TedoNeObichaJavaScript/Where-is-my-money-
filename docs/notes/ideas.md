@@ -393,3 +393,4 @@
 - 2026-05-17: analytics custom range presets: 7d / 30d / MTD / YTD
 - 2026-05-17: icon set audit — replace mismatched category glyphs
 - 2026-05-17: CSV export column order + separator for BG Excel locale
+- 2026-05-17: biometric lock on app resume, grace period 30s
