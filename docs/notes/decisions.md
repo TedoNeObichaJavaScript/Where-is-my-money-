@@ -386,3 +386,4 @@
 - 2026-05-16: budget rollover: carry unspent vs reset monthly
 - 2026-05-17: widget idea: today spend glance on home screen
 - 2026-05-17: chart lib comparison: victory-native vs react-native-svg hand-rolled
+- 2026-05-17: tx tags vs single category — decided: single category + note
