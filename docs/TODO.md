@@ -386,3 +386,4 @@
 - 2026-05-17: recurring tx edge cases (DST, month-end 29/30/31)
 - 2026-05-17: chart lib comparison: victory-native vs react-native-svg hand-rolled
 - 2026-05-17: search: debounce input, index on tx note
+- 2026-05-17: transfer between accounts should not count as spend
