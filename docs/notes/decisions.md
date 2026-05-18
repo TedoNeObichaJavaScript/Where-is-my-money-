@@ -389,3 +389,4 @@
 - 2026-05-17: tx tags vs single category — decided: single category + note
 - 2026-05-17: recurring tx edge cases (DST, month-end 29/30/31)
 - 2026-05-17: sort options: date, amount, category — persist choice
+- 2026-05-18: category color palette — needs contrast pass in dark mode
