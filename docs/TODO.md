@@ -389,3 +389,4 @@
 - 2026-05-17: transfer between accounts should not count as spend
 - 2026-05-18: budget rollover: carry unspent vs reset monthly
 - 2026-05-18: biometric lock on app resume, grace period 30s
+- 2026-05-19: onboarding flow: skip vs guided first account setup
