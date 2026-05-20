@@ -395,3 +395,4 @@
 - 2026-05-17: CSV export column order + separator for BG Excel locale
 - 2026-05-17: biometric lock on app resume, grace period 30s
 - 2026-05-17: settings screen grouping — appearance / data / security
+- 2026-05-20: FlatList perf on long tx history, getItemLayout candidate
