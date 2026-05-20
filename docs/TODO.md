@@ -394,3 +394,4 @@
 - 2026-05-20: SQLite migration strategy before adding budgets table
 - 2026-05-20: widget idea: today spend glance on home screen
 - 2026-05-20: icon set audit — replace mismatched category glyphs
+- 2026-05-20: currency symbol placement per locale (lv after amount)
