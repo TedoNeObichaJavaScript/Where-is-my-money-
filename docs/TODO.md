@@ -392,3 +392,4 @@
 - 2026-05-19: onboarding flow: skip vs guided first account setup
 - 2026-05-20: SQLite migration strategy before adding budgets table
 - 2026-05-20: SQLite migration strategy before adding budgets table
+- 2026-05-20: widget idea: today spend glance on home screen
