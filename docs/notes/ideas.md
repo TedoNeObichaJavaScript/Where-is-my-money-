@@ -396,3 +396,4 @@
 - 2026-05-17: biometric lock on app resume, grace period 30s
 - 2026-05-17: settings screen grouping — appearance / data / security
 - 2026-05-20: FlatList perf on long tx history, getItemLayout candidate
+- 2026-05-20: chart lib comparison: victory-native vs react-native-svg hand-rolled
