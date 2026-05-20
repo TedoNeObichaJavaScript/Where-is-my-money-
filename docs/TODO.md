@@ -391,3 +391,4 @@
 - 2026-05-18: biometric lock on app resume, grace period 30s
 - 2026-05-19: onboarding flow: skip vs guided first account setup
 - 2026-05-20: SQLite migration strategy before adding budgets table
+- 2026-05-20: SQLite migration strategy before adding budgets table
