@@ -391,3 +391,4 @@
 - 2026-05-17: sort options: date, amount, category — persist choice
 - 2026-05-18: category color palette — needs contrast pass in dark mode
 - 2026-05-20: category color palette — needs contrast pass in dark mode
+- 2026-05-20: recurring tx edge cases (DST, month-end 29/30/31)
