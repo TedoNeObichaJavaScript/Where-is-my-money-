@@ -395,3 +395,4 @@
 - 2026-05-20: budget rollover: carry unspent vs reset monthly
 - 2026-05-20: amount input keypad: custom vs system numeric
 - 2026-05-20: multi-currency: store minor units + currency code, convert at display
+- 2026-05-21: transfer between accounts should not count as spend
