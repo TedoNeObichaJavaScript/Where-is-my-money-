@@ -403,3 +403,4 @@
 - 2026-05-21: budget rollover: carry unspent vs reset monthly
 - 2026-05-21: category color palette — needs contrast pass in dark mode
 - 2026-05-21: multi-currency: store minor units + currency code, convert at display
+- 2026-05-21: search: debounce input, index on tx note
