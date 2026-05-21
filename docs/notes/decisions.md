@@ -397,3 +397,4 @@
 - 2026-05-20: multi-currency: store minor units + currency code, convert at display
 - 2026-05-21: transfer between accounts should not count as spend
 - 2026-05-21: backup format versioning so old exports stay importable
+- 2026-05-21: soft delete with undo snackbar instead of confirm dialog
