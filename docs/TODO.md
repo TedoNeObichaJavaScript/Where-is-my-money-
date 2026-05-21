@@ -397,3 +397,4 @@
 - 2026-05-20: currency symbol placement per locale (lv after amount)
 - 2026-05-20: icon set audit — replace mismatched category glyphs
 - 2026-05-21: budget rollover: carry unspent vs reset monthly
+- 2026-05-21: pin fallback when biometrics unenrolled
