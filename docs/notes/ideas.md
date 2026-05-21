@@ -399,3 +399,4 @@
 - 2026-05-20: chart lib comparison: victory-native vs react-native-svg hand-rolled
 - 2026-05-20: FlatList perf on long tx history, getItemLayout candidate
 - 2026-05-20: SQLite migration strategy before adding budgets table
+- 2026-05-21: settings screen grouping — appearance / data / security
