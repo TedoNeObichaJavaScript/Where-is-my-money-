@@ -414,3 +414,4 @@
 - 2026-05-23: receipt photo attach — storage path + cleanup on tx delete
 - 2026-05-23: chart lib comparison: victory-native vs react-native-svg hand-rolled
 - 2026-05-23: transfer between accounts should not count as spend
+- 2026-05-23: CSV export column order + separator for BG Excel locale
