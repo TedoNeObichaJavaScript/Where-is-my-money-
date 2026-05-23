@@ -412,3 +412,4 @@
 - 2026-05-23: receipt photo attach — storage path + cleanup on tx delete
 - 2026-05-23: accessibility pass: touch targets under 44dp on filter chips
 - 2026-05-23: receipt photo attach — storage path + cleanup on tx delete
+- 2026-05-23: chart lib comparison: victory-native vs react-native-svg hand-rolled
