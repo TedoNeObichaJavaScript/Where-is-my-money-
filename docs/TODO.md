@@ -401,3 +401,4 @@
 - 2026-05-21: analytics custom range presets: 7d / 30d / MTD / YTD
 - 2026-05-22: analytics custom range presets: 7d / 30d / MTD / YTD
 - 2026-05-22: transfer between accounts should not count as spend
+- 2026-05-23: multi-currency: store minor units + currency code, convert at display
