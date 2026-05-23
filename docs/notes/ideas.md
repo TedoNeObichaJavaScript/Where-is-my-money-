@@ -407,3 +407,4 @@
 - 2026-05-22: chart lib comparison: victory-native vs react-native-svg hand-rolled
 - 2026-05-23: biometric lock on app resume, grace period 30s
 - 2026-05-23: budget rollover: carry unspent vs reset monthly
+- 2026-05-23: biometric lock on app resume, grace period 30s
