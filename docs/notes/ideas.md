@@ -409,3 +409,4 @@
 - 2026-05-23: budget rollover: carry unspent vs reset monthly
 - 2026-05-23: biometric lock on app resume, grace period 30s
 - 2026-05-23: multi-currency: store minor units + currency code, convert at display
+- 2026-05-23: receipt photo attach — storage path + cleanup on tx delete
