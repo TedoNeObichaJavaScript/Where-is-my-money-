@@ -399,3 +399,4 @@
 - 2026-05-21: backup format versioning so old exports stay importable
 - 2026-05-21: soft delete with undo snackbar instead of confirm dialog
 - 2026-05-22: widget idea: today spend glance on home screen
+- 2026-05-25: settings screen grouping — appearance / data / security
