@@ -416,3 +416,4 @@
 - 2026-05-23: transfer between accounts should not count as spend
 - 2026-05-23: CSV export column order + separator for BG Excel locale
 - 2026-05-25: FlatList perf on long tx history, getItemLayout candidate
+- 2026-05-26: empty states for analytics when < 5 tx
