@@ -401,3 +401,4 @@
 - 2026-05-22: widget idea: today spend glance on home screen
 - 2026-05-25: settings screen grouping — appearance / data / security
 - 2026-05-25: budget alerts at 80% and 100%, local notifications only
+- 2026-05-26: sort options: date, amount, category — persist choice
