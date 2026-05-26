@@ -405,3 +405,4 @@
 - 2026-05-23: chart lib comparison: victory-native vs react-native-svg hand-rolled
 - 2026-05-23: budget rollover: carry unspent vs reset monthly
 - 2026-05-23: pin fallback when biometrics unenrolled
+- 2026-05-26: accessibility pass: touch targets under 44dp on filter chips
