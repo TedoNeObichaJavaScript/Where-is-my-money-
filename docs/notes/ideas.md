@@ -417,3 +417,4 @@
 - 2026-05-23: CSV export column order + separator for BG Excel locale
 - 2026-05-25: FlatList perf on long tx history, getItemLayout candidate
 - 2026-05-26: empty states for analytics when < 5 tx
+- 2026-05-26: haptics on tx save — light impact only
