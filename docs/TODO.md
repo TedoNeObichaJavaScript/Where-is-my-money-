@@ -409,3 +409,4 @@
 - 2026-05-27: receipt photo attach — storage path + cleanup on tx delete
 - 2026-05-27: tx tags vs single category — decided: single category + note
 - 2026-05-27: onboarding flow: skip vs guided first account setup
+- 2026-05-27: amount input keypad: custom vs system numeric
