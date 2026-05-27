@@ -423,3 +423,4 @@
 - 2026-05-27: FlatList perf on long tx history, getItemLayout candidate
 - 2026-05-27: category color palette — needs contrast pass in dark mode
 - 2026-05-27: budget alerts at 80% and 100%, local notifications only
+- 2026-05-27: CSV export column order + separator for BG Excel locale
