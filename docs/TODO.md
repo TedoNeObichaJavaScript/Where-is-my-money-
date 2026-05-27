@@ -408,3 +408,4 @@
 - 2026-05-26: accessibility pass: touch targets under 44dp on filter chips
 - 2026-05-27: receipt photo attach — storage path + cleanup on tx delete
 - 2026-05-27: tx tags vs single category — decided: single category + note
+- 2026-05-27: onboarding flow: skip vs guided first account setup
