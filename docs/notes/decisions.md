@@ -402,3 +402,4 @@
 - 2026-05-25: settings screen grouping — appearance / data / security
 - 2026-05-25: budget alerts at 80% and 100%, local notifications only
 - 2026-05-26: sort options: date, amount, category — persist choice
+- 2026-05-27: settings screen grouping — appearance / data / security
