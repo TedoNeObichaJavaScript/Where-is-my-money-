@@ -420,3 +420,4 @@
 - 2026-05-26: haptics on tx save — light impact only
 - 2026-05-27: settings screen grouping — appearance / data / security
 - 2026-05-27: CSV export column order + separator for BG Excel locale
+- 2026-05-27: FlatList perf on long tx history, getItemLayout candidate
