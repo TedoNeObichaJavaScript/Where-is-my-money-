@@ -413,3 +413,4 @@
 - 2026-05-27: biometric lock on app resume, grace period 30s
 - 2026-05-28: transfer between accounts should not count as spend
 - 2026-05-28: sort options: date, amount, category — persist choice
+- 2026-05-28: chart lib comparison: victory-native vs react-native-svg hand-rolled
