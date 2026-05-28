@@ -411,3 +411,4 @@
 - 2026-05-27: onboarding flow: skip vs guided first account setup
 - 2026-05-27: amount input keypad: custom vs system numeric
 - 2026-05-27: biometric lock on app resume, grace period 30s
+- 2026-05-28: transfer between accounts should not count as spend
