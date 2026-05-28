@@ -407,3 +407,4 @@
 - 2026-05-27: backup format versioning so old exports stay importable
 - 2026-05-27: category color palette — needs contrast pass in dark mode
 - 2026-05-27: haptics on tx save — light impact only
+- 2026-05-28: app icon variants — dark bg vs light bg test on launcher
