@@ -412,3 +412,4 @@
 - 2026-05-29: currency symbol placement per locale (lv after amount)
 - 2026-05-29: recurring tx edge cases (DST, month-end 29/30/31)
 - 2026-05-29: SQLite migration strategy before adding budgets table
+- 2026-05-29: receipt photo attach — storage path + cleanup on tx delete
