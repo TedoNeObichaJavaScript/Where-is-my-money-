@@ -409,3 +409,4 @@
 - 2026-05-27: haptics on tx save — light impact only
 - 2026-05-28: app icon variants — dark bg vs light bg test on launcher
 - 2026-05-28: chart lib comparison: victory-native vs react-native-svg hand-rolled
+- 2026-05-29: currency symbol placement per locale (lv after amount)
