@@ -425,3 +425,4 @@
 - 2026-05-27: budget alerts at 80% and 100%, local notifications only
 - 2026-05-27: CSV export column order + separator for BG Excel locale
 - 2026-05-28: budget alerts at 80% and 100%, local notifications only
+- 2026-05-29: onboarding flow: skip vs guided first account setup
