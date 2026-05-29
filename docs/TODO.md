@@ -417,3 +417,4 @@
 - 2026-05-29: backup format versioning so old exports stay importable
 - 2026-05-29: transfer between accounts should not count as spend
 - 2026-05-29: currency symbol placement per locale (lv after amount)
+- 2026-05-29: budget alerts at 80% and 100%, local notifications only
