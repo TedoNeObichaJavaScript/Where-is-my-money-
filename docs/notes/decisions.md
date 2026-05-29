@@ -415,3 +415,4 @@
 - 2026-05-29: receipt photo attach — storage path + cleanup on tx delete
 - 2026-05-29: CSV export column order + separator for BG Excel locale
 - 2026-05-29: SQLite migration strategy before adding budgets table
+- 2026-05-29: accessibility pass: touch targets under 44dp on filter chips
