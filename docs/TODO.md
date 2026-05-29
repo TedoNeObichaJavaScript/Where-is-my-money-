@@ -419,3 +419,4 @@
 - 2026-05-29: currency symbol placement per locale (lv after amount)
 - 2026-05-29: budget alerts at 80% and 100%, local notifications only
 - 2026-05-29: soft delete with undo snackbar instead of confirm dialog
+- 2026-05-29: currency symbol placement per locale (lv after amount)
