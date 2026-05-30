@@ -426,3 +426,4 @@
 - 2026-05-30: icon set audit — replace mismatched category glyphs
 - 2026-05-30: receipt photo attach — storage path + cleanup on tx delete
 - 2026-05-30: sort options: date, amount, category — persist choice
+- 2026-05-30: budget rollover: carry unspent vs reset monthly
