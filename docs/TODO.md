@@ -425,3 +425,4 @@
 - 2026-05-30: transfer between accounts should not count as spend
 - 2026-05-30: icon set audit — replace mismatched category glyphs
 - 2026-05-30: receipt photo attach — storage path + cleanup on tx delete
+- 2026-05-30: sort options: date, amount, category — persist choice
