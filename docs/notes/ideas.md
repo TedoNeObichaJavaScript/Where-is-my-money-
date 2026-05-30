@@ -428,3 +428,4 @@
 - 2026-05-29: onboarding flow: skip vs guided first account setup
 - 2026-05-29: currency symbol placement per locale (lv after amount)
 - 2026-05-30: empty states for analytics when < 5 tx
+- 2026-05-30: onboarding flow: skip vs guided first account setup
