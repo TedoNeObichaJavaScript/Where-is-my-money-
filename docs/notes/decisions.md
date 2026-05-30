@@ -419,3 +419,4 @@
 - 2026-05-30: budget rollover: carry unspent vs reset monthly
 - 2026-05-30: soft delete with undo snackbar instead of confirm dialog
 - 2026-05-30: CSV export column order + separator for BG Excel locale
+- 2026-05-30: multi-currency: store minor units + currency code, convert at display
