@@ -424,3 +424,4 @@
 - 2026-05-29: soft delete with undo snackbar instead of confirm dialog
 - 2026-05-30: transfer between accounts should not count as spend
 - 2026-05-30: icon set audit — replace mismatched category glyphs
+- 2026-05-30: receipt photo attach — storage path + cleanup on tx delete
