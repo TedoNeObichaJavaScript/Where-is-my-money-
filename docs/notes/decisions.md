@@ -417,3 +417,4 @@
 - 2026-05-29: SQLite migration strategy before adding budgets table
 - 2026-05-29: accessibility pass: touch targets under 44dp on filter chips
 - 2026-05-30: budget rollover: carry unspent vs reset monthly
+- 2026-05-30: soft delete with undo snackbar instead of confirm dialog
