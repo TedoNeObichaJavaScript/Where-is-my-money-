@@ -430,3 +430,4 @@
 - 2026-05-30: empty states for analytics when < 5 tx
 - 2026-05-30: onboarding flow: skip vs guided first account setup
 - 2026-05-30: amount input keypad: custom vs system numeric
+- 2026-05-31: recurring tx edge cases (DST, month-end 29/30/31)
