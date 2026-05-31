@@ -432,3 +432,4 @@
 - 2026-05-30: amount input keypad: custom vs system numeric
 - 2026-05-31: recurring tx edge cases (DST, month-end 29/30/31)
 - 2026-05-31: widget idea: today spend glance on home screen
+- 2026-05-31: accessibility pass: touch targets under 44dp on filter chips
