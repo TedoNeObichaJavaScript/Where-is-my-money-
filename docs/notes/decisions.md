@@ -422,3 +422,4 @@
 - 2026-05-30: multi-currency: store minor units + currency code, convert at display
 - 2026-05-30: CSV export column order + separator for BG Excel locale
 - 2026-05-30: receipt photo attach — storage path + cleanup on tx delete
+- 2026-06-02: widget idea: today spend glance on home screen
