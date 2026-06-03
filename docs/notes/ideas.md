@@ -436,3 +436,4 @@
 - 2026-06-01: backup format versioning so old exports stay importable
 - 2026-06-01: app icon variants — dark bg vs light bg test on launcher
 - 2026-06-03: currency symbol placement per locale (lv after amount)
+- 2026-06-03: settings screen grouping — appearance / data / security
