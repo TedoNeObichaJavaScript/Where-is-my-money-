@@ -439,3 +439,4 @@
 - 2026-06-03: settings screen grouping — appearance / data / security
 - 2026-06-03: soft delete with undo snackbar instead of confirm dialog
 - 2026-06-03: FlatList perf on long tx history, getItemLayout candidate
+- 2026-06-03: FlatList perf on long tx history, getItemLayout candidate
