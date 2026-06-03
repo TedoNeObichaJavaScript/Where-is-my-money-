@@ -438,3 +438,4 @@
 - 2026-06-03: currency symbol placement per locale (lv after amount)
 - 2026-06-03: settings screen grouping — appearance / data / security
 - 2026-06-03: soft delete with undo snackbar instead of confirm dialog
+- 2026-06-03: FlatList perf on long tx history, getItemLayout candidate
