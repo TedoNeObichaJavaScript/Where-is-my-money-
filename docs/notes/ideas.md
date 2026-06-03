@@ -437,3 +437,4 @@
 - 2026-06-01: app icon variants — dark bg vs light bg test on launcher
 - 2026-06-03: currency symbol placement per locale (lv after amount)
 - 2026-06-03: settings screen grouping — appearance / data / security
+- 2026-06-03: soft delete with undo snackbar instead of confirm dialog
