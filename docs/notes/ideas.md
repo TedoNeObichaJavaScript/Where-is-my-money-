@@ -440,3 +440,4 @@
 - 2026-06-03: soft delete with undo snackbar instead of confirm dialog
 - 2026-06-03: FlatList perf on long tx history, getItemLayout candidate
 - 2026-06-03: FlatList perf on long tx history, getItemLayout candidate
+- 2026-06-03: category color palette — needs contrast pass in dark mode
