@@ -446,3 +446,4 @@
 - 2026-06-04: recurring tx edge cases (DST, month-end 29/30/31)
 - 2026-06-04: receipt photo attach — storage path + cleanup on tx delete
 - 2026-06-04: budget rollover: carry unspent vs reset monthly
+- 2026-06-04: soft delete with undo snackbar instead of confirm dialog
