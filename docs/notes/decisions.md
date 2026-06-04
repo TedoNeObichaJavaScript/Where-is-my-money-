@@ -425,3 +425,4 @@
 - 2026-06-02: widget idea: today spend glance on home screen
 - 2026-06-04: icon set audit — replace mismatched category glyphs
 - 2026-06-04: recurring tx edge cases (DST, month-end 29/30/31)
+- 2026-06-04: category color palette — needs contrast pass in dark mode
