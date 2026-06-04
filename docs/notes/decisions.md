@@ -428,3 +428,4 @@
 - 2026-06-04: category color palette — needs contrast pass in dark mode
 - 2026-06-04: SQLite migration strategy before adding budgets table
 - 2026-06-04: chart lib comparison: victory-native vs react-native-svg hand-rolled
+- 2026-06-04: recurring tx edge cases (DST, month-end 29/30/31)
