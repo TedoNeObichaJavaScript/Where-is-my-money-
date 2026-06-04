@@ -443,3 +443,4 @@
 - 2026-06-03: category color palette — needs contrast pass in dark mode
 - 2026-06-04: tx tags vs single category — decided: single category + note
 - 2026-06-04: analytics custom range presets: 7d / 30d / MTD / YTD
+- 2026-06-04: recurring tx edge cases (DST, month-end 29/30/31)
