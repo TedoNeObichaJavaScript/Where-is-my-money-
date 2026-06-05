@@ -431,3 +431,4 @@
 - 2026-06-04: budget rollover: carry unspent vs reset monthly
 - 2026-06-04: currency symbol placement per locale (lv after amount)
 - 2026-06-05: accessibility pass: touch targets under 44dp on filter chips
+- 2026-06-05: multi-currency: store minor units + currency code, convert at display
