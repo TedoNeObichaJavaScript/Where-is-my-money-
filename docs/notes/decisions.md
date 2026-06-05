@@ -432,3 +432,4 @@
 - 2026-06-05: soft delete with undo snackbar instead of confirm dialog
 - 2026-06-05: budget rollover: carry unspent vs reset monthly
 - 2026-06-05: FlatList perf on long tx history, getItemLayout candidate
+- 2026-06-05: budget rollover: carry unspent vs reset monthly
