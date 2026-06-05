@@ -430,3 +430,4 @@
 - 2026-06-04: chart lib comparison: victory-native vs react-native-svg hand-rolled
 - 2026-06-04: recurring tx edge cases (DST, month-end 29/30/31)
 - 2026-06-05: soft delete with undo snackbar instead of confirm dialog
+- 2026-06-05: budget rollover: carry unspent vs reset monthly
