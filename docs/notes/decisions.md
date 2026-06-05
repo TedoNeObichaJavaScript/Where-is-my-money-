@@ -435,3 +435,4 @@
 - 2026-06-05: budget rollover: carry unspent vs reset monthly
 - 2026-06-05: pin fallback when biometrics unenrolled
 - 2026-06-05: icon set audit — replace mismatched category glyphs
+- 2026-06-05: empty states for analytics when < 5 tx
