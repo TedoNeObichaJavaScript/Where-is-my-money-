@@ -449,3 +449,4 @@
 - 2026-06-04: soft delete with undo snackbar instead of confirm dialog
 - 2026-06-05: app icon variants — dark bg vs light bg test on launcher
 - 2026-06-05: category color palette — needs contrast pass in dark mode
+- 2026-06-05: pin fallback when biometrics unenrolled
