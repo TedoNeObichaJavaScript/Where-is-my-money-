@@ -433,3 +433,4 @@
 - 2026-06-05: accessibility pass: touch targets under 44dp on filter chips
 - 2026-06-05: multi-currency: store minor units + currency code, convert at display
 - 2026-06-05: SQLite migration strategy before adding budgets table
+- 2026-06-06: budget alerts at 80% and 100%, local notifications only
