@@ -455,3 +455,4 @@
 - 2026-06-07: CSV export column order + separator for BG Excel locale
 - 2026-06-07: empty states for analytics when < 5 tx
 - 2026-06-07: currency symbol placement per locale (lv after amount)
+- 2026-06-07: backup format versioning so old exports stay importable
