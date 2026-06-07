@@ -438,3 +438,4 @@
 - 2026-06-05: empty states for analytics when < 5 tx
 - 2026-06-05: transfer between accounts should not count as spend
 - 2026-06-06: chart lib comparison: victory-native vs react-native-svg hand-rolled
+- 2026-06-07: multi-currency: store minor units + currency code, convert at display
