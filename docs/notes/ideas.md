@@ -457,3 +457,4 @@
 - 2026-06-07: currency symbol placement per locale (lv after amount)
 - 2026-06-07: backup format versioning so old exports stay importable
 - 2026-06-07: chart lib comparison: victory-native vs react-native-svg hand-rolled
+- 2026-06-07: empty states for analytics when < 5 tx
