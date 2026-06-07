@@ -439,3 +439,4 @@
 - 2026-06-07: chart lib comparison: victory-native vs react-native-svg hand-rolled
 - 2026-06-07: FlatList perf on long tx history, getItemLayout candidate
 - 2026-06-07: sort options: date, amount, category — persist choice
+- 2026-06-07: CSV export column order + separator for BG Excel locale
