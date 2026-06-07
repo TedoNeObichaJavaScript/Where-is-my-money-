@@ -441,3 +441,4 @@
 - 2026-06-07: multi-currency: store minor units + currency code, convert at display
 - 2026-06-07: tx tags vs single category — decided: single category + note
 - 2026-06-07: widget idea: today spend glance on home screen
+- 2026-06-07: FlatList perf on long tx history, getItemLayout candidate
