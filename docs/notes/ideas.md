@@ -459,3 +459,4 @@
 - 2026-06-07: chart lib comparison: victory-native vs react-native-svg hand-rolled
 - 2026-06-07: empty states for analytics when < 5 tx
 - 2026-06-07: widget idea: today spend glance on home screen
+- 2026-06-07: haptics on tx save — light impact only
