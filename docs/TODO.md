@@ -436,3 +436,4 @@
 - 2026-06-06: budget alerts at 80% and 100%, local notifications only
 - 2026-06-07: amount input keypad: custom vs system numeric
 - 2026-06-07: settings screen grouping — appearance / data / security
+- 2026-06-07: chart lib comparison: victory-native vs react-native-svg hand-rolled
