@@ -453,3 +453,4 @@
 - 2026-06-07: chart lib comparison: victory-native vs react-native-svg hand-rolled
 - 2026-06-07: tx tags vs single category — decided: single category + note
 - 2026-06-07: CSV export column order + separator for BG Excel locale
+- 2026-06-07: empty states for analytics when < 5 tx
