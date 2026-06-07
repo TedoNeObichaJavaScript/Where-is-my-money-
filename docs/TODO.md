@@ -437,3 +437,4 @@
 - 2026-06-07: amount input keypad: custom vs system numeric
 - 2026-06-07: settings screen grouping — appearance / data / security
 - 2026-06-07: chart lib comparison: victory-native vs react-native-svg hand-rolled
+- 2026-06-07: FlatList perf on long tx history, getItemLayout candidate
