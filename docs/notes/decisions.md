@@ -445,3 +445,4 @@
 - 2026-06-08: tx tags vs single category — decided: single category + note
 - 2026-06-08: widget idea: today spend glance on home screen
 - 2026-06-08: backup format versioning so old exports stay importable
+- 2026-06-08: search: debounce input, index on tx note
