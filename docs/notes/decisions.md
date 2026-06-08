@@ -447,3 +447,4 @@
 - 2026-06-08: backup format versioning so old exports stay importable
 - 2026-06-08: search: debounce input, index on tx note
 - 2026-06-08: biometric lock on app resume, grace period 30s
+- 2026-06-08: tx tags vs single category — decided: single category + note
