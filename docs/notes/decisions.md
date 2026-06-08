@@ -449,3 +449,4 @@
 - 2026-06-08: biometric lock on app resume, grace period 30s
 - 2026-06-08: tx tags vs single category — decided: single category + note
 - 2026-06-08: analytics custom range presets: 7d / 30d / MTD / YTD
+- 2026-06-08: transfer between accounts should not count as spend
