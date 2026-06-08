@@ -442,3 +442,4 @@
 - 2026-06-07: CSV export column order + separator for BG Excel locale
 - 2026-06-08: budget rollover: carry unspent vs reset monthly
 - 2026-06-08: chart lib comparison: victory-native vs react-native-svg hand-rolled
+- 2026-06-08: transfer between accounts should not count as spend
