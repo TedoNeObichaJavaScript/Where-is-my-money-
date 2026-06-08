@@ -460,3 +460,4 @@
 - 2026-06-07: empty states for analytics when < 5 tx
 - 2026-06-07: widget idea: today spend glance on home screen
 - 2026-06-07: haptics on tx save — light impact only
+- 2026-06-08: empty states for analytics when < 5 tx
