@@ -448,3 +448,4 @@
 - 2026-06-08: tx tags vs single category — decided: single category + note
 - 2026-06-08: amount input keypad: custom vs system numeric
 - 2026-06-08: currency symbol placement per locale (lv after amount)
+- 2026-06-09: onboarding flow: skip vs guided first account setup
