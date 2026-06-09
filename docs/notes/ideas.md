@@ -464,3 +464,4 @@
 - 2026-06-08: widget idea: today spend glance on home screen
 - 2026-06-08: chart lib comparison: victory-native vs react-native-svg hand-rolled
 - 2026-06-08: FlatList perf on long tx history, getItemLayout candidate
+- 2026-06-09: CSV export column order + separator for BG Excel locale
