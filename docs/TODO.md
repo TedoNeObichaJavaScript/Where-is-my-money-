@@ -450,3 +450,4 @@
 - 2026-06-08: currency symbol placement per locale (lv after amount)
 - 2026-06-09: onboarding flow: skip vs guided first account setup
 - 2026-06-10: budget rollover: carry unspent vs reset monthly
+- 2026-06-11: CSV export column order + separator for BG Excel locale
