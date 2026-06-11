@@ -451,3 +451,4 @@
 - 2026-06-08: analytics custom range presets: 7d / 30d / MTD / YTD
 - 2026-06-08: transfer between accounts should not count as spend
 - 2026-06-08: category color palette — needs contrast pass in dark mode
+- 2026-06-11: multi-currency: store minor units + currency code, convert at display
