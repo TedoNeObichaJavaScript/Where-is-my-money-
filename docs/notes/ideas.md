@@ -467,3 +467,4 @@
 - 2026-06-09: CSV export column order + separator for BG Excel locale
 - 2026-06-11: settings screen grouping — appearance / data / security
 - 2026-06-11: biometric lock on app resume, grace period 30s
+- 2026-06-12: search: debounce input, index on tx note
