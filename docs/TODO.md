@@ -455,3 +455,4 @@
 - 2026-06-12: amount input keypad: custom vs system numeric
 - 2026-06-12: search: debounce input, index on tx note
 - 2026-06-12: currency symbol placement per locale (lv after amount)
+- 2026-06-12: biometric lock on app resume, grace period 30s
