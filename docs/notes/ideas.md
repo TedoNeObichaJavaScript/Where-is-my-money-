@@ -470,3 +470,4 @@
 - 2026-06-12: search: debounce input, index on tx note
 - 2026-06-12: CSV export column order + separator for BG Excel locale
 - 2026-06-12: CSV export column order + separator for BG Excel locale
+- 2026-06-12: settings screen grouping — appearance / data / security
