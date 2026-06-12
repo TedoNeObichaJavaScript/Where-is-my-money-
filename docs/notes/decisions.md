@@ -454,3 +454,4 @@
 - 2026-06-11: multi-currency: store minor units + currency code, convert at display
 - 2026-06-11: haptics on tx save — light impact only
 - 2026-06-12: tx tags vs single category — decided: single category + note
+- 2026-06-12: search: debounce input, index on tx note
