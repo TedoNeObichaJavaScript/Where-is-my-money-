@@ -472,3 +472,4 @@
 - 2026-06-12: CSV export column order + separator for BG Excel locale
 - 2026-06-12: settings screen grouping — appearance / data / security
 - 2026-06-12: multi-currency: store minor units + currency code, convert at display
+- 2026-06-12: app icon variants — dark bg vs light bg test on launcher
