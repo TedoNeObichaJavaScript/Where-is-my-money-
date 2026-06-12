@@ -451,3 +451,4 @@
 - 2026-06-09: onboarding flow: skip vs guided first account setup
 - 2026-06-10: budget rollover: carry unspent vs reset monthly
 - 2026-06-11: CSV export column order + separator for BG Excel locale
+- 2026-06-12: tx tags vs single category — decided: single category + note
