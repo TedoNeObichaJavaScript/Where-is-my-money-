@@ -456,3 +456,4 @@
 - 2026-06-12: tx tags vs single category — decided: single category + note
 - 2026-06-12: search: debounce input, index on tx note
 - 2026-06-12: pin fallback when biometrics unenrolled
+- 2026-06-12: chart lib comparison: victory-native vs react-native-svg hand-rolled
