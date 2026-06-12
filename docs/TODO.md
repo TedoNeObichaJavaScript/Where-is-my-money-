@@ -453,3 +453,4 @@
 - 2026-06-11: CSV export column order + separator for BG Excel locale
 - 2026-06-12: tx tags vs single category — decided: single category + note
 - 2026-06-12: amount input keypad: custom vs system numeric
+- 2026-06-12: search: debounce input, index on tx note
