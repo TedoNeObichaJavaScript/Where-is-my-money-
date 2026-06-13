@@ -458,3 +458,4 @@
 - 2026-06-12: pin fallback when biometrics unenrolled
 - 2026-06-12: chart lib comparison: victory-native vs react-native-svg hand-rolled
 - 2026-06-13: empty states for analytics when < 5 tx
+- 2026-06-13: monthly summary notification copy drafts
