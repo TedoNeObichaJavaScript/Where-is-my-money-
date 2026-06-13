@@ -459,3 +459,4 @@
 - 2026-06-12: chart lib comparison: victory-native vs react-native-svg hand-rolled
 - 2026-06-13: empty states for analytics when < 5 tx
 - 2026-06-13: monthly summary notification copy drafts
+- 2026-06-13: multi-currency: store minor units + currency code, convert at display
