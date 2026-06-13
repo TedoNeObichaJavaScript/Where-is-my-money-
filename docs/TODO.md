@@ -456,3 +456,4 @@
 - 2026-06-12: search: debounce input, index on tx note
 - 2026-06-12: currency symbol placement per locale (lv after amount)
 - 2026-06-12: biometric lock on app resume, grace period 30s
+- 2026-06-13: haptics on tx save — light impact only
