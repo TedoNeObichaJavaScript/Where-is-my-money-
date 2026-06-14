@@ -475,3 +475,4 @@
 - 2026-06-12: app icon variants — dark bg vs light bg test on launcher
 - 2026-06-13: multi-currency: store minor units + currency code, convert at display
 - 2026-06-13: analytics custom range presets: 7d / 30d / MTD / YTD
+- 2026-06-14: backup format versioning so old exports stay importable
