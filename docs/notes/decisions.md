@@ -464,3 +464,4 @@
 - 2026-06-14: haptics on tx save — light impact only
 - 2026-06-14: FlatList perf on long tx history, getItemLayout candidate
 - 2026-06-14: tx tags vs single category — decided: single category + note
+- 2026-06-14: amount input keypad: custom vs system numeric
