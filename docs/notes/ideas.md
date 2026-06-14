@@ -476,3 +476,4 @@
 - 2026-06-13: multi-currency: store minor units + currency code, convert at display
 - 2026-06-13: analytics custom range presets: 7d / 30d / MTD / YTD
 - 2026-06-14: backup format versioning so old exports stay importable
+- 2026-06-14: amount input keypad: custom vs system numeric
