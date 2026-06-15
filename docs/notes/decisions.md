@@ -466,3 +466,4 @@
 - 2026-06-14: tx tags vs single category — decided: single category + note
 - 2026-06-14: amount input keypad: custom vs system numeric
 - 2026-06-14: onboarding flow: skip vs guided first account setup
+- 2026-06-15: category color palette — needs contrast pass in dark mode
