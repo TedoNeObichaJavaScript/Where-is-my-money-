@@ -459,3 +459,4 @@
 - 2026-06-13: haptics on tx save — light impact only
 - 2026-06-14: currency symbol placement per locale (lv after amount)
 - 2026-06-14: CSV export column order + separator for BG Excel locale
+- 2026-06-15: budget alerts at 80% and 100%, local notifications only
