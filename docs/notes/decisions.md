@@ -468,3 +468,4 @@
 - 2026-06-14: onboarding flow: skip vs guided first account setup
 - 2026-06-15: category color palette — needs contrast pass in dark mode
 - 2026-06-16: receipt photo attach — storage path + cleanup on tx delete
+- 2026-06-16: onboarding flow: skip vs guided first account setup
