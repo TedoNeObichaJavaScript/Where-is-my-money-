@@ -479,3 +479,4 @@
 - 2026-06-14: amount input keypad: custom vs system numeric
 - 2026-06-15: chart lib comparison: victory-native vs react-native-svg hand-rolled
 - 2026-06-16: multi-currency: store minor units + currency code, convert at display
+- 2026-06-16: monthly summary notification copy drafts
