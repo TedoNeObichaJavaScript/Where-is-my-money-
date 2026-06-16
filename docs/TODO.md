@@ -462,3 +462,4 @@
 - 2026-06-15: budget alerts at 80% and 100%, local notifications only
 - 2026-06-15: accessibility pass: touch targets under 44dp on filter chips
 - 2026-06-15: tx tags vs single category — decided: single category + note
+- 2026-06-16: transfer between accounts should not count as spend
