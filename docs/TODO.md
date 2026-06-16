@@ -463,3 +463,4 @@
 - 2026-06-15: accessibility pass: touch targets under 44dp on filter chips
 - 2026-06-15: tx tags vs single category — decided: single category + note
 - 2026-06-16: transfer between accounts should not count as spend
+- 2026-06-16: app icon variants — dark bg vs light bg test on launcher
