@@ -472,3 +472,4 @@
 - 2026-06-16: currency symbol placement per locale (lv after amount)
 - 2026-06-17: icon set audit — replace mismatched category glyphs
 - 2026-06-17: chart lib comparison: victory-native vs react-native-svg hand-rolled
+- 2026-06-17: biometric lock on app resume, grace period 30s
