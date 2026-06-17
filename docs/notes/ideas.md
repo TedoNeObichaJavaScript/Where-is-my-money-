@@ -483,3 +483,4 @@
 - 2026-06-17: settings screen grouping — appearance / data / security
 - 2026-06-17: recurring tx edge cases (DST, month-end 29/30/31)
 - 2026-06-17: soft delete with undo snackbar instead of confirm dialog
+- 2026-06-17: search: debounce input, index on tx note
