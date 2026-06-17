@@ -464,3 +464,4 @@
 - 2026-06-15: tx tags vs single category — decided: single category + note
 - 2026-06-16: transfer between accounts should not count as spend
 - 2026-06-16: app icon variants — dark bg vs light bg test on launcher
+- 2026-06-17: haptics on tx save — light impact only
