@@ -470,3 +470,4 @@
 - 2026-06-16: receipt photo attach — storage path + cleanup on tx delete
 - 2026-06-16: onboarding flow: skip vs guided first account setup
 - 2026-06-16: currency symbol placement per locale (lv after amount)
+- 2026-06-17: icon set audit — replace mismatched category glyphs
