@@ -481,3 +481,4 @@
 - 2026-06-16: multi-currency: store minor units + currency code, convert at display
 - 2026-06-16: monthly summary notification copy drafts
 - 2026-06-17: settings screen grouping — appearance / data / security
+- 2026-06-17: recurring tx edge cases (DST, month-end 29/30/31)
