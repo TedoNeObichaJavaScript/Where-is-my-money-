@@ -487,3 +487,4 @@
 - 2026-06-17: widget idea: today spend glance on home screen
 - 2026-06-18: chart lib comparison: victory-native vs react-native-svg hand-rolled
 - 2026-06-18: tx tags vs single category — decided: single category + note
+- 2026-06-18: transfer between accounts should not count as spend
