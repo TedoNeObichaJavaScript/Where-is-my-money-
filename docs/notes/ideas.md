@@ -486,3 +486,4 @@
 - 2026-06-17: search: debounce input, index on tx note
 - 2026-06-17: widget idea: today spend glance on home screen
 - 2026-06-18: chart lib comparison: victory-native vs react-native-svg hand-rolled
+- 2026-06-18: tx tags vs single category — decided: single category + note
