@@ -475,3 +475,4 @@
 - 2026-06-17: biometric lock on app resume, grace period 30s
 - 2026-06-18: FlatList perf on long tx history, getItemLayout candidate
 - 2026-06-18: CSV export column order + separator for BG Excel locale
+- 2026-06-18: monthly summary notification copy drafts
