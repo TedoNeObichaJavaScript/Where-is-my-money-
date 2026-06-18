@@ -473,3 +473,4 @@
 - 2026-06-17: icon set audit — replace mismatched category glyphs
 - 2026-06-17: chart lib comparison: victory-native vs react-native-svg hand-rolled
 - 2026-06-17: biometric lock on app resume, grace period 30s
+- 2026-06-18: FlatList perf on long tx history, getItemLayout candidate
