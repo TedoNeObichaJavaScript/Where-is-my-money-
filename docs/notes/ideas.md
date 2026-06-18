@@ -485,3 +485,4 @@
 - 2026-06-17: soft delete with undo snackbar instead of confirm dialog
 - 2026-06-17: search: debounce input, index on tx note
 - 2026-06-17: widget idea: today spend glance on home screen
+- 2026-06-18: chart lib comparison: victory-native vs react-native-svg hand-rolled
