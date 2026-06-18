@@ -468,3 +468,4 @@
 - 2026-06-17: SQLite migration strategy before adding budgets table
 - 2026-06-17: app icon variants — dark bg vs light bg test on launcher
 - 2026-06-18: pin fallback when biometrics unenrolled
+- 2026-06-18: chart lib comparison: victory-native vs react-native-svg hand-rolled
