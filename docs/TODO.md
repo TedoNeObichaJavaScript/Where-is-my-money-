@@ -475,3 +475,4 @@
 - 2026-06-19: app icon variants — dark bg vs light bg test on launcher
 - 2026-06-19: receipt photo attach — storage path + cleanup on tx delete
 - 2026-06-19: chart lib comparison: victory-native vs react-native-svg hand-rolled
+- 2026-06-19: budget rollover: carry unspent vs reset monthly
