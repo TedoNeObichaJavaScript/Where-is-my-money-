@@ -490,3 +490,4 @@
 - 2026-06-18: transfer between accounts should not count as spend
 - 2026-06-18: amount input keypad: custom vs system numeric
 - 2026-06-18: tx tags vs single category — decided: single category + note
+- 2026-06-19: SQLite migration strategy before adding budgets table
