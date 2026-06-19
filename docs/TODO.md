@@ -478,3 +478,4 @@
 - 2026-06-19: budget rollover: carry unspent vs reset monthly
 - 2026-06-19: backup format versioning so old exports stay importable
 - 2026-06-19: transfer between accounts should not count as spend
+- 2026-06-19: onboarding flow: skip vs guided first account setup
