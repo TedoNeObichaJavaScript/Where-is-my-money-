@@ -472,3 +472,4 @@
 - 2026-06-18: receipt photo attach — storage path + cleanup on tx delete
 - 2026-06-18: biometric lock on app resume, grace period 30s
 - 2026-06-18: icon set audit — replace mismatched category glyphs
+- 2026-06-19: app icon variants — dark bg vs light bg test on launcher
