@@ -481,3 +481,4 @@
 - 2026-06-19: onboarding flow: skip vs guided first account setup
 - 2026-06-19: sort options: date, amount, category — persist choice
 - 2026-06-19: tx tags vs single category — decided: single category + note
+- 2026-06-19: category color palette — needs contrast pass in dark mode
