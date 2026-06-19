@@ -492,3 +492,4 @@
 - 2026-06-18: tx tags vs single category — decided: single category + note
 - 2026-06-19: SQLite migration strategy before adding budgets table
 - 2026-06-19: chart lib comparison: victory-native vs react-native-svg hand-rolled
+- 2026-06-19: transfer between accounts should not count as spend
