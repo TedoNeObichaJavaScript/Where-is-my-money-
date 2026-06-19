@@ -477,3 +477,4 @@
 - 2026-06-18: CSV export column order + separator for BG Excel locale
 - 2026-06-18: monthly summary notification copy drafts
 - 2026-06-18: category color palette — needs contrast pass in dark mode
+- 2026-06-19: budget rollover: carry unspent vs reset monthly
