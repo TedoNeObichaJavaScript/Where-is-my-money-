@@ -496,3 +496,4 @@
 - 2026-06-19: backup format versioning so old exports stay importable
 - 2026-06-19: pin fallback when biometrics unenrolled
 - 2026-06-22: SQLite migration strategy before adding budgets table
+- 2026-06-22: FlatList perf on long tx history, getItemLayout candidate
