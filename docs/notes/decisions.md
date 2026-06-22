@@ -483,3 +483,4 @@
 - 2026-06-22: pin fallback when biometrics unenrolled
 - 2026-06-22: onboarding flow: skip vs guided first account setup
 - 2026-06-22: sort options: date, amount, category — persist choice
+- 2026-06-22: currency symbol placement per locale (lv after amount)
