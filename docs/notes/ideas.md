@@ -497,3 +497,4 @@
 - 2026-06-19: pin fallback when biometrics unenrolled
 - 2026-06-22: SQLite migration strategy before adding budgets table
 - 2026-06-22: FlatList perf on long tx history, getItemLayout candidate
+- 2026-06-22: multi-currency: store minor units + currency code, convert at display
