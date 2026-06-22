@@ -483,3 +483,4 @@
 - 2026-06-19: tx tags vs single category — decided: single category + note
 - 2026-06-19: category color palette — needs contrast pass in dark mode
 - 2026-06-22: empty states for analytics when < 5 tx
+- 2026-06-22: FlatList perf on long tx history, getItemLayout candidate
