@@ -499,3 +499,4 @@
 - 2026-06-22: FlatList perf on long tx history, getItemLayout candidate
 - 2026-06-22: multi-currency: store minor units + currency code, convert at display
 - 2026-06-22: search: debounce input, index on tx note
+- 2026-06-22: search: debounce input, index on tx note
