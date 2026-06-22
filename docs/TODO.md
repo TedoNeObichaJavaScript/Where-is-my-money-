@@ -486,3 +486,4 @@
 - 2026-06-22: FlatList perf on long tx history, getItemLayout candidate
 - 2026-06-22: analytics custom range presets: 7d / 30d / MTD / YTD
 - 2026-06-22: budget alerts at 80% and 100%, local notifications only
+- 2026-06-22: CSV export column order + separator for BG Excel locale
