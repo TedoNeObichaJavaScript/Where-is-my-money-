@@ -487,3 +487,4 @@
 - 2026-06-22: accessibility pass: touch targets under 44dp on filter chips
 - 2026-06-22: currency symbol placement per locale (lv after amount)
 - 2026-06-22: analytics custom range presets: 7d / 30d / MTD / YTD
+- 2026-06-22: CSV export column order + separator for BG Excel locale
