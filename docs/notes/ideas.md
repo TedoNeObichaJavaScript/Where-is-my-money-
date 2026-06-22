@@ -495,3 +495,4 @@
 - 2026-06-19: transfer between accounts should not count as spend
 - 2026-06-19: backup format versioning so old exports stay importable
 - 2026-06-19: pin fallback when biometrics unenrolled
+- 2026-06-22: SQLite migration strategy before adding budgets table
