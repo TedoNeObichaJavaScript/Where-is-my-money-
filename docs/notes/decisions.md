@@ -480,3 +480,4 @@
 - 2026-06-19: budget rollover: carry unspent vs reset monthly
 - 2026-06-19: multi-currency: store minor units + currency code, convert at display
 - 2026-06-19: empty states for analytics when < 5 tx
+- 2026-06-22: pin fallback when biometrics unenrolled
