@@ -490,3 +490,4 @@
 - 2026-06-22: CSV export column order + separator for BG Excel locale
 - 2026-06-22: biometric lock on app resume, grace period 30s
 - 2026-06-22: analytics custom range presets: 7d / 30d / MTD / YTD
+- 2026-06-23: analytics custom range presets: 7d / 30d / MTD / YTD
