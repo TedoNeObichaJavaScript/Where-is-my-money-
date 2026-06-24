@@ -488,3 +488,4 @@
 - 2026-06-22: budget alerts at 80% and 100%, local notifications only
 - 2026-06-22: CSV export column order + separator for BG Excel locale
 - 2026-06-23: FlatList perf on long tx history, getItemLayout candidate
+- 2026-06-24: transfer between accounts should not count as spend
