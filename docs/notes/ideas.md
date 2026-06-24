@@ -500,3 +500,4 @@
 - 2026-06-22: multi-currency: store minor units + currency code, convert at display
 - 2026-06-22: search: debounce input, index on tx note
 - 2026-06-22: search: debounce input, index on tx note
+- 2026-06-24: haptics on tx save — light impact only
