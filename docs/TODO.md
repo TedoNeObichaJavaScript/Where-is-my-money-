@@ -490,3 +490,4 @@
 - 2026-06-23: FlatList perf on long tx history, getItemLayout candidate
 - 2026-06-24: transfer between accounts should not count as spend
 - 2026-06-24: multi-currency: store minor units + currency code, convert at display
+- 2026-06-24: app icon variants — dark bg vs light bg test on launcher
