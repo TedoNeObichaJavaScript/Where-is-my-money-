@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "Where Is My Money?",
+    "slug": "parite",
+    "scheme": "parite",
+    "version": "0.3.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#0A0A14"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "bg.parite.app",
+      "config": {
+        "usesNonExemptEncryption": false
+      },
+      "infoPlist": {
+        "NSFaceIDUsageDescription": "Unlock Parite with Face ID to keep your finances private."
+      }
+    },
+    "android": {
+      "package": "bg.parite.app",
+      "compileSdkVersion": 35,
+      "targetSdkVersion": 35,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0A0A14"
+      },
+      "edgeToEdgeEnabled": true
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#0A0A14",
+          "resizeMode": "cover"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
