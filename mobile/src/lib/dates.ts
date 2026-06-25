@@ -23,6 +23,12 @@ export function addDays(ms: number, n: number): number {
   return ms + n * 86_400_000;
 }
 
+/** Number of days in the month containing `ms`. */
+export function daysInMonth(ms: number): number {
+  const d = new Date(ms);
+  return new Date(d.getFullYear(), d.getMonth() + 1, 0).getDate();
+}
+
 /** Day key (YYYY-MM-DD in local time) for grouping. */
 export function dayKey(ms: number): string {
   const d = new Date(ms);

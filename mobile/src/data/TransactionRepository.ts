@@ -123,6 +123,22 @@ export const TransactionRepository = {
     return { income: row?.income ?? 0, expense: row?.expense ?? 0 };
   },
 
+  /** Daily expense totals over [from, to) keyed by day index from `from`. */
+  async dailySeries(from: number, to: number, type: TxnType = 'EXPENSE'): Promise<Map<number, number>> {
+    const db = await getDb();
+    const rows = await db.getAllAsync<{ dayIndex: number; total: number }>(
+      `SELECT CAST((occurredAt - ?) / 86400000 AS INTEGER) AS dayIndex, SUM(amountMinor) AS total
+       FROM transactions
+       WHERE type = ? AND occurredAt >= ? AND occurredAt < ?
+       GROUP BY dayIndex ORDER BY dayIndex;`,
+      from,
+      type,
+      from,
+      to,
+    );
+    return new Map(rows.map((r) => [r.dayIndex, r.total]));
+  },
+
   /** Expense totals grouped by category over [from, to) — drives the donut. */
   async byCategoryBetween(
     from: number,
