@@ -7,10 +7,8 @@ import { useCallback, useEffect, useRef, useState } from 'react';
  */
 type Listener = () => void;
 const listeners = new Set<Listener>();
-let version = 0;
 
 export function bumpData(): void {
-  version += 1;
   listeners.forEach((l) => l());
 }
 

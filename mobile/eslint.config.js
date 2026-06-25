@@ -17,6 +17,12 @@ module.exports = [
       'react-hooks/immutability': 'off',
       'react-hooks/refs': 'off',
       'react-hooks/set-state-in-effect': 'off',
+      // The `const X = {...} as const; type X = ...` string-enum idiom (src/domain/enums.ts)
+      // intentionally shares a name between value and type.
+      'no-redeclare': 'off',
+      '@typescript-eslint/no-redeclare': 'off',
+      // i18next's default export legitimately exposes use()/t()/changeLanguage().
+      'import/no-named-as-default-member': 'off',
     },
   },
 ];
