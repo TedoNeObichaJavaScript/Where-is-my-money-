@@ -233,22 +233,22 @@
 
 ## Phase 9 — Analytics (169–185)
 
-- [ ] 169. Build Analytics scaffold
-- [ ] 170. Add month selector (prev/next, clamp to current)
-- [ ] 171. Add income vs expense summary cards
-- [ ] 172. Add category donut chart (victory-native/Skia)
-- [ ] 173. Add donut center total + legend
-- [ ] 174. Add tap-segment → drill to filtered list
-- [ ] 175. Add daily spending bar chart
-- [ ] 176. Add top-5 categories list w/ bars
+- [x] 169. Build Analytics scaffold
+- [x] 170. Add month selector (prev/next, clamp to current)
+- [x] 171. Add income vs expense summary cards
+- [x] 172. Add category donut chart (victory-native/Skia)
+- [x] 173. Add donut center total + legend
+- [x] 174. Add tap-segment → drill to filtered list
+- [x] 175. Add daily spending bar chart
+- [x] 176. Add top-5 categories list w/ bars
 - [ ] 177. Add Sankey/cash-flow diagram (differentiator)
-- [ ] 178. Add trend vs previous month
+- [x] 178. Add trend vs previous month
 - [ ] 179. Add calendar heatmap
 - [ ] 180. Add date-range custom selector
 - [ ] 181. Add chart entrance animations
-- [ ] 182. Add color-blind-safe encodings (not red/green only)
-- [ ] 183. Add empty state (no data for month)
-- [ ] 184. Add Analytics store binding
+- [x] 182. Add color-blind-safe encodings (not red/green only)
+- [x] 183. Add empty state (no data for month)
+- [x] 184. Add Analytics store binding
 - [ ] 185. Polish chart glow + holographic styling
 
 ## Phase 10 — Settings, security, backup (186–198)
