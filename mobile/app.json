@@ -26,18 +26,21 @@
     },
     "android": {
       "package": "bg.parite.app",
-      "compileSdkVersion": 35,
-      "targetSdkVersion": 35,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#0A0A14"
-      },
-      "edgeToEdgeEnabled": true
+      }
     },
     "plugins": [
       "expo-router",
       "expo-font",
       "expo-localization",
+      [
+        "expo-build-properties",
+        {
+          "android": { "compileSdkVersion": 35, "targetSdkVersion": 35 }
+        }
+      ],
       [
         "expo-sqlite",
         {
