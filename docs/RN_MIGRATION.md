@@ -107,26 +107,26 @@
 
 ## Phase 3 — Domain models, money, repositories, seed (61–80)
 
-- [ ] 61. Add `src/domain/Money.ts` (Long minor units, scale per currency)
-- [ ] 62. Add `Money.format(currency, locale)` via Intl.NumberFormat
-- [ ] 63. Add `Money.fromMajor` / `fromString` (`.` and `,` parsing)
-- [ ] 64. Add `src/domain/models.ts` (Account, Category, Transaction, RecurringRule)
-- [ ] 65. Add `TxnType` / `CategoryKind` / `Freq` enums + guards
-- [ ] 66. Add `src/data/AccountRepository.ts` (CRUD + archive)
-- [ ] 67. Add account balance query (opening + SUM income − SUM expense)
-- [ ] 68. Add `src/data/CategoryRepository.ts` (CRUD + hide)
-- [ ] 69. Add `src/data/TransactionRepository.ts` (CRUD, paged, search-by-note)
-- [ ] 70. Add range/aggregate queries (today, month, by-category)
-- [ ] 71. Add `src/data/RecurringRuleRepository.ts`
-- [ ] 72. Add reactive query layer (subscribe → re-fetch on write)
-- [ ] 73. Add `src/data/seed.ts` — 3 accounts (Cash/Card/Savings)
-- [ ] 74. Add seed — 12 expense categories w/ emoji + color
-- [ ] 75. Add seed — 3 income categories
-- [ ] 76. Add `nameKey` localization keys on seeded rows
-- [ ] 77. Add first-run seeding orchestration
-- [ ] 78. Add device-currency detection for seed default
-- [ ] 79. Test: balance math across mixed txns
-- [ ] 80. Test: Money formatting EN + BG locales
+- [x] 61. Add `src/domain/Money.ts` (Long minor units, scale per currency)
+- [x] 62. Add `Money.format(currency, locale)` via Intl.NumberFormat
+- [x] 63. Add `Money.fromMajor` / `fromString` (`.` and `,` parsing)
+- [x] 64. Add `src/domain/models.ts` (Account, Category, Transaction, RecurringRule)
+- [x] 65. Add `TxnType` / `CategoryKind` / `Freq` enums + guards
+- [x] 66. Add `src/data/AccountRepository.ts` (CRUD + archive)
+- [x] 67. Add account balance query (opening + SUM income − SUM expense)
+- [x] 68. Add `src/data/CategoryRepository.ts` (CRUD + hide)
+- [x] 69. Add `src/data/TransactionRepository.ts` (CRUD, paged, search-by-note)
+- [x] 70. Add range/aggregate queries (today, month, by-category)
+- [x] 71. Add `src/data/RecurringRuleRepository.ts`
+- [x] 72. Add reactive query layer (subscribe → re-fetch on write)
+- [x] 73. Add `src/data/seed.ts` — 3 accounts (Cash/Card/Savings)
+- [x] 74. Add seed — 12 expense categories w/ emoji + color
+- [x] 75. Add seed — 3 income categories
+- [x] 76. Add `nameKey` localization keys on seeded rows
+- [x] 77. Add first-run seeding orchestration
+- [x] 78. Add device-currency detection for seed default
+- [x] 79. Test: balance math across mixed txns
+- [x] 80. Test: Money formatting EN + BG locales
 
 ## Phase 4 — Navigation shell & app frame (81–95)
 
