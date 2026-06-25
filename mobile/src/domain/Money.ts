@@ -31,4 +31,37 @@ export const Money = {
   toMajor(minor: Minor, currency: string): number {
     return minor / Money.scale(currency);
   },
+
+  /** Localized currency string, e.g. format(1840,'EUR','bg') → "18,40 €". */
+  format(minor: Minor, currency: string, locale: string): string {
+    return new Intl.NumberFormat(locale, { style: 'currency', currency }).format(
+      Money.toMajor(minor, currency),
+    );
+  },
+
+  /** Localized number without the currency symbol (for compact chart labels). */
+  formatPlain(minor: Minor, currency: string, locale: string): string {
+    const digits = Math.log10(Money.scale(currency));
+    return new Intl.NumberFormat(locale, {
+      minimumFractionDigits: digits,
+      maximumFractionDigits: digits,
+    }).format(Money.toMajor(minor, currency));
+  },
+
+  /** Major decimal → minor units (rounded to the currency scale). */
+  fromMajor(major: number, currency: string): Minor {
+    return Math.round(major * Money.scale(currency));
+  },
+
+  /**
+   * Parse user input → minor units. Accepts '.' or ',' as the decimal separator
+   * and ignores spaces. Returns null on empty/invalid input.
+   */
+  fromString(input: string, currency: string): Minor | null {
+    const norm = input.trim().replace(/\s/g, '').replace(',', '.');
+    if (norm === '' || norm === '.') return null;
+    const n = Number(norm);
+    if (!Number.isFinite(n)) return null;
+    return Money.fromMajor(n, currency);
+  },
 };
