@@ -184,10 +184,10 @@
 - [x] 126. Add recent transactions list (latest 20)
 - [x] 127. Add tap-row → edit navigation
 - [x] 128. Add empty state (no transactions yet)
-- [ ] 129. Add quick-add entry points (expense/income shortcuts)
+- [x] 129. Add quick-add entry points (expense/income shortcuts)
 - [ ] 130. Add upcoming recurring preview strip
 - [x] 131. Add pull-to-refresh / live reactive updates
-- [ ] 132. Add scroll-linked collapsing header (reanimated)
+- [x] 132. Add scroll-linked collapsing header (reanimated)
 - [x] 133. Add Home view-model/store binding
 - [x] 134. Add greeting + date header
 - [ ] 135. Polish Home animations + glow timing
