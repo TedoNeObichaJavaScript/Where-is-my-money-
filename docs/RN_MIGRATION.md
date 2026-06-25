@@ -217,18 +217,18 @@
 
 ## Phase 8 — History (156–168)
 
-- [ ] 156. Build History scaffold + list
-- [ ] 157. Add day-grouped sections (sticky headers)
-- [ ] 158. Add search-by-note field (debounced)
-- [ ] 159. Add swipe-to-delete + undo snackbar
-- [ ] 160. Add tap-to-edit navigation
-- [ ] 161. Add infinite scroll / pagination
-- [ ] 162. Add per-day subtotals
-- [ ] 163. Add filter chips (type/account/category)
-- [ ] 164. Add empty + no-results states
+- [x] 156. Build History scaffold + list
+- [x] 157. Add day-grouped sections (sticky headers)
+- [x] 158. Add search-by-note field (debounced)
+- [x] 159. Add swipe-to-delete + undo snackbar
+- [x] 160. Add tap-to-edit navigation
+- [x] 161. Add infinite scroll / pagination
+- [x] 162. Add per-day subtotals
+- [x] 163. Add filter chips (type/account/category)
+- [x] 164. Add empty + no-results states
 - [ ] 165. Add list enter animations (staggered)
-- [ ] 166. Add reactive refresh on data change
-- [ ] 167. Add History store binding
+- [x] 166. Add reactive refresh on data change
+- [x] 167. Add History store binding
 - [ ] 168. Polish History performance (FlashList)
 
 ## Phase 9 — Analytics (169–185)
