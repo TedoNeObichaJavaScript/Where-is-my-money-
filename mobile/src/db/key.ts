@@ -1,5 +1,6 @@
 import * as SecureStore from 'expo-secure-store';
 import * as Crypto from 'expo-crypto';
+import { SecureStorageUnavailableError } from './errors';
 
 /**
  * The SQLCipher passphrase. Generated once as 32 random bytes, then kept only in
@@ -20,12 +21,18 @@ function toHex(bytes: Uint8Array): string {
 
 /** Returns the existing DB key, or generates + persists one on first launch. */
 export async function getOrCreateDbKey(): Promise<string> {
-  const existing = await SecureStore.getItemAsync(KEY_ALIAS, secureOpts);
-  if (existing) return existing;
+  try {
+    const existing = await SecureStore.getItemAsync(KEY_ALIAS, secureOpts);
+    if (existing) return existing;
 
-  const key = toHex(Crypto.getRandomBytes(32));
-  await SecureStore.setItemAsync(KEY_ALIAS, key, secureOpts);
-  return key;
+    const key = toHex(Crypto.getRandomBytes(32));
+    await SecureStore.setItemAsync(KEY_ALIAS, key, secureOpts);
+    return key;
+  } catch (e) {
+    // Device without a usable keystore (rare) — surface a typed error the boot
+    // guard can show as a blocking, actionable message rather than a white screen.
+    throw new SecureStorageUnavailableError(e);
+  }
 }
 
 /** Wipes the key — only used by a full data reset (renders the DB unrecoverable). */
