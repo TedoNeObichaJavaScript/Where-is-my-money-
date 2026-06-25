@@ -1,6 +1,5 @@
-import { ScreenPlaceholder } from '@/components/layout/ScreenPlaceholder';
+import { AnalyticsScreen } from '@/features/analytics/AnalyticsScreen';
 
-/** Analytics tab — built out in Phase 9 (tasks 169–185). */
 export default function AnalyticsRoute() {
-  return <ScreenPlaceholder title="Analytics" />;
+  return <AnalyticsScreen />;
 }
