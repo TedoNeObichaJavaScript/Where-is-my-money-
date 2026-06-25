@@ -130,21 +130,21 @@
 
 ## Phase 4 — Navigation shell & app frame (81–95)
 
-- [ ] 81. Add expo-router `(tabs)` group layout
-- [ ] 82. Add custom holographic tab bar component
-- [ ] 83. Add center floating "Add" action button (glow)
-- [ ] 84. Add tabs: Home / History / (Add) / Analytics / Settings
-- [ ] 85. Add tab icons (animated, accent-on-focus)
-- [ ] 86. Add `app/(tabs)/index.tsx` Home route
-- [ ] 87. Add `app/(tabs)/history.tsx` route
-- [ ] 88. Add `app/(tabs)/analytics.tsx` route
-- [ ] 89. Add `app/(tabs)/settings.tsx` route
-- [ ] 90. Add modal route `app/add/[type].tsx` (quick add)
-- [ ] 91. Add modal route `app/add/edit/[id].tsx` (edit)
-- [ ] 92. Add deep-link config + scheme handling
-- [ ] 93. Add animated screen transitions (shared element / fade-up)
-- [ ] 94. Add global background (nebula orbs + aurora gradient)
-- [ ] 95. Add app-frame providers compose (theme, db, i18n, safe-area, gesture)
+- [x] 81. Add expo-router `(tabs)` group layout
+- [x] 82. Add custom holographic tab bar component
+- [x] 83. Add center floating "Add" action button (glow)
+- [x] 84. Add tabs: Home / History / (Add) / Analytics / Settings
+- [x] 85. Add tab icons (animated, accent-on-focus)
+- [x] 86. Add `app/(tabs)/index.tsx` Home route
+- [x] 87. Add `app/(tabs)/history.tsx` route
+- [x] 88. Add `app/(tabs)/analytics.tsx` route
+- [x] 89. Add `app/(tabs)/settings.tsx` route
+- [x] 90. Add modal route `app/add/[type].tsx` (quick add)
+- [x] 91. Add modal route `app/add/edit/[id].tsx` (edit)
+- [x] 92. Add deep-link config + scheme handling
+- [x] 93. Add animated screen transitions (shared element / fade-up)
+- [x] 94. Add global background (nebula orbs + aurora gradient)
+- [x] 95. Add app-frame providers compose (theme, db, i18n, safe-area, gesture)
 
 ## Phase 5 — Reusable holographic component kit (96–120)
 
