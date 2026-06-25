@@ -148,31 +148,31 @@
 
 ## Phase 5 — Reusable holographic component kit (96–120)
 
-- [ ] 96. Add `GlassCard` (blur + border + ambient orb)
-- [ ] 97. Add `NeonButton` (primary glow CTA)
-- [ ] 98. Add `GhostButton` / `PillButton` variants
-- [ ] 99. Add `AuroraBackground` (animated gradient mesh)
-- [ ] 100. Add `NebulaOrbs` (blurred radial light leaks)
-- [ ] 101. Add `Text` primitives (Display/Title/Body/Caption tokens)
-- [ ] 102. Add `AnimatedNumber` (count-up money ticker)
-- [ ] 103. Add `BalanceHero` (glowing primary number)
-- [ ] 104. Add `IconBadge` (emoji/category chip with colored halo)
-- [ ] 105. Add `TextField` (glass input + focus glow)
-- [ ] 106. Add `AmountField` (large monospace money input)
-- [ ] 107. Add `SegmentedControl` (Expense/Income toggle)
-- [ ] 108. Add `Sheet` / `BottomSheet` (gorhom or reanimated)
-- [ ] 109. Add `Picker` rows (account/category select)
-- [ ] 110. Add `ListRow` / `TransactionRow` (emoji + amount + note)
-- [ ] 111. Add `SwipeableRow` (delete + undo, reanimated gesture)
-- [ ] 112. Add `Snackbar` / `Toast` (undo host)
-- [ ] 113. Add `EmptyState` (cosmic illustration + copy)
-- [ ] 114. Add `Skeleton` / shimmer loaders
-- [ ] 115. Add `Chip` / `FilterChip`
-- [ ] 116. Add `Divider` / `SectionHeader`
-- [ ] 117. Add `Switch` (glowing toggle)
-- [ ] 118. Add `DatePicker` wrapper (platform native + themed)
-- [ ] 119. Add `Haptics` util + tap feedback wiring
-- [ ] 120. Add `Pressable` w/ scale+glow press animation
+- [x] 96. Add `GlassCard` (blur + border + ambient orb)
+- [x] 97. Add `NeonButton` (primary glow CTA)
+- [x] 98. Add `GhostButton` / `PillButton` variants
+- [x] 99. Add `AuroraBackground` (animated gradient mesh)
+- [x] 100. Add `NebulaOrbs` (blurred radial light leaks)
+- [x] 101. Add `Text` primitives (Display/Title/Body/Caption tokens)
+- [x] 102. Add `AnimatedNumber` (count-up money ticker)
+- [x] 103. Add `BalanceHero` (glowing primary number)
+- [x] 104. Add `IconBadge` (emoji/category chip with colored halo)
+- [x] 105. Add `TextField` (glass input + focus glow)
+- [x] 106. Add `AmountField` (large monospace money input)
+- [x] 107. Add `SegmentedControl` (Expense/Income toggle)
+- [x] 108. Add `Sheet` / `BottomSheet` (gorhom or reanimated)
+- [x] 109. Add `Picker` rows (account/category select)
+- [x] 110. Add `ListRow` / `TransactionRow` (emoji + amount + note)
+- [x] 111. Add `SwipeableRow` (delete + undo, reanimated gesture)
+- [x] 112. Add `Snackbar` / `Toast` (undo host)
+- [x] 113. Add `EmptyState` (cosmic illustration + copy)
+- [x] 114. Add `Skeleton` / shimmer loaders
+- [x] 115. Add `Chip` / `FilterChip`
+- [x] 116. Add `Divider` / `SectionHeader`
+- [x] 117. Add `Switch` (glowing toggle)
+- [x] 118. Add `DatePicker` wrapper (platform native + themed)
+- [x] 119. Add `Haptics` util + tap feedback wiring
+- [x] 120. Add `Pressable` w/ scale+glow press animation
 
 ## Phase 6 — Home screen (121–135)
 
