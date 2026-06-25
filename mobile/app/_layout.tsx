@@ -40,6 +40,10 @@ export default function RootLayout() {
                   name="add"
                   options={{ presentation: 'modal', animation: 'slide_from_bottom' }}
                 />
+                <Stack.Screen
+                  name="manage"
+                  options={{ presentation: 'modal', animation: 'slide_from_bottom' }}
+                />
               </Stack>
             </LockGate>
           </BootGate>

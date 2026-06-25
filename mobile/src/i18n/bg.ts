@@ -99,10 +99,23 @@ export const bg: Resources = {
   settings_noBiometrics: 'На това устройство няма настроена биометрия.',
   settings_restoreFailed: 'Възстановяването е неуспешно',
 
+  manage_title: 'Сметки и категории',
+  manage_open: 'Сметки и категории',
+  manage_accounts: 'Сметки',
+  manage_categories: 'Категории',
+  manage_addAccount: '+ Добави сметка',
+  manage_addCategory: '+ Добави категория',
+  manage_name: 'Име',
+  manage_emoji: 'Емоджи',
+  manage_color: 'Цвят',
+  manage_newAccount: 'Нова сметка',
+  manage_newCategory: 'Нова категория',
+
   common_undo: 'Отмени',
   common_deleted: 'Транзакцията е изтрита',
   common_cancel: 'Отказ',
   common_delete: 'Изтрий',
   common_restore: 'Възстанови',
   common_erase: 'Изтрий',
+  common_save: 'Запази',
 };

@@ -1,16 +1,11 @@
 import { useState } from 'react';
 import { Alert, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import Constants from 'expo-constants';
+import { router } from 'expo-router';
 import { useTranslation } from 'react-i18next';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import {
-  GlassCard,
-  PillButton,
-  Sheet,
-  Switch,
-  Text,
-} from '@/components/ui';
-import { useThemeControls , useTheme } from '@/theme/ThemeProvider';
+import { GlassCard, PillButton, Sheet, Switch, Text } from '@/components/ui';
+import { useThemeControls, useTheme } from '@/theme/ThemeProvider';
 import { themeVariants } from '@/theme/variants';
 import { settings } from '@/storage/settings';
 import { flags } from '@/storage/flags';
@@ -115,7 +110,8 @@ export function SettingsScreen() {
         style: 'destructive',
         onPress: async () => {
           const r = await importBackup();
-          if (r.ok) Alert.alert(tr('settings_restored'), tr('settings_imported', { count: r.count ?? 0 }));
+          if (r.ok)
+            Alert.alert(tr('settings_restored'), tr('settings_imported', { count: r.count ?? 0 }));
           else if (r.error) Alert.alert(tr('settings_restoreFailed'), r.error);
         },
       },
@@ -146,7 +142,11 @@ export function SettingsScreen() {
   return (
     <ScrollView
       style={{ flex: 1 }}
-      contentContainerStyle={{ paddingTop: insets.top + 12, paddingHorizontal: 16, paddingBottom: 140 }}
+      contentContainerStyle={{
+        paddingTop: insets.top + 12,
+        paddingHorizontal: 16,
+        paddingBottom: 140,
+      }}
       showsVerticalScrollIndicator={false}
     >
       <Text variant="title" color={t.colors.text} style={styles.h}>
@@ -154,7 +154,10 @@ export function SettingsScreen() {
       </Text>
 
       <Group title={tr('settings_security')}>
-        <Row label={tr('settings_biometric')} right={<Switch value={biometric} onChange={toggleBiometric} />} />
+        <Row
+          label={tr('settings_biometric')}
+          right={<Switch value={biometric} onChange={toggleBiometric} />}
+        />
       </Group>
 
       <Group title={tr('settings_appearance')}>
@@ -167,7 +170,10 @@ export function SettingsScreen() {
                   <View
                     style={[
                       styles.swatch,
-                      { backgroundColor: v.swatch[0], borderColor: themeName === v.name ? t.colors.text : 'transparent' },
+                      {
+                        backgroundColor: v.swatch[0],
+                        borderColor: themeName === v.name ? t.colors.text : 'transparent',
+                      },
                     ]}
                   />
                 </Pressable>
@@ -192,6 +198,7 @@ export function SettingsScreen() {
       </Group>
 
       <Group title={tr('settings_data')}>
+        <Row label={tr('manage_open')} onPress={() => router.push('/manage')} />
         <Row label={tr('settings_backup')} onPress={onBackup} />
         <Row label={tr('settings_restore')} onPress={onRestore} />
         <Row label={tr('settings_lastBackup')} value={backupLabel} />
@@ -208,7 +215,11 @@ export function SettingsScreen() {
 
       <Sheet visible={curSheet} onClose={() => setCurSheet(false)}>
         {['Auto', ...CURRENCIES].map((c) => (
-          <Pressable key={c} style={styles.curRow} onPress={() => pickCurrency(c === 'Auto' ? null : c)}>
+          <Pressable
+            key={c}
+            style={styles.curRow}
+            onPress={() => pickCurrency(c === 'Auto' ? null : c)}
+          >
             <Text variant="bodyMedium" color={t.colors.text}>
               {c === 'Auto' ? tr('settings_auto') : c}
             </Text>

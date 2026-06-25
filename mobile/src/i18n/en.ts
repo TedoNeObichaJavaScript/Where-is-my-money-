@@ -104,6 +104,19 @@ export const en = {
   settings_noBiometrics: 'No biometrics are set up on this device.',
   settings_restoreFailed: 'Could not restore',
 
+  // manage
+  manage_title: 'Accounts & categories',
+  manage_open: 'Accounts & categories',
+  manage_accounts: 'Accounts',
+  manage_categories: 'Categories',
+  manage_addAccount: '+ Add account',
+  manage_addCategory: '+ Add category',
+  manage_name: 'Name',
+  manage_emoji: 'Emoji',
+  manage_color: 'Color',
+  manage_newAccount: 'New account',
+  manage_newCategory: 'New category',
+
   // common
   common_undo: 'Undo',
   common_deleted: 'Transaction deleted',
@@ -111,6 +124,7 @@ export const en = {
   common_delete: 'Delete',
   common_restore: 'Restore',
   common_erase: 'Erase',
+  common_save: 'Save',
 };
 
 export type Resources = typeof en;
