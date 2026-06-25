@@ -38,34 +38,34 @@
 
 ## Phase 0 — Tooling & project bootstrap (1–15)
 
-- [ ] 1. Add `docs/RN_MIGRATION.md` (this plan)
-- [ ] 2. Add `docs/DESIGN_SYSTEM.md` (holographic spec)
-- [ ] 3. Create `mobile/` Expo project scaffold (`package.json`)
-- [ ] 4. Add `mobile/app.json` (name, slug, scheme, bundle ids, icons placeholder)
-- [ ] 5. Add `mobile/tsconfig.json` (strict, path aliases `@/*`)
-- [ ] 6. Add `mobile/babel.config.js` (reanimated plugin, module-resolver)
-- [ ] 7. Add `mobile/metro.config.js` (svg/asset transforms)
-- [ ] 8. Add `mobile/.gitignore` + update root `.gitignore` for node/expo
-- [ ] 9. Add ESLint + Prettier config (`eslint.config.js`, `.prettierrc`)
-- [ ] 10. Add `mobile/eas.json` (dev/preview/production build profiles)
-- [ ] 11. Add `mobile/README.md` (run, build, EAS, dev-client notes)
-- [ ] 12. Add `src/` folder structure + barrel `index.ts` stubs
-- [ ] 13. Add `app/_layout.tsx` root layout (providers shell)
-- [ ] 14. Add placeholder `app/index.tsx` boot screen
+- [x] 1. Add `docs/RN_MIGRATION.md` (this plan)
+- [x] 2. Add `docs/DESIGN_SYSTEM.md` (holographic spec)
+- [x] 3. Create `mobile/` Expo project scaffold (`package.json`)
+- [x] 4. Add `mobile/app.json` (name, slug, scheme, bundle ids, icons placeholder)
+- [x] 5. Add `mobile/tsconfig.json` (strict, path aliases `@/*`)
+- [x] 6. Add `mobile/babel.config.js` (reanimated plugin, module-resolver)
+- [x] 7. Add `mobile/metro.config.js` (svg/asset transforms)
+- [x] 8. Add `mobile/.gitignore` + update root `.gitignore` for node/expo
+- [x] 9. Add ESLint + Prettier config (`eslint.config.js`, `.prettierrc`)
+- [x] 10. Add `mobile/eas.json` (dev/preview/production build profiles)
+- [x] 11. Add `mobile/README.md` (run, build, EAS, dev-client notes)
+- [x] 12. Add `src/` folder structure + barrel `index.ts` stubs
+- [x] 13. Add `app/_layout.tsx` root layout (providers shell)
+- [x] 14. Add placeholder `app/index.tsx` boot screen
 - [ ] 15. Verify `expo-doctor` / typecheck pipeline (`npm run typecheck`, `lint`)
 
 ## Phase 1 — Design tokens & theme engine (16–35)
 
-- [ ] 16. Add `src/theme/palette.ts` (Aurora + raw color ramps)
-- [ ] 17. Add `src/theme/space.ts` (4pt spacing scale)
-- [ ] 18. Add `src/theme/radius.ts` (radii scale)
-- [ ] 19. Add `src/theme/typography.ts` (sizes, weights, line-heights)
-- [ ] 20. Add `src/theme/shadows.ts` (depth + neon-halo presets)
-- [ ] 21. Add `src/theme/glass.ts` (glass surface recipes)
-- [ ] 22. Add `src/theme/gradients.ts` (aurora/nebula/iridescent recipes)
-- [ ] 23. Add `src/theme/motion.ts` (durations, easings, spring presets)
-- [ ] 24. Add `src/theme/tokens.ts` (semantic tokens: bg/surface/text/accent)
-- [ ] 25. Add `src/theme/theme.ts` (compose tokens → Theme object)
+- [x] 16. Add `src/theme/palette.ts` (Aurora + raw color ramps)
+- [x] 17. Add `src/theme/space.ts` (4pt spacing scale)
+- [x] 18. Add `src/theme/radius.ts` (radii scale)
+- [x] 19. Add `src/theme/typography.ts` (sizes, weights, line-heights)
+- [x] 20. Add `src/theme/shadows.ts` (depth + neon-halo presets)
+- [x] 21. Add `src/theme/glass.ts` (glass surface recipes)
+- [x] 22. Add `src/theme/gradients.ts` (aurora/nebula/iridescent recipes)
+- [x] 23. Add `src/theme/motion.ts` (durations, easings, spring presets)
+- [x] 24. Add `src/theme/tokens.ts` (semantic tokens: bg/surface/text/accent)
+- [x] 25. Add `src/theme/theme.ts` (compose tokens → Theme object)
 - [ ] 26. Add `src/theme/ThemeProvider.tsx` + `useTheme()` hook
 - [ ] 27. Add multi-theme support (Aurora / Prism / Nebula variants)
 - [ ] 28. Wire Space Grotesk + Inter via `expo-font` loader
