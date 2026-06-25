@@ -1,0 +1,11 @@
+/** Corner radii. */
+export const radius = {
+  sm: 8,
+  md: 12,
+  base: 16,
+  lg: 20,
+  xl: 28,
+  pill: 999,
+} as const;
+
+export type Radius = keyof typeof radius;
