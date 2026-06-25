@@ -7,6 +7,7 @@ import { ThemeProvider } from '@/theme/ThemeProvider';
 import { applySystemBars } from '@/theme/systemBars';
 import { CosmicBackground } from '@/components/background/CosmicBackground';
 import { BootGate } from '@/boot/BootGate';
+import { LockGate } from '@/security/LockGate';
 
 /**
  * Provider shell: gesture root → safe area → theme. The cosmic background sits
@@ -25,19 +26,21 @@ export default function RootLayout() {
           <StatusBar style="light" />
           <CosmicBackground />
           <BootGate>
-            <Stack
-              screenOptions={{
-                headerShown: false,
-                animation: 'fade',
-                contentStyle: { backgroundColor: 'transparent' },
-              }}
-            >
-              <Stack.Screen name="(tabs)" />
-              <Stack.Screen
-                name="add"
-                options={{ presentation: 'modal', animation: 'slide_from_bottom' }}
-              />
-            </Stack>
+            <LockGate>
+              <Stack
+                screenOptions={{
+                  headerShown: false,
+                  animation: 'fade',
+                  contentStyle: { backgroundColor: 'transparent' },
+                }}
+              >
+                <Stack.Screen name="(tabs)" />
+                <Stack.Screen
+                  name="add"
+                  options={{ presentation: 'modal', animation: 'slide_from_bottom' }}
+                />
+              </Stack>
+            </LockGate>
           </BootGate>
         </ThemeProvider>
       </SafeAreaProvider>
