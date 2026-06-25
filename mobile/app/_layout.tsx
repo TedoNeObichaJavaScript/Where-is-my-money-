@@ -8,6 +8,7 @@ import { applySystemBars } from '@/theme/systemBars';
 import { CosmicBackground } from '@/components/background/CosmicBackground';
 import { BootGate } from '@/boot/BootGate';
 import { LockGate } from '@/security/LockGate';
+import '@/i18n';
 
 /**
  * Provider shell: gesture root → safe area → theme. The cosmic background sits

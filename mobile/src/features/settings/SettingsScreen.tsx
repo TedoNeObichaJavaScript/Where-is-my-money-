@@ -18,6 +18,7 @@ import { seedIfNeeded } from '@/data/seed';
 import { wipeAllData } from '@/db/reset';
 import { exportBackup, importBackup } from '@/data/backup';
 import { bumpData } from '@/data/reactive';
+import { setLanguage } from '@/i18n';
 import { isBiometricAvailable } from '@/security/biometric';
 
 const CURRENCIES = ['EUR', 'USD', 'GBP', 'BGN'];
@@ -88,8 +89,9 @@ export function SettingsScreen() {
   };
 
   const setLang = (l: string) => {
-    settings.setLocale(l);
+    setLanguage(l); // persists + switches i18next
     setLocaleState(l);
+    bumpData(); // re-run live queries so seeded names re-localize
   };
 
   const pickCurrency = (c: string | null) => {
