@@ -1,6 +1,13 @@
 import { useMemo, useState } from 'react';
-import { RefreshControl, ScrollView, StyleSheet, View } from 'react-native';
-import Animated, { FadeInDown } from 'react-native-reanimated';
+import { RefreshControl, StyleSheet, View } from 'react-native';
+import Animated, {
+  Extrapolation,
+  FadeInDown,
+  interpolate,
+  useAnimatedScrollHandler,
+  useAnimatedStyle,
+  useSharedValue,
+} from 'react-native-reanimated';
 import { router } from 'expo-router';
 import { useTranslation } from 'react-i18next';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -20,11 +27,11 @@ import { resolveName } from '@/i18n/labels';
 import { Money } from '@/domain/Money';
 import { useTheme } from '@/theme/ThemeProvider';
 
-function greeting(): string {
+function greetingKey(): string {
   const h = new Date().getHours();
-  if (h < 12) return 'Good morning';
-  if (h < 18) return 'Good afternoon';
-  return 'Good evening';
+  if (h < 12) return 'home_morning';
+  if (h < 18) return 'home_afternoon';
+  return 'home_evening';
 }
 
 export function HomeScreen() {
@@ -41,6 +48,16 @@ export function HomeScreen() {
     setTimeout(() => setRefreshing(false), 400);
   };
 
+  // scroll-linked collapsing header
+  const scrollY = useSharedValue(0);
+  const onScroll = useAnimatedScrollHandler((e) => {
+    scrollY.value = e.contentOffset.y;
+  });
+  const headerStyle = useAnimatedStyle(() => ({
+    opacity: interpolate(scrollY.value, [0, 70], [1, 0], Extrapolation.CLAMP),
+    transform: [{ translateY: interpolate(scrollY.value, [0, 70], [0, -12], Extrapolation.CLAMP) }],
+  }));
+
   const monthDelta = useMemo(() => {
     if (d.prevMonthSpent === 0) return undefined;
     const pct = Math.round(((d.monthSpent - d.prevMonthSpent) / d.prevMonthSpent) * 100);
@@ -48,7 +65,7 @@ export function HomeScreen() {
   }, [d.monthSpent, d.prevMonthSpent]);
 
   return (
-    <ScrollView
+    <Animated.ScrollView
       style={{ flex: 1 }}
       contentContainerStyle={{
         paddingTop: insets.top + 16,
@@ -56,21 +73,23 @@ export function HomeScreen() {
         paddingBottom: 140,
       }}
       showsVerticalScrollIndicator={false}
+      onScroll={onScroll}
+      scrollEventThrottle={16}
       refreshControl={
         <RefreshControl refreshing={refreshing} onRefresh={onRefresh} tintColor={t.colors.accent} />
       }
     >
       {/* header */}
-      <View style={styles.header}>
+      <Animated.View style={[styles.header, headerStyle]}>
         <View>
           <Text variant="caption" color={t.colors.textMuted}>
-            {greeting()}
+            {tr(greetingKey())}
           </Text>
           <Text variant="title" color={t.colors.text}>
-            Where’s your money?
+            {tr('home_greeting_q')}
           </Text>
         </View>
-      </View>
+      </Animated.View>
 
       {/* hero */}
       <GlassCard style={styles.hero}>
@@ -141,7 +160,7 @@ export function HomeScreen() {
       <Text variant="micro" color={t.colors.textFaint} style={styles.foot}>
         {Money.format(d.total, d.currency, locale)} across {d.accounts.length} accounts
       </Text>
-    </ScrollView>
+    </Animated.ScrollView>
   );
 }
 

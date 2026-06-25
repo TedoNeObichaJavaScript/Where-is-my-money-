@@ -25,6 +25,10 @@ export const bg: Resources = {
   theme_prism: 'Призма',
   theme_nebula: 'Мъглявина',
 
+  home_greeting_q: 'Къде са ти парите?',
+  home_morning: 'Добро утро',
+  home_afternoon: 'Добър ден',
+  home_evening: 'Добър вечер',
   home_balance: 'Общ баланс',
   home_today: 'Днес',
   home_month: 'Този месец',

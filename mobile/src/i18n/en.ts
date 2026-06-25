@@ -26,6 +26,10 @@ export const en = {
   theme_nebula: 'Nebula',
 
   // home
+  home_greeting_q: 'Where’s your money?',
+  home_morning: 'Good morning',
+  home_afternoon: 'Good afternoon',
+  home_evening: 'Good evening',
   home_balance: 'Total balance',
   home_today: 'Today',
   home_month: 'This month',
