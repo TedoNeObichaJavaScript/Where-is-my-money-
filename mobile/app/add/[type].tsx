@@ -1,11 +1,10 @@
 import { useLocalSearchParams } from 'expo-router';
-import { ScreenPlaceholder } from '@/components/layout/ScreenPlaceholder';
+import { AddScreen } from '@/features/add/AddScreen';
 import { isTxnType } from '@/domain/enums';
 
-/** Quick-add modal. `type` = expense | income. Built out in Phase 7 (136–155). */
+/** Quick-add modal. `type` = expense | income. */
 export default function AddRoute() {
   const { type } = useLocalSearchParams<{ type: string }>();
-  const t = (type ?? 'expense').toUpperCase();
-  const label = isTxnType(t) ? (t === 'INCOME' ? 'Add Income' : 'Add Expense') : 'Add';
-  return <ScreenPlaceholder title={label} />;
+  const upper = (type ?? 'expense').toUpperCase();
+  return <AddScreen type={isTxnType(upper) ? upper : 'EXPENSE'} />;
 }
