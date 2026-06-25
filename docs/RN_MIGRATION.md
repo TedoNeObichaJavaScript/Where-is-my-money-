@@ -253,19 +253,19 @@
 
 ## Phase 10 — Settings, security, backup (186–198)
 
-- [ ] 186. Build Settings scaffold (grouped list)
-- [ ] 187. Add biometric toggle (expo-local-authentication)
-- [ ] 188. Add biometric lock screen on launch
-- [ ] 189. Add theme selector (Aurora/Prism/Nebula)
-- [ ] 190. Add language selector (EN/BG)
-- [ ] 191. Add display-currency override
-- [ ] 192. Add JSON backup export (expo-file-system + sharing)
-- [ ] 193. Add backup format parity w/ Android (version 1 schema)
-- [ ] 194. Add JSON restore (REPLACE mode + confirm)
-- [ ] 195. Add last-backup timestamp display
+- [x] 186. Build Settings scaffold (grouped list)
+- [x] 187. Add biometric toggle (expo-local-authentication)
+- [x] 188. Add biometric lock screen on launch
+- [x] 189. Add theme selector (Aurora/Prism/Nebula)
+- [x] 190. Add language selector (EN/BG)
+- [x] 191. Add display-currency override
+- [x] 192. Add JSON backup export (expo-file-system + sharing)
+- [x] 193. Add backup format parity w/ Android (version 1 schema)
+- [x] 194. Add JSON restore (REPLACE mode + confirm)
+- [x] 195. Add last-backup timestamp display
 - [ ] 196. Add account/category management (add/edit/archive)
-- [ ] 197. Add about / privacy / version section
-- [ ] 198. Add danger zone (wipe all data + confirm)
+- [x] 197. Add about / privacy / version section
+- [x] 198. Add danger zone (wipe all data + confirm)
 
 ## Phase 11 — i18n, store launch, cleanup (199–200 + sub-tasks)
 
