@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { getDb } from '@/db/connection';
 import { getOrCreateDbKey } from '@/db/key';
+import { seedIfNeeded } from '@/data/seed';
 import { encryptKv } from '@/storage/kv';
 
 type BootState = { ready: boolean; error: Error | null };
@@ -20,6 +21,7 @@ export function useBootstrap(): BootState {
         const key = await getOrCreateDbKey();
         encryptKv(key);
         await getDb();
+        await seedIfNeeded();
         if (active) setState({ ready: true, error: null });
       } catch (e) {
         if (active) setState({ ready: false, error: e as Error });
