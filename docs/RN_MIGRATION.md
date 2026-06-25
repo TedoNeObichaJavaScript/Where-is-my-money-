@@ -241,11 +241,11 @@
 - [x] 174. Add tap-segment → drill to filtered list
 - [x] 175. Add daily spending bar chart
 - [x] 176. Add top-5 categories list w/ bars
-- [ ] 177. Add Sankey/cash-flow diagram (differentiator)
+- [x] 177. Add Sankey/cash-flow diagram (differentiator)
 - [x] 178. Add trend vs previous month
-- [ ] 179. Add calendar heatmap
+- [x] 179. Add calendar heatmap
 - [ ] 180. Add date-range custom selector
-- [ ] 181. Add chart entrance animations
+- [x] 181. Add chart entrance animations
 - [x] 182. Add color-blind-safe encodings (not red/green only)
 - [x] 183. Add empty state (no data for month)
 - [x] 184. Add Analytics store binding
