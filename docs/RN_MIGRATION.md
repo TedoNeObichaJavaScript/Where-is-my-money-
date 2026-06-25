@@ -52,7 +52,7 @@
 - [x] 12. Add `src/` folder structure + barrel `index.ts` stubs
 - [x] 13. Add `app/_layout.tsx` root layout (providers shell)
 - [x] 14. Add placeholder `app/index.tsx` boot screen
-- [ ] 15. Verify `expo-doctor` / typecheck pipeline (`npm run typecheck`, `lint`)
+- [x] 15. Verify `expo-doctor` / typecheck pipeline (`npm run typecheck`, `lint`)
 
 ## Phase 1 — Design tokens & theme engine (16–35)
 
