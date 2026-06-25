@@ -66,16 +66,16 @@
 - [x] 23. Add `src/theme/motion.ts` (durations, easings, spring presets)
 - [x] 24. Add `src/theme/tokens.ts` (semantic tokens: bg/surface/text/accent)
 - [x] 25. Add `src/theme/theme.ts` (compose tokens → Theme object)
-- [ ] 26. Add `src/theme/ThemeProvider.tsx` + `useTheme()` hook
-- [ ] 27. Add multi-theme support (Aurora / Prism / Nebula variants)
-- [ ] 28. Wire Space Grotesk + Inter via `expo-font` loader
-- [ ] 29. Add `src/theme/elevation.ts` z-index scale
-- [ ] 30. Add responsive scaling util `src/theme/scale.ts` (guideline 375pt)
-- [ ] 31. Add `useResponsive()` hook (breakpoints, orientation)
-- [ ] 32. Add safe-area wiring via react-native-safe-area-context
-- [ ] 33. Add dark status bar / nav bar styling
-- [ ] 34. Add theme persistence to MMKV
-- [ ] 35. Add theme switcher store + selector
+- [x] 26. Add `src/theme/ThemeProvider.tsx` + `useTheme()` hook
+- [x] 27. Add multi-theme support (Aurora / Prism / Nebula variants)
+- [x] 28. Wire Space Grotesk + Inter via `expo-font` loader
+- [x] 29. Add `src/theme/elevation.ts` z-index scale
+- [x] 30. Add responsive scaling util `src/theme/scale.ts` (guideline 375pt)
+- [x] 31. Add `useResponsive()` hook (breakpoints, orientation)
+- [x] 32. Add safe-area wiring via react-native-safe-area-context
+- [x] 33. Add dark status bar / nav bar styling
+- [x] 34. Add theme persistence to MMKV
+- [x] 35. Add theme switcher store + selector
 
 ## Phase 2 — Secure storage & DB infrastructure (36–60)
 
