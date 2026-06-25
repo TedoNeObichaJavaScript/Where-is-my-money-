@@ -37,6 +37,19 @@
     "plugins": [
       "expo-router",
       "expo-font",
+      "expo-localization",
+      [
+        "expo-sqlite",
+        {
+          "useSQLCipher": true
+        }
+      ],
+      [
+        "expo-secure-store",
+        {
+          "faceIDPermission": "Unlock Parite with Face ID to keep your finances private."
+        }
+      ],
       [
         "expo-splash-screen",
         {
