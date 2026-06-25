@@ -1,6 +1,5 @@
-import { ScreenPlaceholder } from '@/components/layout/ScreenPlaceholder';
+import { HistoryScreen } from '@/features/history/HistoryScreen';
 
-/** History tab — built out in Phase 8 (tasks 156–168). */
 export default function HistoryRoute() {
-  return <ScreenPlaceholder title="History" />;
+  return <HistoryScreen />;
 }
