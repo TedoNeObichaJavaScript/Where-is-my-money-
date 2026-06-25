@@ -226,7 +226,7 @@
 - [x] 162. Add per-day subtotals
 - [x] 163. Add filter chips (type/account/category)
 - [x] 164. Add empty + no-results states
-- [ ] 165. Add list enter animations (staggered)
+- [x] 165. Add list enter animations (staggered)
 - [x] 166. Add reactive refresh on data change
 - [x] 167. Add History store binding
 - [ ] 168. Polish History performance (FlashList)
