@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react';
 import { RefreshControl, ScrollView, StyleSheet, View } from 'react-native';
+import Animated, { FadeInDown } from 'react-native-reanimated';
 import { router } from 'expo-router';
 import { useTranslation } from 'react-i18next';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -49,7 +50,11 @@ export function HomeScreen() {
   return (
     <ScrollView
       style={{ flex: 1 }}
-      contentContainerStyle={{ paddingTop: insets.top + 16, paddingHorizontal: 16, paddingBottom: 140 }}
+      contentContainerStyle={{
+        paddingTop: insets.top + 16,
+        paddingHorizontal: 16,
+        paddingBottom: 140,
+      }}
       showsVerticalScrollIndicator={false}
       refreshControl={
         <RefreshControl refreshing={refreshing} onRefresh={onRefresh} tintColor={t.colors.accent} />
@@ -86,7 +91,12 @@ export function HomeScreen() {
 
       {/* stats */}
       <View style={styles.stats}>
-        <StatCard label={tr('home_today')} amountMinor={d.todaySpent} currency={d.currency} locale={locale} />
+        <StatCard
+          label={tr('home_today')}
+          amountMinor={d.todaySpent}
+          currency={d.currency}
+          locale={locale}
+        />
         <StatCard
           label={tr('home_month')}
           amountMinor={d.monthSpent}
@@ -104,23 +114,23 @@ export function HomeScreen() {
           onAction={() => router.push('/(tabs)/history')}
         />
         {d.recent.length === 0 ? (
-          <EmptyState
-            emoji="🪐"
-            title={tr('home_empty_title')}
-            subtitle={tr('home_empty_sub')}
-          />
+          <EmptyState emoji="🪐" title={tr('home_empty_title')} subtitle={tr('home_empty_sub')} />
         ) : (
           <GlassCard padded={false} style={{ borderRadius: 20 }}>
             <View style={styles.list}>
-              {d.recent.map((txn) => (
-                <TransactionRow
+              {d.recent.map((txn, i) => (
+                <Animated.View
                   key={txn.id}
-                  txn={txn}
-                  title={resolveName(txn.categoryNameKey, txn.categoryName)}
-                  subtitle={`${resolveName(txn.accountNameKey, txn.accountName)}${txn.note ? ` · ${txn.note}` : ''}`}
-                  locale={locale}
-                  onPress={() => router.push(`/add/edit/${txn.id}`)}
-                />
+                  entering={FadeInDown.delay(Math.min(i, 8) * 40).springify()}
+                >
+                  <TransactionRow
+                    txn={txn}
+                    title={resolveName(txn.categoryNameKey, txn.categoryName)}
+                    subtitle={`${resolveName(txn.accountNameKey, txn.accountName)}${txn.note ? ` · ${txn.note}` : ''}`}
+                    locale={locale}
+                    onPress={() => router.push(`/add/edit/${txn.id}`)}
+                  />
+                </Animated.View>
               ))}
             </View>
           </GlassCard>

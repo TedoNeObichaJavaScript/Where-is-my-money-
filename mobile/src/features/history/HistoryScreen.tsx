@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react';
 import { SectionList, StyleSheet, View } from 'react-native';
+import Animated, { FadeInDown } from 'react-native-reanimated';
 import { router } from 'expo-router';
 import { useTranslation } from 'react-i18next';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -53,7 +54,13 @@ export function HistoryScreen() {
         {(['ALL', 'EXPENSE', 'INCOME'] as Filter[]).map((f) => (
           <FilterChip
             key={f}
-            label={f === 'ALL' ? tr('history_all') : f === 'EXPENSE' ? tr('add_expense') : tr('add_income')}
+            label={
+              f === 'ALL'
+                ? tr('history_all')
+                : f === 'EXPENSE'
+                  ? tr('add_expense')
+                  : tr('add_income')
+            }
             active={filter === f}
             onPress={() => setFilter(f)}
           />
@@ -84,25 +91,31 @@ export function HistoryScreen() {
             </Text>
           </View>
         )}
-        renderItem={({ item }) => (
-          <SwipeableRow onDelete={() => void h.deleteWithUndo(item)}>
-            <GlassCard padded={false} style={styles.rowCard}>
-              <View style={styles.rowInner}>
-                <TransactionRow
-                  txn={item}
-                  title={resolveName(item.categoryNameKey, item.categoryName)}
-                  subtitle={`${resolveName(item.accountNameKey, item.accountName)}${item.note ? ` · ${item.note}` : ''}`}
-                  locale={locale}
-                  onPress={() => router.push(`/add/edit/${item.id}`)}
-                />
-              </View>
-            </GlassCard>
-          </SwipeableRow>
+        renderItem={({ item, index }) => (
+          <Animated.View entering={FadeInDown.delay(Math.min(index, 10) * 30).springify()}>
+            <SwipeableRow onDelete={() => void h.deleteWithUndo(item)}>
+              <GlassCard padded={false} style={styles.rowCard}>
+                <View style={styles.rowInner}>
+                  <TransactionRow
+                    txn={item}
+                    title={resolveName(item.categoryNameKey, item.categoryName)}
+                    subtitle={`${resolveName(item.accountNameKey, item.accountName)}${item.note ? ` · ${item.note}` : ''}`}
+                    locale={locale}
+                    onPress={() => router.push(`/add/edit/${item.id}`)}
+                  />
+                </View>
+              </GlassCard>
+            </SwipeableRow>
+          </Animated.View>
         )}
       />
 
       {h.pendingUndo && (
-        <Snackbar message="Transaction deleted" actionLabel="Undo" onAction={() => void h.undo()} />
+        <Snackbar
+          message={tr('common_deleted')}
+          actionLabel={tr('common_undo')}
+          onAction={() => void h.undo()}
+        />
       )}
     </View>
   );
