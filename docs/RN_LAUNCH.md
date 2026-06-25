@@ -14,12 +14,15 @@ The headline plan keeps 200 lines; tasks 199–200 expand into the granular sub-
 - [ ] Locale-aware date formats audited across screens
 - [ ] EN/BG parity lint (no string ships in one language only)
 
-### Build & verify (DO THIS FIRST — nothing is build-verified yet)
-- [ ] `cd mobile && npm install && npx expo install --fix`
-- [ ] `npm run typecheck` — fix type errors surfaced by real deps
-- [ ] Resolve Skia ↔ react-native-svg ↔ SDK version alignment
-- [ ] `eas build --profile development` (dev client; SQLCipher/Skia not in Expo Go)
-- [ ] Smoke test: boot → seed → add → history → analytics → settings → backup/restore
+### Build & verify
+- [x] `cd mobile && npm install` + `npx expo install --fix` (versions aligned to SDK 52)
+- [x] `npm run typecheck` — **0 errors**
+- [x] `npm test` — **15/15 pass** (Money, calculator, balance, db key, migrator)
+- [x] `npx eslint .` — **0 errors** (9 cosmetic warnings)
+- [x] `npx expo-doctor` — **18/18 checks pass**
+- [x] Branded cosmic icon + splash assets generated
+- [ ] `eas build --profile development` (dev client; SQLCipher/Skia not in Expo Go) — needs EAS account
+- [ ] Smoke test on device: boot → seed → add → history → analytics → settings → backup/restore
 
 ### Store assets
 - [ ] App icon (1024²) + adaptive icon + splash (cosmic)
