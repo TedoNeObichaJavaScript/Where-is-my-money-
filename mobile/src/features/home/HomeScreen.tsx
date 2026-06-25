@@ -1,7 +1,11 @@
 import { useMemo, useState } from 'react';
 import { RefreshControl, ScrollView, StyleSheet, View } from 'react-native';
 import { router } from 'expo-router';
+import { useTranslation } from 'react-i18next';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { AccountTiles } from './AccountTiles';
+import { StatCard } from './StatCard';
+import { useHomeData } from './useHomeData';
 import { bumpData } from '@/data/reactive';
 import {
   BalanceHero,
@@ -14,9 +18,6 @@ import {
 import { resolveName } from '@/i18n/labels';
 import { Money } from '@/domain/Money';
 import { useTheme } from '@/theme/ThemeProvider';
-import { AccountTiles } from './AccountTiles';
-import { StatCard } from './StatCard';
-import { useHomeData } from './useHomeData';
 
 function greeting(): string {
   const h = new Date().getHours();
@@ -27,9 +28,10 @@ function greeting(): string {
 
 export function HomeScreen() {
   const t = useTheme();
+  const { t: tr, i18n } = useTranslation();
   const insets = useSafeAreaInsets();
   const d = useHomeData();
-  const locale = 'en';
+  const locale = i18n.language;
   const [refreshing, setRefreshing] = useState(false);
 
   const onRefresh = () => {
@@ -68,7 +70,7 @@ export function HomeScreen() {
       {/* hero */}
       <GlassCard style={styles.hero}>
         <BalanceHero
-          label="Total balance"
+          label={tr('home_balance')}
           valueMinor={d.total}
           currency={d.currency}
           locale={locale}
@@ -84,9 +86,9 @@ export function HomeScreen() {
 
       {/* stats */}
       <View style={styles.stats}>
-        <StatCard label="Today" amountMinor={d.todaySpent} currency={d.currency} locale={locale} />
+        <StatCard label={tr('home_today')} amountMinor={d.todaySpent} currency={d.currency} locale={locale} />
         <StatCard
-          label="This month"
+          label={tr('home_month')}
           amountMinor={d.monthSpent}
           currency={d.currency}
           locale={locale}
@@ -97,15 +99,15 @@ export function HomeScreen() {
       {/* recent */}
       <View style={styles.block}>
         <SectionHeader
-          title="Recent"
-          actionLabel={d.recent.length ? 'See all' : undefined}
+          title={tr('home_recent')}
+          actionLabel={d.recent.length ? tr('home_seeAll') : undefined}
           onAction={() => router.push('/(tabs)/history')}
         />
         {d.recent.length === 0 ? (
           <EmptyState
             emoji="🪐"
-            title="Nothing logged yet"
-            subtitle="Tap the glowing + to add your first transaction."
+            title={tr('home_empty_title')}
+            subtitle={tr('home_empty_sub')}
           />
         ) : (
           <GlassCard padded={false} style={{ borderRadius: 20 }}>

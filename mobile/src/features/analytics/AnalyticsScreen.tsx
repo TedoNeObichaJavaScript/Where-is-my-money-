@@ -1,14 +1,15 @@
 import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { router } from 'expo-router';
 import Svg, { Path } from 'react-native-svg';
+import { useTranslation } from 'react-i18next';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { useAnalytics } from './useAnalytics';
 import { EmptyState, GlassCard, IconBadge, SectionHeader, Text } from '@/components/ui';
 import { DonutChart, type DonutSlice } from '@/components/charts/DonutChart';
 import { BarChart } from '@/components/charts/BarChart';
 import { resolveName } from '@/i18n/labels';
 import { Money } from '@/domain/Money';
 import { useTheme } from '@/theme/ThemeProvider';
-import { useAnalytics } from './useAnalytics';
 
 function Arrow({ dir, color, onPress, disabled }: { dir: 'l' | 'r'; color: string; onPress: () => void; disabled?: boolean }) {
   return (
@@ -28,8 +29,9 @@ function Arrow({ dir, color, onPress, disabled }: { dir: 'l' | 'r'; color: strin
 
 export function AnalyticsScreen() {
   const t = useTheme();
+  const { t: tr, i18n } = useTranslation();
   const insets = useSafeAreaInsets();
-  const locale = 'en';
+  const locale = i18n.language;
   const a = useAnalytics(locale);
 
   const slices: DonutSlice[] = a.byCategory.slice(0, 8).map((c) => ({
@@ -57,14 +59,14 @@ export function AnalyticsScreen() {
       </View>
 
       {!hasData ? (
-        <EmptyState emoji="🌌" title="No data this month" subtitle="Log a transaction to see insights." />
+        <EmptyState emoji="🌌" title={tr('analytics_noData')} />
       ) : (
         <>
           {/* summary */}
           <View style={styles.summary}>
             <GlassCard style={styles.sumCard}>
               <Text variant="micro" color={t.colors.textMuted}>
-                INCOME
+                {tr('analytics_income').toUpperCase()}
               </Text>
               <Text variant="heading" color={t.colors.income}>
                 {Money.format(a.totals.income, a.currency, locale)}
@@ -72,7 +74,7 @@ export function AnalyticsScreen() {
             </GlassCard>
             <GlassCard style={styles.sumCard}>
               <Text variant="micro" color={t.colors.textMuted}>
-                EXPENSE
+                {tr('analytics_expense').toUpperCase()}
               </Text>
               <Text variant="heading" color={t.colors.expense}>
                 {Money.format(a.totals.expense, a.currency, locale)}
@@ -100,14 +102,14 @@ export function AnalyticsScreen() {
           {/* daily bars */}
           <GlassCard style={styles.card}>
             <Text variant="caption" color={t.colors.textMuted} style={{ marginBottom: 12 }}>
-              DAILY SPENDING
+              {tr('analytics_daily').toUpperCase()}
             </Text>
             <BarChart values={a.daily} />
           </GlassCard>
 
           {/* top categories */}
           <View style={styles.card}>
-            <SectionHeader title="Top categories" />
+            <SectionHeader title={tr('analytics_top')} />
             <GlassCard padded={false} style={{ borderRadius: 20 }}>
               <View style={{ padding: 14, gap: 14 }}>
                 {a.byCategory.slice(0, 5).map((c) => {

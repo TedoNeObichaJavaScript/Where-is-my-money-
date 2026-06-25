@@ -1,7 +1,9 @@
 import { useMemo, useState } from 'react';
 import { SectionList, StyleSheet, View } from 'react-native';
 import { router } from 'expo-router';
+import { useTranslation } from 'react-i18next';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { useHistory, type DaySection } from './useHistory';
 import {
   EmptyState,
   FilterChip,
@@ -16,14 +18,14 @@ import { resolveName } from '@/i18n/labels';
 import { Money } from '@/domain/Money';
 import type { TxnType } from '@/domain/enums';
 import { useTheme } from '@/theme/ThemeProvider';
-import { useHistory, type DaySection } from './useHistory';
 
 type Filter = 'ALL' | TxnType;
 
 export function HistoryScreen() {
   const t = useTheme();
+  const { t: tr, i18n } = useTranslation();
   const insets = useSafeAreaInsets();
-  const locale = 'en';
+  const locale = i18n.language;
   const h = useHistory(locale);
   const [filter, setFilter] = useState<Filter>('ALL');
 
@@ -37,11 +39,11 @@ export function HistoryScreen() {
   return (
     <View style={[styles.root, { paddingTop: insets.top + 12 }]}>
       <Text variant="title" color={t.colors.text} style={styles.h}>
-        History
+        {tr('history_title')}
       </Text>
 
       <TextField
-        placeholder="Search notes…"
+        placeholder={tr('history_search')}
         value={h.searchInput}
         onChangeText={h.setSearchInput}
         style={styles.search}
@@ -51,7 +53,7 @@ export function HistoryScreen() {
         {(['ALL', 'EXPENSE', 'INCOME'] as Filter[]).map((f) => (
           <FilterChip
             key={f}
-            label={f === 'ALL' ? 'All' : f === 'EXPENSE' ? 'Expense' : 'Income'}
+            label={f === 'ALL' ? tr('history_all') : f === 'EXPENSE' ? tr('add_expense') : tr('add_income')}
             active={filter === f}
             onPress={() => setFilter(f)}
           />
@@ -69,8 +71,7 @@ export function HistoryScreen() {
         ListEmptyComponent={
           <EmptyState
             emoji={h.search ? '🔭' : '🪐'}
-            title={h.search ? 'No matches' : 'No transactions yet'}
-            subtitle={h.search ? 'Try a different note search.' : 'Your history will appear here.'}
+            title={h.search ? tr('history_noMatches') : tr('history_empty')}
           />
         }
         renderSectionHeader={({ section }) => (
