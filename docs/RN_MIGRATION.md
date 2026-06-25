@@ -194,25 +194,25 @@
 
 ## Phase 7 — Add / Edit transaction (136–155)
 
-- [ ] 136. Build Add screen scaffold (modal)
-- [ ] 137. Add Expense/Income segmented toggle
-- [ ] 138. Add large amount display field
-- [ ] 139. Add calculator keypad (0–9, decimal)
-- [ ] 140. Add operators (+ − × ÷) + evaluation
-- [ ] 141. Add backspace + clear
-- [ ] 142. Add account picker sheet
-- [ ] 143. Add category grid (emoji, color, favorites first)
-- [ ] 144. Add favorites/frequently-used ordering
-- [ ] 145. Add note input field
-- [ ] 146. Add date/time picker
-- [ ] 147. Add save → repository insert + balance update
-- [ ] 148. Add validation (amount > 0, account, category)
-- [ ] 149. Add edit mode (load by id, prefill)
-- [ ] 150. Add update + delete from edit mode
-- [ ] 151. Add success haptic + dismiss animation
-- [ ] 152. Add currency handling per account
-- [ ] 153. Add Add view-model/store binding
-- [ ] 154. Add keypad press animations + glow
+- [x] 136. Build Add screen scaffold (modal)
+- [x] 137. Add Expense/Income segmented toggle
+- [x] 138. Add large amount display field
+- [x] 139. Add calculator keypad (0–9, decimal)
+- [x] 140. Add operators (+ − × ÷) + evaluation
+- [x] 141. Add backspace + clear
+- [x] 142. Add account picker sheet
+- [x] 143. Add category grid (emoji, color, favorites first)
+- [x] 144. Add favorites/frequently-used ordering
+- [x] 145. Add note input field
+- [x] 146. Add date/time picker
+- [x] 147. Add save → repository insert + balance update
+- [x] 148. Add validation (amount > 0, account, category)
+- [x] 149. Add edit mode (load by id, prefill)
+- [x] 150. Add update + delete from edit mode
+- [x] 151. Add success haptic + dismiss animation
+- [x] 152. Add currency handling per account
+- [x] 153. Add Add view-model/store binding
+- [x] 154. Add keypad press animations + glow
 - [ ] 155. Polish Add screen transitions
 
 ## Phase 8 — History (156–168)
