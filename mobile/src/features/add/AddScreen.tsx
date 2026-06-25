@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Alert, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { router } from 'expo-router';
 import Svg, { Path } from 'react-native-svg';
+import { useTranslation } from 'react-i18next';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Keypad } from './Keypad';
 import { CategoryGrid } from './CategoryGrid';
@@ -30,8 +31,9 @@ function symbolOf(currency: string, locale: string): string {
 
 export function AddScreen({ type, editId }: { type?: TxnType; editId?: number }) {
   const t = useTheme();
+  const { t: tr, i18n } = useTranslation();
   const insets = useSafeAreaInsets();
-  const locale = 'en';
+  const locale = i18n.language;
   const vm = useAddTransaction({ type, editId });
   const [accountSheet, setAccountSheet] = useState(false);
 
@@ -44,10 +46,10 @@ export function AddScreen({ type, editId }: { type?: TxnType; editId?: number })
   };
 
   const onDelete = () => {
-    Alert.alert('Delete transaction?', 'This cannot be undone.', [
-      { text: 'Cancel', style: 'cancel' },
+    Alert.alert(tr('add_deleteTitle'), tr('add_deleteMsg'), [
+      { text: tr('common_cancel'), style: 'cancel' },
       {
-        text: 'Delete',
+        text: tr('common_delete'),
         style: 'destructive',
         onPress: async () => {
           await vm.remove();
@@ -68,7 +70,7 @@ export function AddScreen({ type, editId }: { type?: TxnType; editId?: number })
           </Svg>
         </Pressable>
         <Text variant="heading" color={t.colors.text}>
-          {vm.isEdit ? 'Edit' : 'New transaction'}
+          {vm.isEdit ? tr('add_edit') : tr('add_new')}
         </Text>
         {vm.isEdit ? (
           <Pressable onPress={onDelete} hitSlop={12}>
@@ -88,8 +90,8 @@ export function AddScreen({ type, editId }: { type?: TxnType; editId?: number })
             value={vm.type}
             onChange={vm.setType}
             options={[
-              { value: 'EXPENSE', label: 'Expense' },
-              { value: 'INCOME', label: 'Income' },
+              { value: 'EXPENSE', label: tr('add_expense') },
+              { value: 'INCOME', label: tr('add_income') },
             ]}
           />
         </View>
@@ -117,18 +119,18 @@ export function AddScreen({ type, editId }: { type?: TxnType; editId?: number })
             </>
           ) : (
             <Text variant="body" color={t.colors.textMuted} style={{ flex: 1 }}>
-              Select account
+              {tr('add_selectAccount')}
             </Text>
           )}
           <Text variant="caption" color={t.colors.accentBlue}>
-            Change
+            {tr('add_change')}
           </Text>
         </PressableScale>
 
         {/* category grid */}
         <View style={styles.block}>
           <Text variant="caption" color={t.colors.textMuted} style={styles.lbl}>
-            CATEGORY
+            {tr('add_category').toUpperCase()}
           </Text>
           <CategoryGrid
             categories={vm.categories}
@@ -140,15 +142,15 @@ export function AddScreen({ type, editId }: { type?: TxnType; editId?: number })
         {/* note + date */}
         <View style={styles.block}>
           <TextField
-            label="Note"
-            placeholder="Optional"
+            label={tr('add_note')}
+            placeholder={tr('add_optional')}
             value={vm.note}
             onChangeText={vm.setNote}
           />
         </View>
         <View style={styles.block}>
           <DatePickerField
-            label="DATE"
+            label={tr('add_date').toUpperCase()}
             value={vm.occurredAt}
             onChange={vm.setOccurredAt}
             locale={locale}
@@ -163,7 +165,11 @@ export function AddScreen({ type, editId }: { type?: TxnType; editId?: number })
 
       {/* save */}
       <View style={[styles.footer, { paddingBottom: insets.bottom + 8 }]}>
-        <NeonButton label={vm.isEdit ? 'Save changes' : 'Add'} onPress={onSave} disabled={!vm.valid} />
+        <NeonButton
+          label={vm.isEdit ? tr('add_saveChanges') : tr('add_save')}
+          onPress={onSave}
+          disabled={!vm.valid}
+        />
       </View>
 
       {/* account picker sheet */}

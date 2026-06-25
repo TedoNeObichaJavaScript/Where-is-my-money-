@@ -46,6 +46,9 @@ export const en = {
   add_save: 'Add',
   add_saveChanges: 'Save changes',
   add_selectAccount: 'Select account',
+  add_change: 'Change',
+  add_deleteTitle: 'Delete transaction?',
+  add_deleteMsg: 'This cannot be undone.',
 
   // history
   history_title: 'History',
@@ -77,17 +80,30 @@ export const en = {
   settings_backup: 'Back up to file',
   settings_restore: 'Restore from file',
   settings_lastBackup: 'Last backup',
+  settings_never: 'Never',
   settings_about: 'About',
   settings_version: 'Version',
   settings_privacy: 'Privacy',
   settings_danger: 'Danger zone',
   settings_erase: 'Erase all data',
+  settings_privacyValue: 'On-device only',
+  settings_restoreTitle: 'Restore backup?',
+  settings_restoreMsg: 'This REPLACES all current data.',
+  settings_restored: 'Restored',
+  settings_imported: '{{count}} transactions imported.',
+  settings_eraseTitle: 'Erase all data?',
+  settings_eraseMsg: 'Every transaction, account and category will be deleted.',
+  settings_notAvailable: 'Not available',
+  settings_noBiometrics: 'No biometrics are set up on this device.',
+  settings_restoreFailed: 'Could not restore',
 
   // common
   common_undo: 'Undo',
   common_deleted: 'Transaction deleted',
   common_cancel: 'Cancel',
   common_delete: 'Delete',
+  common_restore: 'Restore',
+  common_erase: 'Erase',
 };
 
 export type Resources = typeof en;

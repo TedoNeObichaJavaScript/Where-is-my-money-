@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Alert, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import Constants from 'expo-constants';
+import { useTranslation } from 'react-i18next';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import {
   GlassCard,
@@ -69,6 +70,7 @@ function Row({
 
 export function SettingsScreen() {
   const t = useTheme();
+  const { t: tr } = useTranslation();
   const insets = useSafeAreaInsets();
   const { name: themeName, setTheme } = useThemeControls();
 
@@ -80,7 +82,7 @@ export function SettingsScreen() {
 
   const toggleBiometric = async (v: boolean) => {
     if (v && !(await isBiometricAvailable())) {
-      Alert.alert('Not available', 'No biometrics are set up on this device.');
+      Alert.alert(tr('settings_notAvailable'), tr('settings_noBiometrics'));
       return;
     }
     settings.setBiometricEnabled(v);
@@ -106,25 +108,25 @@ export function SettingsScreen() {
   };
 
   const onRestore = () => {
-    Alert.alert('Restore backup?', 'This REPLACES all current data.', [
-      { text: 'Cancel', style: 'cancel' },
+    Alert.alert(tr('settings_restoreTitle'), tr('settings_restoreMsg'), [
+      { text: tr('common_cancel'), style: 'cancel' },
       {
-        text: 'Restore',
+        text: tr('common_restore'),
         style: 'destructive',
         onPress: async () => {
           const r = await importBackup();
-          if (r.ok) Alert.alert('Restored', `${r.count ?? 0} transactions imported.`);
-          else if (r.error) Alert.alert('Could not restore', r.error);
+          if (r.ok) Alert.alert(tr('settings_restored'), tr('settings_imported', { count: r.count ?? 0 }));
+          else if (r.error) Alert.alert(tr('settings_restoreFailed'), r.error);
         },
       },
     ]);
   };
 
   const onWipe = () => {
-    Alert.alert('Erase all data?', 'Every transaction, account and category will be deleted.', [
-      { text: 'Cancel', style: 'cancel' },
+    Alert.alert(tr('settings_eraseTitle'), tr('settings_eraseMsg'), [
+      { text: tr('common_cancel'), style: 'cancel' },
       {
-        text: 'Erase',
+        text: tr('common_erase'),
         style: 'destructive',
         onPress: async () => {
           await wipeAllData();
@@ -137,7 +139,9 @@ export function SettingsScreen() {
   };
 
   const version = Constants.expoConfig?.version ?? '0.3.0';
-  const backupLabel = lastBackup ? new Date(lastBackup).toLocaleDateString(locale) : 'Never';
+  const backupLabel = lastBackup
+    ? new Date(lastBackup).toLocaleDateString(locale)
+    : tr('settings_never');
 
   return (
     <ScrollView
@@ -146,16 +150,16 @@ export function SettingsScreen() {
       showsVerticalScrollIndicator={false}
     >
       <Text variant="title" color={t.colors.text} style={styles.h}>
-        Settings
+        {tr('settings_title')}
       </Text>
 
-      <Group title="Security">
-        <Row label="Biometric lock" right={<Switch value={biometric} onChange={toggleBiometric} />} />
+      <Group title={tr('settings_security')}>
+        <Row label={tr('settings_biometric')} right={<Switch value={biometric} onChange={toggleBiometric} />} />
       </Group>
 
-      <Group title="Appearance">
+      <Group title={tr('settings_appearance')}>
         <Row
-          label="Theme"
+          label={tr('settings_theme')}
           right={
             <View style={styles.swatches}>
               {themeVariants.map((v) => (
@@ -172,7 +176,7 @@ export function SettingsScreen() {
           }
         />
         <Row
-          label="Language"
+          label={tr('settings_language')}
           right={
             <View style={styles.langs}>
               <PillButton label="EN" active={locale === 'en'} onPress={() => setLang('en')} />
@@ -180,29 +184,33 @@ export function SettingsScreen() {
             </View>
           }
         />
-        <Row label="Display currency" value={currency ?? 'Auto'} onPress={() => setCurSheet(true)} />
+        <Row
+          label={tr('settings_currency')}
+          value={currency ?? tr('settings_auto')}
+          onPress={() => setCurSheet(true)}
+        />
       </Group>
 
-      <Group title="Data">
-        <Row label="Back up to file" onPress={onBackup} />
-        <Row label="Restore from file" onPress={onRestore} />
-        <Row label="Last backup" value={backupLabel} />
+      <Group title={tr('settings_data')}>
+        <Row label={tr('settings_backup')} onPress={onBackup} />
+        <Row label={tr('settings_restore')} onPress={onRestore} />
+        <Row label={tr('settings_lastBackup')} value={backupLabel} />
       </Group>
 
-      <Group title="About">
-        <Row label="Version" value={version} />
-        <Row label="Privacy" value="On-device only" />
+      <Group title={tr('settings_about')}>
+        <Row label={tr('settings_version')} value={version} />
+        <Row label={tr('settings_privacy')} value={tr('settings_privacyValue')} />
       </Group>
 
-      <Group title="Danger zone">
-        <Row label="Erase all data" danger onPress={onWipe} />
+      <Group title={tr('settings_danger')}>
+        <Row label={tr('settings_erase')} danger onPress={onWipe} />
       </Group>
 
       <Sheet visible={curSheet} onClose={() => setCurSheet(false)}>
         {['Auto', ...CURRENCIES].map((c) => (
           <Pressable key={c} style={styles.curRow} onPress={() => pickCurrency(c === 'Auto' ? null : c)}>
             <Text variant="bodyMedium" color={t.colors.text}>
-              {c}
+              {c === 'Auto' ? tr('settings_auto') : c}
             </Text>
           </Pressable>
         ))}
