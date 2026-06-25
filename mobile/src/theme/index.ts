@@ -1,2 +1,10 @@
-// Theme barrel — populated in Phase 1 (tasks 16–35).
-export {};
+export * from './palette';
+export * from './space';
+export * from './radius';
+export * from './typography';
+export * from './shadows';
+export * from './glass';
+export * from './gradients';
+export * from './motion';
+export * from './tokens';
+export * from './theme';
