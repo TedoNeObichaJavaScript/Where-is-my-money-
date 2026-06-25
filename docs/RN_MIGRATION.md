@@ -176,20 +176,20 @@
 
 ## Phase 6 — Home screen (121–135)
 
-- [ ] 121. Build Home scaffold + safe-area + scroll
-- [ ] 122. Add total balance hero card (animated)
-- [ ] 123. Add swipeable account tiles row
-- [ ] 124. Add "today spent" stat card
-- [ ] 125. Add "this month spent" stat card + vs-last-month delta
-- [ ] 126. Add recent transactions list (latest 20)
-- [ ] 127. Add tap-row → edit navigation
-- [ ] 128. Add empty state (no transactions yet)
+- [x] 121. Build Home scaffold + safe-area + scroll
+- [x] 122. Add total balance hero card (animated)
+- [x] 123. Add swipeable account tiles row
+- [x] 124. Add "today spent" stat card
+- [x] 125. Add "this month spent" stat card + vs-last-month delta
+- [x] 126. Add recent transactions list (latest 20)
+- [x] 127. Add tap-row → edit navigation
+- [x] 128. Add empty state (no transactions yet)
 - [ ] 129. Add quick-add entry points (expense/income shortcuts)
 - [ ] 130. Add upcoming recurring preview strip
-- [ ] 131. Add pull-to-refresh / live reactive updates
+- [x] 131. Add pull-to-refresh / live reactive updates
 - [ ] 132. Add scroll-linked collapsing header (reanimated)
-- [ ] 133. Add Home view-model/store binding
-- [ ] 134. Add greeting + date header
+- [x] 133. Add Home view-model/store binding
+- [x] 134. Add greeting + date header
 - [ ] 135. Polish Home animations + glow timing
 
 ## Phase 7 — Add / Edit transaction (136–155)
