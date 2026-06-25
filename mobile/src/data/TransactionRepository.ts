@@ -8,15 +8,19 @@ import { bumpData } from './reactive';
 
 /** A transaction joined with its account/category display fields (for lists). */
 export interface TransactionView extends Transaction {
-  categoryName: string | null;
+  categoryName: string;
+  categoryNameKey: string | null;
   categoryEmoji: string;
   categoryColor: string;
   accountName: string;
+  accountNameKey: string | null;
 }
 
 const VIEW_SELECT = `
-  SELECT t.*, c.name AS categoryName, c.emoji AS categoryEmoji, c.colorHex AS categoryColor,
-         a.name AS accountName
+  SELECT t.*,
+         c.name AS categoryName, c.nameKey AS categoryNameKey,
+         c.emoji AS categoryEmoji, c.colorHex AS categoryColor,
+         a.name AS accountName, a.nameKey AS accountNameKey
   FROM transactions t
   JOIN categories c ON c.id = t.categoryId
   JOIN accounts a ON a.id = t.accountId`;
