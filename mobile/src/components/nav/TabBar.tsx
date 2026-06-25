@@ -2,9 +2,9 @@ import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { BlurView } from 'expo-blur';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import type { BottomTabBarProps } from '@react-navigation/bottom-tabs';
-import { useTheme } from '@/theme/ThemeProvider';
 import { TabIcon, type TabName } from './TabIcon';
 import { AddButton } from './AddButton';
+import { useTheme } from '@/theme/ThemeProvider';
 
 const ICONS: Record<string, TabName> = {
   index: 'home',
@@ -40,8 +40,8 @@ export function TabBar({ state, navigation }: BottomTabBarProps) {
         accessibilityRole="button"
         accessibilityState={{ selected: focused }}
       >
-        <TabIcon name={ICONS[routeName]} color={color} />
-        <Text style={[styles.label, { color }]}>{LABELS[routeName]}</Text>
+        <TabIcon name={ICONS[routeName] ?? 'home'} color={color} />
+        <Text style={[styles.label, { color }]}>{LABELS[routeName] ?? ''}</Text>
       </Pressable>
     );
   };

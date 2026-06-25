@@ -31,7 +31,18 @@ export function DonutChart({
   const c = 2 * Math.PI * r;
   const sum = slices.reduce((s, x) => s + x.value, 0) || 1;
 
-  let offset = 0;
+  // precompute each slice's dash length + cumulative offset (pure, no render mutation)
+  const arcs = slices.reduce<{ id: number; color: string; dash: number; offset: number }[]>(
+    (acc, s) => {
+      const dash = (s.value / sum) * c;
+      const prev = acc[acc.length - 1];
+      const offset = prev ? prev.offset + prev.dash : 0;
+      acc.push({ id: s.id, color: s.color, dash, offset });
+      return acc;
+    },
+    [],
+  );
+
   return (
     <View style={{ width: size, height: size, alignItems: 'center', justifyContent: 'center' }}>
       <Svg width={size} height={size}>
@@ -44,26 +55,20 @@ export function DonutChart({
             strokeWidth={stroke}
             fill="none"
           />
-          {slices.map((s) => {
-            const frac = s.value / sum;
-            const dash = frac * c;
-            const el = (
-              <Circle
-                key={s.id}
-                cx={size / 2}
-                cy={size / 2}
-                r={r}
-                stroke={s.color}
-                strokeWidth={stroke}
-                strokeLinecap="butt"
-                fill="none"
-                strokeDasharray={`${dash} ${c - dash}`}
-                strokeDashoffset={-offset}
-              />
-            );
-            offset += dash;
-            return el;
-          })}
+          {arcs.map((a) => (
+            <Circle
+              key={a.id}
+              cx={size / 2}
+              cy={size / 2}
+              r={r}
+              stroke={a.color}
+              strokeWidth={stroke}
+              strokeLinecap="butt"
+              fill="none"
+              strokeDasharray={`${a.dash} ${c - a.dash}`}
+              strokeDashoffset={-a.offset}
+            />
+          ))}
         </G>
       </Svg>
       <View style={{ position: 'absolute', alignItems: 'center' }}>

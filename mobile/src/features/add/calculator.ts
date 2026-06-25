@@ -33,6 +33,7 @@ export function evaluate(expr: string): number | null {
   const p1: (number | Op)[] = [];
   for (let i = 0; i < tokens.length; i++) {
     const tk = tokens[i];
+    if (tk === undefined) continue;
     if (tk === '×' || tk === '÷') {
       const prev = p1.pop() as number;
       const next = tokens[++i] as number;

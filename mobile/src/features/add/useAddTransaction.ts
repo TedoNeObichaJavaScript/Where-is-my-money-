@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
+import { applyKey, evaluate } from './calculator';
 import { AccountRepository } from '@/data/AccountRepository';
 import { CategoryRepository } from '@/data/CategoryRepository';
 import { TransactionRepository } from '@/data/TransactionRepository';
@@ -6,7 +7,6 @@ import { subscribeData, useLiveQuery } from '@/data/reactive';
 import { Money } from '@/domain/Money';
 import type { Account, Category } from '@/domain/models';
 import type { TxnType } from '@/domain/enums';
-import { applyKey, evaluate } from './calculator';
 
 export type AddState = ReturnType<typeof useAddTransaction>;
 
@@ -17,7 +17,7 @@ export function useAddTransaction(opts: { type?: TxnType; editId?: number }) {
   const [accountId, setAccountId] = useState<number | null>(null);
   const [categoryId, setCategoryId] = useState<number | null>(null);
   const [note, setNote] = useState('');
-  const [occurredAt, setOccurredAt] = useState<number>(Date.now());
+  const [occurredAt, setOccurredAt] = useState<number>(() => Date.now());
   const [loaded, setLoaded] = useState(opts.editId == null);
 
   const accounts = useLiveQuery<Account[]>(() => AccountRepository.all(), []);
@@ -40,7 +40,8 @@ export function useAddTransaction(opts: { type?: TxnType; editId?: number }) {
 
   // default account once loaded
   useEffect(() => {
-    if (accountId == null && accounts.length > 0) setAccountId(accounts[0].id);
+    const first = accounts[0];
+    if (accountId == null && first) setAccountId(first.id);
   }, [accounts, accountId]);
 
   // load existing transaction for edit mode

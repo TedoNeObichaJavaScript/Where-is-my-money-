@@ -51,4 +51,9 @@ export const semantic = {
   danger: '#FF5C7A',
 } as const;
 
-export type AccentRamp = typeof aurora;
+export type AccentRamp = {
+  accent: string;
+  accentBright: string;
+  accentBlue: string;
+  deep: string;
+};
