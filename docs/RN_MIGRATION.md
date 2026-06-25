@@ -269,7 +269,7 @@
 
 ## Phase 11 — i18n, store launch, cleanup (199–200 + sub-tasks)
 
-- [ ] 199. Wire i18next: EN + BG resource bundles (port 102 keys), expo-localization detection, runtime switch; App Store + Play Store assets (icons, splash, screenshots, privacy manifest, data-safety, financial-features declaration, EAS production profiles); QA across iPhone SE→16 Pro Max + Android; accessibility + perf pass
+- [x] 199. Wire i18next: EN + BG resource bundles (port 102 keys), expo-localization detection, runtime switch; App Store + Play Store assets (icons, splash, screenshots, privacy manifest, data-safety, financial-features declaration, EAS production profiles); QA across iPhone SE→16 Pro Max + Android; accessibility + perf pass
 - [ ] 200. Remove legacy Android `app/`, gradle, root build files; promote `mobile/` to repo root; update README to cross-platform; final release tag
 
 > Tasks 199–200 are umbrellas — each expands into its own granular sub-commit checklist
