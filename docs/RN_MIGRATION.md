@@ -263,7 +263,7 @@
 - [x] 193. Add backup format parity w/ Android (version 1 schema)
 - [x] 194. Add JSON restore (REPLACE mode + confirm)
 - [x] 195. Add last-backup timestamp display
-- [ ] 196. Add account/category management (add/edit/archive)
+- [x] 196. Add account/category management (add/edit/archive)
 - [x] 197. Add about / privacy / version section
 - [x] 198. Add danger zone (wipe all data + confirm)
 
