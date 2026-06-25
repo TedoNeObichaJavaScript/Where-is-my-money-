@@ -34,6 +34,18 @@ window_dump.xml
 !app/src/**/*.jpg
 !app/src/**/*.webp
 
+# --- React Native / Expo (mobile/) ---
+node_modules/
+mobile/.expo/
+mobile/dist/
+mobile/ios/
+mobile/android/
+expo-env.d.ts
+# allow committed mobile design assets despite the global *.png ignore above
+!mobile/assets/**/*.png
+!mobile/assets/**/*.jpg
+!mobile/assets/**/*.webp
+
 # OS / editors
 Thumbs.db
 *.swp
