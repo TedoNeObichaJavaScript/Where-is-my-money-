@@ -21,13 +21,13 @@ function fakeDb() {
 describe('migration runner', () => {
   it('applies schema v1 once and is idempotent on re-run', async () => {
     const f = fakeDb();
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+     
     await runMigrations(f.db as any);
     expect(f.version()).toBe(1);
     expect(f.exec.filter((s) => s.includes('CREATE TABLE')).length).toBe(4);
 
     const before = f.exec.length;
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+     
     await runMigrations(f.db as any);
     expect(f.exec.length).toBe(before);
   });

@@ -1,7 +1,7 @@
 import { getLocales } from 'expo-localization';
+import { bumpData } from './reactive';
 import { getDb } from '@/db/connection';
 import { flags } from '@/storage/flags';
-import { bumpData } from './reactive';
 
 /** Device currency for seeded accounts, falling back to EUR. */
 export function deviceCurrency(): string {

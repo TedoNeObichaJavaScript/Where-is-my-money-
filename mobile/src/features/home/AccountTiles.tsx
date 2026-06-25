@@ -1,9 +1,9 @@
 import { ScrollView, StyleSheet, View } from 'react-native';
+import type { AccountWithBalance } from './useHomeData';
 import { GlassCard, IconBadge, Text } from '@/components/ui';
 import { Money } from '@/domain/Money';
 import { resolveName } from '@/i18n/labels';
 import { useTheme } from '@/theme/ThemeProvider';
-import type { AccountWithBalance } from './useHomeData';
 
 /** Horizontally scrollable account balance tiles. */
 export function AccountTiles({

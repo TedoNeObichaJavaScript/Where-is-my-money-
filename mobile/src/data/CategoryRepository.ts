@@ -1,9 +1,9 @@
+import { bumpData } from './reactive';
 import { getDb } from '@/db/connection';
 import { toCategory } from '@/db/mappers';
 import { fromBool, type CategoryRow } from '@/db/types';
 import type { Category, NewCategory } from '@/domain/models';
 import type { CategoryKind } from '@/domain/enums';
-import { bumpData } from './reactive';
 
 export const CategoryRepository = {
   async all(includeHidden = false): Promise<Category[]> {

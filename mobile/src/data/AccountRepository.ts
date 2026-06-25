@@ -1,9 +1,9 @@
+import { bumpData } from './reactive';
 import { getDb } from '@/db/connection';
 import { toAccount } from '@/db/mappers';
 import { fromBool, type AccountRow } from '@/db/types';
 import type { Account, NewAccount } from '@/domain/models';
 import type { Minor } from '@/domain/Money';
-import { bumpData } from './reactive';
 
 export const AccountRepository = {
   async all(includeArchived = false): Promise<Account[]> {

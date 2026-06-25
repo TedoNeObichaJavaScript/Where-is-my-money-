@@ -1,9 +1,9 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import { getLocales } from 'expo-localization';
-import { settings } from '@/storage/settings';
 import { en } from './en';
 import { bg } from './bg';
+import { settings } from '@/storage/settings';
 
 /** Resolve the startup language: saved preference → device → English. */
 function initialLanguage(): string {

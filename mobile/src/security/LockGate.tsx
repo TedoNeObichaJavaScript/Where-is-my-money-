@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useState, type ReactNode } from 'react';
 import { StyleSheet, View } from 'react-native';
+import { authenticate } from './biometric';
 import { NeonButton, Text } from '@/components/ui';
 import { settings } from '@/storage/settings';
-import { authenticate } from './biometric';
 
 /** If biometric lock is enabled, requires authentication before revealing the app. */
 export function LockGate({ children }: { children: ReactNode }) {

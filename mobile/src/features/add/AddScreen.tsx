@@ -3,6 +3,9 @@ import { Alert, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { router } from 'expo-router';
 import Svg, { Path } from 'react-native-svg';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { Keypad } from './Keypad';
+import { CategoryGrid } from './CategoryGrid';
+import { useAddTransaction } from './useAddTransaction';
 import {
   AmountField,
   GlassCard,
@@ -14,15 +17,11 @@ import {
   Sheet,
   TextField,
   Text,
-} from '@/components/ui';
-import { DatePickerField } from '@/components/ui';
+ DatePickerField } from '@/components/ui';
 import { resolveName } from '@/i18n/labels';
 import { haptics } from '@/lib/haptics';
 import { useTheme } from '@/theme/ThemeProvider';
 import type { TxnType } from '@/domain/enums';
-import { Keypad } from './Keypad';
-import { CategoryGrid } from './CategoryGrid';
-import { useAddTransaction } from './useAddTransaction';
 
 function symbolOf(currency: string, locale: string): string {
   const parts = new Intl.NumberFormat(locale, { style: 'currency', currency }).formatToParts(0);

@@ -1,7 +1,7 @@
 import { StyleSheet, View } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
-import { useTheme } from '@/theme/ThemeProvider';
 import { NebulaOrbs } from './NebulaOrbs';
+import { useTheme } from '@/theme/ThemeProvider';
 
 /**
  * The app's persistent void: indigo-black base + a barely-there aurora wash +

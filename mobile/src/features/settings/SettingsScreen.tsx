@@ -9,9 +9,8 @@ import {
   Switch,
   Text,
 } from '@/components/ui';
-import { useThemeControls } from '@/theme/ThemeProvider';
+import { useThemeControls , useTheme } from '@/theme/ThemeProvider';
 import { themeVariants } from '@/theme/variants';
-import { useTheme } from '@/theme/ThemeProvider';
 import { settings } from '@/storage/settings';
 import { flags } from '@/storage/flags';
 import { seedIfNeeded } from '@/data/seed';

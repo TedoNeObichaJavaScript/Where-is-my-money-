@@ -1,3 +1,5 @@
+import { getOrCreateDbKey } from '../key';
+
 const store: Record<string, string> = {};
 
 jest.mock('expo-secure-store', () => ({
@@ -14,8 +16,6 @@ jest.mock('expo-secure-store', () => ({
 jest.mock('expo-crypto', () => ({
   getRandomBytes: (n: number) => new Uint8Array(Array.from({ length: n }, (_, i) => (i * 7) % 256)),
 }));
-
-import { getOrCreateDbKey } from '../key';
 
 describe('db key', () => {
   it('generates a 32-byte (64 hex char) key and reuses it', async () => {

@@ -1,8 +1,8 @@
 import { type ReactNode } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { useAppFonts } from '@/theme/fonts';
 import { useBootstrap } from './useBootstrap';
 import { BootScreen } from './BootScreen';
+import { useAppFonts } from '@/theme/fonts';
 
 /** Blocks render until fonts + the encrypted DB are ready; shows errors clearly. */
 export function BootGate({ children }: { children: ReactNode }) {

@@ -1,8 +1,8 @@
+import { bumpData } from './reactive';
 import { getDb } from '@/db/connection';
 import { toRecurringRule } from '@/db/mappers';
 import { fromBool, type RecurringRuleRow } from '@/db/types';
 import type { RecurringRule } from '@/domain/models';
-import { bumpData } from './reactive';
 
 type NewRule = Omit<RecurringRule, 'id'>;
 

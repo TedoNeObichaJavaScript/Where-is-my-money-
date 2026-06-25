@@ -1,6 +1,6 @@
 import { createContext, useContext, type ReactNode } from 'react';
-import { useThemeStore } from '@/stores/themeStore';
 import type { Theme, ThemeName } from './theme';
+import { useThemeStore } from '@/stores/themeStore';
 
 type ThemeContextValue = {
   theme: Theme;

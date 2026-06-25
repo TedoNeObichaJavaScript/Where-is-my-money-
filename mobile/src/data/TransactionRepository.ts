@@ -1,10 +1,10 @@
+import { bumpData } from './reactive';
 import { getDb } from '@/db/connection';
 import { toTransaction } from '@/db/mappers';
 import type { TransactionRow } from '@/db/types';
 import type { NewTransaction, Transaction } from '@/domain/models';
 import type { Minor } from '@/domain/Money';
 import type { TxnType } from '@/domain/enums';
-import { bumpData } from './reactive';
 
 /** A transaction joined with its account/category display fields (for lists). */
 export interface TransactionView extends Transaction {

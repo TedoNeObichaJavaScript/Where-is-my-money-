@@ -1,11 +1,11 @@
 import * as FileSystem from 'expo-file-system';
 import * as Sharing from 'expo-sharing';
 import * as DocumentPicker from 'expo-document-picker';
+import { bumpData } from './reactive';
 import { getDb } from '@/db/connection';
 import { wipeAllData } from '@/db/reset';
 import { flags } from '@/storage/flags';
 import { settings } from '@/storage/settings';
-import { bumpData } from './reactive';
 
 /** Backup format version — parity with the Android JSON schema. */
 export const BACKUP_VERSION = 1;
