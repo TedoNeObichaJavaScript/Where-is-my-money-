@@ -7,7 +7,7 @@ import { useTheme } from '@/theme/ThemeProvider';
 
 /**
  * The center floating action — the one element allowed a full neon halo.
- * Opens the Add (expense) modal. The glow is a stack of soft shadow layers.
+ * Tap → add expense; long-press → add income (quick-add shortcuts).
  */
 export function AddButton() {
   const t = useTheme();
@@ -17,11 +17,18 @@ export function AddButton() {
     router.push('/add/expense');
   };
 
+  const onLongPress = () => {
+    void Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Heavy);
+    router.push('/add/income');
+  };
+
   return (
     <View style={styles.wrap} pointerEvents="box-none">
       {/* layered glow halo */}
-      <View style={[styles.halo, { backgroundColor: t.colors.accent, shadowColor: t.colors.accent }]} />
-      <Pressable onPress={onPress} hitSlop={12}>
+      <View
+        style={[styles.halo, { backgroundColor: t.colors.accent, shadowColor: t.colors.accent }]}
+      />
+      <Pressable onPress={onPress} onLongPress={onLongPress} hitSlop={12}>
         <LinearGradient
           colors={[t.colors.accent, t.colors.accentBlue]}
           start={{ x: 0, y: 0 }}
@@ -29,7 +36,12 @@ export function AddButton() {
           style={styles.fab}
         >
           <Svg width={28} height={28} viewBox="0 0 24 24">
-            <Path d="M12 5v14M5 12h14" stroke={t.colors.onAccent} strokeWidth={2.4} strokeLinecap="round" />
+            <Path
+              d="M12 5v14M5 12h14"
+              stroke={t.colors.onAccent}
+              strokeWidth={2.4}
+              strokeLinecap="round"
+            />
           </Svg>
         </LinearGradient>
       </Pressable>
