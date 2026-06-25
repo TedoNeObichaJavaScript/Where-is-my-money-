@@ -79,31 +79,31 @@
 
 ## Phase 2 — Secure storage & DB infrastructure (36–60)
 
-- [ ] 36. Install + configure expo-sqlite with SQLCipher plugin
-- [ ] 37. Add `src/db/key.ts` — generate 32-byte DB key once
-- [ ] 38. Store DB key in expo-secure-store (WHEN_UNLOCKED_THIS_DEVICE_ONLY)
-- [ ] 39. Add `src/db/connection.ts` — open DB, `PRAGMA key` first stmt
-- [ ] 40. Add `src/db/migrations/0001_init.ts` — schema v1
-- [ ] 41. Add `transactions` table DDL + indices
-- [ ] 42. Add `accounts` table DDL
-- [ ] 43. Add `categories` table DDL
-- [ ] 44. Add `recurring_rules` table DDL
-- [ ] 45. Add `src/db/migrator.ts` — versioned migration runner
-- [ ] 46. Add `user_version` pragma tracking
-- [ ] 47. Add foreign-key enforcement pragma + WAL mode
-- [ ] 48. Add `src/db/types.ts` — row ↔ domain mappers
-- [ ] 49. Add MMKV encrypted instance `src/storage/kv.ts`
-- [ ] 50. Add `src/storage/settings.ts` typed prefs (keys from spec)
-- [ ] 51. Add prefs: biometricEnabled, displayCurrency, lastBackupAt, themeKey
-- [ ] 52. Add `src/storage/migrationFlag.ts` (first-run / seeded flags)
-- [ ] 53. Add DB transaction helper `withTxn()`
-- [ ] 54. Add query logging in __DEV__ only
-- [ ] 55. Add DB reset/wipe util (for restore)
-- [ ] 56. Add unit test harness (jest + ts-jest) config
-- [ ] 57. Test: DB opens + key round-trips
-- [ ] 58. Test: migration runner is idempotent
-- [ ] 59. Add secure-store error fallbacks (no biometrics hw)
-- [ ] 60. Add boot guard: DB ready before render
+- [x] 36. Install + configure expo-sqlite with SQLCipher plugin
+- [x] 37. Add `src/db/key.ts` — generate 32-byte DB key once
+- [x] 38. Store DB key in expo-secure-store (WHEN_UNLOCKED_THIS_DEVICE_ONLY)
+- [x] 39. Add `src/db/connection.ts` — open DB, `PRAGMA key` first stmt
+- [x] 40. Add `src/db/migrations/0001_init.ts` — schema v1
+- [x] 41. Add `transactions` table DDL + indices
+- [x] 42. Add `accounts` table DDL
+- [x] 43. Add `categories` table DDL
+- [x] 44. Add `recurring_rules` table DDL
+- [x] 45. Add `src/db/migrator.ts` — versioned migration runner
+- [x] 46. Add `user_version` pragma tracking
+- [x] 47. Add foreign-key enforcement pragma + WAL mode
+- [x] 48. Add `src/db/types.ts` — row ↔ domain mappers
+- [x] 49. Add MMKV encrypted instance `src/storage/kv.ts`
+- [x] 50. Add `src/storage/settings.ts` typed prefs (keys from spec)
+- [x] 51. Add prefs: biometricEnabled, displayCurrency, lastBackupAt, themeKey
+- [x] 52. Add `src/storage/migrationFlag.ts` (first-run / seeded flags)
+- [x] 53. Add DB transaction helper `withTxn()`
+- [x] 54. Add query logging in __DEV__ only
+- [x] 55. Add DB reset/wipe util (for restore)
+- [x] 56. Add unit test harness (jest + ts-jest) config
+- [x] 57. Test: DB opens + key round-trips
+- [x] 58. Test: migration runner is idempotent
+- [x] 59. Add secure-store error fallbacks (no biometrics hw)
+- [x] 60. Add boot guard: DB ready before render
 
 ## Phase 3 — Domain models, money, repositories, seed (61–80)
 
