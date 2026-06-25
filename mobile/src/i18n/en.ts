@@ -66,6 +66,9 @@ export const en = {
   analytics_daily: 'Daily spending',
   analytics_top: 'Top categories',
   analytics_noData: 'No data this month',
+  analytics_cashflow: 'Cash flow',
+  analytics_saved: 'Saved',
+  analytics_heatmap: 'Spending calendar',
 
   // settings
   settings_title: 'Settings',

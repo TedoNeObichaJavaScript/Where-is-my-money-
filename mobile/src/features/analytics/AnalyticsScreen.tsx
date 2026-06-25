@@ -1,4 +1,5 @@
 import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
+import Animated, { FadeInDown } from 'react-native-reanimated';
 import { router } from 'expo-router';
 import Svg, { Path } from 'react-native-svg';
 import { useTranslation } from 'react-i18next';
@@ -7,13 +8,52 @@ import { useAnalytics } from './useAnalytics';
 import { EmptyState, GlassCard, IconBadge, SectionHeader, Text } from '@/components/ui';
 import { DonutChart, type DonutSlice } from '@/components/charts/DonutChart';
 import { BarChart } from '@/components/charts/BarChart';
+import { SankeyFlow, type FlowNode } from '@/components/charts/SankeyFlow';
+import { CalendarHeatmap } from '@/components/charts/CalendarHeatmap';
 import { resolveName } from '@/i18n/labels';
 import { Money } from '@/domain/Money';
 import { useTheme } from '@/theme/ThemeProvider';
 
-function Arrow({ dir, color, onPress, disabled }: { dir: 'l' | 'r'; color: string; onPress: () => void; disabled?: boolean }) {
+/** Animated card wrapper — staggered fade-up entrance for each chart block. */
+function ChartCard({
+  index,
+  children,
+  style,
+}: {
+  index: number;
+  children: React.ReactNode;
+  style?: object;
+}) {
   return (
-    <Pressable onPress={onPress} disabled={disabled} hitSlop={12} style={{ opacity: disabled ? 0.3 : 1 }}>
+    <Animated.View
+      entering={FadeInDown.delay(index * 70)
+        .springify()
+        .damping(18)}
+      style={style}
+    >
+      <GlassCard style={styles.card}>{children}</GlassCard>
+    </Animated.View>
+  );
+}
+
+function Arrow({
+  dir,
+  color,
+  onPress,
+  disabled,
+}: {
+  dir: 'l' | 'r';
+  color: string;
+  onPress: () => void;
+  disabled?: boolean;
+}) {
+  return (
+    <Pressable
+      onPress={onPress}
+      disabled={disabled}
+      hitSlop={12}
+      style={{ opacity: disabled ? 0.3 : 1 }}
+    >
       <Svg width={24} height={24} viewBox="0 0 24 24">
         <Path
           d={dir === 'l' ? 'M15 6l-6 6 6 6' : 'M9 6l6 6-6 6'}
@@ -43,10 +83,21 @@ export function AnalyticsScreen() {
 
   const hasData = a.totals.expense > 0 || a.totals.income > 0;
 
+  const outflows: FlowNode[] = a.byCategory.slice(0, 6).map((c) => ({
+    label: resolveName(null, c.name),
+    color: c.colorHex,
+    value: c.total,
+  }));
+  const firstWeekday = new Date(a.monthStart).getDay();
+
   return (
     <ScrollView
       style={{ flex: 1 }}
-      contentContainerStyle={{ paddingTop: insets.top + 12, paddingHorizontal: 16, paddingBottom: 140 }}
+      contentContainerStyle={{
+        paddingTop: insets.top + 12,
+        paddingHorizontal: 16,
+        paddingBottom: 140,
+      }}
       showsVerticalScrollIndicator={false}
     >
       {/* month selector */}
@@ -80,7 +131,10 @@ export function AnalyticsScreen() {
                 {Money.format(a.totals.expense, a.currency, locale)}
               </Text>
               {a.trendPct != null ? (
-                <Text variant="caption" color={a.trendPct <= 0 ? t.colors.income : t.colors.expense}>
+                <Text
+                  variant="caption"
+                  color={a.trendPct <= 0 ? t.colors.income : t.colors.expense}
+                >
                   {a.trendPct <= 0 ? '↓' : '↑'} {Math.abs(a.trendPct)}% vs last month
                 </Text>
               ) : null}
@@ -88,7 +142,7 @@ export function AnalyticsScreen() {
           </View>
 
           {/* donut */}
-          <GlassCard style={styles.card}>
+          <ChartCard index={0}>
             <View style={{ alignItems: 'center' }}>
               <DonutChart
                 slices={slices}
@@ -97,7 +151,32 @@ export function AnalyticsScreen() {
                 locale={locale}
               />
             </View>
-          </GlassCard>
+          </ChartCard>
+
+          {/* cash-flow (Sankey) — the differentiator */}
+          {a.totals.income > 0 && outflows.length > 0 ? (
+            <ChartCard index={1}>
+              <Text variant="caption" color={t.colors.textMuted} style={{ marginBottom: 12 }}>
+                {tr('analytics_cashflow').toUpperCase()}
+              </Text>
+              <SankeyFlow
+                incomeLabel={tr('analytics_income')}
+                savedLabel={tr('analytics_saved')}
+                income={a.totals.income}
+                outflows={outflows}
+                currency={a.currency}
+                locale={locale}
+              />
+            </ChartCard>
+          ) : null}
+
+          {/* spending calendar heatmap */}
+          <ChartCard index={2}>
+            <Text variant="caption" color={t.colors.textMuted} style={{ marginBottom: 12 }}>
+              {tr('analytics_heatmap').toUpperCase()}
+            </Text>
+            <CalendarHeatmap values={a.daily} firstWeekday={firstWeekday} color={t.colors.accent} />
+          </ChartCard>
 
           {/* daily bars */}
           <GlassCard style={styles.card}>
@@ -154,7 +233,12 @@ export function AnalyticsScreen() {
 }
 
 const styles = StyleSheet.create({
-  monthRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: 20 },
+  monthRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    marginBottom: 20,
+  },
   summary: { flexDirection: 'row', gap: 12, marginBottom: 12 },
   sumCard: { flex: 1, borderRadius: 20 },
   card: { borderRadius: 24, marginVertical: 8 },

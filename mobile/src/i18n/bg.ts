@@ -62,6 +62,9 @@ export const bg: Resources = {
   analytics_daily: 'Дневни разходи',
   analytics_top: 'Топ категории',
   analytics_noData: 'Няма данни този месец',
+  analytics_cashflow: 'Паричен поток',
+  analytics_saved: 'Спестено',
+  analytics_heatmap: 'Календар на разходите',
 
   settings_title: 'Настройки',
   settings_security: 'Сигурност',
