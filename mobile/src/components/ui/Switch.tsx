@@ -7,7 +7,7 @@ const W = 50;
 const H = 30;
 const KNOB = 24;
 
-/** Glowing toggle. Track lights up accent when on; knob slides with a spring. */
+/** Toggle. Track fills accent when on; knob slides with a spring. */
 export function Switch({ value, onChange }: { value: boolean; onChange: (v: boolean) => void }) {
   const t = useTheme();
 
