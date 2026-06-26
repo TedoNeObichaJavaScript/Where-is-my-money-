@@ -16,17 +16,12 @@ export function AmountField({
   expense?: boolean;
 }) {
   const t = useTheme();
-  const tint = expense ? t.colors.expense : t.colors.income;
   return (
     <View style={styles.row}>
       <Text variant="title" color={t.colors.textMuted} style={styles.sign}>
         {expense ? '−' : '+'}
       </Text>
-      <Text
-        variant="hero"
-        color={t.colors.text}
-        style={[styles.amount, { textShadowColor: `${tint}66`, textShadowRadius: 16 }]}
-      >
+      <Text variant="hero" color={t.colors.text} style={styles.amount}>
         {display}
       </Text>
       <Text variant="title" color={t.colors.textMuted} style={styles.cur}>

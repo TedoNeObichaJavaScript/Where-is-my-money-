@@ -79,5 +79,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     paddingHorizontal: 20,
   },
-  pill: { paddingHorizontal: 16, paddingVertical: 9, alignItems: 'center', justifyContent: 'center' },
+  pill: {
+    paddingHorizontal: 16,
+    paddingVertical: 9,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
 });

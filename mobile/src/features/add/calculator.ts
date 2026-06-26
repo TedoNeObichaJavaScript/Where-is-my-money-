@@ -63,13 +63,12 @@ export function applyKey(display: string, key: string): string {
       return '';
     case '⌫':
       return display.slice(0, -1);
-    case '.':
-      // only one decimal per number segment
-      {
-        const seg = display.split(/[+\-×÷]/).pop() ?? '';
-        if (seg.includes('.')) return display;
-        return display === '' || OPS.includes(last) ? `${display}0.` : `${display}.`;
-      }
+    case '.': // only one decimal per number segment
+    {
+      const seg = display.split(/[+\-×÷]/).pop() ?? '';
+      if (seg.includes('.')) return display;
+      return display === '' || OPS.includes(last) ? `${display}0.` : `${display}.`;
+    }
     default:
       if (OPS.includes(key)) {
         if (display === '') return key === '-' ? '-' : display; // allow leading minus only

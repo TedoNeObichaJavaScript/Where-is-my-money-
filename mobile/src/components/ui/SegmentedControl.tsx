@@ -17,7 +17,10 @@ export function SegmentedControl<T extends string>({
 }) {
   const t = useTheme();
   const [w, setW] = useState(0);
-  const index = Math.max(0, options.findIndex((o) => o.value === value));
+  const index = Math.max(
+    0,
+    options.findIndex((o) => o.value === value),
+  );
   const seg = w / options.length;
 
   const thumb = useAnimatedStyle(() => ({
@@ -32,7 +35,11 @@ export function SegmentedControl<T extends string>({
     >
       {w > 0 && (
         <Animated.View
-          style={[styles.thumb, thumb, { backgroundColor: t.colors.accent, borderRadius: t.radius.pill }]}
+          style={[
+            styles.thumb,
+            thumb,
+            { backgroundColor: t.colors.accent, borderRadius: t.radius.pill },
+          ]}
         />
       )}
       {options.map((o) => {

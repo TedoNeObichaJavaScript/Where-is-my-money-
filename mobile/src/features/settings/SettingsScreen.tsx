@@ -5,8 +5,7 @@ import { router } from 'expo-router';
 import { useTranslation } from 'react-i18next';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { GlassCard, PillButton, Sheet, Switch, Text } from '@/components/ui';
-import { useThemeControls, useTheme } from '@/theme/ThemeProvider';
-import { themeVariants } from '@/theme/variants';
+import { useTheme } from '@/theme/ThemeProvider';
 import { settings } from '@/storage/settings';
 import { flags } from '@/storage/flags';
 import { seedIfNeeded } from '@/data/seed';
@@ -67,7 +66,6 @@ export function SettingsScreen() {
   const t = useTheme();
   const { t: tr } = useTranslation();
   const insets = useSafeAreaInsets();
-  const { name: themeName, setTheme } = useThemeControls();
 
   const [biometric, setBiometric] = useState(settings.getBiometricEnabled());
   const [locale, setLocaleState] = useState(settings.getLocale() ?? 'en');
@@ -161,26 +159,6 @@ export function SettingsScreen() {
       </Group>
 
       <Group title={tr('settings_appearance')}>
-        <Row
-          label={tr('settings_theme')}
-          right={
-            <View style={styles.swatches}>
-              {themeVariants.map((v) => (
-                <Pressable key={v.name} onPress={() => setTheme(v.name)}>
-                  <View
-                    style={[
-                      styles.swatch,
-                      {
-                        backgroundColor: v.swatch[0],
-                        borderColor: themeName === v.name ? t.colors.text : 'transparent',
-                      },
-                    ]}
-                  />
-                </Pressable>
-              ))}
-            </View>
-          }
-        />
         <Row
           label={tr('settings_language')}
           right={

@@ -1,7 +1,8 @@
 import { StyleSheet, View } from 'react-native';
 import { PressableScale } from './PressableScale';
-import { IconBadge } from './IconBadge';
 import { Text } from './Text';
+import { IconTile } from '@/components/icons/IconTile';
+import { categoryIcon } from '@/components/icons/catalog';
 import { Money } from '@/domain/Money';
 import { useTheme } from '@/theme/ThemeProvider';
 import type { TransactionView } from '@/data/TransactionRepository';
@@ -25,7 +26,7 @@ export function TransactionRow({
   const amount = Money.format(txn.amountMinor, txn.currency, locale);
   return (
     <PressableScale onPress={onPress} style={styles.row} scaleTo={0.98}>
-      <IconBadge emoji={txn.categoryEmoji} color={txn.categoryColor} />
+      <IconTile icon={categoryIcon(txn.categoryNameKey, txn.type)} color={txn.categoryColor} />
       <View style={styles.meta}>
         <Text variant="bodyMedium" color={t.colors.text} numberOfLines={1}>
           {title}

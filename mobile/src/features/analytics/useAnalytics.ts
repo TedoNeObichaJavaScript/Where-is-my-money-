@@ -7,7 +7,7 @@ import { addMonths, daysInMonth, startOfMonth } from '@/lib/dates';
 export type CategoryTotal = {
   categoryId: number;
   name: string;
-  emoji: string;
+  nameKey: string | null;
   colorHex: string;
   total: number;
 };

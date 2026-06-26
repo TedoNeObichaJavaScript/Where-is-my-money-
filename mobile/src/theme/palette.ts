@@ -1,54 +1,39 @@
 /**
- * Raw color values for the holographic system. Semantic mapping lives in tokens.ts.
- * Rule: indigo-black base, never pure #000000. ≤2 neons per theme.
+ * Refined-dark palette. Calm, clean, finance-appropriate — indigo-charcoal canvas,
+ * subtle bordered surfaces, ONE emerald accent. No neon, no nebula, no glow.
  */
 
 export const canvas = {
-  bg: '#0A0A14', // the void
-  surface: '#12121F', // elevated section
-  card: '#1A1A2E', // solid card base
-  cardGlass: 'rgba(17,25,40,0.55)', // glass fill over orbs
-  border: 'rgba(255,255,255,0.12)', // hairline glass border
-  borderStrong: 'rgba(255,255,255,0.20)',
+  bg: '#0F1216', // app background (clean near-black)
+  surface: '#181B21', // cards
+  surfaceAlt: '#13161B', // tab bar / sunken areas
+  card: '#181B21',
+  cardGlass: '#181B21', // (kept for API compat; no blur)
+  border: '#232830', // hairline card border
+  borderStrong: '#2D343E',
 } as const;
 
 export const ink = {
-  text: '#E2F3FF', // primary text
-  textMuted: '#8A93B2', // secondary
-  textFaint: '#5A6080', // tertiary / disabled
+  text: '#E7E9EE', // primary
+  textMuted: '#7A828F', // secondary
+  textFaint: '#4B515C', // tertiary / disabled
   white: '#FFFFFF',
 } as const;
 
-/** Aurora — calm premium default. */
-export const aurora = {
-  accent: '#04E2B7', // teal
-  accentBright: '#0EF3C5',
-  accentBlue: '#5B8DFF',
-  deep: '#025385',
+/** Single accent ramp — emerald. */
+export const accent = {
+  accent: '#3DD68C',
+  accentBright: '#52E39C',
+  accentBlue: '#5B8DEF', // secondary accent (links, info)
+  deep: '#1C6B4A',
 } as const;
 
-/** Prism — high energy. */
-export const prism = {
-  accent: '#FF6AD5',
-  accentBright: '#FF9DFB',
-  accentBlue: '#7AF5FF',
-  deep: '#5B8DFF',
-} as const;
-
-/** Nebula — moody. */
-export const nebula = {
-  accent: '#EA00D9',
-  accentBright: '#0ABDC6',
-  accentBlue: '#711C91',
-  deep: '#091833',
-} as const;
-
-/** Semantic money colors — always paired with an icon, never color-alone. */
+/** Semantic money + state colors. */
 export const semantic = {
-  income: '#04E2B7',
-  expense: '#FF6AD5',
-  warning: '#E8C07A',
-  danger: '#FF5C7A',
+  income: '#3DD68C',
+  expense: '#E7E9EE', // neutral; the −/+ sign conveys direction
+  warning: '#F59E0B',
+  danger: '#EF4444',
 } as const;
 
 export type AccentRamp = {

@@ -4,7 +4,9 @@ import { router } from 'expo-router';
 import Svg, { Path } from 'react-native-svg';
 import { useTranslation } from 'react-i18next';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { GlassCard, IconBadge, NeonButton, Sheet, Switch, Text, TextField } from '@/components/ui';
+import { GlassCard, NeonButton, Sheet, Switch, Text, TextField } from '@/components/ui';
+import { IconTile } from '@/components/icons/IconTile';
+import { accountIcon, categoryIcon } from '@/components/icons/catalog';
 import { AccountRepository } from '@/data/AccountRepository';
 import { CategoryRepository } from '@/data/CategoryRepository';
 import { useLiveQuery } from '@/data/reactive';
@@ -105,7 +107,7 @@ export function ManageScreen() {
           <View style={styles.list}>
             {accounts.map((a) => (
               <View key={a.id} style={styles.row}>
-                <IconBadge emoji={a.emoji} color={a.colorHex} size={38} />
+                <IconTile icon={accountIcon(a.nameKey)} color={a.colorHex} size={38} />
                 <Text variant="bodyMedium" color={t.colors.text} style={{ flex: 1 }}>
                   {resolveName(a.nameKey, a.name)}
                 </Text>
@@ -131,7 +133,7 @@ export function ManageScreen() {
           <View style={styles.list}>
             {categories.map((c) => (
               <View key={c.id} style={styles.row}>
-                <IconBadge emoji={c.emoji} color={c.colorHex} size={38} />
+                <IconTile icon={categoryIcon(c.nameKey, c.kind)} color={c.colorHex} size={38} />
                 <Text variant="bodyMedium" color={t.colors.text} style={{ flex: 1 }}>
                   {resolveName(c.nameKey, c.name)}
                 </Text>
@@ -159,12 +161,6 @@ export function ManageScreen() {
         </Text>
         <View style={{ gap: 14, marginBottom: 16 }}>
           <TextField label={tr('manage_name')} value={name} onChangeText={setName} />
-          <TextField
-            label={tr('manage_emoji')}
-            value={emoji}
-            onChangeText={setEmoji}
-            maxLength={2}
-          />
           <View>
             <Text variant="caption" color={t.colors.textMuted} style={{ marginBottom: 8 }}>
               {tr('manage_color')}

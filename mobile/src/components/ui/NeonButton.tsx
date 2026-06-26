@@ -1,11 +1,10 @@
 import { StyleSheet, type ViewStyle } from 'react-native';
-import { LinearGradient } from 'expo-linear-gradient';
 import { PressableScale } from './PressableScale';
 import { Text } from './Text';
 import { haptics } from '@/lib/haptics';
 import { useTheme } from '@/theme/ThemeProvider';
 
-/** Primary CTA — the only button allowed a glow. Gradient fill + halo. */
+/** Primary CTA — solid accent fill, clean. (No gradient or glow in refined-dark.) */
 export function NeonButton({
   label,
   onPress,
@@ -26,25 +25,22 @@ export function NeonButton({
         onPress();
       }}
       style={[
-        t.shadow.glow(t.colors.accent, 18),
-        { borderRadius: t.radius.pill, opacity: disabled ? 0.45 : 1 },
+        styles.btn,
+        {
+          backgroundColor: t.colors.accent,
+          borderRadius: t.radius.base,
+          opacity: disabled ? 0.4 : 1,
+        },
         style as object,
       ]}
     >
-      <LinearGradient
-        colors={[t.colors.accent, t.colors.accentBlue]}
-        start={{ x: 0, y: 0 }}
-        end={{ x: 1, y: 0 }}
-        style={styles.btn}
-      >
-        <Text variant="bodyMedium" color={t.colors.onAccent}>
-          {label}
-        </Text>
-      </LinearGradient>
+      <Text variant="bodyMedium" color={t.colors.onAccent}>
+        {label}
+      </Text>
     </PressableScale>
   );
 }
 
 const styles = StyleSheet.create({
-  btn: { height: 54, borderRadius: 999, alignItems: 'center', justifyContent: 'center' },
+  btn: { height: 52, alignItems: 'center', justifyContent: 'center' },
 });

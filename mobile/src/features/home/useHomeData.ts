@@ -22,7 +22,10 @@ export function useHomeData(): HomeData {
   const accounts = useLiveQuery<AccountWithBalance[]>(async () => {
     const accs = await AccountRepository.all();
     return Promise.all(
-      accs.map(async (account) => ({ account, balance: await AccountRepository.balance(account.id) })),
+      accs.map(async (account) => ({
+        account,
+        balance: await AccountRepository.balance(account.id),
+      })),
     );
   }, []);
 
@@ -45,8 +48,7 @@ export function useHomeData(): HomeData {
 
   const recent = useLiveQuery(() => TransactionRepository.recent(20), []);
 
-  const currency =
-    settings.getDisplayCurrency() ?? accounts[0]?.account.currency ?? 'EUR';
+  const currency = settings.getDisplayCurrency() ?? accounts[0]?.account.currency ?? 'EUR';
 
   return { currency, total, accounts, todaySpent, monthSpent, prevMonthSpent, recent };
 }

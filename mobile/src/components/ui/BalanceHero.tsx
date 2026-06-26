@@ -3,7 +3,7 @@ import { AnimatedNumber } from './AnimatedNumber';
 import { Text } from './Text';
 import { useTheme } from '@/theme/ThemeProvider';
 
-/** The one glowing number. Label + animated balance with a soft text halo. */
+/** Label + animated balance number. Clean, no glow. */
 export function BalanceHero({
   label,
   valueMinor,
@@ -23,13 +23,7 @@ export function BalanceHero({
       <Text variant="micro" color={t.colors.textMuted} style={styles.label}>
         {label.toUpperCase()}
       </Text>
-      <AnimatedNumber
-        valueMinor={valueMinor}
-        currency={currency}
-        locale={locale}
-        variant="hero"
-        style={{ textShadowColor: 'rgba(94,141,255,0.55)', textShadowRadius: 18 }}
-      />
+      <AnimatedNumber valueMinor={valueMinor} currency={currency} locale={locale} variant="hero" />
       {delta ? (
         <Text variant="caption" color={t.colors.accent} style={{ marginTop: 4 }}>
           {delta}

@@ -1,11 +1,10 @@
 import { type ReactNode } from 'react';
 import { StyleSheet, View, type ViewProps, type ViewStyle } from 'react-native';
-import { BlurView } from 'expo-blur';
 import { useTheme } from '@/theme/ThemeProvider';
 
 /**
- * Frosted glass surface: depth shadow on the outer view, blur+fill+border clipped
- * to the radius on the inner. Reads only over the cosmic background.
+ * Clean surface card: solid fill + hairline border. (Refined-dark redesign — the old
+ * blur/glass is gone; kept the name so call sites are unchanged.)
  */
 export function GlassCard({
   children,
@@ -15,25 +14,26 @@ export function GlassCard({
   ...rest
 }: ViewProps & { children: ReactNode; raised?: boolean; padded?: boolean }) {
   const t = useTheme();
-  const g = raised ? t.glassRaised : t.glass;
-
   return (
-    <View style={[t.shadow.depth, style]} {...rest}>
-      <View
-        style={[
-          styles.clip,
-          { borderRadius: g.radius, borderWidth: g.borderWidth, borderColor: g.border },
-        ]}
-      >
-        <BlurView intensity={g.blurIntensity} tint="dark" style={StyleSheet.absoluteFill} />
-        <View style={[StyleSheet.absoluteFill, { backgroundColor: g.fill }]} />
-        <View style={padded ? (styles.pad as ViewStyle) : undefined}>{children}</View>
-      </View>
+    <View
+      style={[
+        styles.card,
+        {
+          backgroundColor: t.colors.surface,
+          borderColor: raised ? t.colors.borderStrong : t.colors.border,
+          borderRadius: raised ? t.radius.lg : t.radius.base,
+        },
+        padded && (styles.pad as ViewStyle),
+        style,
+      ]}
+      {...rest}
+    >
+      {children}
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  clip: { overflow: 'hidden' },
+  card: { borderWidth: 1, overflow: 'hidden' },
   pad: { padding: 16 },
 });

@@ -1,5 +1,7 @@
 import { StyleSheet, View } from 'react-native';
-import { IconBadge, PressableScale, Text } from '@/components/ui';
+import { PressableScale, Text } from '@/components/ui';
+import { IconTile } from '@/components/icons/IconTile';
+import { categoryIcon } from '@/components/icons/catalog';
 import { resolveName } from '@/i18n/labels';
 import { useTheme } from '@/theme/ThemeProvider';
 import type { Category } from '@/domain/models';
@@ -32,8 +34,12 @@ export function CategoryGrid({
               },
             ]}
           >
-            <IconBadge emoji={c.emoji} color={c.colorHex} size={34} />
-            <Text variant="micro" color={selected ? t.colors.text : t.colors.textMuted} numberOfLines={1}>
+            <IconTile icon={categoryIcon(c.nameKey, c.kind)} color={c.colorHex} size={34} />
+            <Text
+              variant="micro"
+              color={selected ? t.colors.text : t.colors.textMuted}
+              numberOfLines={1}
+            >
               {resolveName(c.nameKey, c.name)}
             </Text>
           </PressableScale>

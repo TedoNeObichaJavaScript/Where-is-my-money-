@@ -1,18 +1,19 @@
 import { StyleSheet, View } from 'react-native';
+import type { LucideIcon } from 'lucide-react-native';
 import { PressableScale } from './PressableScale';
-import { IconBadge } from './IconBadge';
+import { IconTile } from '@/components/icons/IconTile';
 import { Text } from './Text';
 import { useTheme } from '@/theme/ThemeProvider';
 
 /** Selectable row for account/category pickers inside a Sheet. */
 export function PickerRow({
-  emoji,
+  icon,
   color,
   label,
   selected = false,
   onPress,
 }: {
-  emoji: string;
+  icon: LucideIcon;
   color: string;
   label: string;
   selected?: boolean;
@@ -30,13 +31,11 @@ export function PickerRow({
         },
       ]}
     >
-      <IconBadge emoji={emoji} color={color} size={40} />
+      <IconTile icon={icon} color={color} size={40} />
       <Text variant="bodyMedium" color={t.colors.text} style={styles.label}>
         {label}
       </Text>
-      {selected ? (
-        <View style={[styles.dot, { backgroundColor: t.colors.accent }]} />
-      ) : null}
+      {selected ? <View style={[styles.dot, { backgroundColor: t.colors.accent }]} /> : null}
     </PressableScale>
   );
 }

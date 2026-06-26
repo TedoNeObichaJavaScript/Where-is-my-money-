@@ -28,18 +28,20 @@ export function NebulaOrbs() {
 
   return (
     <Canvas style={{ position: 'absolute', top: 0, left: 0, width, height }}>
-      <Group layer={<Paint><Blur blur={70} /></Paint>}>
+      <Group
+        layer={
+          <Paint>
+            <Blur blur={70} />
+          </Paint>
+        }
+      >
         {orbs.map((o, i) => {
           const cx = o.cx * width;
           const cy = o.cy * height;
           const r = o.size * max * 0.6;
           return (
             <Circle key={i} cx={cx} cy={cy} r={r} opacity={o.opacity}>
-              <RadialGradient
-                c={vec(cx, cy)}
-                r={r}
-                colors={[o.color, withAlpha(o.color, 0)]}
-              />
+              <RadialGradient c={vec(cx, cy)} r={r} colors={[o.color, withAlpha(o.color, 0)]} />
             </Circle>
           );
         })}

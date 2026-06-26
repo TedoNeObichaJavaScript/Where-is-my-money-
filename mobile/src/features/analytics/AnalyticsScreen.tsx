@@ -2,10 +2,13 @@ import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import Animated, { FadeInDown } from 'react-native-reanimated';
 import { router } from 'expo-router';
 import Svg, { Path } from 'react-native-svg';
+import { ChartPie } from 'lucide-react-native';
 import { useTranslation } from 'react-i18next';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useAnalytics } from './useAnalytics';
-import { EmptyState, GlassCard, IconBadge, SectionHeader, Text } from '@/components/ui';
+import { EmptyState, GlassCard, SectionHeader, Text } from '@/components/ui';
+import { IconTile } from '@/components/icons/IconTile';
+import { categoryIcon } from '@/components/icons/catalog';
 import { DonutChart, type DonutSlice } from '@/components/charts/DonutChart';
 import { BarChart } from '@/components/charts/BarChart';
 import { SankeyFlow, type FlowNode } from '@/components/charts/SankeyFlow';
@@ -78,13 +81,13 @@ export function AnalyticsScreen() {
     id: c.categoryId,
     value: c.total,
     color: c.colorHex,
-    label: resolveName(null, c.name),
+    label: resolveName(c.nameKey, c.name),
   }));
 
   const hasData = a.totals.expense > 0 || a.totals.income > 0;
 
   const outflows: FlowNode[] = a.byCategory.slice(0, 6).map((c) => ({
-    label: resolveName(null, c.name),
+    label: resolveName(c.nameKey, c.name),
     color: c.colorHex,
     value: c.total,
   }));
@@ -110,7 +113,7 @@ export function AnalyticsScreen() {
       </View>
 
       {!hasData ? (
-        <EmptyState emoji="🌌" title={tr('analytics_noData')} />
+        <EmptyState icon={ChartPie} title={tr('analytics_noData')} />
       ) : (
         <>
           {/* summary */}
@@ -199,11 +202,15 @@ export function AnalyticsScreen() {
                       onPress={() => router.push('/(tabs)/history')}
                       style={styles.catRow}
                     >
-                      <IconBadge emoji={c.emoji} color={c.colorHex} size={36} />
+                      <IconTile
+                        icon={categoryIcon(c.nameKey, 'EXPENSE')}
+                        color={c.colorHex}
+                        size={36}
+                      />
                       <View style={{ flex: 1, gap: 6 }}>
                         <View style={styles.catTop}>
                           <Text variant="bodyMedium" color={t.colors.text}>
-                            {resolveName(null, c.name)}
+                            {resolveName(c.nameKey, c.name)}
                           </Text>
                           <Text variant="caption" color={t.colors.textMuted}>
                             {Money.format(c.total, a.currency, locale)}

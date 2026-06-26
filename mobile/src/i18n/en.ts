@@ -36,7 +36,7 @@ export const en = {
   home_recent: 'Recent',
   home_seeAll: 'See all',
   home_empty_title: 'Nothing logged yet',
-  home_empty_sub: 'Tap the glowing + to add your first transaction.',
+  home_empty_sub: 'Tap + to add your first transaction.',
 
   // add
   add_new: 'New transaction',

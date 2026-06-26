@@ -10,32 +10,32 @@ export function deviceCurrency(): string {
 
 /** Seed accounts — names carry a nameKey so they re-translate on locale switch. */
 const SEED_ACCOUNTS = [
-  { nameKey: 'acc_cash', emoji: '💵', colorHex: '#04E2B7' },
-  { nameKey: 'acc_card', emoji: '💳', colorHex: '#5B8DFF' },
-  { nameKey: 'acc_savings', emoji: '🏦', colorHex: '#FFB454' },
+  { nameKey: 'acc_cash', emoji: '', colorHex: '#3DD68C' },
+  { nameKey: 'acc_card', emoji: '', colorHex: '#5B8DEF' },
+  { nameKey: 'acc_savings', emoji: '', colorHex: '#8B5CF6' },
 ];
 
-/** 12 expense categories. */
+/** 12 expense categories — refined, distinct, non-neon colors. */
 const SEED_EXPENSE = [
-  { nameKey: 'cat_food', emoji: '🍕', colorHex: '#FF6AD5' },
-  { nameKey: 'cat_groceries', emoji: '🛒', colorHex: '#04E2B7' },
-  { nameKey: 'cat_transport', emoji: '🚗', colorHex: '#5B8DFF' },
-  { nameKey: 'cat_housing', emoji: '🏠', colorHex: '#A78BFA' },
-  { nameKey: 'cat_bills', emoji: '⚡', colorHex: '#FFD166' },
-  { nameKey: 'cat_fun', emoji: '🎉', colorHex: '#F472B6' },
-  { nameKey: 'cat_clothing', emoji: '👕', colorHex: '#7AF5FF' },
-  { nameKey: 'cat_health', emoji: '💊', colorHex: '#34D399' },
-  { nameKey: 'cat_education', emoji: '📚', colorHex: '#60A5FA' },
-  { nameKey: 'cat_gifts', emoji: '🎁', colorHex: '#FB7185' },
-  { nameKey: 'cat_travel', emoji: '✈️', colorHex: '#22D3EE' },
-  { nameKey: 'cat_other_exp', emoji: '📦', colorHex: '#94A3B8' },
+  { nameKey: 'cat_food', emoji: '', colorHex: '#F4725E' },
+  { nameKey: 'cat_groceries', emoji: '', colorHex: '#3DD68C' },
+  { nameKey: 'cat_transport', emoji: '', colorHex: '#5B8DEF' },
+  { nameKey: 'cat_housing', emoji: '', colorHex: '#8B5CF6' },
+  { nameKey: 'cat_bills', emoji: '', colorHex: '#F59E0B' },
+  { nameKey: 'cat_fun', emoji: '', colorHex: '#EC4899' },
+  { nameKey: 'cat_clothing', emoji: '', colorHex: '#06B6D4' },
+  { nameKey: 'cat_health', emoji: '', colorHex: '#EF4444' },
+  { nameKey: 'cat_education', emoji: '', colorHex: '#3B82F6' },
+  { nameKey: 'cat_gifts', emoji: '', colorHex: '#F472B6' },
+  { nameKey: 'cat_travel', emoji: '', colorHex: '#14B8A6' },
+  { nameKey: 'cat_other_exp', emoji: '', colorHex: '#94A3B8' },
 ];
 
 /** 3 income categories. */
 const SEED_INCOME = [
-  { nameKey: 'cat_salary', emoji: '💰', colorHex: '#04E2B7' },
-  { nameKey: 'cat_gift_in', emoji: '🎁', colorHex: '#5B8DFF' },
-  { nameKey: 'cat_other_inc', emoji: '✨', colorHex: '#FFD166' },
+  { nameKey: 'cat_salary', emoji: '', colorHex: '#3DD68C' },
+  { nameKey: 'cat_gift_in', emoji: '', colorHex: '#5B8DEF' },
+  { nameKey: 'cat_other_inc', emoji: '', colorHex: '#F59E0B' },
 ];
 
 /**

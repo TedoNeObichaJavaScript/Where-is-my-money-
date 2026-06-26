@@ -4,11 +4,7 @@ import { Text } from './Text';
 import { useTheme } from '@/theme/ThemeProvider';
 
 /** Glass text input with a focus glow. */
-export function TextField({
-  label,
-  style,
-  ...rest
-}: TextInputProps & { label?: string }) {
+export function TextField({ label, style, ...rest }: TextInputProps & { label?: string }) {
   const t = useTheme();
   const [focused, setFocused] = useState(false);
   return (

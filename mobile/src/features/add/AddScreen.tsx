@@ -10,7 +10,6 @@ import { useAddTransaction } from './useAddTransaction';
 import {
   AmountField,
   GlassCard,
-  IconBadge,
   NeonButton,
   PickerRow,
   PressableScale,
@@ -18,7 +17,10 @@ import {
   Sheet,
   TextField,
   Text,
- DatePickerField } from '@/components/ui';
+  DatePickerField,
+} from '@/components/ui';
+import { IconTile } from '@/components/icons/IconTile';
+import { accountIcon } from '@/components/icons/catalog';
 import { resolveName } from '@/i18n/labels';
 import { haptics } from '@/lib/haptics';
 import { useTheme } from '@/theme/ThemeProvider';
@@ -66,7 +68,12 @@ export function AddScreen({ type, editId }: { type?: TxnType; editId?: number })
       <View style={styles.header}>
         <Pressable onPress={() => router.back()} hitSlop={12}>
           <Svg width={26} height={26} viewBox="0 0 24 24">
-            <Path d="M6 6l12 12M18 6L6 18" stroke={t.colors.textMuted} strokeWidth={2} strokeLinecap="round" />
+            <Path
+              d="M6 6l12 12M18 6L6 18"
+              stroke={t.colors.textMuted}
+              strokeWidth={2}
+              strokeLinecap="round"
+            />
           </Svg>
         </Pressable>
         <Text variant="heading" color={t.colors.text}>
@@ -75,7 +82,13 @@ export function AddScreen({ type, editId }: { type?: TxnType; editId?: number })
         {vm.isEdit ? (
           <Pressable onPress={onDelete} hitSlop={12}>
             <Svg width={24} height={24} viewBox="0 0 24 24">
-              <Path d="M5 7h14M9 7V5h6v2M7 7l1 13h8l1-13" stroke={t.colors.danger} strokeWidth={1.8} fill="none" strokeLinecap="round" />
+              <Path
+                d="M5 7h14M9 7V5h6v2M7 7l1 13h8l1-13"
+                stroke={t.colors.danger}
+                strokeWidth={1.8}
+                fill="none"
+                strokeLinecap="round"
+              />
             </Svg>
           </Pressable>
         ) : (
@@ -83,7 +96,10 @@ export function AddScreen({ type, editId }: { type?: TxnType; editId?: number })
         )}
       </View>
 
-      <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{ paddingBottom: 24 }}>
+      <ScrollView
+        showsVerticalScrollIndicator={false}
+        contentContainerStyle={{ paddingBottom: 24 }}
+      >
         {/* type toggle */}
         <View style={styles.block}>
           <SegmentedControl<TxnType>
@@ -112,7 +128,11 @@ export function AddScreen({ type, editId }: { type?: TxnType; editId?: number })
         >
           {vm.account ? (
             <>
-              <IconBadge emoji={vm.account.emoji} color={vm.account.colorHex} size={32} />
+              <IconTile
+                icon={accountIcon(vm.account.nameKey)}
+                color={vm.account.colorHex}
+                size={32}
+              />
               <Text variant="bodyMedium" color={t.colors.text} style={{ flex: 1 }}>
                 {resolveName(vm.account.nameKey, vm.account.name)}
               </Text>
@@ -177,7 +197,7 @@ export function AddScreen({ type, editId }: { type?: TxnType; editId?: number })
         {vm.accounts.map((a) => (
           <PickerRow
             key={a.id}
-            emoji={a.emoji}
+            icon={accountIcon(a.nameKey)}
             color={a.colorHex}
             label={resolveName(a.nameKey, a.name)}
             selected={a.id === vm.accountId}
@@ -194,11 +214,23 @@ export function AddScreen({ type, editId }: { type?: TxnType; editId?: number })
 
 const styles = StyleSheet.create({
   root: { flex: 1, paddingHorizontal: 16 },
-  header: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: 12 },
+  header: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    marginBottom: 12,
+  },
   block: { marginVertical: 8 },
   lbl: { marginBottom: 8, marginLeft: 2, letterSpacing: 1 },
   amount: { paddingVertical: 18 },
-  accountRow: { flexDirection: 'row', alignItems: 'center', gap: 12, borderWidth: 1, padding: 12, marginVertical: 8 },
+  accountRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 12,
+    borderWidth: 1,
+    padding: 12,
+    marginVertical: 8,
+  },
   keypadCard: { borderRadius: 24, marginTop: 8 },
   footer: { paddingTop: 8 },
 });

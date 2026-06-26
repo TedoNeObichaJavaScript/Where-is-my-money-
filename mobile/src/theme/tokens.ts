@@ -1,13 +1,11 @@
-import { aurora, canvas, ink, semantic, type AccentRamp } from './palette';
+import { accent, canvas, ink, semantic, type AccentRamp } from './palette';
 
-/**
- * Semantic color tokens. Built from the canvas/ink base plus a swappable accent
- * ramp (Aurora / Prism / Nebula), so theme switching only changes the accents.
- */
-export function buildColors(accent: AccentRamp) {
+/** Semantic color tokens for the refined-dark theme. */
+export function buildColors(ramp: AccentRamp = accent) {
   return {
     bg: canvas.bg,
     surface: canvas.surface,
+    surfaceAlt: canvas.surfaceAlt,
     card: canvas.card,
     cardGlass: canvas.cardGlass,
     border: canvas.border,
@@ -16,12 +14,12 @@ export function buildColors(accent: AccentRamp) {
     text: ink.text,
     textMuted: ink.textMuted,
     textFaint: ink.textFaint,
-    onAccent: '#06121A',
+    onAccent: '#0F1216',
 
-    accent: accent.accent,
-    accentBright: accent.accentBright,
-    accentBlue: accent.accentBlue,
-    deep: accent.deep,
+    accent: ramp.accent,
+    accentBright: ramp.accentBright,
+    accentBlue: ramp.accentBlue,
+    deep: ramp.deep,
 
     income: semantic.income,
     expense: semantic.expense,
@@ -31,6 +29,4 @@ export function buildColors(accent: AccentRamp) {
 }
 
 export type Colors = ReturnType<typeof buildColors>;
-
-/** Default token set. */
-export const colors = buildColors(aurora);
+export const colors = buildColors();

@@ -3,13 +3,7 @@ import Svg, { Defs, LinearGradient, Rect, Stop } from 'react-native-svg';
 import { useTheme } from '@/theme/ThemeProvider';
 
 /** Daily spending bars with an aurora gradient fill. Values in minor units. */
-export function BarChart({
-  values,
-  height = 120,
-}: {
-  values: number[];
-  height?: number;
-}) {
+export function BarChart({ values, height = 120 }: { values: number[]; height?: number }) {
   const t = useTheme();
   const max = Math.max(1, ...values);
   const n = values.length || 1;

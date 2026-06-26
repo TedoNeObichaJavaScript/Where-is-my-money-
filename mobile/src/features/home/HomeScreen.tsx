@@ -8,6 +8,7 @@ import Animated, {
   useAnimatedStyle,
   useSharedValue,
 } from 'react-native-reanimated';
+import { Wallet } from 'lucide-react-native';
 import { router } from 'expo-router';
 import { useTranslation } from 'react-i18next';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -133,7 +134,11 @@ export function HomeScreen() {
           onAction={() => router.push('/(tabs)/history')}
         />
         {d.recent.length === 0 ? (
-          <EmptyState emoji="🪐" title={tr('home_empty_title')} subtitle={tr('home_empty_sub')} />
+          <EmptyState
+            icon={Wallet}
+            title={tr('home_empty_title')}
+            subtitle={tr('home_empty_sub')}
+          />
         ) : (
           <GlassCard padded={false} style={{ borderRadius: 20 }}>
             <View style={styles.list}>

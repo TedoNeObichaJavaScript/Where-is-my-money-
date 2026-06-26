@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react';
 import { SectionList, StyleSheet, View } from 'react-native';
 import Animated, { FadeInDown } from 'react-native-reanimated';
+import { Receipt, Search } from 'lucide-react-native';
 import { router } from 'expo-router';
 import { useTranslation } from 'react-i18next';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -77,7 +78,7 @@ export function HistoryScreen() {
         onEndReached={() => void h.loadMore()}
         ListEmptyComponent={
           <EmptyState
-            emoji={h.search ? '🔭' : '🪐'}
+            icon={h.search ? Search : Receipt}
             title={h.search ? tr('history_noMatches') : tr('history_empty')}
           />
         }

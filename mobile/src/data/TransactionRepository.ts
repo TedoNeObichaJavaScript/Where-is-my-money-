@@ -50,7 +50,10 @@ export const TransactionRepository = {
 
   async byId(id: number): Promise<Transaction | null> {
     const db = await getDb();
-    const r = await db.getFirstAsync<TransactionRow>('SELECT * FROM transactions WHERE id = ?;', id);
+    const r = await db.getFirstAsync<TransactionRow>(
+      'SELECT * FROM transactions WHERE id = ?;',
+      id,
+    );
     return r ? toTransaction(r) : null;
   },
 
@@ -124,7 +127,11 @@ export const TransactionRepository = {
   },
 
   /** Daily expense totals over [from, to) keyed by day index from `from`. */
-  async dailySeries(from: number, to: number, type: TxnType = 'EXPENSE'): Promise<Map<number, number>> {
+  async dailySeries(
+    from: number,
+    to: number,
+    type: TxnType = 'EXPENSE',
+  ): Promise<Map<number, number>> {
     const db = await getDb();
     const rows = await db.getAllAsync<{ dayIndex: number; total: number }>(
       `SELECT CAST((occurredAt - ?) / 86400000 AS INTEGER) AS dayIndex, SUM(amountMinor) AS total
@@ -144,10 +151,18 @@ export const TransactionRepository = {
     from: number,
     to: number,
     type: TxnType = 'EXPENSE',
-  ): Promise<{ categoryId: number; name: string; emoji: string; colorHex: string; total: Minor }[]> {
+  ): Promise<
+    {
+      categoryId: number;
+      name: string;
+      nameKey: string | null;
+      colorHex: string;
+      total: Minor;
+    }[]
+  > {
     const db = await getDb();
     return db.getAllAsync(
-      `SELECT c.id AS categoryId, c.name AS name, c.emoji AS emoji, c.colorHex AS colorHex,
+      `SELECT c.id AS categoryId, c.name AS name, c.nameKey AS nameKey, c.colorHex AS colorHex,
               SUM(t.amountMinor) AS total
        FROM transactions t JOIN categories c ON c.id = t.categoryId
        WHERE t.type = ? AND t.occurredAt >= ? AND t.occurredAt < ?

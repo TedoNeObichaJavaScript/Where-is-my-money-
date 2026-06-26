@@ -1,6 +1,8 @@
 import { ScrollView, StyleSheet, View } from 'react-native';
 import type { AccountWithBalance } from './useHomeData';
-import { GlassCard, IconBadge, Text } from '@/components/ui';
+import { GlassCard, Text } from '@/components/ui';
+import { IconTile } from '@/components/icons/IconTile';
+import { accountIcon } from '@/components/icons/catalog';
 import { Money } from '@/domain/Money';
 import { resolveName } from '@/i18n/labels';
 import { useTheme } from '@/theme/ThemeProvider';
@@ -23,7 +25,7 @@ export function AccountTiles({
       {data.map(({ account, balance }) => (
         <GlassCard key={account.id} style={styles.tile} padded={false}>
           <View style={styles.inner}>
-            <IconBadge emoji={account.emoji} color={account.colorHex} size={36} />
+            <IconTile icon={accountIcon(account.nameKey)} color={account.colorHex} size={36} />
             <Text variant="caption" color={t.colors.textMuted}>
               {resolveName(account.nameKey, account.name)}
             </Text>

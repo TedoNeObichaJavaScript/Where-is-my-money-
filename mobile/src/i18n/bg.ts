@@ -35,7 +35,7 @@ export const bg: Resources = {
   home_recent: 'Скорошни',
   home_seeAll: 'Виж всички',
   home_empty_title: 'Все още няма записи',
-  home_empty_sub: 'Натисни светещия +, за да добавиш първата си транзакция.',
+  home_empty_sub: 'Натисни +, за да добавиш първата си транзакция.',
 
   add_new: 'Нова транзакция',
   add_edit: 'Редакция',

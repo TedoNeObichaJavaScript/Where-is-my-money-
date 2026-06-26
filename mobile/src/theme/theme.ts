@@ -1,4 +1,4 @@
-import { aurora, nebula, prism, type AccentRamp } from './palette';
+import { accent } from './palette';
 import { glass, glassRaised } from './glass';
 import { gradients, orbs } from './gradients';
 import { duration, easing, press, spring } from './motion';
@@ -8,19 +8,13 @@ import { space } from './space';
 import { buildColors } from './tokens';
 import { type } from './typography';
 
-export type ThemeName = 'aurora' | 'prism' | 'nebula';
+/** Single refined-dark theme. (Type kept for API compatibility.) */
+export type ThemeName = 'refined';
 
-const ramps: Record<ThemeName, AccentRamp> = {
-  aurora,
-  prism,
-  nebula,
-};
-
-/** Compose the full theme object for a given accent variant. */
-export function makeTheme(name: ThemeName) {
+export function makeTheme(_name: ThemeName = 'refined') {
   return {
-    name,
-    colors: buildColors(ramps[name]),
+    name: 'refined' as const,
+    colors: buildColors(accent),
     space,
     radius,
     type,
@@ -34,5 +28,4 @@ export function makeTheme(name: ThemeName) {
 }
 
 export type Theme = ReturnType<typeof makeTheme>;
-
-export const defaultTheme = makeTheme('aurora');
+export const defaultTheme = makeTheme();
