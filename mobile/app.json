@@ -8,11 +8,6 @@
     "userInterfaceStyle": "dark",
     "newArchEnabled": true,
     "icon": "./assets/icon.png",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "cover",
-      "backgroundColor": "#0A0A14"
-    },
     "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
@@ -57,7 +52,8 @@
         "expo-splash-screen",
         {
           "backgroundColor": "#0A0A14",
-          "resizeMode": "cover"
+          "image": "./assets/icon.png",
+          "imageWidth": 200
         }
       ]
     ],
