@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { getDb } from '@/db/connection';
 import { getOrCreateDbKey } from '@/db/key';
 import { seedIfNeeded } from '@/data/seed';
+import { postDueRecurring } from '@/data/recurringPoster';
 
 type BootState = { ready: boolean; error: Error | null };
 
@@ -19,6 +20,9 @@ export function useBootstrap(): BootState {
         await getOrCreateDbKey();
         await getDb();
         await seedIfNeeded();
+        // Catch up any recurring rules that came due while the app was closed.
+        // Never block boot on this — a failure here must not lock the user out.
+        await postDueRecurring().catch(() => 0);
         if (active) setState({ ready: true, error: null });
       } catch (e) {
         if (active) setState({ ready: false, error: e as Error });
