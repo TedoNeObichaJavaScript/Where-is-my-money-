@@ -7,7 +7,7 @@ import {
 import { Inter_400Regular, Inter_500Medium, Inter_600SemiBold } from '@expo-google-fonts/inter';
 
 /**
- * Loads the holographic type system. Call once at app root; gate the splash
+ * Loads the app fonts (Space Grotesk + Inter). Call once at app root; gate the splash
  * screen on `loaded` so text never flashes a fallback font.
  */
 export function useAppFonts(): boolean {
