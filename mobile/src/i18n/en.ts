@@ -21,7 +21,6 @@ export const en = {
   cat_other_inc: 'Other',
 
   // theme names
-  theme_prism: 'Prism',
   theme_nebula: 'Nebula',
 
   // home
