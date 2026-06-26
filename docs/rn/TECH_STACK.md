@@ -62,7 +62,7 @@ Exact stack for the Expo app in [`mobile/`](../../mobile). Rationale in
 ## Verification gates (all green)
 
 - `npm run typecheck` → 0 errors
-- `npm test` → 27 tests / 8 suites pass
+- `npm test` → 40 tests / 13 suites pass
 - `npx eslint .` → 0 problems
 - `npx expo-doctor` → 18/18
 
