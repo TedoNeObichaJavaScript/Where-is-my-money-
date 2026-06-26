@@ -106,6 +106,16 @@ SDK-aligned tree that `expo-doctor` validates.
 **Trade-off:** A non-zero audit count that is build-time-only. Re-evaluate when Expo bumps
 its own tooling.
 
+## ADR-015 — Refined Dark over the cosmic/holographic look
+**Decision:** Replace the holographic theme (nebula gradients, neon glow, glass blur) with a
+clean **Refined Dark** system: flat `#0F1216` canvas, bordered `#181B21` cards, one emerald
+accent, no glow.
+**Why:** On a real device the cosmic look read as edgy and unpolished — wrong for a finance
+app, which must feel calm and trustworthy. Verified against fintech references (Mercury,
+Linear, Copilot).
+**Trade-off:** Loses the distinctive "out of space" identity the project started with.
+Accepted — clarity and trust matter more for this product.
+
 ---
 
 ## Deferred (tracked in [../RN_LAUNCH.md](../RN_LAUNCH.md))
