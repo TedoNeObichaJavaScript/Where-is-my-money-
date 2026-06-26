@@ -124,6 +124,24 @@ consistent, professional, 1:1-representative set (Food→Utensils, Transport→C
 **Trade-off:** Custom (user-created) categories fall back to a generic icon until an
 icon-picker is added; the DB keeps an unused `emoji` column for now.
 
+## ADR-017 — Don't encrypt the MMKV prefs store
+**Decision:** Store app preferences (theme, locale, toggles, first-run flags) in plain MMKV;
+no per-boot `recrypt`.
+**Why:** The prefs hold nothing about the user's money (that's all in the SQLCipher DB).
+Re-encrypting MMKV every boot — with the instance created synchronously before the async
+device key was available — made the previous launch's data unreadable, silently resetting the
+"seeded" flag and **re-seeding duplicate accounts on every start**.
+**Trade-off:** Prefs are at-rest unencrypted. Acceptable: they reveal nothing sensitive, and
+financial data stays hardware-key-encrypted.
+
+## ADR-018 — Single theme (drop Aurora/Prism/Nebula variants)
+**Decision:** Collapse the three cosmic theme variants to one Refined Dark theme; remove the
+Settings theme selector and the unused theme i18n keys.
+**Why:** The variants only existed to swap cosmic accent ramps; with one clean theme they add
+indirection and a pointless setting.
+**Trade-off:** No user theme switching (incl. no light mode yet). The `ThemeProvider`/store API
+is kept so a light theme can be added later without re-plumbing.
+
 ---
 
 ## Deferred (tracked in [../RN_LAUNCH.md](../RN_LAUNCH.md))
