@@ -16,14 +16,14 @@ import { useTheme } from '@/theme/ThemeProvider';
 import type { Account, Category } from '@/domain/models';
 
 const PALETTE = [
-  '#04E2B7',
-  '#5B8DFF',
-  '#FF6AD5',
-  '#FFD166',
-  '#A78BFA',
-  '#22D3EE',
-  '#FB7185',
-  '#34D399',
+  '#3DD68C',
+  '#5B8DEF',
+  '#F4725E',
+  '#F59E0B',
+  '#8B5CF6',
+  '#06B6D4',
+  '#EC4899',
+  '#14B8A6',
 ];
 
 type Draft = { kind: 'account' | 'category'; income: boolean } | null;
