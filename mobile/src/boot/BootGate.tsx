@@ -29,6 +29,6 @@ const styles = StyleSheet.create({
     padding: 32,
     backgroundColor: '#0F1216',
   },
-  title: { color: '#FF5C7A', fontSize: 18, fontWeight: '600', marginBottom: 8 },
-  msg: { color: '#8A93B2', fontSize: 14, textAlign: 'center' },
+  title: { color: '#EF4444', fontSize: 18, fontWeight: '600', marginBottom: 8 },
+  msg: { color: '#7A828F', fontSize: 14, textAlign: 'center' },
 });
