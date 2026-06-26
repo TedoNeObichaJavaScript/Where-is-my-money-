@@ -1,5 +1,5 @@
 <p align="center">
-  <img src=".github/assets/banner.svg" alt="Where Is My Money? — Къде са ми парите? — A free Android personal finance tracker. Manual-only. No login. No cloud. No ads." width="100%" />
+  <img src=".github/assets/banner.svg" alt="Where Is My Money? — Къде са ми парите? — A free, private personal finance tracker for iOS & Android. Manual-only. No login. No cloud. No ads." width="100%" />
 </p>
 
 <h1 align="center">Where Is My Money?<br/><sub>Къде са ми парите?</sub></h1>
@@ -9,15 +9,13 @@
 </p>
 
 <p align="center">
-  <a href="#"><img alt="platform" src="https://img.shields.io/badge/platform-Android-7BA98C?style=for-the-badge&logo=android&logoColor=white"/></a>
-  <a href="#"><img alt="min sdk" src="https://img.shields.io/badge/minSdk-26-1A1816?style=for-the-badge"/></a>
-  <a href="#"><img alt="target sdk" src="https://img.shields.io/badge/targetSdk-35-1A1816?style=for-the-badge"/></a>
-  <a href="#"><img alt="kotlin" src="https://img.shields.io/badge/Kotlin-100%25-E07A5F?style=for-the-badge&logo=kotlin&logoColor=white"/></a>
-  <a href="#"><img alt="ui" src="https://img.shields.io/badge/Jetpack%20Compose-Material%203-7BA98C?style=for-the-badge"/></a>
-  <a href="#"><img alt="db" src="https://img.shields.io/badge/Room-SQLCipher-1A1816?style=for-the-badge"/></a>
-  <a href="#"><img alt="locales" src="https://img.shields.io/badge/i18n-EN%20%C2%B7%20BG-E07A5F?style=for-the-badge"/></a>
-  <a href="LICENSE"><img alt="license" src="https://img.shields.io/badge/license-MIT-1A1816?style=for-the-badge"/></a>
-  <a href="#"><img alt="price" src="https://img.shields.io/badge/price-Free%20forever-7BA98C?style=for-the-badge"/></a>
+  <a href="#"><img alt="platform" src="https://img.shields.io/badge/platform-iOS%20%2B%20Android-3DD68C?style=for-the-badge"/></a>
+  <a href="#"><img alt="framework" src="https://img.shields.io/badge/Expo-React%20Native-0F1216?style=for-the-badge&logo=expo&logoColor=white"/></a>
+  <a href="#"><img alt="language" src="https://img.shields.io/badge/TypeScript-strict-5B8DEF?style=for-the-badge&logo=typescript&logoColor=white"/></a>
+  <a href="#"><img alt="db" src="https://img.shields.io/badge/SQLite-SQLCipher-0F1216?style=for-the-badge"/></a>
+  <a href="#"><img alt="locales" src="https://img.shields.io/badge/i18n-EN%20%C2%B7%20BG-3DD68C?style=for-the-badge"/></a>
+  <a href="LICENSE"><img alt="license" src="https://img.shields.io/badge/license-MIT-0F1216?style=for-the-badge"/></a>
+  <a href="#"><img alt="price" src="https://img.shields.io/badge/price-Free%20forever-3DD68C?style=for-the-badge"/></a>
 </p>
 
 ---
@@ -40,9 +38,9 @@ That's the whole product.
 |---|---|---|
 | Account / login | Required | None |
 | Bank aggregation | Plaid / Tink / Salt Edge | None — by design |
-| Transaction storage | Their servers | **Your phone**, AES-GCM-wrapped via Android Keystore |
-| Backup | Cloud, opt-out at best | Plain JSON to a folder *you* choose (SAF) |
-| Tracking SDKs | Plenty | Crashlytics only |
+| Transaction storage | Their servers | **Your phone**, SQLCipher-encrypted with a hardware-backed key |
+| Backup | Cloud, opt-out at best | Plain JSON you export to a place *you* choose |
+| Tracking SDKs | Plenty | **Zero** — no network code at all (enforced by a test) |
 | Pricing | Subscription / ads / freemium | **Free forever.** No tip jar. No "pro." |
 | Languages | English, sometimes | **English + Bulgarian**, parity is a hard rule |
 
@@ -52,105 +50,73 @@ That's the whole product.
 
 Marketing privacy says "we don't sell your data." Structural privacy says **"we couldn't if we wanted to."**
 
-<p align="center">
-  <img src=".github/assets/flow.svg" alt="Data flow diagram. You enter data into the phone. The phone stores it locally, encrypted. Optionally, you export a JSON backup to a folder you choose. Nothing ever reaches a server." width="100%"/>
-</p>
+Financial data lives in an on-device **SQLCipher** database. Its 32-byte key is generated once and stored only in the hardware keychain/keystore via `expo-secure-store` — it can be used, never extracted. The app contains **no network code whatsoever** (a unit test fails the build if `fetch`/`XHR`/`WebSocket`/`axios` ever appears). Fonts and translations are bundled; nothing is fetched. Backups are plain JSON that you explicitly export and share.
 
-The crypto picture, in one paragraph: SQLCipher protects the database with a 32-byte passphrase generated once at first launch. That passphrase is wrapped with AES-GCM using a key that lives only inside the Android Keystore — it cannot be extracted, only used. The wrapped ciphertext + IV sits in plain SharedPreferences; without the Keystore key, it's noise. Survives app-data clears. Lost only on factory reset, which is exactly the threat model we want.
-
-Full details in [docs/SECURITY.md](docs/SECURITY.md).
+Full details in [docs/rn/ARCHITECTURE.md](docs/rn/ARCHITECTURE.md) (§8 Security & privacy).
 
 ---
 
 ## ▸ The stack
 
 ```
-Kotlin              ─▶  one language, no Java
-Jetpack Compose     ─▶  declarative UI, Material 3
-Room                ─▶  observable Flow<…> DAOs
-SQLCipher           ─▶  database file is encrypted on disk
-Android Keystore    ─▶  AES-GCM wraps the SQLCipher passphrase
-DataStore           ─▶  preferences (no SharedPreferences sprawl)
-BiometricPrompt     ─▶  optional fingerprint / face gate
-SAF                 ─▶  backup/restore to user-chosen file
-Manual DI           ─▶  ~80 lines of AppContainer, no Hilt
+Expo (React Native)  ─▶  one codebase, iOS + Android
+TypeScript (strict)  ─▶  noUncheckedIndexedAccess, path aliases
+expo-router          ─▶  file-based, typed routes
+expo-sqlite + SQLCipher ─▶ encrypted system of record
+expo-secure-store    ─▶  hardware-backed DB key
+react-native-mmkv    ─▶  fast prefs (non-secret)
+expo-local-authentication ─▶ optional Face/Touch ID lock
+lucide-react-native  ─▶  1:1 line icons (no emoji)
+react-native-svg     ─▶  donut / bars / Sankey / heatmap (no chart lib)
+i18next              ─▶  EN + BG, parity enforced
 ```
 
-No paid dependencies. No `kotlinx.serialization` (we use `org.json`). No chart library — donut and bars are drawn with Compose `Canvas`.
-
-Architecture details: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
+No backend. No paid dependencies. Money is `Long` minor units, never a float.
+Architecture: [docs/rn/ARCHITECTURE.md](docs/rn/ARCHITECTURE.md) · Decisions: [docs/rn/DECISIONS.md](docs/rn/DECISIONS.md) · Design: [docs/DESIGN_SYSTEM.md](docs/DESIGN_SYSTEM.md)
 
 ---
 
-## ▸ Money math, taken seriously
+## ▸ Design
 
-Floats are a famously bad way to count money. Parite stores every amount as `Long` minor units paired with a currency code:
+A clean, calm **Refined Dark** finance aesthetic — flat indigo-charcoal canvas, subtle bordered
+cards, one emerald accent, consistent Lucide line icons. No neon, no gradients, no glow.
 
-```kotlin
-@JvmInline value class Money(val amountMinor: Long) {
-    fun format(currency: String, locale: Locale): String =
-        NumberFormat.getCurrencyInstance(locale).apply {
-            this.currency = Currency.getInstance(currency)
-        }.format(amountMinor / 100.0)
-}
-```
-
-Account balances are computed in SQL via `JOIN`, never summed on the client beyond display. There is no place in the codebase where two `Double`s get added together and become 0.30000000000000004.
+<p align="center">
+  <img src=".github/assets/redesign/home.png" width="24%"/>
+  <img src=".github/assets/redesign/add.png" width="24%"/>
+  <img src=".github/assets/redesign/stats.png" width="24%"/>
+  <img src=".github/assets/redesign/settings.png" width="24%"/>
+</p>
 
 ---
 
-## ▸ Bilingual is a structural rule, not a feature
-
-Every shipped string exists in **`values/strings.xml`** and **`values-bg/strings.xml`**. PRs that add an English-only string don't merge.
-
-Seeded entities (categories, accounts) carry a `nameKey` (e.g. `"cat_food"`) so they can be re-translated when the user switches locale, instead of being frozen at install time.
-
-The product has two names, both first-class:
-
-- **Where Is My Money?**  ·  English market, app launcher long form
-- **Къде са ми парите?**  ·  Bulgarian market, app launcher long form
-- **Парите** ("the money")  ·  short form for both
-
-Contributing strings: [docs/STRINGS.md](docs/STRINGS.md).
-
----
-
-## ▸ Features (v0.2, deployed)
+## ▸ Features
 
 ```
-HOME        balance card · today / month spent · recent list · empty state
-ADD         calculator keypad · expense / income · accounts · 12-emoji categories · favorites · note · date picker
-HISTORY     search-by-note · day grouping · swipe-to-delete with undo · tap-to-edit
-ANALYTICS   donut by category · daily bar · top categories · month selector
-SETTINGS    biometric toggle · JSON backup (SAF) · JSON restore (REPLACE-mode) · language
+HOME        total balance · account tiles · today / month spent · recent list · empty state
+ADD         calculator keypad (± × ÷) · expense / income · accounts · category grid · note · date
+HISTORY     search-by-note · day grouping · swipe-to-delete with undo · pagination · tap-to-edit
+ANALYTICS   category donut · daily bars · cash-flow (Sankey) · calendar heatmap · month selector
+SETTINGS    biometric lock · language (EN/BG) · currency · JSON backup / REPLACE-restore · wipe
+MANAGE      add / archive accounts & categories
 ```
-
-Queued for v1.x: Quick-Settings tile, home-screen widget, recurring auto-logs, streaks, on-home insights. Tracked in [docs/ROADMAP.md](docs/ROADMAP.md).
 
 ---
 
 ## ▸ Building it
 
 ```bash
-# from Git Bash on Windows
-./gradlew.bat installDebug
-adb -s emulator-5554 shell am force-stop bg.parite.app.debug
-adb -s emulator-5554 shell am start -n bg.parite.app.debug/bg.parite.app.MainActivity
+cd mobile
+npm install --legacy-peer-deps
+npx expo install --fix
+
+# A custom dev client is required (SQLCipher isn't in Expo Go):
+eas build --profile development --platform ios   # or android
+npm run start                                    # Metro for the dev client
 ```
 
-Detailed setup, AVD notes, signing: [docs/BUILD.md](docs/BUILD.md).
-
----
-
-## ▸ Documentation map
-
-| Document | Read it when… |
-|---|---|
-| [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) | "Where does X live? How do flows fit together?" |
-| [`docs/SECURITY.md`](docs/SECURITY.md) | You're reviewing the crypto, the backup format, or the threat model. |
-| [`docs/BUILD.md`](docs/BUILD.md) | First time building, debugging the wrapper, deploying to a fresh emulator. |
-| [`docs/STRINGS.md`](docs/STRINGS.md) | Adding a new screen / button / dialog string. |
-| [`docs/ROADMAP.md`](docs/ROADMAP.md) | What's done, what's queued, what's intentionally deferred. |
+Verify locally: `npm run typecheck` · `npm test` · `npm run lint`.
+Details: [mobile/README.md](mobile/README.md) · launch checklist: [docs/RN_LAUNCH.md](docs/RN_LAUNCH.md).
 
 ---
 
@@ -159,22 +125,30 @@ Detailed setup, AVD notes, signing: [docs/BUILD.md](docs/BUILD.md).
 These aren't aspirations — they're constraints. PRs that violate any of them don't merge.
 
 1. **Free forever.** No subscription. No ads. No tip jar. No "pro tier."
-2. **No backend.** No accounts. No bank aggregation. No cloud sync of transactions.
+2. **No backend.** No accounts. No bank aggregation. No cloud sync. **No network code.**
 3. **EN + BG parity, always.** A string ships in both, or it doesn't ship.
-4. **Money is `Long` minor units.** Never `Double`. Never `Float`.
-5. **`@RequiresApi` on framework-called overrides is forbidden.** Gate inside with `Build.VERSION.SDK_INT`.
-6. **Restore is REPLACE-only.** Partial-merge is a separate design problem.
-7. **No paid dependencies.** Including OCR, charts, serialization, fonts.
+4. **Money is integer minor units.** Never `Float`.
+5. **Restore is REPLACE-only.** Partial-merge is a separate design problem.
+6. **No paid dependencies.** Including OCR, charts, serialization, fonts.
+
+---
+
+## ▸ History
+
+This started as a native **Android (Kotlin / Jetpack Compose / Room)** app, then was ported to a
+single cross-platform **React Native** codebase (see `docs/RN_MIGRATION.md`). The Kotlin original
+lives in git history before this migration.
 
 ---
 
 ## ▸ License
 
-MIT. Use it, fork it, ship a better one. The point is the *idea* of structural privacy in personal finance — if a thousand variants exist, that's a win.
+MIT. Use it, fork it, ship a better one. The point is the *idea* of structural privacy in personal
+finance — if a thousand variants exist, that's a win.
 
 ---
 
 <p align="center">
   <sub>Built with calm code and zero analytics.<br/>
-  <code>bg.parite.app</code> · made for Android · made in Bulgaria</sub>
+  <code>bg.parite.app</code> · iOS &amp; Android · made in Bulgaria</sub>
 </p>
