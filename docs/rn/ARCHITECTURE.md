@@ -25,7 +25,7 @@ src/
   domain/       PURE: Money, models, enums, balance math (no RN/db imports)
   db/           SQLCipher connection, migrations, row types + mappers, key, reset
   data/         repositories (CRUD + aggregate SQL), reactive layer, seed, backup
-  storage/      MMKV prefs (settings, flags) + encryption hook
+  storage/      MMKV prefs (settings, flags) — plain, non-secret
   security/     biometric helpers + LockGate
   boot/         useBootstrap + BootGate + BootScreen (startup orchestration)
   components/   ui/ kit · charts/ (svg) · background/ (flat) · nav/ · layout/
