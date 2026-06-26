@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<full-backup-content>
-    <exclude domain="database" path="parite.db" />
-    <exclude domain="database" path="parite.db-journal" />
-    <exclude domain="database" path="parite.db-wal" />
-    <exclude domain="database" path="parite.db-shm" />
-    <exclude domain="sharedpref" path="parite_secure.xml" />
-    <exclude domain="file" path="datastore/" />
-</full-backup-content>
