@@ -2,14 +2,12 @@ import { useEffect, useState } from 'react';
 import { getDb } from '@/db/connection';
 import { getOrCreateDbKey } from '@/db/key';
 import { seedIfNeeded } from '@/data/seed';
-import { encryptKv } from '@/storage/kv';
 
 type BootState = { ready: boolean; error: Error | null };
 
 /**
- * Boot guard: derive the device key, encrypt the prefs store, open + migrate the
- * encrypted DB. Nothing renders until `ready` is true (or `error` is set).
- * Phase 3 plugs first-run seeding in here (task 77).
+ * Boot guard: ensure the device key exists, open + migrate the encrypted DB, then
+ * seed on first run. Nothing renders until `ready` is true (or `error` is set).
  */
 export function useBootstrap(): BootState {
   const [state, setState] = useState<BootState>({ ready: false, error: null });
@@ -18,8 +16,7 @@ export function useBootstrap(): BootState {
     let active = true;
     (async () => {
       try {
-        const key = await getOrCreateDbKey();
-        encryptKv(key);
+        await getOrCreateDbKey();
         await getDb();
         await seedIfNeeded();
         if (active) setState({ ready: true, error: null });

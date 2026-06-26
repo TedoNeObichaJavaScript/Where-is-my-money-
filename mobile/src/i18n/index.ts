@@ -18,6 +18,8 @@ void i18n.use(initReactI18next).init({
   lng: initialLanguage(),
   fallbackLng: 'en',
   interpolation: { escapeValue: false },
+  // Hermes lacks Intl.PluralRules; v3 JSON plural format avoids the runtime warning.
+  compatibilityJSON: 'v3',
 });
 
 export { i18n };

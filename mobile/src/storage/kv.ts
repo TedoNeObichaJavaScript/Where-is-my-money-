@@ -1,13 +1,13 @@
 import { MMKV } from 'react-native-mmkv';
 
 /**
- * Fast key-value store for non-secret app preferences (toggles, last-backup time,
- * locale). Encrypted at rest; the encryption key is injected at boot from
- * secure-store via encryptKv() — prefs hold no financial data, but we encrypt anyway.
+ * Fast key-value store for **non-secret** app preferences (theme, locale, toggles,
+ * last-backup time, first-run flags). All financial data lives in the SQLCipher DB;
+ * these prefs reveal nothing about the user's money, so the store is plain.
+ *
+ * NOTE: this store must NOT be recrypted per-boot. MMKV is opened synchronously at
+ * module load (before the async device key is available), so re-encrypting it each
+ * launch would make the previous launch's data unreadable — which silently reset the
+ * "seeded" flag and re-seeded duplicate accounts on every start.
  */
 export const kv = new MMKV({ id: 'parite.kv' });
-
-/** Re-encrypt the store with a device-bound key (called once during bootstrap). */
-export function encryptKv(key: string): void {
-  kv.recrypt(key);
-}
