@@ -20,7 +20,6 @@ export const en = {
   cat_gift_in: 'Gift',
   cat_other_inc: 'Other',
 
-  // theme names
 
   // home
   home_greeting_q: 'Where’s your money?',
