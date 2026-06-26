@@ -177,6 +177,7 @@ export function SettingsScreen() {
 
       <Group title={tr('settings_data')}>
         <Row label={tr('manage_open')} onPress={() => router.push('/manage')} />
+        <Row label={tr('recurring_open')} onPress={() => router.push('/recurring')} />
         <Row label={tr('settings_backup')} onPress={onBackup} />
         <Row label={tr('settings_restore')} onPress={onRestore} />
         <Row label={tr('settings_lastBackup')} value={backupLabel} />

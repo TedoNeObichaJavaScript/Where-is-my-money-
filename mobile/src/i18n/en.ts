@@ -119,6 +119,27 @@ export const en = {
   manage_newAccount: 'New account',
   manage_newCategory: 'New category',
 
+  // recurring
+  recurring_title: 'Recurring',
+  recurring_open: 'Recurring',
+  recurring_empty: 'No recurring rules',
+  recurring_emptySub: 'Add rent, salary or bills that repeat automatically.',
+  recurring_add: '+ Add recurring',
+  recurring_new: 'New recurring',
+  recurring_amount: 'Amount',
+  recurring_every: 'Every',
+  recurring_freq_daily: 'Day',
+  recurring_freq_weekly: 'Week',
+  recurring_freq_monthly: 'Month',
+  recurring_freq_yearly: 'Year',
+  recurring_start: 'Start date',
+  recurring_end: 'End date',
+  recurring_noEnd: 'No end',
+  recurring_next: 'Next',
+  recurring_paused: 'Paused',
+  recurring_deleteTitle: 'Delete rule?',
+  recurring_deleteMsg: 'Future occurrences stop. Already-logged transactions stay.',
+
   // common
   common_undo: 'Undo',
   common_deleted: 'Transaction deleted',

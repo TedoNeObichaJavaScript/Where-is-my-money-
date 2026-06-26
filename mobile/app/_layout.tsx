@@ -44,6 +44,10 @@ export default function RootLayout() {
                   name="manage"
                   options={{ presentation: 'modal', animation: 'slide_from_bottom' }}
                 />
+                <Stack.Screen
+                  name="recurring"
+                  options={{ presentation: 'modal', animation: 'slide_from_bottom' }}
+                />
               </Stack>
             </LockGate>
           </BootGate>
