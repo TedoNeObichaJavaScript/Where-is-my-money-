@@ -52,6 +52,10 @@ Marketing privacy says "we don't sell your data." Structural privacy says **"we 
 
 Financial data lives in an on-device **SQLCipher** database. Its 32-byte key is generated once and stored only in the hardware keychain/keystore via `expo-secure-store` — it can be used, never extracted. The app contains **no network code whatsoever** (a unit test fails the build if `fetch`/`XHR`/`WebSocket`/`axios` ever appears). Fonts and translations are bundled; nothing is fetched. Backups are plain JSON that you explicitly export and share.
 
+<p align="center">
+  <img src=".github/assets/flow.svg" alt="Data flow: you enter data → it lives encrypted on your phone → you can export it to a file you choose → it never reaches any server or cloud." width="100%" />
+</p>
+
 Full details in [docs/rn/ARCHITECTURE.md](docs/rn/ARCHITECTURE.md) (§8 Security & privacy).
 
 ---
