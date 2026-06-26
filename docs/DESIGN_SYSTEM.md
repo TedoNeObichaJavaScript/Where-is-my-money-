@@ -1,126 +1,96 @@
-# Parite — Holographic Design System ("Out of Space")
+# Parite — Design System (Refined Dark)
 
-The look: a calm, premium **cosmic** interface. Indigo-black void, aurora light, glass panels
-floating over blurred nebula orbs. Drama comes from **color and light**, not clutter. Glow is
-rationed — only the hero number and the primary action emit light.
+A clean, calm, trustworthy finance aesthetic. Flat indigo-charcoal canvas, subtle
+bordered surfaces, one restrained emerald accent, and a consistent **Lucide** line-icon
+set. Clarity and legibility over decoration — no neon, no gradients, no glow.
+
+> Note: the app originally shipped a "holographic / cosmic" look; it was replaced because
+> heavy gradients, neon glow, and emoji icons read as edgy and unpolished for a finance
+> app. See `docs/rn/DECISIONS.md` (ADR-015..018) for the rationale.
 
 ## 1. Principles
 
-1. **Indigo-black, never pure black.** `#000000` reads flat and cheap. Base is `#0A0A14`.
-2. **≤ 2 neons.** One deep base + one dominant accent + one secondary. More = tacky.
-3. **Glow the one thing.** The balance hero and the center "Add" button glow. Nothing else.
-4. **Glass needs a busy backdrop.** Blur panels only sit over gradients/orbs, never flat color.
-5. **Light carries hierarchy.** Restrained geometric type; let color and depth do the work.
-6. **Motion is physical.** Springs, not linear tweens. UI-thread (Reanimated) only — never drop frames.
-7. **Accessible by structure.** Never encode meaning in red/green alone. Maintain text contrast.
+1. **Calm over flashy.** A finance app must feel trustworthy. Restraint is the style.
+2. **One accent.** A single emerald accent marks the primary action and active state. Nothing else competes.
+3. **Flat surfaces.** Cards are a solid fill + 1px hairline border — no blur, no shadow drama.
+4. **Icons are literal.** Every category/account/tab uses a precise Lucide line icon (1:1 with the thing).
+5. **Legibility first.** High text contrast, clear hierarchy, generous spacing.
+6. **Accessible.** Never encode meaning in color alone — the +/− sign carries direction; income is green but always paired with the sign.
 
 ## 2. Color
 
 ### Canvas
 | Token | Hex | Use |
 |---|---|---|
-| `bg` | `#0A0A14` | app background (void) |
-| `surface` | `#12121F` | elevated sections |
-| `card` | `#1A1A2E` | glass card base fill |
-| `cardGlass` | `rgba(17,25,40,0.55)` | glass fill over orbs |
-| `border` | `rgba(255,255,255,0.12)` | hairline glass border |
-| `text` | `#E2F3FF` | primary text |
-| `textMuted` | `#8A93B2` | secondary text |
+| `bg` | `#0F1216` | app background |
+| `surface` / `card` | `#181B21` | cards, grouped rows |
+| `surfaceAlt` | `#13161B` | tab bar, sunken areas |
+| `border` | `#232830` | hairline card border |
+| `borderStrong` | `#2D343E` | raised surfaces (sheets) |
+| `text` | `#E7E9EE` | primary text |
+| `textMuted` | `#7A828F` | secondary text |
+| `textFaint` | `#4B515C` | tertiary / disabled |
 
-### Aurora accents (default theme)
+### Accent (emerald)
 | Token | Hex |
 |---|---|
-| `accent` (teal) | `#04E2B7` |
-| `accentBright` | `#0EF3C5` |
-| `accentBlue` | `#5B8DFF` |
-| `deep` | `#025385` |
+| `accent` | `#3DD68C` |
+| `accentBright` | `#52E39C` |
+| `accentBlue` | `#5B8DEF` (links / info) |
+| `onAccent` | `#0F1216` (text on accent) |
 
 ### Semantic
 | Token | Hex | Note |
 |---|---|---|
-| `income` | `#04E2B7` | + pair with ↑ icon, not color alone |
-| `expense` | `#FF6AD5` | magenta, pair with ↓ icon |
-| `warning` | `#E8C07A` | |
+| `income` | `#3DD68C` | paired with `+` |
+| `expense` | `#E7E9EE` | neutral; the `−` sign conveys direction |
+| `warning` | `#F59E0B` | |
+| `danger` | `#EF4444` | delete / erase |
 
-### Alternate themes (selectable)
-- **Prism** (high energy): magenta `#FF6AD5` · `#FF9DFB` · cyan `#7AF5FF` · `#5B8DFF`
-- **Nebula** (moody): `#091833` base · violet `#711C91` · `#EA00D9` · `#0ABDC6`
+### Category palette (refined, distinct, non-neon)
+`#F4725E · #3DD68C · #5B8DEF · #8B5CF6 · #F59E0B · #EC4899 · #06B6D4 · #EF4444 ·
+#3B82F6 · #F472B6 · #14B8A6 · #94A3B8` — used as the icon tint over a `${color}22` tile.
 
-## 3. Gradients
+## 3. Iconography
 
-```ts
-auroraBg     = ['#025385', '#04E2B7', '#0EF3C5', '#5B8DFF']   // 120deg, animate position
-nebulaOrbA   = radial('30% 20%', '#711C91', 'transparent 60%')
-nebulaOrbB   = radial('75% 70%', '#EA00D9', 'transparent 55%')
-hero         = ['#0A0A14', '#1A0A2E', '#2D1B4E']              // 160deg
-iridescent   = ['#FF6AD5', '#7AF5FF', '#5B8DFF', '#FF9DFB']   // 135deg, screen blend
-```
-Add extra stops + OKLCH interpolation to kill banding on dark gradients.
+- **Library:** [Lucide](https://lucide.dev) via `lucide-react-native` (line, `strokeWidth: 2`).
+- **Mapping:** `src/components/icons/catalog.ts` maps each seeded `nameKey` → an exact icon
+  (Food→Utensils, Groceries→ShoppingCart, Transport→Car, Bills→Receipt, Health→HeartPulse,
+  Salary→Wallet, Cash→Banknote, Card→CreditCard, Savings→PiggyBank, …).
+- **Tile:** `IconTile` renders the icon in a soft `${color}22` rounded square — no glow.
+- **Tabs:** Home→House, History→Receipt, Stats→ChartColumn, Profile→User; center Add→Plus.
 
-## 4. Glass (dark recipe)
+## 4. Surfaces
 
-```
-fill:    rgba(17,25,40,0.55)
-blur:    12px  (sweet spot 10–20)  + saturate(160%)
-border:  1px solid rgba(255,255,255,0.12)
-radius:  16
-shadow:  0 8px 32px rgba(0,0,0,0.36)   // depth, soft + large + low-opacity
-```
-RN: `expo-blur` `<BlurView intensity={30} tint="dark">` + semi-transparent overlay + border.
+- **Card:** `surface` fill, `border` 1px, radius 16 (raised: `borderStrong`, radius 20).
+- **No glass blur** (the `expo-blur` BlurView survives only in the bottom Sheet).
+- **Shadows:** soft, subtle depth only (`shadow.depth` / `depthSm`). No colored glow.
 
-## 5. Glow / shadows
+## 5. Typography
 
-```
-depth:      0 8px 32px rgba(0,0,0,0.36)               // every card
-neonHalo:   0 0 4px  rgba(4,226,183,0.9),             // primary action only
-            0 0 12px rgba(4,226,183,0.5),
-            0 0 28px rgba(4,226,183,0.25)
-textGlow:   0 0 8px rgba(94,141,255,0.6)              // hero number only
-```
-RN has no multi-shadow on one view → stack layered absolutely-positioned glow layers, or use
-a Skia blurred halo behind the element. Reserve Skia for the hero + Add button.
+- Display: **Space Grotesk** (balance figures, tabular). Body/UI: **Inter**.
+- Scale (pt): Hero 48 · Title 28 · Heading 20 · Body 16 · Caption 13 · Micro 11.
+- Money uses tabular figures so digits don't jitter.
 
-## 6. Typography
+## 6. Spacing & radius
 
-- Display font: **Space Grotesk** (geometric, slightly technical — fits cosmic).
-- Body font: **Inter**.
-- Scale (pt): Display 48 · Title 28 · Heading 20 · Body 16 · Caption 13 · Micro 11.
-- Money hero uses tabular/monospace figures so digits don't jitter while animating.
+- Spacing 4pt grid: `xs 4 · sm 8 · md 12 · base 16 · lg 24 · xl 32`.
+- Radius: `sm 8 · md 12 · base 16 · lg 20 · pill 999`. Touch targets ≥ 44pt.
 
-| Style | Size | Weight | Use |
-|---|---|---|---|
-| Hero | 48 | 700 | balance number |
-| Title | 28 | 600 | screen titles |
-| Heading | 20 | 600 | section headers |
-| Body | 16 | 400/500 | rows, labels |
-| Caption | 13 | 500 | meta, deltas |
+## 7. Buttons & controls
 
-## 7. Spacing & radius
-
-- Spacing: 4pt grid → `xs 4 · sm 8 · md 12 · base 16 · lg 24 · xl 32 · 2xl 48`.
-- Radius: `sm 8 · md 12 · base 16 · lg 20 · xl 28 · pill 999`.
-- Touch targets ≥ 44pt. Center Add button ≈ 64pt.
+- **Primary:** solid `accent` fill, `onAccent` label, radius 16 (`NeonButton` — name kept).
+- **Center Add:** rounded-square (16) accent FAB with a Plus icon. Tap → add expense, long-press → add income.
+- **Segmented (Expense/Income):** sliding accent thumb over `surface`.
+- **Tab bar:** solid `surfaceAlt`, hairline top border; active item in `accent`.
 
 ## 8. Motion
 
-- Durations: fast 120ms · base 220ms · slow 360ms.
-- Spring (default): `{ damping: 18, stiffness: 180, mass: 1 }`.
-- Number count-up: 600ms ease-out on value change.
-- Press: scale 0.96 + glow intensify, spring back.
-- Use Reanimated worklets for everything interactive; Moti for mount/unmount.
+- Durations: fast 120ms · base 220ms · slow 360ms. Spring default `{ damping 18, stiffness 180 }`.
+- Press: scale 0.96 spring-back. Number count-up 600ms ease-out. List rows fade-up, staggered.
+- Respect reduce-motion.
 
-## 9. Responsiveness (iOS + Android)
+## 9. Responsiveness
 
-- Design in **points**, test extremes: iPhone SE 375pt → 16 Pro Max 440pt.
-- `useSafeAreaInsets()` for top/bottom — never hardcode notch/Dynamic Island height.
-- `scale()` util normalizes against a 375pt guideline width; clamp so text never balloons.
-- Tab bar sits above `insets.bottom`; hero/header below `insets.top`.
-- Respect `prefers-reduced-motion` (disable count-up + ambient drift).
-
-## 10. Performance budget
-
-- 60fps minimum, target 120fps on ProMotion.
-- Ambient gradient drift on UI thread, paused when app backgrounded.
-- Blur is expensive on old Android — cap concurrent BlurViews; fall back to solid `card` fill
-  below Android 12 or when `reduceTransparency` is on.
-- Lists use FlashList; charts use Skia (GPU) not SVG for >50 points.
+- Design in points; test iPhone SE (375) → 16 Pro Max (440). `useSafeAreaInsets()` for notch /
+  Dynamic Island / home indicator — never hardcode. `scale()` clamps against a 375pt guideline.
