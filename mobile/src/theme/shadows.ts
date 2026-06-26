@@ -26,12 +26,3 @@ export const depthSm: Shadow = {
   shadowRadius: 6,
   elevation: 2,
 };
-
-/** No neon glow in the refined theme — returns a subtle neutral depth instead. */
-export function glow(_color: string, _radius = 16): Shadow {
-  return depthSm;
-}
-
-export function glowLayers(_color: string): { radius: number; opacity: number }[] {
-  return [];
-}
