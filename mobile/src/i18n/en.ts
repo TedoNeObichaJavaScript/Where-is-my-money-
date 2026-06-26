@@ -108,7 +108,6 @@ export const en = {
   manage_addAccount: '+ Add account',
   manage_addCategory: '+ Add category',
   manage_name: 'Name',
-  manage_emoji: 'Emoji',
   manage_color: 'Color',
   manage_newAccount: 'New account',
   manage_newCategory: 'New category',

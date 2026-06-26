@@ -103,7 +103,6 @@ export const bg: Resources = {
   manage_addAccount: '+ Добави сметка',
   manage_addCategory: '+ Добави категория',
   manage_name: 'Име',
-  manage_emoji: 'Емоджи',
   manage_color: 'Цвят',
   manage_newAccount: 'Нова сметка',
   manage_newCategory: 'Нова категория',
