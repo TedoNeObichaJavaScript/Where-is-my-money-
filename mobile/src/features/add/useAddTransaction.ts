@@ -3,7 +3,7 @@ import { applyKey, evaluate } from './calculator';
 import { AccountRepository } from '@/data/AccountRepository';
 import { CategoryRepository } from '@/data/CategoryRepository';
 import { TransactionRepository } from '@/data/TransactionRepository';
-import { subscribeData, useLiveQuery } from '@/data/reactive';
+import { useLiveQuery } from '@/data/reactive';
 import { Money } from '@/domain/Money';
 import type { Account, Category } from '@/domain/models';
 import type { TxnType } from '@/domain/enums';
@@ -21,28 +21,29 @@ export function useAddTransaction(opts: { type?: TxnType; editId?: number }) {
   const [loaded, setLoaded] = useState(opts.editId == null);
 
   const accounts = useLiveQuery<Account[]>(() => AccountRepository.all(), []);
-
-  // categories depend on `type`, so load explicitly (useLiveQuery has no deps)
-  const [categories, setCategories] = useState<Category[]>([]);
-  useEffect(() => {
-    let active = true;
-    const load = () =>
-      CategoryRepository.byKind(type === 'INCOME' ? 'INCOME' : 'EXPENSE').then((c) => {
-        if (active) setCategories(c);
-      });
-    void load();
-    const unsub = subscribeData(() => void load());
-    return () => {
-      active = false;
-      unsub();
-    };
-  }, [type]);
+  const categories = useLiveQuery<Category[]>(
+    () => CategoryRepository.byKind(type === 'INCOME' ? 'INCOME' : 'EXPENSE'),
+    [],
+    [type],
+  );
 
   // default account once loaded
   useEffect(() => {
     const first = accounts[0];
     if (accountId == null && first) setAccountId(first.id);
   }, [accounts, accountId]);
+
+  // drop the selected category if it isn't valid for the current type
+  // (e.g. after switching Expense↔Income) so an income txn can't keep an expense category
+  useEffect(() => {
+    if (
+      categoryId != null &&
+      categories.length > 0 &&
+      !categories.some((c) => c.id === categoryId)
+    ) {
+      setCategoryId(null);
+    }
+  }, [categories, categoryId]);
 
   // load existing transaction for edit mode
   useEffect(() => {

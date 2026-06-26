@@ -20,9 +20,11 @@ function sectionTitle(key: string, locale: string): string {
   if (key === today) return 'Today';
   if (key === yest) return 'Yesterday';
   const [y, m, d] = key.split('-').map(Number);
-  return new Intl.DateTimeFormat(locale, { weekday: 'short', day: 'numeric', month: 'short' }).format(
-    new Date(y!, m! - 1, d!),
-  );
+  return new Intl.DateTimeFormat(locale, {
+    weekday: 'short',
+    day: 'numeric',
+    month: 'short',
+  }).format(new Date(y!, m! - 1, d!));
 }
 
 /** History view-model: debounced search, pagination, day grouping, undo-delete. */
@@ -32,6 +34,7 @@ export function useHistory(locale = 'en') {
   const [items, setItems] = useState<TransactionView[]>([]);
   const [hasMore, setHasMore] = useState(true);
   const offset = useRef(0);
+  const reloadToken = useRef(0);
   const [pendingUndo, setPendingUndo] = useState<TransactionView | null>(null);
   const undoTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -41,9 +44,18 @@ export function useHistory(locale = 'en') {
     return () => clearTimeout(id);
   }, [searchInput]);
 
+  // clear a pending undo timer if the screen unmounts (avoids setState-after-unmount)
+  useEffect(
+    () => () => {
+      if (undoTimer.current) clearTimeout(undoTimer.current);
+    },
+    [],
+  );
+
   const reload = useCallback(async () => {
-    offset.current = 0;
+    const token = ++reloadToken.current;
     const rows = await TransactionRepository.page({ limit: PAGE, offset: 0, search });
+    if (token !== reloadToken.current) return; // a newer reload superseded this one
     setItems(rows);
     setHasMore(rows.length === PAGE);
     offset.current = rows.length;
@@ -70,7 +82,13 @@ export function useHistory(locale = 'en') {
       const key = dayKey(txn.occurredAt);
       let sec = map.get(key);
       if (!sec) {
-        sec = { key, title: sectionTitle(key, locale), expenseMinor: 0, currency: txn.currency, data: [] };
+        sec = {
+          key,
+          title: sectionTitle(key, locale),
+          expenseMinor: 0,
+          currency: txn.currency,
+          data: [],
+        };
         map.set(key, sec);
       }
       sec.data.push(txn);
@@ -88,8 +106,23 @@ export function useHistory(locale = 'en') {
 
   async function undo() {
     if (!pendingUndo) return;
-    const { id: _id, createdAt: _c, categoryName, categoryNameKey, categoryEmoji, categoryColor, accountName, accountNameKey, ...rest } = pendingUndo;
-    void categoryName; void categoryNameKey; void categoryEmoji; void categoryColor; void accountName; void accountNameKey;
+    const {
+      id: _id,
+      createdAt: _c,
+      categoryName,
+      categoryNameKey,
+      categoryEmoji,
+      categoryColor,
+      accountName,
+      accountNameKey,
+      ...rest
+    } = pendingUndo;
+    void categoryName;
+    void categoryNameKey;
+    void categoryEmoji;
+    void categoryColor;
+    void accountName;
+    void accountNameKey;
     await TransactionRepository.create(rest);
     setPendingUndo(null);
   }

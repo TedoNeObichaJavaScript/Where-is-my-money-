@@ -19,8 +19,25 @@ type Backup = {
   recurringRules: unknown[];
 };
 
+/** Remove backup files left in the cache by previous exports (avoids cache bloat). */
+async function clearOldBackups(): Promise<void> {
+  const dir = FileSystem.cacheDirectory;
+  if (!dir) return;
+  try {
+    const files = await FileSystem.readDirectoryAsync(dir);
+    await Promise.all(
+      files
+        .filter((f) => f.startsWith('parite-backup-') && f.endsWith('.json'))
+        .map((f) => FileSystem.deleteAsync(dir + f, { idempotent: true })),
+    );
+  } catch {
+    // best-effort cleanup — never block an export on it
+  }
+}
+
 /** Export all data to a JSON file and open the share sheet (SAF on Android). */
 export async function exportBackup(): Promise<boolean> {
+  await clearOldBackups();
   const db = await getDb();
   const payload: Backup = {
     version: BACKUP_VERSION,
@@ -62,7 +79,17 @@ export async function importBackup(): Promise<{ ok: boolean; count?: number; err
       await db.runAsync(
         `INSERT INTO accounts (id,name,nameKey,currency,openingMinor,colorHex,emoji,sortOrder,archived)
          VALUES (?,?,?,?,?,?,?,?,?);`,
-        ...vals(a, ['id', 'name', 'nameKey', 'currency', 'openingMinor', 'colorHex', 'emoji', 'sortOrder', 'archived']),
+        ...vals(a, [
+          'id',
+          'name',
+          'nameKey',
+          'currency',
+          'openingMinor',
+          'colorHex',
+          'emoji',
+          'sortOrder',
+          'archived',
+        ]),
       );
     }
     for (const c of data.categories as Record<string, unknown>[]) {
@@ -76,14 +103,39 @@ export async function importBackup(): Promise<{ ok: boolean; count?: number; err
       await db.runAsync(
         `INSERT INTO recurring_rules (id,accountId,categoryId,type,amountMinor,currency,freq,intervalCount,startAt,endAt,nextDueAt,note,active)
          VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?);`,
-        ...vals(r, ['id', 'accountId', 'categoryId', 'type', 'amountMinor', 'currency', 'freq', 'intervalCount', 'startAt', 'endAt', 'nextDueAt', 'note', 'active']),
+        ...vals(r, [
+          'id',
+          'accountId',
+          'categoryId',
+          'type',
+          'amountMinor',
+          'currency',
+          'freq',
+          'intervalCount',
+          'startAt',
+          'endAt',
+          'nextDueAt',
+          'note',
+          'active',
+        ]),
       );
     }
     for (const tx of data.transactions as Record<string, unknown>[]) {
       await db.runAsync(
         `INSERT INTO transactions (id,accountId,categoryId,type,amountMinor,currency,occurredAt,note,recurringRuleId,createdAt)
          VALUES (?,?,?,?,?,?,?,?,?,?);`,
-        ...vals(tx, ['id', 'accountId', 'categoryId', 'type', 'amountMinor', 'currency', 'occurredAt', 'note', 'recurringRuleId', 'createdAt']),
+        ...vals(tx, [
+          'id',
+          'accountId',
+          'categoryId',
+          'type',
+          'amountMinor',
+          'currency',
+          'occurredAt',
+          'note',
+          'recurringRuleId',
+          'createdAt',
+        ]),
       );
     }
   });

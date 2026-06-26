@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 /**
  * Minimal reactivity: repositories call bumpData() after any write; live queries
@@ -17,30 +17,34 @@ export function subscribeData(l: Listener): () => void {
   return () => listeners.delete(l);
 }
 
-/** Runs an async query, re-running whenever data changes. */
-export function useLiveQuery<T>(query: () => Promise<T>, initial: T): T {
+/**
+ * Runs an async query, re-running whenever data changes. A monotonic token ensures
+ * only the most recently started query can apply its result — so a slow earlier
+ * query resolving after a fast later one (under rapid writes) can't overwrite fresh
+ * data with stale, and in-flight queries are ignored after unmount.
+ */
+export function useLiveQuery<T>(query: () => Promise<T>, initial: T, deps: unknown[] = []): T {
   const [data, setData] = useState<T>(initial);
   const queryRef = useRef(query);
   queryRef.current = query;
-
-  const run = useCallback(() => {
-    let active = true;
-    queryRef.current().then((r) => {
-      if (active) setData(r);
-    });
-    return () => {
-      active = false;
-    };
-  }, []);
+  const tokenRef = useRef(0);
 
   useEffect(() => {
-    const cancel = run();
-    const unsub = subscribeData(() => run());
+    const run = () => {
+      const token = ++tokenRef.current;
+      void queryRef.current().then((r) => {
+        if (token === tokenRef.current) setData(r);
+      });
+    };
+    run();
+    const unsub = subscribeData(run);
     return () => {
-      cancel();
+      tokenRef.current += 1; // invalidate any in-flight query on unmount
       unsub();
     };
-  }, [run]);
+    // re-run when caller-provided deps change (in addition to every data write)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, deps);
 
   return data;
 }
