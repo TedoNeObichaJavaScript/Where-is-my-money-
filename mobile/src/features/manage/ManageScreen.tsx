@@ -38,12 +38,10 @@ export function ManageScreen() {
 
   const [draft, setDraft] = useState<Draft>(null);
   const [name, setName] = useState('');
-  const [emoji, setEmoji] = useState('💸');
   const [color, setColor] = useState(PALETTE[0]!);
 
   const openCreate = (kind: 'account' | 'category', income = false) => {
     setName('');
-    setEmoji(kind === 'account' ? '🏦' : '🏷️');
     setColor(PALETTE[0]!);
     setDraft({ kind, income });
   };
@@ -57,7 +55,7 @@ export function ManageScreen() {
         currency: deviceCurrency(),
         openingMinor: 0,
         colorHex: color,
-        emoji,
+        emoji: '',
         sortOrder: accounts.length,
         archived: false,
       });
@@ -66,7 +64,7 @@ export function ManageScreen() {
         name: name.trim(),
         nameKey: null,
         kind: draft.income ? 'INCOME' : 'EXPENSE',
-        emoji,
+        emoji: '',
         colorHex: color,
         sortOrder: categories.length,
         hidden: false,
