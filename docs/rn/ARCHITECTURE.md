@@ -134,7 +134,7 @@ re-translate on language switch. EN/BG key parity is enforced by TypeScript *and
 
 ## 10. Testing
 
-`jest-expo`. 8 suites / 27 tests covering the pure, high-risk logic: Money, calculator
+`jest-expo`. 13 suites / 40 tests covering the pure, high-risk logic: Money, calculator
 (precedence, ÷0), balance math, DB key round-trip, migration idempotency, row mappers,
-date helpers, and i18n parity. UI/native-dependent paths are validated via typecheck +
+date helpers, i18n parity, storage prefs, enum guards, and a network-free privacy guard. UI/native-dependent paths are validated via typecheck +
 `expo-doctor` and (the remaining step) an on-device dev build.
