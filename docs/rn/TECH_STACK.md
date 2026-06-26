@@ -28,7 +28,7 @@ Exact stack for the Expo app in [`mobile/`](../../mobile). Rationale in
 | Vector/charts | react-native-svg | 15.8.0 |
 | Blur (bottom sheet only) | expo-blur | ~14.0 |
 | Gradients (chart fills) | expo-linear-gradient | ~14.0 |
-| ~~GPU shaders~~ | @shopify/react-native-skia | 1.5.0 — *now unused after the refined-dark redesign; pending removal* |
+| ~~GPU shaders~~ | — | *removed — Skia was only used by the cosmic nebula background* |
 | Encrypted DB | expo-sqlite (+ SQLCipher plugin) | ~15.1 |
 | Key storage | expo-secure-store | ~14.0 |
 | Randomness | expo-crypto | ~14.0 |
@@ -68,7 +68,7 @@ Exact stack for the Expo app in [`mobile/`](../../mobile). Rationale in
 
 ## Known constraints
 
-- **Dev client required** (not Expo Go): SQLCipher and Skia are native modules → must run
+- **Dev client required** (not Expo Go): SQLCipher is a native module → must run
   via `eas build --profile development` or a local prebuild.
 - **eslint-config-expo** is pinned to the flat-config v56 line and added to
   `expo.install.exclude` (Expo SDK 52 otherwise expects the legacy v8 eslintrc config).
