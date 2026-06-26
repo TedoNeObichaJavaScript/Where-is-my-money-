@@ -13,6 +13,7 @@ import { router } from 'expo-router';
 import { useTranslation } from 'react-i18next';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { AccountTiles } from './AccountTiles';
+import { RecurringStrip } from './RecurringStrip';
 import { StatCard } from './StatCard';
 import { useHomeData } from './useHomeData';
 import { bumpData } from '@/data/reactive';
@@ -25,7 +26,6 @@ import {
   TransactionRow,
 } from '@/components/ui';
 import { resolveName } from '@/i18n/labels';
-import { Money } from '@/domain/Money';
 import { useTheme } from '@/theme/ThemeProvider';
 
 function greetingKey(): string {
@@ -126,6 +126,22 @@ export function HomeScreen() {
         />
       </View>
 
+      {/* upcoming recurring */}
+      {d.upcoming.length > 0 && (
+        <View style={styles.block}>
+          <SectionHeader
+            title={tr('recurring_title')}
+            actionLabel={tr('home_seeAll')}
+            onAction={() => router.push('/recurring')}
+          />
+          <RecurringStrip
+            data={d.upcoming}
+            locale={locale}
+            onOpen={() => router.push('/recurring')}
+          />
+        </View>
+      )}
+
       {/* recent */}
       <View style={styles.block}>
         <SectionHeader
@@ -160,11 +176,6 @@ export function HomeScreen() {
           </GlassCard>
         )}
       </View>
-
-      {/* tiny footer note to confirm money formatting wiring */}
-      <Text variant="micro" color={t.colors.textFaint} style={styles.foot}>
-        {Money.format(d.total, d.currency, locale)} across {d.accounts.length} accounts
-      </Text>
     </Animated.ScrollView>
   );
 }
@@ -175,5 +186,4 @@ const styles = StyleSheet.create({
   block: { marginTop: 8, marginBottom: 8 },
   stats: { flexDirection: 'row', gap: 12, marginVertical: 8 },
   list: { paddingHorizontal: 14, paddingVertical: 4 },
-  foot: { textAlign: 'center', marginTop: 16 },
 });
