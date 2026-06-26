@@ -39,13 +39,18 @@ The headline plan keeps 200 lines; tasks 199–200 expand into the granular sub-
 - [ ] VoiceOver/TalkBack labels on icon-only controls
 
 ## Deferred screen features (non-blocking)
-- [ ] 129 income quick-add shortcut · 130 recurring-bills strip · 132 collapsing header · 135 home polish
-- [ ] 165 staggered list animations · 168 FlashList swap
-- [ ] 177 Sankey cash-flow · 179 calendar heatmap · 180 custom date range · 181 chart entrance anim · 185 chart polish
-- [ ] 196 account/category management UI
+- [x] 129 income quick-add shortcut · [x] 130 recurring rules (engine + posting + manage screen + Home strip) · [x] 132 collapsing header · [ ] 135 home polish (subjective)
+- [x] 165 staggered list animations · [ ] 168 FlashList swap (needs @shopify/flash-list native dep → dev-client rebuild)
+- [x] 177 Sankey cash-flow · [x] 179 calendar heatmap · [x] 180 custom date range · [x] 181 chart entrance anim · [ ] 185 chart polish (subjective)
+- [x] 196 account/category management UI
+
+## Remaining (all need device/EAS or are subjective)
+- 135 / 155 / 185 — subjective polish, best with on-device feedback
+- 168 — FlashList swap; adds a native module, so it requires a dev-client rebuild
+- `eas build --profile development` + on-device smoke test — needs the user's EAS account
 
 ## 200 — Legacy removal & promotion (REQUIRES CONFIRMATION — destructive)
-- [ ] Remove Android `app/`, `gradle/`, root `build.gradle.kts`, `settings.gradle.kts`, wrappers
-- [ ] Promote `mobile/` contents to repo root
-- [ ] Rewrite root README for cross-platform
+- [x] Remove Android `app/`, `gradle/`, root `build.gradle.kts`, `settings.gradle.kts`, wrappers
+- [ ] Promote `mobile/` contents to repo root (deferred — big path change, would break doc refs)
+- [x] Rewrite root README for cross-platform
 - [ ] Tag release `v0.3.0`
