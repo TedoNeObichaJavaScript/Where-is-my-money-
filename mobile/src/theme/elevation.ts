@@ -1,7 +1,6 @@
-/** z-index scale for stacked holographic layers. */
+/** z-index scale for stacked layers. */
 export const elevation = {
   base: 0,
-  orbs: 1, // nebula light-leaks behind content
   content: 10,
   header: 20,
   tabBar: 30,
