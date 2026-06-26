@@ -24,10 +24,11 @@ Exact stack for the Expo app in [`mobile/`](../../mobile). Rationale in
 | Gestures | react-native-gesture-handler | ~2.20 |
 | Safe area | react-native-safe-area-context | 4.12 |
 | Native screens | react-native-screens | ~4.4 |
-| Gradients | expo-linear-gradient | ~14.0 |
-| Blur (glass) | expo-blur | ~14.0 |
-| GPU shaders (orbs) | @shopify/react-native-skia | 1.5.0 |
+| Icons | **lucide-react-native** | ^1.21 |
 | Vector/charts | react-native-svg | 15.8.0 |
+| Blur (bottom sheet only) | expo-blur | ~14.0 |
+| Gradients (chart fills) | expo-linear-gradient | ~14.0 |
+| ~~GPU shaders~~ | @shopify/react-native-skia | 1.5.0 — *now unused after the refined-dark redesign; pending removal* |
 | Encrypted DB | expo-sqlite (+ SQLCipher plugin) | ~15.1 |
 | Key storage | expo-secure-store | ~14.0 |
 | Randomness | expo-crypto | ~14.0 |
