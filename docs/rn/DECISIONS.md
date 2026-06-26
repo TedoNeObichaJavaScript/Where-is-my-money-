@@ -116,6 +116,14 @@ Linear, Copilot).
 **Trade-off:** Loses the distinctive "out of space" identity the project started with.
 Accepted — clarity and trust matter more for this product.
 
+## ADR-016 — Lucide line icons over emoji
+**Decision:** Use `lucide-react-native` for all category/account/tab icons via a
+`nameKey → icon` catalog; emoji are gone from the UI.
+**Why:** Emoji render inconsistently across platforms and look cheap; Lucide gives a
+consistent, professional, 1:1-representative set (Food→Utensils, Transport→Car, …).
+**Trade-off:** Custom (user-created) categories fall back to a generic icon until an
+icon-picker is added; the DB keeps an unused `emoji` column for now.
+
 ---
 
 ## Deferred (tracked in [../RN_LAUNCH.md](../RN_LAUNCH.md))
