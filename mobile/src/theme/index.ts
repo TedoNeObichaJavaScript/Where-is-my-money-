@@ -4,7 +4,6 @@ export * from './radius';
 export * from './typography';
 export * from './shadows';
 export * from './glass';
-export * from './gradients';
 export * from './motion';
 export * from './tokens';
 export * from './theme';
