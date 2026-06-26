@@ -21,7 +21,6 @@ export const en = {
   cat_other_inc: 'Other',
 
   // theme names
-  theme_nebula: 'Nebula',
 
   // home
   home_greeting_q: 'Where’s your money?',

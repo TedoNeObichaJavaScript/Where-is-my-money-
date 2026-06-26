@@ -21,7 +21,6 @@ export const bg: Resources = {
   cat_gift_in: 'Подарък',
   cat_other_inc: 'Друго',
 
-  theme_nebula: 'Мъглявина',
 
   home_greeting_q: 'Къде са ти парите?',
   home_morning: 'Добро утро',
