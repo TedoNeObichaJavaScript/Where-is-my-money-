@@ -23,7 +23,7 @@
       "package": "bg.parite.app",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#0A0A14"
+        "backgroundColor": "#0F1216"
       }
     },
     "plugins": [
@@ -51,7 +51,7 @@
       [
         "expo-splash-screen",
         {
-          "backgroundColor": "#0A0A14",
+          "backgroundColor": "#0F1216",
           "image": "./assets/icon.png",
           "imageWidth": 200
         }
