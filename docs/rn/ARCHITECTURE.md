@@ -89,17 +89,20 @@ mirrors the SQL for optimistic UI. All money logic is unit-tested.
 ## 6. Theme & UI
 
 - **Tokens** (`theme/`): palette → semantic tokens → composed `Theme` object exposing
-  `colors / space / radius / type / glass / gradients / shadow / motion`. Three accent
-  variants (Aurora default, Prism, Nebula); switching only swaps the accent ramp.
+  `colors / space / radius / type / glass / shadow / motion`. A single **Refined Dark**
+  theme (`ThemeName = 'refined'`); the variant/store API is kept so a light theme can be
+  added later without re-plumbing.
 - **Provider:** `ThemeProvider` reads a persisted Zustand store; `useTheme()` everywhere.
-- **Components** (`components/ui`): ~25 primitives (GlassCard, NeonButton, BalanceHero,
-  AnimatedNumber, SegmentedControl, Sheet, SwipeableRow, …) all theme-driven.
+- **Icons:** `lucide-react-native` via `components/icons/catalog.ts` (`nameKey → icon`) +
+  `IconTile` — every category/account/tab is a 1:1 line icon (no emoji).
+- **Components** (`components/ui`): ~25 primitives (GlassCard — now a clean bordered card,
+  NeonButton, BalanceHero, AnimatedNumber, SegmentedControl, Sheet, SwipeableRow, …).
 - **Charts** (`components/charts`): donut, bars, **Sankey cash-flow**, calendar heatmap —
   drawn with `react-native-svg` (no chart library; avoids the victory-native↔Skia trap).
-- **Background** (`components/background`): Skia-rendered blurred nebula orbs + aurora
-  gradient. The single signature surface that justifies the Skia dependency.
-- **Design law:** indigo-black base (never pure black), ≤2 neons, glow rationed to the
-  hero balance and the Add button. See [DESIGN_SYSTEM.md](../DESIGN_SYSTEM.md).
+- **Background** (`components/background`): a flat `bg`-colored canvas. (The old Skia nebula
+  orbs were removed in the refined-dark redesign.)
+- **Design law:** flat indigo-charcoal base, one emerald accent, no neon/glow/blur. See
+  [../DESIGN_SYSTEM.md](../DESIGN_SYSTEM.md).
 
 ## 7. Screens (feature folders)
 
