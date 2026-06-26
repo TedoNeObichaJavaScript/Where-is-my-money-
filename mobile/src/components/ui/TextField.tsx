@@ -3,7 +3,7 @@ import { StyleSheet, TextInput, View, type TextInputProps } from 'react-native';
 import { Text } from './Text';
 import { useTheme } from '@/theme/ThemeProvider';
 
-/** Glass text input with a focus glow. */
+/** Text input with a focus highlight. */
 export function TextField({ label, style, ...rest }: TextInputProps & { label?: string }) {
   const t = useTheme();
   const [focused, setFocused] = useState(false);
