@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import Animated, { FadeInDown } from 'react-native-reanimated';
 import { router } from 'expo-router';
@@ -6,7 +7,16 @@ import { ChartPie } from 'lucide-react-native';
 import { useTranslation } from 'react-i18next';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useAnalytics } from './useAnalytics';
-import { EmptyState, GlassCard, SectionHeader, Text } from '@/components/ui';
+import {
+  DatePickerField,
+  EmptyState,
+  FilterChip,
+  GlassCard,
+  PillButton,
+  SectionHeader,
+  Text,
+} from '@/components/ui';
+import { addDays, startOfDay } from '@/lib/dates';
 import { IconTile } from '@/components/icons/IconTile';
 import { categoryIcon } from '@/components/icons/catalog';
 import { DonutChart, type DonutSlice } from '@/components/charts/DonutChart';
@@ -77,6 +87,10 @@ export function AnalyticsScreen() {
   const locale = i18n.language;
   const a = useAnalytics(locale);
 
+  const [editorOpen, setEditorOpen] = useState(false);
+  const [fromDraft, setFromDraft] = useState(() => addDays(startOfDay(), -29));
+  const [toDraft, setToDraft] = useState(() => startOfDay());
+
   const slices: DonutSlice[] = a.byCategory.slice(0, 8).map((c) => ({
     id: c.categoryId,
     value: c.total,
@@ -91,7 +105,7 @@ export function AnalyticsScreen() {
     color: c.colorHex,
     value: c.total,
   }));
-  const firstWeekday = new Date(a.monthStart).getDay();
+  const firstWeekday = new Date(a.rangeStart).getDay();
 
   return (
     <ScrollView
@@ -103,17 +117,67 @@ export function AnalyticsScreen() {
       }}
       showsVerticalScrollIndicator={false}
     >
-      {/* month selector */}
-      <View style={styles.monthRow}>
-        <Arrow dir="l" color={t.colors.textMuted} onPress={a.prev} />
-        <Text variant="title" color={t.colors.text}>
-          {a.monthLabel}
+      {/* period selector — month nav or a custom day range */}
+      {a.mode === 'month' ? (
+        <View style={styles.monthRow}>
+          <Arrow dir="l" color={t.colors.textMuted} onPress={a.prev} />
+          <Text variant="title" color={t.colors.text}>
+            {a.periodLabel}
+          </Text>
+          <Arrow dir="r" color={t.colors.textMuted} onPress={a.next} disabled={!a.canNext} />
+        </View>
+      ) : (
+        <Text variant="title" color={t.colors.text} style={styles.rangeLabel}>
+          {a.periodLabel}
         </Text>
-        <Arrow dir="r" color={t.colors.textMuted} onPress={a.next} disabled={!a.canNext} />
+      )}
+
+      <View style={styles.modeRow}>
+        <FilterChip
+          label={tr('analytics_thisMonth')}
+          active={a.mode === 'month'}
+          onPress={() => {
+            a.setMonthMode();
+            setEditorOpen(false);
+          }}
+        />
+        <FilterChip
+          label={tr('analytics_customRange')}
+          active={a.mode === 'custom'}
+          onPress={() => setEditorOpen((v) => !v)}
+        />
       </View>
 
+      {editorOpen ? (
+        <GlassCard style={styles.editor}>
+          <DatePickerField
+            label={tr('analytics_from')}
+            value={fromDraft}
+            onChange={setFromDraft}
+            locale={locale}
+          />
+          <DatePickerField
+            label={tr('analytics_to')}
+            value={toDraft}
+            onChange={setToDraft}
+            locale={locale}
+          />
+          <PillButton
+            label={tr('analytics_apply')}
+            active
+            onPress={() => {
+              a.setCustom(fromDraft, toDraft);
+              setEditorOpen(false);
+            }}
+          />
+        </GlassCard>
+      ) : null}
+
       {!hasData ? (
-        <EmptyState icon={ChartPie} title={tr('analytics_noData')} />
+        <EmptyState
+          icon={ChartPie}
+          title={tr(a.mode === 'month' ? 'analytics_noData' : 'analytics_noDataRange')}
+        />
       ) : (
         <>
           {/* summary */}
@@ -138,7 +202,7 @@ export function AnalyticsScreen() {
                   variant="caption"
                   color={a.trendPct <= 0 ? t.colors.income : t.colors.expense}
                 >
-                  {a.trendPct <= 0 ? '↓' : '↑'} {Math.abs(a.trendPct)}% vs last month
+                  {a.trendPct <= 0 ? '↓' : '↑'} {Math.abs(a.trendPct)}% {tr('analytics_vsPrev')}
                 </Text>
               ) : null}
             </GlassCard>
@@ -244,8 +308,11 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    marginBottom: 20,
+    marginBottom: 12,
   },
+  rangeLabel: { textAlign: 'center', marginBottom: 12 },
+  modeRow: { flexDirection: 'row', justifyContent: 'center', gap: 8, marginBottom: 12 },
+  editor: { borderRadius: 20, gap: 12, marginBottom: 12 },
   summary: { flexDirection: 'row', gap: 12, marginBottom: 12 },
   sumCard: { flex: 1, borderRadius: 20 },
   card: { borderRadius: 24, marginVertical: 8 },

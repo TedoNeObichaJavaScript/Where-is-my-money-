@@ -66,6 +66,13 @@ export const bg: Resources = {
   analytics_cashflow: 'Паричен поток',
   analytics_saved: 'Спестено',
   analytics_heatmap: 'Календар на разходите',
+  analytics_thisMonth: 'Този месец',
+  analytics_customRange: 'Период',
+  analytics_from: 'От',
+  analytics_to: 'До',
+  analytics_apply: 'Приложи',
+  analytics_vsPrev: 'спрямо предходния',
+  analytics_noDataRange: 'Няма данни за този период',
 
   settings_title: 'Настройки',
   settings_security: 'Сигурност',

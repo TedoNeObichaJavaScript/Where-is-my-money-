@@ -1,8 +1,10 @@
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import { AccountRepository } from '@/data/AccountRepository';
 import { TransactionRepository } from '@/data/TransactionRepository';
 import { useLiveQuery } from '@/data/reactive';
-import { addMonths, daysInMonth, startOfMonth } from '@/lib/dates';
+import { addDays, addMonths, startOfDay, startOfMonth } from '@/lib/dates';
+
+const DAY = 86_400_000;
 
 export type CategoryTotal = {
   categoryId: number;
@@ -11,6 +13,11 @@ export type CategoryTotal = {
   colorHex: string;
   total: number;
 };
+
+/** A whole calendar month, or an explicit inclusive day range picked by the user. */
+type Period =
+  | { mode: 'month'; anchor: number } // anchor = startOfMonth
+  | { mode: 'custom'; from: number; to: number }; // [from, to), to is exclusive
 
 type Snapshot = {
   currency: string;
@@ -28,26 +35,45 @@ const EMPTY: Snapshot = {
   prevExpense: 0,
 };
 
-/** Analytics view-model: month navigation + per-month aggregates (reactive, race-safe). */
+/** Analytics view-model: month nav or custom range + aggregates (reactive, race-safe). */
 export function useAnalytics(locale = 'en') {
-  const [monthStart, setMonthStart] = useState(startOfMonth());
+  const [period, setPeriod] = useState<Period>({ mode: 'month', anchor: startOfMonth() });
 
-  const canNext = monthStart < startOfMonth();
-  const prev = () => setMonthStart((m) => addMonths(m, -1));
-  const next = () => setMonthStart((m) => (m < startOfMonth() ? addMonths(m, 1) : m));
+  // Resolve the period into a concrete half-open window [from, to).
+  const { from, to } = useMemo(() => {
+    if (period.mode === 'month') return { from: period.anchor, to: addMonths(period.anchor, 1) };
+    return { from: period.from, to: period.to };
+  }, [period]);
+
+  const isMonth = period.mode === 'month';
+  const canNext = isMonth && from < startOfMonth();
+  const prev = () =>
+    setPeriod((p) => (p.mode === 'month' ? { mode: 'month', anchor: addMonths(p.anchor, -1) } : p));
+  const next = () =>
+    setPeriod((p) =>
+      p.mode === 'month' && p.anchor < startOfMonth()
+        ? { mode: 'month', anchor: addMonths(p.anchor, 1) }
+        : p,
+    );
+  const setMonthMode = () => setPeriod({ mode: 'month', anchor: startOfMonth() });
+  /** `f`/`t` are any millis on the chosen days; end day is treated inclusively. */
+  const setCustom = (f: number, t: number) => {
+    const a = startOfDay(Math.min(f, t));
+    const b = addDays(startOfDay(Math.max(f, t)), 1); // inclusive end → exclusive next-day bound
+    setPeriod({ mode: 'custom', from: a, to: b });
+  };
 
   const snap = useLiveQuery<Snapshot>(
     async () => {
-      const from = monthStart;
-      const to = addMonths(monthStart, 1);
+      const len = to - from;
       const [accts, totals, cats, series, prevExpense] = await Promise.all([
         AccountRepository.all(),
         TransactionRepository.totalsBetween(from, to),
         TransactionRepository.byCategoryBetween(from, to, 'EXPENSE'),
         TransactionRepository.dailySeries(from, to, 'EXPENSE'),
-        TransactionRepository.spentBetween(addMonths(from, -1), from),
+        TransactionRepository.spentBetween(from - len, from), // preceding equal-length window
       ]);
-      const days = daysInMonth(monthStart);
+      const days = Math.max(1, Math.round(len / DAY));
       return {
         currency: accts[0]?.currency ?? 'EUR',
         totals,
@@ -57,20 +83,28 @@ export function useAnalytics(locale = 'en') {
       };
     },
     EMPTY,
-    [monthStart],
+    [from, to],
   );
 
-  const monthLabel = new Intl.DateTimeFormat(locale, { month: 'long', year: 'numeric' }).format(
-    new Date(monthStart),
-  );
+  const periodLabel = useMemo(() => {
+    if (isMonth)
+      return new Intl.DateTimeFormat(locale, { month: 'long', year: 'numeric' }).format(
+        new Date(from),
+      );
+    const fmt = new Intl.DateTimeFormat(locale, { day: 'numeric', month: 'short' });
+    return `${fmt.format(new Date(from))} – ${fmt.format(new Date(to - DAY))}`;
+  }, [isMonth, from, to, locale]);
+
   const trendPct =
     snap.prevExpense > 0
       ? Math.round(((snap.totals.expense - snap.prevExpense) / snap.prevExpense) * 100)
       : null;
 
   return {
-    monthStart,
-    monthLabel,
+    mode: period.mode,
+    rangeStart: from,
+    rangeEnd: to,
+    periodLabel,
     currency: snap.currency,
     totals: snap.totals,
     byCategory: snap.byCategory,
@@ -80,5 +114,7 @@ export function useAnalytics(locale = 'en') {
     canNext,
     prev,
     next,
+    setMonthMode,
+    setCustom,
   };
 }

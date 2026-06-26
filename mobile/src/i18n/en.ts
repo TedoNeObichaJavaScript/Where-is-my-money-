@@ -69,6 +69,13 @@ export const en = {
   analytics_cashflow: 'Cash flow',
   analytics_saved: 'Saved',
   analytics_heatmap: 'Spending calendar',
+  analytics_thisMonth: 'This month',
+  analytics_customRange: 'Custom range',
+  analytics_from: 'From',
+  analytics_to: 'To',
+  analytics_apply: 'Apply',
+  analytics_vsPrev: 'vs previous',
+  analytics_noDataRange: 'No data for this range',
 
   // settings
   settings_title: 'Settings',
