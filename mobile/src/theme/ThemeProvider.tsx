@@ -11,7 +11,7 @@ type ThemeContextValue = {
 const ThemeContext = createContext<ThemeContextValue | null>(null);
 
 /**
- * Provides the active holographic theme. Backed by the persisted Zustand store,
+ * Provides the active theme. Backed by the persisted Zustand store,
  * so theme switches re-render every consumer of useTheme().
  */
 export function ThemeProvider({ children }: { children: ReactNode }) {
