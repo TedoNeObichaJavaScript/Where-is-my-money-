@@ -42,13 +42,12 @@ on `db` + `domain`. `features` depend on `data` + `components` + `theme` + `i18n
 
 ```
 RootLayout
- └─ ThemeProvider (persisted accent variant)
-     └─ CosmicBackground (always behind everything, pointerEvents=none)
+ └─ ThemeProvider (persisted theme)
+     └─ CosmicBackground (flat canvas behind everything, pointerEvents=none)
      └─ BootGate                     ← gates render on:
          1. useAppFonts()            Space Grotesk + Inter loaded
          2. useBootstrap():
               getOrCreateDbKey()      32-byte key from / into expo-secure-store
-              encryptKv(key)          MMKV recrypted with the device key
               getDb()                 open DB → PRAGMA key → FK/WAL → runMigrations()
               seedIfNeeded()          first run: 3 accounts + 15 categories
          └─ LockGate                 if biometric enabled → require Face/Touch ID
@@ -122,7 +121,7 @@ state + reactive queries). Routes in `app/` are one-liners delegating to these.
 
 - DB key: 32 random bytes → `expo-secure-store` (`WHEN_UNLOCKED_THIS_DEVICE_ONLY`).
   Survives app-data clears, lost only on factory reset — the intended threat model.
-- MMKV prefs encrypted with the same device key.
+- MMKV prefs are plain (non-secret: theme, locale, toggles, flags) — see ADR-017.
 - Optional biometric gate (`expo-local-authentication`) via `LockGate`.
 - Backup is plain JSON (schema v1) the user explicitly exports/shares; restore is
   REPLACE-only and confirmed. Nothing is ever sent to a network.
