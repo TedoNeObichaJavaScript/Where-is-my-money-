@@ -5,14 +5,14 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { ThemeProvider } from '@/theme/ThemeProvider';
 import { applySystemBars } from '@/theme/systemBars';
-import { CosmicBackground } from '@/components/background/CosmicBackground';
+import { AppBackground } from '@/components/background/AppBackground';
 import { BootGate } from '@/boot/BootGate';
 import { LockGate } from '@/security/LockGate';
 import '@/i18n';
 
 /**
- * Provider shell: gesture root → safe area → theme. The cosmic background sits
- * behind every route; BootGate holds render until storage + fonts are ready.
+ * Provider shell: gesture root → safe area → theme. The flat background sits
+ * sits behind every route; BootGate holds render until storage + fonts are ready.
  * Add/Edit are presented as modals over the tab shell.
  */
 export default function RootLayout() {
@@ -21,11 +21,11 @@ export default function RootLayout() {
   }, []);
 
   return (
-    <GestureHandlerRootView style={{ flex: 1, backgroundColor: '#0A0A14' }}>
+    <GestureHandlerRootView style={{ flex: 1, backgroundColor: '#0F1216' }}>
       <SafeAreaProvider>
         <ThemeProvider>
           <StatusBar style="light" />
-          <CosmicBackground />
+          <AppBackground />
           <BootGate>
             <LockGate>
               <Stack

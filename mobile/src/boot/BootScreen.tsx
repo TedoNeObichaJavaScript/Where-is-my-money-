@@ -11,7 +11,7 @@ export function BootScreen() {
 }
 
 const styles = StyleSheet.create({
-  root: { flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: '#0A0A14' },
+  root: { flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: '#0F1216' },
   brand: {
     color: '#E2F3FF',
     fontSize: 40,

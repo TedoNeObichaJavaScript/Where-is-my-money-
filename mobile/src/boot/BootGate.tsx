@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     padding: 32,
-    backgroundColor: '#0A0A14',
+    backgroundColor: '#0F1216',
   },
   title: { color: '#FF5C7A', fontSize: 18, fontWeight: '600', marginBottom: 8 },
   msg: { color: '#8A93B2', fontSize: 14, textAlign: 'center' },
