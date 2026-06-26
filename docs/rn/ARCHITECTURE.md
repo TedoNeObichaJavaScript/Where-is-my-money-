@@ -7,7 +7,7 @@ made see [DECISIONS.md](DECISIONS.md); for versions see [TECH_STACK.md](TECH_STA
 
 A privacy-first, **offline-only** personal finance app. No backend, no accounts. All data
 lives in an on-device **SQLCipher-encrypted SQLite** database whose key never leaves the
-hardware keychain. The UI is a holographic ("out-of-space") dark theme built on expo-router
+hardware keychain. The UI is a clean refined-dark theme built on expo-router
 file routes, a token-driven theme engine, and a hand-rolled component kit. State flows
 **DB → repositories → a tiny reactive layer → screen view-models → components**.
 
@@ -28,7 +28,7 @@ src/
   storage/      MMKV prefs (settings, flags) + encryption hook
   security/     biometric helpers + LockGate
   boot/         useBootstrap + BootGate + BootScreen (startup orchestration)
-  components/   ui/ kit · charts/ (svg) · background/ (Skia orbs) · nav/ · layout/
+  components/   ui/ kit · charts/ (svg) · background/ (flat) · nav/ · layout/
   features/     one folder per screen: <Screen>.tsx + use<Screen> view-model + parts
   i18n/         i18next init + en/bg bundles + nameKey resolver
   lib/          haptics, dates
