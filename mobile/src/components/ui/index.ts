@@ -5,7 +5,6 @@ export * from './NeonButton';
 export * from './Buttons';
 export * from './AnimatedNumber';
 export * from './BalanceHero';
-export * from './IconBadge';
 export * from './TextField';
 export * from './AmountField';
 export * from './SegmentedControl';
