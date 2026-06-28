@@ -493,3 +493,4 @@
 - 2026-06-24: app icon variants — dark bg vs light bg test on launcher
 - 2026-06-28: chart lib comparison: victory-native vs react-native-svg hand-rolled
 - 2026-06-28: haptics on tx save — light impact only
+- 2026-06-28: FlatList perf on long tx history, getItemLayout candidate
