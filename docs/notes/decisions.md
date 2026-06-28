@@ -494,3 +494,4 @@
 - 2026-06-24: receipt photo attach — storage path + cleanup on tx delete
 - 2026-06-24: monthly summary notification copy drafts
 - 2026-06-28: icon set audit — replace mismatched category glyphs
+- 2026-06-28: pin fallback when biometrics unenrolled
