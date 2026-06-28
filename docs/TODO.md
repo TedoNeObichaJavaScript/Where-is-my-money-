@@ -494,3 +494,4 @@
 - 2026-06-28: chart lib comparison: victory-native vs react-native-svg hand-rolled
 - 2026-06-28: haptics on tx save — light impact only
 - 2026-06-28: FlatList perf on long tx history, getItemLayout candidate
+- 2026-06-28: budget alerts at 80% and 100%, local notifications only
