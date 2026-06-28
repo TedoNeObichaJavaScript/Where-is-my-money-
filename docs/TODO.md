@@ -491,3 +491,4 @@
 - 2026-06-24: transfer between accounts should not count as spend
 - 2026-06-24: multi-currency: store minor units + currency code, convert at display
 - 2026-06-24: app icon variants — dark bg vs light bg test on launcher
+- 2026-06-28: chart lib comparison: victory-native vs react-native-svg hand-rolled
