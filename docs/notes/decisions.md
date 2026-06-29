@@ -496,3 +496,4 @@
 - 2026-06-28: icon set audit — replace mismatched category glyphs
 - 2026-06-28: pin fallback when biometrics unenrolled
 - 2026-06-28: CSV export column order + separator for BG Excel locale
+- 2026-06-29: backup format versioning so old exports stay importable
