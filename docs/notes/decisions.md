@@ -500,3 +500,4 @@
 - 2026-06-29: analytics custom range presets: 7d / 30d / MTD / YTD
 - 2026-06-29: widget idea: today spend glance on home screen
 - 2026-06-29: currency symbol placement per locale (lv after amount)
+- 2026-06-29: category color palette — needs contrast pass in dark mode
