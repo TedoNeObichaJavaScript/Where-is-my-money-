@@ -497,3 +497,4 @@
 - 2026-06-28: pin fallback when biometrics unenrolled
 - 2026-06-28: CSV export column order + separator for BG Excel locale
 - 2026-06-29: backup format versioning so old exports stay importable
+- 2026-06-29: analytics custom range presets: 7d / 30d / MTD / YTD
