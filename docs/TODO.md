@@ -497,3 +497,4 @@
 - 2026-06-28: budget alerts at 80% and 100%, local notifications only
 - 2026-06-28: biometric lock on app resume, grace period 30s
 - 2026-06-29: biometric lock on app resume, grace period 30s
+- 2026-06-29: transfer between accounts should not count as spend
