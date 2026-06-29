@@ -500,3 +500,4 @@
 - 2026-06-29: transfer between accounts should not count as spend
 - 2026-06-29: FlatList perf on long tx history, getItemLayout candidate
 - 2026-06-29: budget alerts at 80% and 100%, local notifications only
+- 2026-06-29: backup format versioning so old exports stay importable
