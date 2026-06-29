@@ -502,3 +502,4 @@
 - 2026-06-22: search: debounce input, index on tx note
 - 2026-06-24: haptics on tx save — light impact only
 - 2026-06-28: settings screen grouping — appearance / data / security
+- 2026-06-29: backup format versioning so old exports stay importable
