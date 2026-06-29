@@ -508,3 +508,4 @@
 - 2026-06-29: onboarding flow: skip vs guided first account setup
 - 2026-06-29: FlatList perf on long tx history, getItemLayout candidate
 - 2026-06-29: budget rollover: carry unspent vs reset monthly
+- 2026-06-29: settings screen grouping — appearance / data / security
