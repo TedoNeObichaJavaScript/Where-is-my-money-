@@ -504,3 +504,4 @@
 - 2026-06-28: settings screen grouping — appearance / data / security
 - 2026-06-29: backup format versioning so old exports stay importable
 - 2026-06-29: recurring tx edge cases (DST, month-end 29/30/31)
+- 2026-06-29: budget alerts at 80% and 100%, local notifications only
