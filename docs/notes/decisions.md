@@ -499,3 +499,4 @@
 - 2026-06-29: backup format versioning so old exports stay importable
 - 2026-06-29: analytics custom range presets: 7d / 30d / MTD / YTD
 - 2026-06-29: widget idea: today spend glance on home screen
+- 2026-06-29: currency symbol placement per locale (lv after amount)
