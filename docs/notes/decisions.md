@@ -502,3 +502,4 @@
 - 2026-06-29: currency symbol placement per locale (lv after amount)
 - 2026-06-29: category color palette — needs contrast pass in dark mode
 - 2026-06-29: backup format versioning so old exports stay importable
+- 2026-06-30: widget idea: today spend glance on home screen
