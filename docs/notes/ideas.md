@@ -513,3 +513,4 @@
 - 2026-06-30: CSV export column order + separator for BG Excel locale
 - 2026-06-30: FlatList perf on long tx history, getItemLayout candidate
 - 2026-06-30: biometric lock on app resume, grace period 30s
+- 2026-06-30: category color palette — needs contrast pass in dark mode
