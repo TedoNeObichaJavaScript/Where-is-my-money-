@@ -509,3 +509,4 @@
 - 2026-06-29: FlatList perf on long tx history, getItemLayout candidate
 - 2026-06-29: budget rollover: carry unspent vs reset monthly
 - 2026-06-29: settings screen grouping — appearance / data / security
+- 2026-06-30: widget idea: today spend glance on home screen
