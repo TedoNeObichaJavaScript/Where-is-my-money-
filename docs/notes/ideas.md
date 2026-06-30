@@ -511,3 +511,4 @@
 - 2026-06-29: settings screen grouping — appearance / data / security
 - 2026-06-30: widget idea: today spend glance on home screen
 - 2026-06-30: CSV export column order + separator for BG Excel locale
+- 2026-06-30: FlatList perf on long tx history, getItemLayout candidate
