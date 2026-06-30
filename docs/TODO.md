@@ -502,3 +502,4 @@
 - 2026-06-29: budget alerts at 80% and 100%, local notifications only
 - 2026-06-29: backup format versioning so old exports stay importable
 - 2026-06-30: tx tags vs single category — decided: single category + note
+- 2026-06-30: haptics on tx save — light impact only
