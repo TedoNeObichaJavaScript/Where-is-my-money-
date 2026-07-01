@@ -504,3 +504,4 @@
 - 2026-06-30: tx tags vs single category — decided: single category + note
 - 2026-06-30: haptics on tx save — light impact only
 - 2026-06-30: transfer between accounts should not count as spend
+- 2026-07-01: empty states for analytics when < 5 tx
