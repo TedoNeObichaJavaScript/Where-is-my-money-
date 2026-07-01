@@ -507,3 +507,4 @@
 - 2026-07-01: category color palette — needs contrast pass in dark mode
 - 2026-07-01: search: debounce input, index on tx note
 - 2026-07-01: amount input keypad: custom vs system numeric
+- 2026-07-01: CSV export column order + separator for BG Excel locale
