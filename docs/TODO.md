@@ -507,3 +507,4 @@
 - 2026-07-01: empty states for analytics when < 5 tx
 - 2026-07-01: recurring tx edge cases (DST, month-end 29/30/31)
 - 2026-07-01: accessibility pass: touch targets under 44dp on filter chips
+- 2026-07-01: accessibility pass: touch targets under 44dp on filter chips
