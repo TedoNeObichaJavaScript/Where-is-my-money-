@@ -509,3 +509,4 @@
 - 2026-07-01: amount input keypad: custom vs system numeric
 - 2026-07-01: CSV export column order + separator for BG Excel locale
 - 2026-07-01: multi-currency: store minor units + currency code, convert at display
+- 2026-07-01: currency symbol placement per locale (lv after amount)
