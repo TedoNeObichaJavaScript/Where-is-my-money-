@@ -506,3 +506,4 @@
 - 2026-06-30: accessibility pass: touch targets under 44dp on filter chips
 - 2026-07-01: category color palette — needs contrast pass in dark mode
 - 2026-07-01: search: debounce input, index on tx note
+- 2026-07-01: amount input keypad: custom vs system numeric
