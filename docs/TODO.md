@@ -505,3 +505,4 @@
 - 2026-06-30: haptics on tx save — light impact only
 - 2026-06-30: transfer between accounts should not count as spend
 - 2026-07-01: empty states for analytics when < 5 tx
+- 2026-07-01: recurring tx edge cases (DST, month-end 29/30/31)
