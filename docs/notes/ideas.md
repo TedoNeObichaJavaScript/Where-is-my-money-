@@ -516,3 +516,4 @@
 - 2026-06-30: category color palette — needs contrast pass in dark mode
 - 2026-07-01: chart lib comparison: victory-native vs react-native-svg hand-rolled
 - 2026-07-01: search: debounce input, index on tx note
+- 2026-07-01: tx tags vs single category — decided: single category + note
