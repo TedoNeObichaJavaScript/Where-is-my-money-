@@ -513,3 +513,4 @@
 - 2026-07-01: recurring tx edge cases (DST, month-end 29/30/31)
 - 2026-07-01: settings screen grouping — appearance / data / security
 - 2026-07-01: amount input keypad: custom vs system numeric
+- 2026-07-02: icon set audit — replace mismatched category glyphs
