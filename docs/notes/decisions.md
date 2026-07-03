@@ -515,3 +515,4 @@
 - 2026-07-01: amount input keypad: custom vs system numeric
 - 2026-07-02: icon set audit — replace mismatched category glyphs
 - 2026-07-03: accessibility pass: touch targets under 44dp on filter chips
+- 2026-07-03: settings screen grouping — appearance / data / security
