@@ -510,3 +510,4 @@
 - 2026-07-01: accessibility pass: touch targets under 44dp on filter chips
 - 2026-07-03: amount input keypad: custom vs system numeric
 - 2026-07-03: budget rollover: carry unspent vs reset monthly
+- 2026-07-03: onboarding flow: skip vs guided first account setup
