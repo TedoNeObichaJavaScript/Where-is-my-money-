@@ -518,3 +518,4 @@
 - 2026-07-01: search: debounce input, index on tx note
 - 2026-07-01: tx tags vs single category — decided: single category + note
 - 2026-07-03: icon set audit — replace mismatched category glyphs
+- 2026-07-04: SQLite migration strategy before adding budgets table
