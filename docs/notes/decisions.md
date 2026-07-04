@@ -521,3 +521,4 @@
 - 2026-07-03: search: debounce input, index on tx note
 - 2026-07-04: sort options: date, amount, category — persist choice
 - 2026-07-04: amount input keypad: custom vs system numeric
+- 2026-07-04: budget alerts at 80% and 100%, local notifications only
