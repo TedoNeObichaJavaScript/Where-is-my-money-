@@ -520,3 +520,4 @@
 - 2026-07-03: settings screen grouping — appearance / data / security
 - 2026-07-03: search: debounce input, index on tx note
 - 2026-07-04: sort options: date, amount, category — persist choice
+- 2026-07-04: amount input keypad: custom vs system numeric
