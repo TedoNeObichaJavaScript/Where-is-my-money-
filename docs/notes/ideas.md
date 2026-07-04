@@ -520,3 +520,4 @@
 - 2026-07-03: icon set audit — replace mismatched category glyphs
 - 2026-07-04: SQLite migration strategy before adding budgets table
 - 2026-07-04: FlatList perf on long tx history, getItemLayout candidate
+- 2026-07-04: settings screen grouping — appearance / data / security
