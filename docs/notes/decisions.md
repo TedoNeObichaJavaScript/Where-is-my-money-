@@ -523,3 +523,4 @@
 - 2026-07-04: amount input keypad: custom vs system numeric
 - 2026-07-04: budget alerts at 80% and 100%, local notifications only
 - 2026-07-04: amount input keypad: custom vs system numeric
+- 2026-07-04: FlatList perf on long tx history, getItemLayout candidate
