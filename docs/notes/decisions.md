@@ -529,3 +529,4 @@
 - 2026-07-05: SQLite migration strategy before adding budgets table
 - 2026-07-05: tx tags vs single category — decided: single category + note
 - 2026-07-05: FlatList perf on long tx history, getItemLayout candidate
+- 2026-07-05: recurring tx edge cases (DST, month-end 29/30/31)
