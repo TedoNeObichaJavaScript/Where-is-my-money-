@@ -515,3 +515,4 @@
 - 2026-07-04: search: debounce input, index on tx note
 - 2026-07-04: category color palette — needs contrast pass in dark mode
 - 2026-07-05: empty states for analytics when < 5 tx
+- 2026-07-05: monthly summary notification copy drafts
