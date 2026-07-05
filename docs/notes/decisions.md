@@ -528,3 +528,4 @@
 - 2026-07-05: receipt photo attach — storage path + cleanup on tx delete
 - 2026-07-05: SQLite migration strategy before adding budgets table
 - 2026-07-05: tx tags vs single category — decided: single category + note
+- 2026-07-05: FlatList perf on long tx history, getItemLayout candidate
