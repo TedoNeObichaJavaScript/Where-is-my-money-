@@ -522,3 +522,4 @@
 - 2026-07-04: FlatList perf on long tx history, getItemLayout candidate
 - 2026-07-04: settings screen grouping — appearance / data / security
 - 2026-07-05: onboarding flow: skip vs guided first account setup
+- 2026-07-05: currency symbol placement per locale (lv after amount)
