@@ -531,3 +531,4 @@
 - 2026-07-06: FlatList perf on long tx history, getItemLayout candidate
 - 2026-07-06: icon set audit — replace mismatched category glyphs
 - 2026-07-06: category color palette — needs contrast pass in dark mode
+- 2026-07-06: app icon variants — dark bg vs light bg test on launcher
