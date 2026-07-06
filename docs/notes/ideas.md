@@ -530,3 +530,4 @@
 - 2026-07-06: biometric lock on app resume, grace period 30s
 - 2026-07-06: FlatList perf on long tx history, getItemLayout candidate
 - 2026-07-06: icon set audit — replace mismatched category glyphs
+- 2026-07-06: category color palette — needs contrast pass in dark mode
