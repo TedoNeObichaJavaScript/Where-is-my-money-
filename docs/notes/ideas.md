@@ -529,3 +529,4 @@
 - 2026-07-06: budget alerts at 80% and 100%, local notifications only
 - 2026-07-06: biometric lock on app resume, grace period 30s
 - 2026-07-06: FlatList perf on long tx history, getItemLayout candidate
+- 2026-07-06: icon set audit — replace mismatched category glyphs
