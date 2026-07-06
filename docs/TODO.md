@@ -522,3 +522,4 @@
 - 2026-07-06: biometric lock on app resume, grace period 30s
 - 2026-07-06: search: debounce input, index on tx note
 - 2026-07-06: multi-currency: store minor units + currency code, convert at display
+- 2026-07-06: tx tags vs single category — decided: single category + note
