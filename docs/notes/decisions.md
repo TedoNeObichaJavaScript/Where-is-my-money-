@@ -532,3 +532,4 @@
 - 2026-07-05: recurring tx edge cases (DST, month-end 29/30/31)
 - 2026-07-05: CSV export column order + separator for BG Excel locale
 - 2026-07-06: CSV export column order + separator for BG Excel locale
+- 2026-07-06: sort options: date, amount, category — persist choice
