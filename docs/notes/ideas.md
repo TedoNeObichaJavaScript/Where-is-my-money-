@@ -526,3 +526,4 @@
 - 2026-07-05: soft delete with undo snackbar instead of confirm dialog
 - 2026-07-05: icon set audit — replace mismatched category glyphs
 - 2026-07-06: budget rollover: carry unspent vs reset monthly
+- 2026-07-06: budget alerts at 80% and 100%, local notifications only
