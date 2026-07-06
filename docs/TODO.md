@@ -517,3 +517,4 @@
 - 2026-07-05: empty states for analytics when < 5 tx
 - 2026-07-05: monthly summary notification copy drafts
 - 2026-07-06: SQLite migration strategy before adding budgets table
+- 2026-07-06: category color palette — needs contrast pass in dark mode
