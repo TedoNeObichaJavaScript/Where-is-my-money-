@@ -525,3 +525,4 @@
 - 2026-07-05: currency symbol placement per locale (lv after amount)
 - 2026-07-05: soft delete with undo snackbar instead of confirm dialog
 - 2026-07-05: icon set audit — replace mismatched category glyphs
+- 2026-07-06: budget rollover: carry unspent vs reset monthly
