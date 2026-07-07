@@ -525,3 +525,4 @@
 - 2026-07-06: tx tags vs single category — decided: single category + note
 - 2026-07-07: backup format versioning so old exports stay importable
 - 2026-07-07: chart lib comparison: victory-native vs react-native-svg hand-rolled
+- 2026-07-07: biometric lock on app resume, grace period 30s
