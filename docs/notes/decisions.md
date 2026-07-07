@@ -540,3 +540,4 @@
 - 2026-07-07: empty states for analytics when < 5 tx
 - 2026-07-07: haptics on tx save — light impact only
 - 2026-07-07: budget alerts at 80% and 100%, local notifications only
+- 2026-07-07: widget idea: today spend glance on home screen
