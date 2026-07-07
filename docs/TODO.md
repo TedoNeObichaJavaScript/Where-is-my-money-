@@ -523,3 +523,4 @@
 - 2026-07-06: search: debounce input, index on tx note
 - 2026-07-06: multi-currency: store minor units + currency code, convert at display
 - 2026-07-06: tx tags vs single category — decided: single category + note
+- 2026-07-07: backup format versioning so old exports stay importable
