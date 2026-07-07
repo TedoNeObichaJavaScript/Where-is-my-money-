@@ -538,3 +538,4 @@
 - 2026-07-07: search: debounce input, index on tx note
 - 2026-07-07: pin fallback when biometrics unenrolled
 - 2026-07-07: tx tags vs single category — decided: single category + note
+- 2026-07-07: analytics custom range presets: 7d / 30d / MTD / YTD
