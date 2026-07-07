@@ -536,3 +536,4 @@
 - 2026-07-07: biometric lock on app resume, grace period 30s
 - 2026-07-07: SQLite migration strategy before adding budgets table
 - 2026-07-07: multi-currency: store minor units + currency code, convert at display
+- 2026-07-07: chart lib comparison: victory-native vs react-native-svg hand-rolled
