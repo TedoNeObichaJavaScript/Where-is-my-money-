@@ -533,3 +533,4 @@
 - 2026-07-05: CSV export column order + separator for BG Excel locale
 - 2026-07-06: CSV export column order + separator for BG Excel locale
 - 2026-07-06: sort options: date, amount, category — persist choice
+- 2026-07-07: biometric lock on app resume, grace period 30s
