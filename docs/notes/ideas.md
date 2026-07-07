@@ -535,3 +535,4 @@
 - 2026-07-06: onboarding flow: skip vs guided first account setup
 - 2026-07-07: backup format versioning so old exports stay importable
 - 2026-07-07: multi-currency: store minor units + currency code, convert at display
+- 2026-07-07: search: debounce input, index on tx note
