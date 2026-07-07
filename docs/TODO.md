@@ -528,3 +528,4 @@
 - 2026-07-07: biometric lock on app resume, grace period 30s
 - 2026-07-07: multi-currency: store minor units + currency code, convert at display
 - 2026-07-07: sort options: date, amount, category — persist choice
+- 2026-07-07: search: debounce input, index on tx note
