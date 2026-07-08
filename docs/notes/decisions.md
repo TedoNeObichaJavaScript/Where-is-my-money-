@@ -542,3 +542,4 @@
 - 2026-07-07: budget alerts at 80% and 100%, local notifications only
 - 2026-07-07: widget idea: today spend glance on home screen
 - 2026-07-07: SQLite migration strategy before adding budgets table
+- 2026-07-08: empty states for analytics when < 5 tx
