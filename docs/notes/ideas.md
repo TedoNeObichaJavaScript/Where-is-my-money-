@@ -543,3 +543,4 @@
 - 2026-07-08: pin fallback when biometrics unenrolled
 - 2026-07-08: haptics on tx save — light impact only
 - 2026-07-08: amount input keypad: custom vs system numeric
+- 2026-07-08: accessibility pass: touch targets under 44dp on filter chips
