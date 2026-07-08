@@ -546,3 +546,4 @@
 - 2026-07-08: haptics on tx save — light impact only
 - 2026-07-08: pin fallback when biometrics unenrolled
 - 2026-07-08: empty states for analytics when < 5 tx
+- 2026-07-08: monthly summary notification copy drafts
