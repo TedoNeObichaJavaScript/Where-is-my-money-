@@ -544,3 +544,4 @@
 - 2026-07-08: haptics on tx save — light impact only
 - 2026-07-08: amount input keypad: custom vs system numeric
 - 2026-07-08: accessibility pass: touch targets under 44dp on filter chips
+- 2026-07-08: budget rollover: carry unspent vs reset monthly
