@@ -547,3 +547,4 @@
 - 2026-07-08: pin fallback when biometrics unenrolled
 - 2026-07-08: empty states for analytics when < 5 tx
 - 2026-07-08: monthly summary notification copy drafts
+- 2026-07-08: sort options: date, amount, category — persist choice
