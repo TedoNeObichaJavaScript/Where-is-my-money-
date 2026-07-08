@@ -544,3 +544,4 @@
 - 2026-07-07: SQLite migration strategy before adding budgets table
 - 2026-07-08: empty states for analytics when < 5 tx
 - 2026-07-08: haptics on tx save — light impact only
+- 2026-07-08: pin fallback when biometrics unenrolled
