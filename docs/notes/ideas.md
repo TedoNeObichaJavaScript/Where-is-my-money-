@@ -540,3 +540,4 @@
 - 2026-07-07: tx tags vs single category — decided: single category + note
 - 2026-07-07: analytics custom range presets: 7d / 30d / MTD / YTD
 - 2026-07-08: accessibility pass: touch targets under 44dp on filter chips
+- 2026-07-08: pin fallback when biometrics unenrolled
