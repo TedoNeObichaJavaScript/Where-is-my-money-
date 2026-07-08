@@ -530,3 +530,4 @@
 - 2026-07-07: sort options: date, amount, category — persist choice
 - 2026-07-07: search: debounce input, index on tx note
 - 2026-07-08: receipt photo attach — storage path + cleanup on tx delete
+- 2026-07-08: biometric lock on app resume, grace period 30s
