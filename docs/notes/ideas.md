@@ -546,3 +546,4 @@
 - 2026-07-08: accessibility pass: touch targets under 44dp on filter chips
 - 2026-07-08: budget rollover: carry unspent vs reset monthly
 - 2026-07-08: tx tags vs single category — decided: single category + note
+- 2026-07-08: chart lib comparison: victory-native vs react-native-svg hand-rolled
