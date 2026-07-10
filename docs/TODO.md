@@ -532,3 +532,4 @@
 - 2026-07-08: receipt photo attach — storage path + cleanup on tx delete
 - 2026-07-08: biometric lock on app resume, grace period 30s
 - 2026-07-10: sort options: date, amount, category — persist choice
+- 2026-07-10: multi-currency: store minor units + currency code, convert at display
