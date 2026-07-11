@@ -551,3 +551,4 @@
 - 2026-07-08: recurring tx edge cases (DST, month-end 29/30/31)
 - 2026-07-10: receipt photo attach — storage path + cleanup on tx delete
 - 2026-07-11: CSV export column order + separator for BG Excel locale
+- 2026-07-11: CSV export column order + separator for BG Excel locale
