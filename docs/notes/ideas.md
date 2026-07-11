@@ -547,3 +547,4 @@
 - 2026-07-08: budget rollover: carry unspent vs reset monthly
 - 2026-07-08: tx tags vs single category — decided: single category + note
 - 2026-07-08: chart lib comparison: victory-native vs react-native-svg hand-rolled
+- 2026-07-11: onboarding flow: skip vs guided first account setup
