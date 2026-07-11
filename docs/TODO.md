@@ -533,3 +533,4 @@
 - 2026-07-08: biometric lock on app resume, grace period 30s
 - 2026-07-10: sort options: date, amount, category — persist choice
 - 2026-07-10: multi-currency: store minor units + currency code, convert at display
+- 2026-07-11: currency symbol placement per locale (lv after amount)
