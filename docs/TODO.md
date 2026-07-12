@@ -535,3 +535,4 @@
 - 2026-07-10: multi-currency: store minor units + currency code, convert at display
 - 2026-07-11: currency symbol placement per locale (lv after amount)
 - 2026-07-11: accessibility pass: touch targets under 44dp on filter chips
+- 2026-07-12: CSV export column order + separator for BG Excel locale
