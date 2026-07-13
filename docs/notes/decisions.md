@@ -552,3 +552,4 @@
 - 2026-07-10: receipt photo attach — storage path + cleanup on tx delete
 - 2026-07-11: CSV export column order + separator for BG Excel locale
 - 2026-07-11: CSV export column order + separator for BG Excel locale
+- 2026-07-13: FlatList perf on long tx history, getItemLayout candidate
