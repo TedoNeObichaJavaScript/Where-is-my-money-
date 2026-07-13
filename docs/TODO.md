@@ -537,3 +537,4 @@
 - 2026-07-11: accessibility pass: touch targets under 44dp on filter chips
 - 2026-07-12: CSV export column order + separator for BG Excel locale
 - 2026-07-12: CSV export column order + separator for BG Excel locale
+- 2026-07-13: recurring tx edge cases (DST, month-end 29/30/31)
