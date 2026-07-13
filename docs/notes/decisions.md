@@ -555,3 +555,4 @@
 - 2026-07-13: FlatList perf on long tx history, getItemLayout candidate
 - 2026-07-13: CSV export column order + separator for BG Excel locale
 - 2026-07-13: amount input keypad: custom vs system numeric
+- 2026-07-13: widget idea: today spend glance on home screen
