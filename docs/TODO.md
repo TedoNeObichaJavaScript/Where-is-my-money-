@@ -541,3 +541,4 @@
 - 2026-07-13: budget rollover: carry unspent vs reset monthly
 - 2026-07-13: chart lib comparison: victory-native vs react-native-svg hand-rolled
 - 2026-07-13: budget alerts at 80% and 100%, local notifications only
+- 2026-07-13: haptics on tx save — light impact only
