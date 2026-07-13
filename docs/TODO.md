@@ -540,3 +540,4 @@
 - 2026-07-13: recurring tx edge cases (DST, month-end 29/30/31)
 - 2026-07-13: budget rollover: carry unspent vs reset monthly
 - 2026-07-13: chart lib comparison: victory-native vs react-native-svg hand-rolled
+- 2026-07-13: budget alerts at 80% and 100%, local notifications only
