@@ -559,3 +559,4 @@
 - 2026-07-13: analytics custom range presets: 7d / 30d / MTD / YTD
 - 2026-07-15: currency symbol placement per locale (lv after amount)
 - 2026-07-15: soft delete with undo snackbar instead of confirm dialog
+- 2026-07-15: haptics on tx save — light impact only
