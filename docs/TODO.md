@@ -548,3 +548,4 @@
 - 2026-07-15: settings screen grouping — appearance / data / security
 - 2026-07-15: transfer between accounts should not count as spend
 - 2026-07-15: monthly summary notification copy drafts
+- 2026-07-15: category color palette — needs contrast pass in dark mode
