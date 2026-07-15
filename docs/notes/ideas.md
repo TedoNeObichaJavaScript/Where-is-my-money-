@@ -551,3 +551,4 @@
 - 2026-07-13: tx tags vs single category — decided: single category + note
 - 2026-07-15: analytics custom range presets: 7d / 30d / MTD / YTD
 - 2026-07-15: monthly summary notification copy drafts
+- 2026-07-15: currency symbol placement per locale (lv after amount)
