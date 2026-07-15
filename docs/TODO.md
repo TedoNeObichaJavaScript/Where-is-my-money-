@@ -550,3 +550,4 @@
 - 2026-07-15: monthly summary notification copy drafts
 - 2026-07-15: category color palette — needs contrast pass in dark mode
 - 2026-07-15: accessibility pass: touch targets under 44dp on filter chips
+- 2026-07-15: SQLite migration strategy before adding budgets table
