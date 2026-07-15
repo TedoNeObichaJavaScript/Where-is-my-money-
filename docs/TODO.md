@@ -545,3 +545,4 @@
 - 2026-07-13: analytics custom range presets: 7d / 30d / MTD / YTD
 - 2026-07-15: receipt photo attach — storage path + cleanup on tx delete
 - 2026-07-15: budget alerts at 80% and 100%, local notifications only
+- 2026-07-15: settings screen grouping — appearance / data / security
