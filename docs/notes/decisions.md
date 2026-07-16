@@ -562,3 +562,4 @@
 - 2026-07-15: haptics on tx save — light impact only
 - 2026-07-16: currency symbol placement per locale (lv after amount)
 - 2026-07-16: search: debounce input, index on tx note
+- 2026-07-16: onboarding flow: skip vs guided first account setup
