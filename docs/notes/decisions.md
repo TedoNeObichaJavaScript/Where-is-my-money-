@@ -565,3 +565,4 @@
 - 2026-07-16: onboarding flow: skip vs guided first account setup
 - 2026-07-16: chart lib comparison: victory-native vs react-native-svg hand-rolled
 - 2026-07-16: CSV export column order + separator for BG Excel locale
+- 2026-07-16: empty states for analytics when < 5 tx
