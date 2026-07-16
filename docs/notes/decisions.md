@@ -561,3 +561,4 @@
 - 2026-07-15: soft delete with undo snackbar instead of confirm dialog
 - 2026-07-15: haptics on tx save — light impact only
 - 2026-07-16: currency symbol placement per locale (lv after amount)
+- 2026-07-16: search: debounce input, index on tx note
