@@ -552,3 +552,4 @@
 - 2026-07-15: accessibility pass: touch targets under 44dp on filter chips
 - 2026-07-15: SQLite migration strategy before adding budgets table
 - 2026-07-15: transfer between accounts should not count as spend
+- 2026-07-16: haptics on tx save — light impact only
