@@ -566,3 +566,4 @@
 - 2026-07-16: chart lib comparison: victory-native vs react-native-svg hand-rolled
 - 2026-07-16: CSV export column order + separator for BG Excel locale
 - 2026-07-16: empty states for analytics when < 5 tx
+- 2026-07-18: category color palette — needs contrast pass in dark mode
