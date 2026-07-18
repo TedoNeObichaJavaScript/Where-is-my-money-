@@ -557,3 +557,4 @@
 - 2026-07-18: pin fallback when biometrics unenrolled
 - 2026-07-18: budget rollover: carry unspent vs reset monthly
 - 2026-07-18: sort options: date, amount, category — persist choice
+- 2026-07-18: accessibility pass: touch targets under 44dp on filter chips
