@@ -568,3 +568,4 @@
 - 2026-07-16: empty states for analytics when < 5 tx
 - 2026-07-18: category color palette — needs contrast pass in dark mode
 - 2026-07-18: analytics custom range presets: 7d / 30d / MTD / YTD
+- 2026-07-18: SQLite migration strategy before adding budgets table
