@@ -554,3 +554,4 @@
 - 2026-07-15: transfer between accounts should not count as spend
 - 2026-07-16: haptics on tx save — light impact only
 - 2026-07-16: pin fallback when biometrics unenrolled
+- 2026-07-18: analytics custom range presets: 7d / 30d / MTD / YTD
