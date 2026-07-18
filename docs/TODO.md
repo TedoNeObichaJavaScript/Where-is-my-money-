@@ -555,3 +555,4 @@
 - 2026-07-16: haptics on tx save — light impact only
 - 2026-07-16: pin fallback when biometrics unenrolled
 - 2026-07-18: analytics custom range presets: 7d / 30d / MTD / YTD
+- 2026-07-18: budget rollover: carry unspent vs reset monthly
