@@ -553,3 +553,4 @@
 - 2026-07-15: monthly summary notification copy drafts
 - 2026-07-15: currency symbol placement per locale (lv after amount)
 - 2026-07-15: monthly summary notification copy drafts
+- 2026-07-18: currency symbol placement per locale (lv after amount)
