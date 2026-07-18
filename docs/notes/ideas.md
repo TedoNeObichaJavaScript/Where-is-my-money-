@@ -556,3 +556,4 @@
 - 2026-07-18: currency symbol placement per locale (lv after amount)
 - 2026-07-18: pin fallback when biometrics unenrolled
 - 2026-07-18: budget rollover: carry unspent vs reset monthly
+- 2026-07-18: sort options: date, amount, category — persist choice
