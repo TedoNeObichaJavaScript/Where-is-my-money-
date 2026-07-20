@@ -570,3 +570,4 @@
 - 2026-07-18: analytics custom range presets: 7d / 30d / MTD / YTD
 - 2026-07-18: SQLite migration strategy before adding budgets table
 - 2026-07-18: pin fallback when biometrics unenrolled
+- 2026-07-20: app icon variants — dark bg vs light bg test on launcher
