@@ -556,3 +556,4 @@
 - 2026-07-16: pin fallback when biometrics unenrolled
 - 2026-07-18: analytics custom range presets: 7d / 30d / MTD / YTD
 - 2026-07-18: budget rollover: carry unspent vs reset monthly
+- 2026-07-20: search: debounce input, index on tx note
