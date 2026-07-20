@@ -559,3 +559,4 @@
 - 2026-07-18: sort options: date, amount, category — persist choice
 - 2026-07-18: accessibility pass: touch targets under 44dp on filter chips
 - 2026-07-18: app icon variants — dark bg vs light bg test on launcher
+- 2026-07-20: sort options: date, amount, category — persist choice
