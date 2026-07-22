@@ -561,3 +561,4 @@
 - 2026-07-22: currency symbol placement per locale (lv after amount)
 - 2026-07-22: recurring tx edge cases (DST, month-end 29/30/31)
 - 2026-07-22: budget rollover: carry unspent vs reset monthly
+- 2026-07-22: soft delete with undo snackbar instead of confirm dialog
