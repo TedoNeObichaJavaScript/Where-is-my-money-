@@ -561,3 +561,4 @@
 - 2026-07-18: app icon variants — dark bg vs light bg test on launcher
 - 2026-07-20: sort options: date, amount, category — persist choice
 - 2026-07-22: currency symbol placement per locale (lv after amount)
+- 2026-07-22: SQLite migration strategy before adding budgets table
