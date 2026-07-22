@@ -558,3 +558,4 @@
 - 2026-07-18: budget rollover: carry unspent vs reset monthly
 - 2026-07-20: search: debounce input, index on tx note
 - 2026-07-22: app icon variants — dark bg vs light bg test on launcher
+- 2026-07-22: currency symbol placement per locale (lv after amount)
