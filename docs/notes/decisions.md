@@ -573,3 +573,4 @@
 - 2026-07-20: app icon variants — dark bg vs light bg test on launcher
 - 2026-07-20: soft delete with undo snackbar instead of confirm dialog
 - 2026-07-22: CSV export column order + separator for BG Excel locale
+- 2026-07-22: tx tags vs single category — decided: single category + note
