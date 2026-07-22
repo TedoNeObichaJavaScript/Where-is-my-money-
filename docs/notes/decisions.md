@@ -574,3 +574,4 @@
 - 2026-07-20: soft delete with undo snackbar instead of confirm dialog
 - 2026-07-22: CSV export column order + separator for BG Excel locale
 - 2026-07-22: tx tags vs single category — decided: single category + note
+- 2026-07-22: sort options: date, amount, category — persist choice
