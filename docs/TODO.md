@@ -559,3 +559,4 @@
 - 2026-07-20: search: debounce input, index on tx note
 - 2026-07-22: app icon variants — dark bg vs light bg test on launcher
 - 2026-07-22: currency symbol placement per locale (lv after amount)
+- 2026-07-22: recurring tx edge cases (DST, month-end 29/30/31)
