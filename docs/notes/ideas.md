@@ -563,3 +563,4 @@
 - 2026-07-22: currency symbol placement per locale (lv after amount)
 - 2026-07-22: SQLite migration strategy before adding budgets table
 - 2026-07-22: settings screen grouping — appearance / data / security
+- 2026-07-24: settings screen grouping — appearance / data / security
