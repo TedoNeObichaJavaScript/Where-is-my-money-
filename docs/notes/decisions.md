@@ -579,3 +579,4 @@
 - 2026-07-24: empty states for analytics when < 5 tx
 - 2026-07-24: CSV export column order + separator for BG Excel locale
 - 2026-07-24: settings screen grouping — appearance / data / security
+- 2026-07-24: multi-currency: store minor units + currency code, convert at display
