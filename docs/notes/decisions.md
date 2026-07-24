@@ -576,3 +576,4 @@
 - 2026-07-22: tx tags vs single category — decided: single category + note
 - 2026-07-22: sort options: date, amount, category — persist choice
 - 2026-07-22: SQLite migration strategy before adding budgets table
+- 2026-07-24: empty states for analytics when < 5 tx
