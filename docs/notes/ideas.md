@@ -564,3 +564,4 @@
 - 2026-07-22: SQLite migration strategy before adding budgets table
 - 2026-07-22: settings screen grouping — appearance / data / security
 - 2026-07-24: settings screen grouping — appearance / data / security
+- 2026-07-24: recurring tx edge cases (DST, month-end 29/30/31)
