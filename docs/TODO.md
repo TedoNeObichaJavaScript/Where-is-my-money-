@@ -562,3 +562,4 @@
 - 2026-07-22: recurring tx edge cases (DST, month-end 29/30/31)
 - 2026-07-22: budget rollover: carry unspent vs reset monthly
 - 2026-07-22: soft delete with undo snackbar instead of confirm dialog
+- 2026-07-24: CSV export column order + separator for BG Excel locale
