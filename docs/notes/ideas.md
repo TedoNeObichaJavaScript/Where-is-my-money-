@@ -565,3 +565,4 @@
 - 2026-07-22: settings screen grouping — appearance / data / security
 - 2026-07-24: settings screen grouping — appearance / data / security
 - 2026-07-24: recurring tx edge cases (DST, month-end 29/30/31)
+- 2026-07-24: onboarding flow: skip vs guided first account setup
